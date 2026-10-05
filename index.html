@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cookie Run: Ovenbreak Archive</title>
+    <style>
+      :root {
+        --ink: #fff;
+        --brick: #3a1f1c;
+        --purple: #6a0dad;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      body {
+        font:
+          700 15px/1.3 "Trebuchet MS",
+          system-ui,
+          sans-serif;
+        color: var(--ink);
+        background: var(--brick);
+        text-shadow:
+          0 1px 0 #000,
+          0 0 3px #000;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+        text-shadow: inherit;
+        cursor: pointer;
+      }
+      .r-legendary {
+        --c: linear-gradient(135deg, #ff6ec7, #ffd36e, #7dffb0, #6ec8ff, #c58bff);
+      }
+      .r-epic {
+        --c: linear-gradient(#e24dff, #7b3ff2 60%, #5a2bb8);
+      }
+      .r-rare {
+        --c: linear-gradient(#5fb0ff, #2f6fe0);
+      }
+      .r-common {
+        --c: linear-gradient(#b98a5e, #7a5230);
+      }
+      .r-sanrio {
+        --c: linear-gradient(#bfeaff, #6cc4ee);
+      }
+      .r-teenieping {
+        --c: linear-gradient(#ffc2e0, #ff7fba);
+      }
+      .r-ppg {
+        --c: linear-gradient(#ff7a9c, #e0245e);
+      }
+      .r-special {
+        --c: linear-gradient(#fff08a, #f5b800);
+      }
+      #list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        background: #00000040;
+        flex-wrap: wrap;
+      }
+      .top h1 {
+        font-size: 18px;
+        margin: 0;
+        flex: 1;
+        min-width: 150px;
+      }
+      .top input {
+        padding: 7px 10px;
+        border-radius: 8px;
+        border: 0;
+        width: 130px;
+        font: inherit;
+      }
+      .top select {
+        padding: 7px;
+        border-radius: 8px;
+        border: 0;
+        font: inherit;
+      }
+      .body {
+        display: flex;
+        flex: 1;
+        min-height: 0;
+      }
+      .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 84px;
+        background: #00000050;
+      }
+      .tabs button {
+        background: none;
+        border: 0;
+        padding: 16px 4px;
+        opacity: 0.55;
+        font-size: 15px;
+      }
+      .tabs button.on {
+        opacity: 1;
+        color: #ffe45e;
+        background: #ffffff18;
+      }
+      .tabs i {
+        display: block;
+        font-style: normal;
+        font-size: 26px;
+      }
+      #grid {
+        flex: 1;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+        gap: 10px;
+        padding: 12px;
+        align-content: start;
+      }
+      .card {
+        border: 3px solid #000;
+        border-radius: 12px;
+        background: #000;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: 0 0 10px #c0f;
+      }
+      .card .art {
+        background: var(--c);
+        height: 104px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+      }
+      .card img {
+        max-height: 100px;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .card .lv {
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        font-size: 20px;
+        color: #fff;
+      }
+      .card .nm {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        font-size: 12px;
+        padding: 0 3px;
+      }
+      .card .bar {
+        padding: 3px;
+        font-size: 12px;
+        background: #000;
+      }
+      #detail {
+        display: none;
+        height: 100%;
+        background: radial-gradient(#8a10c8, #5a0c9a);
+        flex-direction: column;
+      }
+      .dtop {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+        font-size: 18px;
+      }
+      .back {
+        background: none;
+        border: 0;
+        font-size: 30px;
+        padding: 0 6px;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 6px 14px;
+        overflow: auto;
+      }
+      .left {
+        flex: 1 1 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .badge {
+        padding: 3px 22px;
+        border-radius: 20px;
+        background: var(--c);
+        border: 2px solid #fff8;
+      }
+      .nm2 {
+        font-size: 24px;
+      }
+      .pill {
+        background: #ffffff30;
+        border-radius: 8px;
+        padding: 3px 8px;
+        display: inline-block;
+      }
+      .green {
+        color: #fff;
+        cursor: pointer;
+        background: #5fd12a;
+        border-radius: 8px;
+        padding: 3px 8px;
+        border: 2px solid #fff6;
+      }
+      .sprite {
+        align-self: center;
+        font-size: 110px;
+        margin: auto;
+      }
+      .sprite img {
+        max-width: min(100%, 320px);
+        max-height: 340px;
+        object-fit: contain;
+      }
+      .sprite span img {
+        max-width: 96px;
+        max-height: 96px;
+      }
+      .right {
+        flex: 1 1 300px;
+        background: #0004;
+        border-radius: 18px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .btns {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        background: #c9a6ff;
+        color: #fff;
+        border: 2px solid #fff8;
+        border-radius: 8px;
+        padding: 6px 14px;
+      }
+      .lvbig {
+        font-size: 34px;
+        color: #ffe500;
+        text-align: center;
+      }
+      .lvbig small {
+        color: #ccc;
+        font-size: 16px;
+      }
+      .tags {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .tags span {
+        background: #ffffff20;
+        color: #6ff;
+        border-radius: 14px;
+        padding: 3px 10px;
+      }
+      .pow {
+        background: #0005;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 28px;
+        padding: 4px;
+      }
+      .desc {
+        background: #0005;
+        border-radius: 10px;
+        padding: 16px;
+        text-align: center;
+        white-space: pre-line;
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .rav {
+        width: auto;
+        height: auto;
+        max-width: none;
+        max-height: none;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .lc .hp {
+        display: block;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .max {
+        height: 22px;
+        background: #f5b800;
+        border: 2px solid #000;
+        border-radius: 3px;
+        text-align: center;
+        color: #fff;
+        margin: 4px 0;
+      }
+      .done {
+        background: #0007;
+        border-radius: 12px;
+        padding: 14px;
+        text-align: center;
+        color: #ffe500;
+        font-size: 24px;
+      }
+      .foot {
+        display: flex;
+        gap: 12px;
+        padding: 10px 14px;
+        align-items: center;
+      }
+      .rw,
+      .cs {
+        background: #4a4a60;
+        border: 3px solid #000;
+        border-radius: 12px;
+        padding: 8px 14px;
+      }
+      .cs {
+        align-self: center;
+        border-radius: 50%;
+        width: 62px;
+        height: 62px;
+        border-color: #5f5;
+        background: #2a2;
+        padding: 0;
+        font-size: 26px;
+      }
+      .cs small {
+        display: block;
+        font-size: 11px;
+      }
+      .modal {
+        position: fixed;
+        inset: 0;
+        background: #000a;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        padding: 10px;
+      }
+      .sheet {
+        background: #fff0c8;
+        color: #4a2a10;
+        text-shadow: none;
+        border-radius: 14px;
+        max-width: 960px;
+        width: 100%;
+        max-height: 92%;
+        overflow: auto;
+        border: 4px solid #f5a000;
+      }
+      .sheet h2 {
+        margin: 0;
+        background: #f5a000;
+        color: #fff;
+        padding: 10px 14px;
+        text-shadow: 0 1px 0 #000;
+        display: flex;
+        justify-content: space-between;
+      }
+      .sheet h2 button {
+        background: none;
+        border: 0;
+        font-size: 22px;
+      }
+      .sc {
+        padding: 12px;
+        display: flex;
+        gap: 10px;
+        overflow: auto;
+      }
+      .lc {
+        min-width: 200px;
+        flex: 1;
+        background: #ffe5a8;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        white-space: pre-line;
+      }
+      .lc b {
+        display: block;
+        font-size: 20px;
+      }
+      .cc {
+        min-width: 170px;
+        flex: 1;
+        background: #ffe5a8;
+        border-radius: 10px;
+        padding: 8px;
+        text-align: center;
+        font-size: 13px;
+      }
+      .cc .sp {
+        font-size: 56px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6px;
+      }
+      .cc .sp img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      /* Costume rarity colors */
+      .t-legendary {
+        --c: linear-gradient(#ffe27a, #e0a100);
+      }
+      .t-champion {
+        --c: linear-gradient(#6fe08a, #1f9e4a);
+      }
+      .t-superepic {
+        --c: linear-gradient(#ff6b6b, #c4152b);
+      }
+      .t-epic {
+        --c: linear-gradient(#e24dff, #7b3ff2 60%, #5a2bb8);
+      }
+      .t-rare {
+        --c: linear-gradient(#5fb0ff, #2f6fe0);
+      }
+      .t-common {
+        --c: linear-gradient(#b98a5e, #7a5230);
+      }
+      .cc .g {
+        font-size: 11px;
+        margin: 4px 0;
+      }
+      .cc button {
+        width: 100%;
+        padding: 8px;
+        border-radius: 10px;
+        border: 2px solid #000;
+        background: #ffd84a;
+        color: #fff;
+        text-shadow: 0 1px 0 #000;
+      }
+      .cc button.p {
+        background: #9b2ee0;
+      }
+      .cc button.eq {
+        background: #777;
+      }
+      .tier {
+        display: inline-block;
+        border-radius: 6px;
+        padding: 1px 8px;
+        color: #fff;
+        background: var(--c);
+        font-size: 11px;
+      }
+      .txt {
+        padding: 14px;
+        white-space: pre-line;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      .quote {
+        background: #fff;
+        border-radius: 10px;
+        padding: 8px;
+        text-align: center;
+        margin: 0 14px;
+      }
+      .aff {
+        padding: 6px 14px;
+      }
+      .aff div {
+        padding: 6px 0;
+        border-bottom: 1px solid #0002;
+      }
+      .candy {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px 14px;
+      }
+      .nm2 .star,
+      .star {
+        background: none;
+        border: 0;
+        font-size: 26px;
+        color: #9a9a9a;
+        padding: 0 4px;
+        vertical-align: middle;
+        text-shadow: 0 1px 0 #000;
+      }
+      .star.on {
+        color: #ffd800;
+      }
+      .fstar {
+        position: absolute;
+        top: 2px;
+        right: 6px;
+        color: #ffd800;
+        font-size: 22px;
+        z-index: 2;
+      }
+      .pow {
+        position: relative;
+      }
+      .pow .heart {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+      }
+      .desc {
+        position: relative;
+      }
+      .info {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 2px solid #fff8;
+        background: #9a8fb0;
+        color: #fff;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1;
+      }
+
+      /* ---- Enhancement / official-look additions ---- */
+      .tabs { overflow-y: auto; }
+      .eico { width: 1em; height: 1em; vertical-align: -0.15em; }
+      .enh {
+        position: relative;
+        background: #0005;
+        border-radius: 10px;
+        padding: 12px 48px;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        white-space: pre-line;
+      }
+      .enh > .eico {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        color: #d9c9f2;
+      }
+      .enh .info { top: 50%; transform: translateY(-50%); }
+      .max { position: relative; }
+      .max::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 28px;
+        background: linear-gradient(#ffc9ea, #c76fb0);
+        clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%);
+      }
+      .lc .lbox {
+        background: #ffd98b;
+        border-radius: 10px;
+        padding: 12px;
+        margin: 8px 0;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+      .lc .lbox.s {
+        min-height: 0;
+        position: relative;
+        padding: 12px 12px 12px 46px;
+      }
+      .lc .lbox.s .eico {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+      }
+      .lc.e { background: #ffeec6; border: 2px solid #fbd88a; min-width: 250px; }
+      .lc.e > b { white-space: nowrap; font-size: 19px; }
+      .lc .rw2 { margin-top: 14px; font-size: 15px; opacity: 0.85; }
+      /* Costume illustration viewer */
+      .cc .sp.zoomable { position: relative; }
+      .cc button.zoom {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: #0008;
+        font-size: 18px;
+        line-height: 1;
+        text-shadow: none;
+      }
+      #modal2 { z-index: 12; }
+      #modal2 .sheet { max-width: 1100px; width: auto; }
+      #modal2 img { display: block; max-width: 100%; max-height: calc(92vh - 70px); margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+    <div id="list">
+      <div class="top">
+        <h1 id="count"></h1>
+        <input id="q" placeholder="Search name or #tag…" /><select id="sort">
+          <option value="rarity">Rarity</option>
+          <option value="name">Name</option>
+          <option value="favorite">Favorite</option>
+          <option value="level">Level</option>
+        </select>
+      </div>
+      <div class="body">
+        <div class="tabs" id="tabs"></div>
+        <div id="grid"></div>
+      </div>
+    </div>
+    <div id="detail"></div>
+    <div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
+    <div class="modal" id="modal2"><div class="sheet" id="sheet2"></div></div>
+    <script src="cookies.js"></script>
+    <script src="pets.js"></script>
+    <script src="treasures.js"></script>
+    <script>
+      const RN = {
+        legendary: "LEGENDARY",
+        epic: "EPIC",
+        rare: "RARE",
+        common: "COMMON",
+        sanrio: "SANRIO",
+        teenieping: "TEENIEPING",
+        ppg: "POWERPUFF GIRLS",
+        special: "SPECIAL",
+      };
+      const ORDER = Object.keys(RN);
+      // Costume rarity, highest first (collab tiers like sanrio still use RN above)
+      const TIER = {
+        legendary: "LEGENDARY",
+        champion: "CHAMPION",
+        superepic: "SUPER EPIC",
+        epic: "EPIC",
+        rare: "RARE",
+        common: "COMMON",
+      };
+      const tierCls = (t) => (TIER[t] ? "t-" + t : "r-" + t);
+      const tierName = (t) => TIER[t] || RN[t] || t;
+      const TABS = {
+        cookie: {
+          label: "Cookie",
+          icon: "🍪",
+          data: () => window.COOKIES || [],
+          plural: "Cookies",
+        },
+        pet: { label: "Pet", icon: "🐾", data: () => window.PETS || [], plural: "Pets" },
+        treasure: {
+          label: "Treasure",
+          icon: "🔶",
+          data: () =>
+            (window.TREASURES || []).filter((t) =>
+              ["legendary", "epic", "rare", "special"].includes(t.rarity),
+            ),
+          plural: "Treasures",
+        },
+        cookieCostume: {
+          label: "Cookie Costume",
+          icon: "👕",
+          data: () => allCostumes("cookie"),
+          plural: "Cookie Costumes",
+        },
+        petCostume: {
+          label: "Pet Costume",
+          icon: "🧢",
+          data: () => allCostumes("pet"),
+          plural: "Pet Costumes",
+        },
+      };
+      // Costume rarity order (premium tiers first, then collab tiers)
+      const COS_ORDER = ["legendary","champion","superepic","epic","rare","common","sanrio","teenieping","ppg","special"];
+      // Every non-default costume of every cookie / pet, flattened into one list
+      const isCos = () => tab == "cookieCostume" || tab == "petCostume";
+      function allCostumes(only) {
+        const out = [];
+        [["cookie", window.COOKIES], ["pet", window.PETS]]
+          .filter(([type]) => !only || type == only)
+          .forEach(([type, arr]) =>
+          (arr || []).forEach((o, oi) =>
+            (o.costumes || []).forEach((c, n) => {
+              if (c.tier == "default") return;
+              out.push({ ...c, id: `${type}:${o.id}:${n}`, rarity: c.tier, ownerIdx: oi, ownerType: type, ownerId: o.id, ownerName: o.name });
+            }),
+          ),
+        );
+        return out;
+      }
+      const ordOf = (i) =>
+        isCos() ? COS_ORDER.indexOf(i.rarity) : ORDER.indexOf(i.rarity);
+      // Enhancement helpers
+      const enhIcon = () => {
+        let s = "";
+        for (let k = 0; k < 12; k++) {
+          const a = (k * Math.PI) / 6, r1 = k % 2 ? 7 : 5, r2 = 10.5;
+          s += `<line x1="${(12 + r1 * Math.cos(a)).toFixed(2)}" y1="${(12 + r1 * Math.sin(a)).toFixed(2)}" x2="${(12 + r2 * Math.cos(a)).toFixed(2)}" y2="${(12 + r2 * Math.sin(a)).toFixed(2)}"/>`;
+        }
+        return `<svg class="eico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">${s}</svg>`;
+      };
+      // Skill text is shown exactly as written (no number highlighting)
+      const hl = (t) => String(t);
+      const hlg = (t) => String(t);
+      const enhList = (i) => (i.enhancements || []).slice().sort((a, b) => a.lv - b.lv);
+      let prevTab = null;
+      let tab = "cookie",
+        cur = null,
+        view = "main";
+      const $ = (id) => document.getElementById(id);
+      const lvOf = (i) => (i.levels ? Math.max(...i.levels.map((l) => l.lv), 1) : 0);
+      // Candy levels use the same "levels" array as every other item.
+      // (Old format { level: "5/5", desc } is still understood as a fallback.)
+      const cLevels = (c) =>
+        c.levels || [
+          { lv: parseInt(c.level) || 1, desc: c.desc, reward: c.reward || "" },
+        ];
+      const cLast = (c) => cLevels(c)[cLevels(c).length - 1];
+      const cMax = (c) =>
+        c.levels
+          ? Math.max(...c.levels.map((l) => l.lv), 1)
+          : parseInt(String(c.level).split("/")[1]) || cLast(c).lv;
+      const spr = (x) => (x.img ? `<img src="${x.img}" alt="">` : x.emoji || "❔");
+      const art = (i) => {
+        const e = i.costumes && i.costumes.find((c) => c.equipped);
+        return spr(e || i);
+      };
+      // List cards: treasures show their small "avatar" icon (falls back to the full sprite).
+      // The detail page always uses art(i), i.e. the full sprite.
+      const cardArt = (i) =>
+        tab == "treasure" && i.avatar ? `<img src="${i.avatar}" alt="">` : art(i);
+      let FAV = new Set();
+      try {
+        FAV = new Set(JSON.parse(localStorage.getItem("croFav") || "[]"));
+      } catch (e) {}
+      const isFav = (i) => FAV.has(tab + ":" + i.id);
+      function toggleFav() {
+        const k = tab + ":" + cur.id;
+        FAV.has(k) ? FAV.delete(k) : FAV.add(k);
+        try {
+          localStorage.setItem("croFav", JSON.stringify([...FAV]));
+        } catch (e) {}
+        renderDetail();
+        renderList();
+      }
+      // Always the default costume (falls back to the item's own sprite)
+      const defSpr = (i) => {
+        const d = i.costumes && i.costumes.find((c) => c.tier == "default");
+        return spr(d && d.img ? d : i);
+      };
+      function skillInfo() {
+        const i = cur;
+        if (view == "candy") {
+          modal(
+            `${i.candy.name}'s Skill`,
+            `<div class="sc" style="align-items:center"><div class="cc" style="flex:0 0 200px"><div class="sp" style="height:240px">${spr(i.candy)}</div></div><div class="txt" style="flex:1;text-align:center;font-size:17px">${i.candy.skillFull || "No detailed skill description yet."}</div></div>`,
+          );
+          return;
+        }
+        modal(
+          `${i.name}'s Skill`,
+          `<div class="sc" style="align-items:center"><div class="cc" style="flex:0 0 200px"><div class="sp" style="height:240px">${defSpr(i)}</div></div><div class="txt" style="flex:1;text-align:center;font-size:17px">${i.skillFull || "No detailed skill description yet."}</div></div>`,
+        );
+      }
+      function renderList() {
+        $("tabs").innerHTML = Object.entries(TABS)
+          .map(
+            ([k, t]) =>
+              `<button class="${k == tab ? "on" : ""}" onclick="tab='${k}';renderList()"><i>${t.icon}</i>${t.label}</button>`,
+          )
+          .join("");
+        let d = TABS[tab].data().slice(),
+          q = $("q").value.toLowerCase(),
+          s = $("sort").value;
+        $("count").textContent = `All ${TABS[tab].plural}: ${d.length}`;
+        // Search matches name, owner (costumes) and #tags; spaces and "#" are ignored
+        const norm = (x) => String(x).toLowerCase().replace(/[\s#]/g, "");
+        const nq = norm(q);
+        d = d.filter((i) =>
+          [i.name, i.ownerName || "", ...(i.tags || [])].some((x) => norm(x).includes(nq)),
+        );
+        const co = isCos();
+        // Costumes: rarity -> owner (database order) -> alphabetical
+        const cosCmp = (a, b) =>
+          ordOf(a) - ordOf(b) || a.ownerIdx - b.ownerIdx || a.name.localeCompare(b.name);
+        d.sort((a, b) =>
+          co
+            ? s == "name"
+              ? a.name.localeCompare(b.name)
+              : s == "favorite"
+                ? +isFav(b) - +isFav(a) || cosCmp(a, b)
+                : cosCmp(a, b)
+            : s == "favorite"
+              ? +isFav(b) - +isFav(a) || ordOf(a) - ordOf(b) || lvOf(b) - lvOf(a)
+              : s == "name"
+                ? a.name.localeCompare(b.name)
+                : s == "level"
+                  ? lvOf(b) - lvOf(a)
+                  : ordOf(a) - ordOf(b) || lvOf(b) - lvOf(a),
+        );
+        $("grid").innerHTML =
+          d
+            .map(
+              (i) =>
+                `<button class="card ${co ? tierCls(i.rarity) : "r-" + i.rarity}" onclick="${co ? "openCostume" : "openItem"}('${i.id}')"><div class="art">${co ? "" : `<span class="lv">Lv<br>${lvOf(i)}</span>`}${isFav(i) ? '<span class="fstar">★</span>' : ""}${cardArt(i)}<span class="nm">${i.name}</span></div></button>`,
+            )
+            .join("") || "<p>No entries yet.</p>";
+      }
+      function openCostume(id) {
+        const c = TABS[tab].data().find((x) => x.id == id);
+        if (!c) return;
+        modal(
+          c.name,
+          `<div class="sc" style="justify-content:center"><div class="cc ${tierCls(c.tier)}" style="flex:0 1 320px"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div></div>`,
+        );
+      }
+      function showIllust(id) {
+        const c = TABS[tab].data().find((x) => x.id == id);
+        if (!c || !c.illust) return;
+        $("sheet2").innerHTML = `<h2>${c.name}<button onclick="closeM2()">✖</button></h2><img src="${c.illust}" alt="${c.name}">`;
+        $("modal2").style.display = "flex";
+      }
+      function closeM2() {
+        $("modal2").style.display = "none";
+      }
+      $("modal2").onclick = (e) => {
+        if (e.target.id == "modal2") closeM2();
+      };
+      function costumeOwner(type, id) {
+        closeM();
+        prevTab = tab;
+        openItem(id, type);
+      }
+      function find(id) {
+        return TABS[tab].data().find((i) => i.id == id);
+      }
+      function openItem(id, type) {
+        if (type) tab = type;
+        cur = find(id);
+        view = "main";
+        renderDetail();
+        $("list").style.display = "none";
+        $("detail").style.display = "flex";
+      }
+      function backToList() {
+        if (prevTab) {
+          tab = prevTab;
+          prevTab = null;
+          renderList();
+        }
+        $("detail").style.display = "none";
+        $("list").style.display = "flex";
+      }
+      function renderDetail() {
+        const i = cur,
+          L = i.levels[i.levels.length - 1],
+          cand = tab == "cookie" && i.candy;
+        const foot = "";
+        const EN = enhList(i), EL = EN[EN.length - 1];
+        const enhBox = EL
+          ? `<div class="enh">${enhIcon()}<span>${hl(EL.effect)}</span><button class="info" onclick="enhInfo()" title="Enhancement effect">!</button></div>`
+          : "";
+        let right, left;
+        if (view == "candy") {
+          left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
+          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button></div><div class="lvbig">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</div></div>`;
+          $("detail").innerHTML =
+            `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
+          return;
+        }
+        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${art(i)}${cand ? `<span style="font-size:50px;cursor:pointer" onclick="view='candy';renderDetail()">${spr(i.candy)}</span>` : ""}</div>${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
+        right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}</div>
+ <div class="lvbig">Lv.${L.lv}<small>/${lvOf(i)}</small></div><div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
+ ${L.power ? `<div class="pow"><span class="heart">❤️</span>${L.power}<small>/${L.power}</small></div>` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</div>${enhBox}<div class="max">MAX!</div><div class="done">Max Level Reached!</div></div>`;
+        $("detail").innerHTML =
+          `<div class="dtop"><button class="back" onclick="backToList()">‹</button>${tab[0].toUpperCase() + tab.slice(1)} Details</div><div class="main">${left}${right}</div>${foot}`;
+      }
+      function modal(title, html) {
+        $("sheet").innerHTML =
+          `<h2>${title}<button onclick="closeM()">✖</button></h2>${html}`;
+        $("modal").style.display = "flex";
+      }
+      function closeM() {
+        $("modal").style.display = "none";
+      }
+      $("modal").onclick = (e) => {
+        if (e.target.id == "modal") closeM();
+      };
+      function levels() {
+        const l = view == "candy" ? cLevels(cur.candy) : cur.levels;
+        const card = (x) =>
+          `<div class="lc"><b>Lv.${x.lv}</b>${x.power ? `<b>❤️ ${x.power}</b>` : ""}<div class="lbox">${hlg(x.desc)}${x.extra ? "\n\n" + hlg(x.extra) : ""}</div>${x.reward ? `<div class="rw2">Level Up Reward:\n${x.reward}</div>` : ""}</div>`;
+        const main = l[l.length - 1].desc;
+        const enh =
+          view == "candy"
+            ? ""
+            : enhList(cur)
+                .map(
+                  (e) =>
+                    `<div class="lc e"><b>${enhIcon()} Enhancement Lv.${e.lv}</b><div class="lbox">${hlg(e.desc || main)}</div><div class="lbox s">${enhIcon()}<span>${hlg(e.effect)}</span></div><div class="rw2">${e.reward ? "Level Up Reward:\n" + e.reward : "No Level Up Reward"}</div></div>`,
+                )
+                .join("");
+        modal("Level Info", `<div class="sc">${l.map(card).join("")}${enh}</div>`);
+        if (enh) {
+          const sc = document.querySelector("#sheet .sc");
+          sc.scrollLeft = sc.scrollWidth;
+        }
+      }
+      function enhInfo() {
+        const i = cur;
+        modal(
+          `${i.name}'s Enhancement Effect`,
+          `<div class="txt">${i.enhSkill || "After reaching max level, enhancing the treasure (Enhancement Lv.1–6) adds a bonus effect."}</div><div class="aff">${enhList(i)
+            .map((e) => `<div>${enhIcon()} Enhancement Lv.${e.lv} — ${hlg(e.effect)}</div>`)
+            .join("")}</div>`,
+        );
+      }
+      function story() {
+        const i = cur;
+        const tabsH = `<div class="btns" style="padding:10px 14px"><button class="btn" style="background:#c58a3a" onclick="story()">Story</button>${i.affection ? `<button class="btn" style="background:#c58a3a" onclick="rel()">Relationships</button>` : ""}</div>`;
+        modal(
+          i.name + "'s Story",
+          tabsH +
+            (i.quote ? `<div class="quote">${i.quote}</div>` : "") +
+            `<div class="txt">${i.story}</div>`,
+        );
+      }
+      // Avatar for a relationship entry: looked up from the cookie it credits (r.id -> cookie.avatar).
+      // Falls back to an inline r.img if given; shows nothing if neither exists.
+      function relAvatar(r) {
+        const c = r.id && (window.COOKIES || []).find((x) => x.id == r.id);
+        const src = (c && c.avatar) || r.img;
+        return src ? `<img class="rav" src="${src}" alt="">` : "";
+      }
+      function rel() {
+        const i = cur;
+        modal(
+          "Relationships",
+          `<div class="btns" style="padding:10px 14px"><button class="btn" style="background:#c58a3a" onclick="story()">Story</button></div><div class="aff"><b>Affection</b>${i.affection
+            .slice()
+            .reverse()
+            .map(
+              (a) => `<div>❤ ${a.n} — ${a.name}${a.bonus ? "<br>" + a.bonus : ""}</div>`,
+            )
+            .join(
+              "",
+            )}</div><div class="aff"><b>Relationship Chart</b>${(i.relations || []).map((r) => `<div>${relAvatar(r)}${r.who}: “${r.text}” (${r.type})</div>`).join("")}</div>`,
+        );
+      }
+      function rewards() {
+        modal(
+          "Rewards",
+          `<div class="txt">No reward data yet. Add a "rewards" field to this entry.</div>`,
+        );
+      }
+      function costumes() {
+        const i = cur;
+        modal(
+          `${i.name} (${i.costumes.length})`,
+          `<div class="sc">${i.costumes
+            .map((c, n) => {
+              const on =
+                c.equipped ||
+                (c.tier == "default" && !i.costumes.some((x) => x.equipped));
+              return `<div class="cc ${c.tier == "default" ? "t-common" : tierCls(c.tier)}"><b>${c.name}</b><div class="sp">${c.tier == "default" && !c.img ? spr(i) : spr(c)}</div>${c.tier != "default" ? `<span class="tier">${tierName(c.tier)}</span>` : ""}<div class="g">${c.bonus || c.desc || ""}</div>${on ? `<button class="eq">✔ Equipped</button>` : `<button onclick="equip(${n})">Equip</button>`}${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>`;
+            })
+            .join("")}</div>`,
+        );
+      }
+      function equip(n) {
+        cur.costumes.forEach((c, k) => (c.equipped = k == n && c.tier != "default"));
+        costumes();
+        renderDetail();
+        renderList();
+      }
+      function combi() {
+        const i = cur,
+          list = i.combi || [];
+        modal(
+          "Combi Bonus",
+          `<div class="sc" style="justify-content:center"><div class="cc" style="flex:0 1 200px"><div class="sp" style="height:200px">${spr(i)}</div></div>${
+            list
+              .map((b) => {
+                const found = TABS[b.type].data().find((x) => x.id == b.id);
+                const t = found || { name: b.name || b.id, emoji: "❔" };
+                return `<div class="cc" style="flex:0 1 200px"><b>${t.name}</b><div class="sp">${spr(t)}</div><div class="g">${b.desc}</div>${found ? `<button class="p" style="background:#19b8d6" onclick="closeM();openItem('${b.id}','${b.type}')">Details</button>` : `<div class="g">Not in archive yet</div>`}</div>`;
+              })
+              .join("") || '<div class="txt">No combi bonus recorded yet.</div>'
+          }</div>`,
+        );
+      }
+      $("q").oninput = renderList;
+      $("sort").onchange = renderList;
+      renderList();
+    </script>
+  </body>
+</html>
