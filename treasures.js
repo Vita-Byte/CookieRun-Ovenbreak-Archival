@@ -107,7 +107,7 @@ window.TREASURES = [
       { lv: 3, effect: "+60,750 pts for Starlight Jellies" },
       { lv: 4, effect: "+81,000 pts for Starlight Jellies" },
       { lv: 5, effect: "+101,250 pts for Starlight Jellies" },
-      { lv: 6, effect: "+121,500 pts for Starlight Jell+12,150 pts for Tiny Sticker Jelliesies" },
+      { lv: 6, effect: "+121,500 pts for Starlight Jellies" },
     ],
 	skillFull: "Starlight shines down from the sky at certain intervals, creating Starlight Jellies. Level Up for more points for Starlight Jellies.",
     levels: [
