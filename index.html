@@ -2,8 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <title>Cookie Run: Ovenbreak Archive</title>
+    <!-- Install as an app (iOS Safari: Share → Add to Home Screen) -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="https://cdn.wikimg.net/en/cookierunwiki/images/c/cf/Crob_affection_jelly_milky_way.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="OB Archive" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#6a0dad" />
     <style>
       :root {
         --ink: #fff;
@@ -19,6 +27,10 @@
         height: 100%;
       }
       body {
+        /* keep content clear of the iPhone notch / home bar in app mode */
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
         font:
           700 15px/1.3 "Trebuchet MS",
           system-ui,
@@ -1082,6 +1094,12 @@
       $("q").oninput = renderList;
       $("sort").onchange = renderList;
       renderList();
+    </script>
+  <script>
+      // Register the service worker (needs https:// hosting; skipped on file://)
+      if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+      }
     </script>
   </body>
 </html>
