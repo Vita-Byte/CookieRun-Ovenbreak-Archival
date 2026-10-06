@@ -639,6 +639,45 @@
       #modal2 { z-index: 12; }
       #modal2 .sheet { max-width: 1100px; width: auto; }
       #modal2 img { display: block; max-width: 100%; max-height: calc(92vh - 70px); margin: 0 auto; }
+      /* Release date + Affection Jelly */
+      .rel {
+        margin-left: auto;
+        align-self: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #e9d8ff;
+        background: #0004;
+        border-radius: 999px;
+        padding: 6px 12px;
+        white-space: nowrap;
+      }
+      .sheet h2 .rel { font-size: 13px; margin: 0 10px 0 14px; align-self: center; background: #0003; text-shadow: none; }
+      .sheet h2 > span { flex: 1; display: flex; align-items: center; flex-wrap: wrap; }
+      .jelly {
+        background: #0007;
+        border-radius: 12px;
+        padding: 14px;
+        margin-top: 8px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        color: #fff;
+      }
+      .jelly .jimg {
+        flex: 0 0 auto;
+        width: 84px;
+        height: 84px;
+        border-radius: 14px;
+        background: #ffffff1c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 44px;
+      }
+      .jelly .jimg img { max-width: 72px; max-height: 72px; image-rendering: auto; }
+      .jelly .jt small { display: block; color: #cbb3f5; font-size: 13px; letter-spacing: 0.3px; }
+      .jelly .jt b { display: block; font-size: 19px; color: #ffe500; margin: 2px 0 6px; }
+      .jelly .jt p { margin: 0; font-size: 15px; line-height: 1.4; white-space: pre-line; }
     </style>
   </head>
   <body>
@@ -856,7 +895,7 @@
         const c = TABS[tab].data().find((x) => x.id == id);
         if (!c) return;
         modal(
-          c.name,
+          `<span>${c.name}${c.released ? `<span class="rel">📅 ${c.released}</span>` : ""}</span>`,
           `<div class="sc" style="justify-content:center"><div class="cc ${tierCls(c.tier)}" style="flex:0 1 320px"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div></div>`,
         );
       }
@@ -902,6 +941,11 @@
           L = i.levels[i.levels.length - 1],
           cand = tab == "cookie" && i.candy;
         const foot = "";
+        const relH = i.released ? `<span class="rel" title="Release date">📅 ${i.released}</span>` : "";
+        const jellyH =
+          tab == "cookie" && i.jelly
+            ? `<div class="jelly"><div class="jimg">${i.jelly.img ? `<img src="${i.jelly.img}" alt="">` : "🍬"}</div><div class="jt"><small>Affection Jelly</small><b>${i.name} Jelly</b><p>${i.jelly.story || ""}</p></div></div>`
+            : "";
         const EN = enhList(i), EL = EN[EN.length - 1];
         const enhBox = EL
           ? `<div class="enh">${enhIcon()}<span>${hl(EL.effect)}</span><button class="info" onclick="enhInfo()" title="Enhancement effect">!</button></div>`
@@ -909,15 +953,15 @@
         let right, left;
         if (view == "candy") {
           left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
-          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button></div><div class="lvbig">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</div></div>`;
+          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</div></div>`;
           $("detail").innerHTML =
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;
         }
         left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${art(i)}${cand ? `<span style="font-size:50px;cursor:pointer" onclick="view='candy';renderDetail()">${spr(i.candy)}</span>` : ""}</div>${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
-        right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}</div>
+        right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}${relH}</div>
  <div class="lvbig">Lv.${L.lv}<small>/${lvOf(i)}</small></div><div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
- ${L.power ? `<div class="pow"><span class="heart">❤️</span>${L.power}<small>/${L.power}</small></div>` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</div>${enhBox}<div class="max">MAX!</div><div class="done">Max Level Reached!</div></div>`;
+ ${L.power ? `<div class="pow"><span class="heart">❤️</span>${L.power}<small>/${L.power}</small></div>` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</div>${enhBox}<div class="max">MAX!</div><div class="done">Max Level Reached!</div>${jellyH}</div>`;
         $("detail").innerHTML =
           `<div class="dtop"><button class="back" onclick="backToList()">‹</button>${tab[0].toUpperCase() + tab.slice(1)} Details</div><div class="main">${left}${right}</div>${foot}`;
       }

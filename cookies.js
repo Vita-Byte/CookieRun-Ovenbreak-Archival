@@ -7,6 +7,11 @@ window.COOKIES = [
     id: "milky-way",
     name: "Milky Way Cookie",
     rarity: "epic",
+    released: "October 27, 2025",
+    jelly: {
+      img: "https://cdn.wikimg.net/en/cookierunwiki/images/c/cf/Crob_affection_jelly_milky_way.png",
+      story: "She gets a bit worn out greeting all the drivers on the Stardust Platforms, but the welcoming feeling is nice all the same.",
+    },
     img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/87/Crob_standard_milky_way.png",
     emoji: "🌙",
     avatar: "", // head icon shown beside this cookie's name in other cookies' Relationship Charts
@@ -185,8 +190,9 @@ window.COOKIES = [
       {
         name: "Guide to Sweet Dreams",
         img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/92/Guide_to_sweet_dreams.png",
-		illust: "https://cdn.wikimg.net/en/cookierunwiki/images/e/ef/Img_skinIllust_457301.png",
+        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/e/ef/Img_skinIllust_457301.png", // full costume illustration (magnifier button)
         bonus: "+1,600 pts for Milky Way Star Jellies",
+        released: "October 27, 2025", // costume release date (shown next to its name)
         tier: "superepic",
         emoji: "🌙",
         info: "Upon the night of the full moon, if you slip into your favorite pajamas and wait, you might just hear an unfamiliar sound from just outside your window. Take a glimpse outside and you'll see it's none other than Milky Way Cookie, choo choo!-ing her wat over to guide you into dreamland! Follow the sound and before you know it, you'll be deep, deep asleep. A good night's sleep with a cozy, relaxing dream sounds like an exhausted Cookie's dream come true!",
@@ -194,8 +200,8 @@ window.COOKIES = [
 	  {
         name: "Sweet Travel Gift",
         img: "https://cdn.wikimg.net/en/cookierunwiki/images/a/a8/Crob_standard_sweet_travel_gift.png",
-		illust: "https://cdn.wikimg.net/en/cookierunwiki/images/0/00/Crob_illustration_sweet_travel_gift.png",
         bonus: "+1,600 pts for Milky Way Star Jellies",
+        released: "March 13, 2026",
         tier: "superepic",
         emoji: "💝",
         info: "Something feels different about the Star Voyage Express! The interior is bathed in pink colors and sweet candies... and then the conductor herself appears—just as adorably decorated—as she hands you a bouquet of strawberry candies! According to the Cookie, it's a special treat just for today's passengers. Imagine how sweet it would be to travel the dream world if every day was like this!",

@@ -4,6 +4,7 @@ window.PETS = [
     id: "marshpillow",
     name: "Marshpillow",
     rarity: "epic",
+    released: "October 27, 2025",
     emoji: "🧸",
     img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/fa/Marshpillow.png",
     tags: ["Jellies", "Energy Speed", "Destruction"],
