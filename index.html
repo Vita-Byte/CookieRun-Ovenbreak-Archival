@@ -722,6 +722,101 @@
         .qt .qrow { grid-template-columns: 1fr; }
         .qt .ql { border-right: 0; border-bottom: 1px solid #5a3a22; }
       }
+
+      /* ===== Phone layout ===== */
+      .left { position: relative; }
+      .candybtn { position: absolute; top: 56px; right: 8px; width: 104px; height: 104px; padding: 0; background: none; border: 0; font-size: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+      .candybtn img { max-width: 100%; max-height: 100%; }
+      .candybtn:active { transform: scale(0.92); }
+      /* Wide screens: header floats over the top-left so the detail box can sit higher without being clipped */
+      @media (min-width: 701px) {
+        #detail { position: relative; }
+        .dtop { position: absolute; top: 0; left: 0; z-index: 3; }
+        .main { padding-top: 40px; }
+        .left { padding-top: 14px; }
+        .candybtn { top: 70px; }
+      }
+      @media (max-width: 700px) {
+        .gnav.l { left: -46px; } .gnav.r { right: -46px; }
+        .candybtn { top: 0; width: 76px; height: 76px; }
+        .body { flex-direction: column-reverse; }
+        .tabs { flex-direction: row; width: auto; overflow-x: auto; overflow-y: hidden; padding-bottom: env(safe-area-inset-bottom); border-top: 1px solid #fff3; }
+        .tabs button { flex: 1 0 auto; min-width: 72px; padding: 8px 6px; font-size: 12px; }
+        .tabs i { font-size: 22px; }
+        #grid { overflow: auto; min-height: 0; padding: 8px; }
+        .top { flex-wrap: wrap; }
+        .sprite img { max-height: 250px; }
+        .main { padding: 6px 10px; }
+      }
+      /* ===== Motion ===== */
+      @keyframes fi { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes up { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+      @keyframes pop { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: none; } }
+      @keyframes sl { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: none; } }
+      @keyframes sr { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
+      img { animation: fi 0.4s; }
+      .modal { animation: fi 0.2s; }
+      .modal .sheet { animation: up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
+      #modal2 .sheet { animation: pop 0.25s; }
+      #detail.enter .main { animation: up 0.35s cubic-bezier(0.2, 0.8, 0.2, 1); }
+      .card { animation: pop 0.3s both; animation-delay: calc(var(--n, 0) * 18ms); transition: transform 0.15s, box-shadow 0.15s; }
+      .card:active { transform: scale(0.95); }
+      @media (hover: hover) { .card:hover { transform: translateY(-3px); } }
+      .tabs button, .btn { transition: opacity 0.2s, background 0.2s, transform 0.1s; }
+      .btn:active, .tabs button:active { transform: scale(0.95); }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+      /* ===== Level slider ===== */
+      .lvs { width: 100%; accent-color: #ffe45e; margin: 0 0 6px; height: 28px; }
+      #powb:empty { display: none; }
+      /* ===== Costume gallery ===== */
+      .gal { position: relative; display: flex; align-items: center; justify-content: center; touch-action: pan-y; }
+      .gframe { border: 3px solid var(--c); border-radius: 22px; padding: 10px; min-width: 200px; min-height: 200px; display: flex; align-items: center; justify-content: center;
+        background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--c) 40%, transparent), transparent 70%); box-shadow: 0 0 22px color-mix(in srgb, var(--c) 55%, transparent); }
+      .gframe.sl { animation: sl 0.3s; }
+      .gframe.sr { animation: sr 0.3s; }
+      .gnav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 38px; height: 38px; border-radius: 50%; border: 2px solid #fff8; background: #0006; font-size: 24px; line-height: 1; padding: 0; }
+      .gnav.l { left: -64px; } .gnav.r { right: -64px; }
+      .gcap { font-size: 16px; display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 8px; }
+      .gn { font-size: 18px; }
+      .gd { display: flex; gap: 6px; }
+      .gd i { width: 8px; height: 8px; border-radius: 50%; background: #fff5; transition: transform 0.2s; }
+      .gd i.on { background: #ffe45e; transform: scale(1.4); }
+      .gq { padding: 5px 16px; border-radius: 999px; border: 2px solid #fff8; background: #19b8d6; }
+      .gq.on { background: #3aa84a; }
+
+      /* ===== Rarity-based backgrounds ===== */
+      .r-legendary, .t-legendary { --g: #ff8fd8; } .t-legendary { --g: #e0a100; }
+      .r-epic, .t-epic { --g: #b45cff; }
+      .r-rare, .t-rare { --g: #4f9bff; }
+      .r-common, .t-common { --g: #b98a5e; }
+      .r-sanrio { --g: #6cc4ee; } .r-teenieping { --g: #ff7fba; } .r-ppg, .t-superepic { --g: #e0245e; }
+      .r-special { --g: #f5b800; } .t-champion { --g: #1f9e4a; }
+      /* detail screen: the item's own rarity gradient, slightly darkened so panels stay readable */
+      #detail[class*="r-"] { background: linear-gradient(rgba(10, 0, 30, 0.22), rgba(10, 0, 30, 0.5)), var(--c); }
+      #detail.r-legendary { background: linear-gradient(180deg, #7b1fb5 0%, #5a55d6 38%, #2ba9d0 74%, #2fd0b5 100%); }
+      /* cards: rarity gradient + orange MAX bar */
+      .card.r-legendary .art { background: linear-gradient(180deg, #ff8ad8 0%, #b58cff 35%, #5fc8ff 70%, #3fe0c8 100%); }
+      .card { box-shadow: 0 0 8px var(--g, #c0f); border-color: #1a0a2a; }
+      /* Rarity tags (detail page + costume cards): indigo border, bold white text with dark outline */
+      .left .badge {
+        border: 3px solid #2a1a7a;
+        box-shadow: 0 0 0 1px #ffffff55 inset, 0 1px 4px #0006;
+        color: #fff;
+        font-weight: 900;
+        letter-spacing: 0.4px;
+        text-shadow: -1.5px -1.5px 0 #25156a, 1.5px -1.5px 0 #25156a, -1.5px 1.5px 0 #25156a, 1.5px 1.5px 0 #25156a, 0 2px 0 #25156a;
+      }
+      .left.r-legendary .badge { background: linear-gradient(90deg, #5ef2b0 0%, #34c6f0 45%, #6a7bff 75%, #b06bff 100%); }
+      .cc .tier {
+        border: 2px solid #2a1a7a;
+        border-radius: 999px;
+        padding: 1px 12px;
+        font-weight: 900;
+        letter-spacing: 0.3px;
+        text-shadow: -1px -1px 0 #25156a, 1px -1px 0 #25156a, -1px 1px 0 #25156a, 1px 1px 0 #25156a;
+      }
+      /* gallery frame: gradient border (the colors are gradients, so use the padding-box/border-box trick) */
+      .gframe { border: 0; background: none; box-shadow: none; padding: 0; min-width: 0; min-height: 0; }
     </style>
   </head>
   <body>
@@ -956,8 +1051,8 @@
         $("grid").innerHTML =
           d
             .map(
-              (i) =>
-                `<button class="card ${co ? tierCls(i.rarity) : "r-" + i.rarity}" onclick="${co ? "openCostume" : "openItem"}('${i.id}')"><div class="art">${co ? "" : `<span class="lv">Lv<br>${lvOf(i)}</span>`}${isFav(i) ? '<span class="fstar">★</span>' : ""}${cardArt(i)}<span class="nm">${i.name}</span></div></button>`,
+              (i, k) =>
+                `<button class="card ${co ? tierCls(i.rarity) : "r-" + i.rarity}" style="--n:${Math.min(k, 14)}" onclick="${co ? "openCostume" : "openItem"}('${i.id}')"><div class="art">${isFav(i) ? '<span class="fstar">★</span>' : ""}${cardArt(i)}<span class="nm">${i.name}</span></div></button>`,
             )
             .join("") || "<p>No entries yet.</p>";
       }
@@ -966,7 +1061,7 @@
         if (!c) return;
         modal(
           `<span>${c.name}${c.released ? `<span class="rel">📅 ${c.released}</span>` : ""}</span>`,
-          `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div><div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div></div>`,
+          `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>${c.ownerType == "cookie" ? `<div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div>` : ""}</div>`,
         );
       }
       function showIllust(id) {
@@ -993,7 +1088,11 @@
         if (type) tab = type;
         cur = find(id);
         view = "main";
+        galIdx = null;
         renderDetail();
+        $("detail").classList.remove("enter");
+        void $("detail").offsetWidth;
+        $("detail").classList.add("enter");
         $("list").style.display = "none";
         $("detail").style.display = "flex";
       }
@@ -1006,7 +1105,56 @@
         $("detail").style.display = "none";
         $("list").style.display = "flex";
       }
+      let galIdx = null, gX = 0;
+      const powH = (x) => (x.power ? `<div class="pow"><span class="heart">❤️</span>${x.power}<small>/${x.power}</small></div>` : "");
+      // Level slider: updates the panels in place
+      function setLv(v) {
+        const i = cur, n = +v, L = i.levels[n], full = n == i.levels.length - 1, tot = lvOf(i);
+        $("lvb").innerHTML = `Lv.${L.lv}<small>/${tot}</small>`;
+        $("powb").innerHTML = powH(L);
+        $("dtx").textContent = L.desc + (L.extra ? "\n\n" + L.extra : "");
+        $("enhw").style.display = full ? "" : "none";
+        const m = $("maxb");
+        m.textContent = full ? "MAX!" : `Lv.${L.lv}/${tot}`;
+        m.style.background = full ? "" : `linear-gradient(90deg,#f4b400 ${Math.round((L.lv / tot) * 100)}%,#5a3b00 0)`;
+        $("doneb").textContent = full ? "Max Level Reached!" : L.reward ? (/^No /.test(L.reward) ? L.reward : "Level Up Reward: " + L.reward) : "No Level Up Reward";
+      }
+      // Costume gallery (swipe or use the arrows)
+      const gCls = (c) => (c.tier == "default" ? "t-common" : tierCls(c.tier));
+      const gSpr = (c) => (c.tier == "default" && !c.img ? spr(cur) : spr(c));
+      function gCap() {
+        const l = cur.costumes, c = l[galIdx], on = c.equipped || (c.tier == "default" && !l.some((x) => x.equipped));
+        return `<div class="gn">${c.name}</div><div class="gd">${l.map((_, k) => `<i class="${k == galIdx ? "on" : ""}"></i>`).join("")}</div><button class="gq${on ? " on" : ""}" onclick="galEquip()">${on ? "Equipped ✓" : "Equip"}</button>`;
+      }
+      function galHTML(i) {
+        if (!(i.costumes && i.costumes.length > 1)) return art(i);
+        if (galIdx === null) galIdx = Math.max(0, i.costumes.findIndex((c) => c.equipped));
+        const c = i.costumes[galIdx];
+        return `<div class="gal" ontouchstart="gX=event.touches[0].clientX" ontouchend="gSwipe(event)"><button class="gnav l" onclick="galGo(-1)">‹</button><div class="gframe ${gCls(c)}" id="gfr">${gSpr(c)}</div><button class="gnav r" onclick="galGo(1)">›</button></div><div class="gcap" id="gcap">${gCap()}</div>`;
+      }
+      function galGo(d) {
+        const n = cur.costumes.length, f = $("gfr");
+        galIdx = (galIdx + d + n) % n;
+        const c = cur.costumes[galIdx];
+        f.className = "gframe " + gCls(c);
+        f.innerHTML = gSpr(c);
+        void f.offsetWidth;
+        f.classList.add(d > 0 ? "sl" : "sr");
+        $("gcap").innerHTML = gCap();
+      }
+      function gSwipe(e) {
+        const dx = e.changedTouches[0].clientX - gX;
+        if (Math.abs(dx) > 40) galGo(dx < 0 ? 1 : -1);
+      }
+      function galEquip() {
+        cur.costumes.forEach((c, k) => (c.equipped = k == galIdx && c.tier != "default"));
+        renderList();
+        renderDetail();
+      }
       function renderDetail() {
+        const dEl = $("detail");
+        dEl.className = dEl.className.replace(/\b[rt]-\S+/g, "").trim();
+        dEl.classList.add("r-" + cur.rarity);
         const i = cur,
           L = i.levels[i.levels.length - 1],
           cand = tab == "cookie" && i.candy;
@@ -1028,10 +1176,10 @@
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;
         }
-        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${art(i)}${cand ? `<span style="font-size:50px;cursor:pointer" onclick="view='candy';renderDetail()">${spr(i.candy)}</span>` : ""}</div>${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
+        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
         right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}${relH}</div>
- <div class="lvbig">Lv.${L.lv}<small>/${lvOf(i)}</small></div><div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
- ${L.power ? `<div class="pow"><span class="heart">❤️</span>${L.power}<small>/${L.power}</small></div>` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</div>${enhBox}<div class="max">MAX!</div><div class="done">Max Level Reached!</div>${jellyH}</div>`;
+ <div class="lvbig" id="lvb">Lv.${L.lv}<small>/${lvOf(i)}</small></div>${i.levels.length > 1 ? `<input type="range" class="lvs" min="0" max="${i.levels.length - 1}" value="${i.levels.length - 1}" oninput="setLv(this.value)" aria-label="Level">` : ""}<div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
+ <div id="powb">${powH(L)}</div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</span></div><div id="enhw">${enhBox}</div><div class="max" id="maxb">MAX!</div><div class="done" id="doneb">Max Level Reached!</div>${jellyH}</div>`;
         $("detail").innerHTML =
           `<div class="dtop"><button class="back" onclick="backToList()">‹</button>${tab[0].toUpperCase() + tab.slice(1)} Details</div><div class="main">${left}${right}</div>${foot}`;
       }

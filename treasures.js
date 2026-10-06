@@ -3,7 +3,88 @@
 //   [{ lv: 1..6, effect: "+x pts for ...", desc?: "(overrides main skill text)", reward?: "..." }]
 //   The LAST entry is displayed in the "Enhancement Effect" box; all of them appear in Level Info.
 window.TREASURES = [
-{
+  {
+    id: "dread-grasp-of-darkness",
+    name: "Dread Grasp of Darkness",
+    rarity: "legendary",
+    emoji: "📔",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/6/65/Crob_sprite_background_dread_grasp_of_darkness.png",
+	avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/7/7d/Crob_sprite_dread_grasp_of_darkness.png",
+    tags: ["Jellies"],
+    bonus: true,
+	skillFull: "After first activation, a colossal hand appears for a certain period of time. The eye within the hand scans the surrounding area before striking down with Dark Lightning, destroying obstacles and creating Dark Crimson Gem Jellies. At the end of the skill, the claw falls down, destroying everything in the surrounding area, creating Dark Crimson Gem Jellies and Dark Sigil Jellies. Afterwards, Dark Lightning strikes at certain intervals, destroying obstacles to create Dark Crimson Gem Jellies. Level Up for more points for Dark Crimson Gem Jellies and Dark Sigil Jellies.",
+    levels: [
+      {
+        lv: 1,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+108,540 pts for Crimson Gem Jellies\n+1,340,000 pts for Dark Sigil Jellies",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+117,450 pts for Crimson Gem Jellies\n+1,450,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 3,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+126,360 pts for Crimson Gem Jellies\n+1,560,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 4,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+135,270 pts for Crimson Gem Jellies\n+1,670,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 5,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+144,180 pts for Crimson Gem Jellies\n+1,780,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 6,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+153,090 pts for Crimson Gem Jellies\n+1,890,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 7,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+162,000 pts for Crimson Gem Jellies\n+2,000,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 8,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+178,200 pts for Crimson Gem Jellies\n+2,200,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 9,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+194,400 pts for Crimson Gem Jellies\n+2,400,000 pts for Dark Sigil Jellies",
+        reward: "🔥4,000",
+      },
+	  {
+        lv: 10,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+210,600 pts for Crimson Gem Jellies\n+2,600,000 pts for Dark Sigil Jellies",
+        reward: "🔥8,000",
+      },
+	  {
+        lv: 11,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+226,800 pts for Crimson Gem Jellies\n+2,800,000 pts for Dark Sigil Jellies",
+        reward: "🔥8,000",
+      },
+	  {
+        lv: 12,
+        desc: "Colossal Hand cooldown 56 sec\nSkill activates every 9 sec after Colossal Hand\n+243,000 pts for Crimson Gem Jellies\n+3,000,000 pts for Dark Sigil Jellies",
+        reward: "🔥12,000",
+      },
+    ],
+    story: "When the night sky is torn apart by crimson and black lightning, beware...! A colossal hand closes around the world, dragging it inexorably into eternal Darkness!",
+	combi: [
+      {
+        type: "cookie",
+        id: "dark-enchantress",
+        desc: "+18,000 pts for Crimson Gem Jellies",
+      },
+    ],
+  },
+  {
     id: "sticker-diary",
     name: "Bursting Sticker Diary",
     rarity: "epic",

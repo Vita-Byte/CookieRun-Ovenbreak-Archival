@@ -1,6 +1,234 @@
 // PET DATABASE — same fields as cookies (no candy). costumes optional.
 window.PETS = [
   {
+    id: "kimchi-bell",
+    name: "Kimchi Bell",
+    rarity: "epic",
+    released: "September 11, 2026",
+    emoji: "🧸",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/11/Pet96_shop.png",
+    tags: ["Jellies", "Energy Speed"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Skill activates every 22.1 sec\n33% slower Energy Drain during skill activation\n+123,200 pts for White Radish Jellies",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Skill activates every 22.1 sec\n36% slower Energy Drain during skill activation\n+134,400 pts for White Radish Jellies",
+        reward: "🔥400  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Skill activates every 22.1 sec\n39% slower Energy Drain during skill activation\n+145,600 pts for White Radish Jellies",
+        reward: "🔥800  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Skill activates every 22.1 sec\n42% slower Energy Drain during skill activation\n+156,800 pts for White Radish Jellies",
+        reward: "🔥2,000  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Skill activates every 22.1 sec\n45% slower Energy Drain during skill activation\n+168,000 pts for White Radish Jellies",
+        reward: "🔥4,000  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Skill activates every 22.1 sec\n48% slower Energy Drain during skill activation\n+179,200 pts for White Radish Jellies",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Skill activates every 22.1 sec\n51% slower Energy Drain during skill activation\n+190,400 pts for White Radish Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Skill activates every 22.1 sec\n54% slower Energy Drain during skill activation\n+201,600 pts for White Radish Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Skill activates every 22.1 sec\n57% slower Energy Drain during skill activation\n+212,800 pts for White Radish Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Skill activates every 22.1 sec\n60% slower Energy Drain during skill activation\n+224,000 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Skill activates every 22.1 sec\n63% slower Energy Drain during skill activation\n+235,200 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Skill activates every 22.1 sec\n66% slower Energy Drain during skill activation\n+246,400 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Skill activates every 22.1 sec\n69% slower Energy Drain during skill activation\n+257,600 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Skill activates every 22.1 sec\n72% slower Energy Drain during skill activation\n+268,800 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Skill activates every 22.1 sec\n75% slower Energy Drain during skill activation\n280,000 pts for White Radish Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+    ],
+	skillFull: "Moves ahead, sprinkling salt and pickling the ground at regular intervals. While performing the ritual, a mystical power prevents collisions with obstacles and slows down the Energy drain. White Radish Jellies are created from the pickled ground at regular intervals. Level Up for slower Energy drain and more points for White Radish Jellies.",
+    story:
+      "The sacred Kimchi Bell that lifts the spirits with its clear, calming chime. Passed down through White Kimchi Cookie's family for generations, this mystical bell is said to have been bestowed upon the first shaman by the great deity.\n\nWith every ring, pure energy ripples outward, quietly driving away the shadows that linger in the dark. Listen closely, and even the darkest thoughts may simply drift away!",
+    combi: [
+      {
+        type: "cookie",
+        id: "white-kimchi",
+        desc: "+178,000 pts for Cabbage Spirit Jellies",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Kimchi Bell", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/11/Pet96_shop.png",	
+        equipped: true,
+	  },
+	  {
+        name: "Big Dipper Norigae",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/df/Crob_standard_big_dipper_norigae.png",
+        tier: "epic",
+        emoji: "🚁",
+        info: "Kimchi Bell lingers at the edge of the Bridge Ritual. Easy to mistake it for a fancy ornament, but when a spirit's time to pass on comes, it rings out clear to show the way. Like the Big Dipper in a clear night sky, may the road ahead shine bright for all who depart!",
+      },
+    ],
+  },
+  {
+    id: "grand-beehive",
+    name: "Grand Beehive",
+    rarity: "epic",
+    released: "July 29, 2026",
+    emoji: "🧸",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/b/b4/Crob_standard_grand_beehive.png",
+    tags: ["Score", "Jellies", "Potion"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥400  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥800  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥2,000  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥4,000  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥5,000  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Skill activates every 20.85 sec\n+1,000,000 pts for collecting honey\n9,500,000 pts for Royal Honeydrop Jellies\n+10 Energy for Life Honeydrop Jellies",
+        reward: "🔥6,000  ❤️+20",
+      },
+    ],
+	skillFull: "Bees arrive one by one, carrying honey at certain intervals. Once all the honey has been collected from the bees, the Pet creates a Royal Honeydrop Jelly. Occasionally, a bee carrying Life Honey appears, which the Pet uses to create a Life Honeydrop Jelly instead. Level Up for more points for Royal Honeydrop Jellies, and more Energy restored by Life Honeydrop Jellies",
+    story:
+      "Every last one of its hundreds upon thousands of hexagonal wax chambers is packed to the brim with sweet honey and treasures for its sovereign, ready to present them to the Empress before a single command is given, Truly an efficiency that defies explanation.\n\nAnd somehow, it even carries the Worker Bees who will become the wings of the empire, all on those tiny little wings of its own. How does it manage to carry so much? Honestly, you have to see it to believe it!",
+    combi: [
+      {
+        type: "cookie",
+        id: "allulose-nova",
+        desc: "+426,000 pts for Allulose Shard Jellies",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Grand Beehive", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/b/b4/Crob_standard_grand_beehive.png",	
+        equipped: true,
+	  },
+	  {
+        name: "Rosey Groundskeeper",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/3/33/Crob_standard_rosey_groundskeeper.png",
+        tier: "epic",
+        emoji: "🚁",
+        info: "Despite being located in the farthest corner of the Allulose Empire, the Rose Nebula's garden blooms beautifully. It's all thanks to Grand Beehive's efforts! Its main duty: regularly making the rounds and releasing worker bees to tend to the flowers! Seeing the space roses sparkle like the stars beings the Pet just as much pride as watching the worker bees grow up. Perhaps it's that sense of pride that keeps the roses pristine and healthy,",
+      },
+    ],
+  },
+  {
     id: "marshpillow",
     name: "Marshpillow",
     rarity: "epic",
@@ -133,120 +361,6 @@ window.PETS = [
         emoji: "☁️",
 		info: "Passengers who were used to the constant rattling of the train began drifting off one by one as it glided along the cozy, cushioned tracks! They look so peaceful—it would be a shame to wake them, wouldn't it? Marshpillow will keep them nice and snug so they can enjoy sweet dreams all the way to their destination.",
         shop: "Collab Shop",
-      },
-    ],
-  },
-  {
-    id: "kimchi-bell",
-    name: "Kimchi Bell",
-    rarity: "epic",
-    released: "September 11, 2026",
-    emoji: "🧸",
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/11/Pet96_shop.png",
-    tags: ["Jellies", "Energy Speed"],
-    bonus: true,
-    levels: [
-	  {
-        lv: 1,
-        desc: "Skill activates every 22.1 sec\n33% slower Energy Drain during skill activation\n+123,200 pts for White Radish Jellies",
-        reward: "No Level Up Reward",
-      },
-	  {
-        lv: 2,
-        desc: "Skill activates every 22.1 sec\n36% slower Energy Drain during skill activation\n+134,400 pts for White Radish Jellies",
-        reward: "🔥400  ❤️+20",
-      },
-      {
-        lv: 3,
-        desc: "Skill activates every 22.1 sec\n39% slower Energy Drain during skill activation\n+145,600 pts for White Radish Jellies",
-        reward: "🔥800  ❤️+20",
-      },
-      {
-        lv: 4,
-        desc: "Skill activates every 22.1 sec\n42% slower Energy Drain during skill activation\n+156,800 pts for White Radish Jellies",
-        reward: "🔥2,000  ❤️+20",
-      },
-      {
-        lv: 5,
-        desc: "Skill activates every 22.1 sec\n45% slower Energy Drain during skill activation\n+168,000 pts for White Radish Jellies",
-        reward: "🔥4,000  ❤️+20",
-      },	
-      {
-        lv: 6,
-        desc: "Skill activates every 22.1 sec\n48% slower Energy Drain during skill activation\n+179,200 pts for White Radish Jellies",
-        reward: "🔥4,000  ❤️+20",
-      },
-      {
-        lv: 7,
-        desc: "Skill activates every 22.1 sec\n51% slower Energy Drain during skill activation\n+190,400 pts for White Radish Jellies",
-        reward: "🔥5,000  ❤️+20",
-      },
-      {
-        lv: 8,
-        desc: "Skill activates every 22.1 sec\n54% slower Energy Drain during skill activation\n+201,600 pts for White Radish Jellies",
-        reward: "🔥5,000  ❤️+20",
-      },
-      {
-        lv: 9,
-        desc: "Skill activates every 22.1 sec\n57% slower Energy Drain during skill activation\n+212,800 pts for White Radish Jellies",
-        reward: "🔥5,000  ❤️+20",
-      },	  
-	  {
-        lv: 10,
-        desc: "Skill activates every 22.1 sec\n60% slower Energy Drain during skill activation\n+224,000 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-      {
-        lv: 11,
-        desc: "Skill activates every 22.1 sec\n63% slower Energy Drain during skill activation\n+235,200 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-	  {
-        lv: 12,
-        desc: "Skill activates every 22.1 sec\n66% slower Energy Drain during skill activation\n+246,400 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-      {
-        lv: 13,
-        desc: "Skill activates every 22.1 sec\n69% slower Energy Drain during skill activation\n+257,600 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-	  {
-        lv: 14,
-        desc: "Skill activates every 22.1 sec\n72% slower Energy Drain during skill activation\n+268,800 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-      {
-        lv: 15,
-        desc: "Skill activates every 22.1 sec\n75% slower Energy Drain during skill activation\n280,000 pts for White Radish Jellies",
-        reward: "🔥6,000  ❤️+20",
-      },
-    ],
-	skillFull: "Moves ahead, sprinkling salt and pickling the ground at regular intervals. While performing the ritual, a mystical power prevents collisions with obstacles and slows down the Energy drain. White Radish Jellies are created from the pickled ground at regular intervals. Level Up for slower Energy drain and more points for White Radish Jellies.",
-    story:
-      "The sacred Kimchi Bell that lifts the spirits with its clear, calming chime. Passed down through White Kimchi Cookie's family for generations, this mystical bell is said to have been bestowed upon the first shaman by the great deity.\n\nWith every ring, pure energy ripples outward, quietly driving away the shadows that linger in the dark. Listen closely, and even the darkest thoughts may simply drift away!",
-    combi: [
-      {
-        type: "cookie",
-        id: "white-kimchi",
-        desc: "+178,000 pts for Cabbage Spirit Jellies",
-      },
-    ],
-    costumes: [
-      { 
-	    name: "Kimchi Bell", 
-		desc: "Default Costume", 
-		tier: "default", 
-		emoji: "🧸",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/11/Pet96_shop.png",	
-        equipped: true,
-	  },
-	  {
-        name: "Big Dipper Norigae",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/df/Crob_standard_big_dipper_norigae.png",
-        tier: "epic",
-        emoji: "🚁",
-        info: "Kimchi Bell lingers at the edge of the Bridge Ritual. Easy to mistake it for a fancy ornament, but when a spirit's time to pass on comes, it rings out clear to show the way. Like the Big Dipper in a clear night sky, may the road ahead shine bright for all who depart!",
       },
     ],
   },
