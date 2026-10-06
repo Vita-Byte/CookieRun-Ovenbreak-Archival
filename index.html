@@ -690,6 +690,38 @@
       .jelly .jt small { display: block; color: #cbb3f5; font-size: 13px; letter-spacing: 0.3px; }
       .jelly .jt b { display: block; font-size: 19px; color: #ffe500; margin: 2px 0 6px; }
       .jelly .jt p { margin: 0; font-size: 15px; line-height: 1.4; white-space: pre-line; }
+      /* Cookie illustration + Quotes tab */
+      .sillust { text-align: center; padding: 6px 14px 0; }
+      .sillust img { max-width: 100%; max-height: 440px; object-fit: contain; }
+      .qh { font-size: 20px; font-weight: 800; padding: 4px 14px; color: #5a3a22; }
+      .qt { margin: 0 14px 14px; border: 3px solid #5a3a22; border-radius: 14px; overflow: hidden; background: #e8ceb1; color: #3d2616; }
+      .qt .qs { background: #84694f; color: #fff; text-align: center; font-weight: 800; padding: 6px; border-bottom: 1px solid #5a3a22; }
+      .qt .qr { display: grid; grid-template-columns: 1fr 1fr; }
+      .qt .qr > div { padding: 12px 10px; text-align: center; font-weight: 600; text-shadow: none; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #84694f; background: #e8ceb1; }
+      .qt .qr > div.b { background: #efd8bf; }
+      .qt .qr > div:nth-child(odd):not(.w) { border-right: 1px solid #84694f; }
+      .qt .qr > div.w { grid-column: 1 / -1; }
+      .qt > :last-child { margin-bottom: -1px; } /* hides the final divider under the outer border */
+      .qt .qrow { display: grid; grid-template-columns: minmax(110px, 30%) 1fr; border-bottom: 1px solid #84694f; }
+      .qt .ql { background: #7a5f48; color: #fff; font-weight: 800; text-align: center; padding: 12px 8px; display: flex; align-items: center; justify-content: center; border-right: 1px solid #5a3a22; text-shadow: 0 1px 0 #3a2616, 0 0 3px #3a2616; }
+      .qt .qrow.b .ql { background: #84694f; }
+      .qt .ql u { text-decoration: none; border-bottom: 2px solid #f3dfc4; }
+      .qt .qv { padding: 12px 10px; text-align: center; font-weight: 600; text-shadow: none; display: flex; align-items: center; justify-content: center; background: #e8ceb1; }
+      .qt .qrow.b .qv { background: #efd8bf; }
+      /* Costume pop-up: card on the left, quotes on the right */
+      .cosw { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; padding: 6px 14px 14px; justify-content: center; }
+      .cosw .cc { flex: 0 1 320px; }
+      .cosw .cq { flex: 1 1 380px; min-width: 0; }
+      .cosw .qtitle { font-size: 22px; font-weight: 800; color: #5a3a22; padding: 4px 0 2px; }
+      .cosw .qh { padding: 4px 0; }
+      .cosw .qt { margin: 0 0 14px; }
+      .cqe { font-weight: 600; color: #7a5a3a; padding: 16px; text-align: center; background: #fff8; border-radius: 12px; }
+      @media (max-width: 600px) {
+        .qt .qr { grid-template-columns: 1fr; }
+        .qt .qr > div:nth-child(odd):not(.w) { border-right: 0; }
+        .qt .qrow { grid-template-columns: 1fr; }
+        .qt .ql { border-right: 0; border-bottom: 1px solid #5a3a22; }
+      }
     </style>
   </head>
   <body>
@@ -697,8 +729,12 @@
       <div class="top">
         <h1 id="count"></h1>
         <input id="q" placeholder="Search name or #tag…" /><select id="sort">
-          <option value="rarity">Rarity</option>
-          <option value="name">Name</option>
+          <option value="rarity">Rarity: Highest → Lowest</option>
+          <option value="rarity-asc">Rarity: Lowest → Highest</option>
+          <option value="name">Name: A → Z</option>
+          <option value="name-desc">Name: Z → A</option>
+          <option value="released-new">Released: Newest</option>
+          <option value="released-old">Released: Oldest</option>
           <option value="favorite">Favorite</option>
           <option value="level">Level</option>
         </select>
@@ -768,7 +804,22 @@
         },
       };
       // Costume rarity order (premium tiers first, then collab tiers)
-      const COS_ORDER = ["legendary","champion","superepic","epic","rare","common","sanrio","teenieping","ppg","special"];
+      // Rarity ranking, HIGHEST first.
+      // Items: Special + Collab sit above Epic. Costumes: Collab sits above Super Epic.
+      const COS_ORDER = ["legendary","champion","sanrio","teenieping","ppg","special","superepic","epic","rare","common"];
+      const ITEM_ORDER = ["legendary","sanrio","teenieping","ppg","special","epic","rare","common"];
+      // "October 27, 2025" / "2025-10-27" -> timestamp (null when missing)
+      const MONTHS = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+      function relTime(r) {
+        if (!r) return null;
+        const m = String(r).match(/([A-Za-z]{3,})\.?\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
+        if (m) {
+          const mo = MONTHS.indexOf(m[1].slice(0, 3).toLowerCase());
+          if (mo >= 0) return Date.UTC(+m[3], mo, +m[2]);
+        }
+        const t = Date.parse(r);
+        return isNaN(t) ? null : t;
+      }
       // Every non-default costume of every cookie / pet, flattened into one list
       const isCos = () => tab == "cookieCostume" || tab == "petCostume";
       function allCostumes(only) {
@@ -786,7 +837,7 @@
         return out;
       }
       const ordOf = (i) =>
-        isCos() ? COS_ORDER.indexOf(i.rarity) : ORDER.indexOf(i.rarity);
+        (isCos() ? COS_ORDER : ITEM_ORDER).indexOf(i.rarity);
       // Enhancement helpers
       const enhIcon = () => {
         let s = "";
@@ -877,24 +928,31 @@
           [i.name, i.ownerName || "", ...(i.tags || [])].some((x) => norm(x).includes(nq)),
         );
         const co = isCos();
-        // Costumes: rarity -> owner (database order) -> alphabetical
-        const cosCmp = (a, b) =>
-          ordOf(a) - ordOf(b) || a.ownerIdx - b.ownerIdx || a.name.localeCompare(b.name);
-        d.sort((a, b) =>
-          co
-            ? s == "name"
-              ? a.name.localeCompare(b.name)
-              : s == "favorite"
-                ? +isFav(b) - +isFav(a) || cosCmp(a, b)
-                : cosCmp(a, b)
-            : s == "favorite"
-              ? +isFav(b) - +isFav(a) || ordOf(a) - ordOf(b) || lvOf(b) - lvOf(a)
-              : s == "name"
-                ? a.name.localeCompare(b.name)
-                : s == "level"
-                  ? lvOf(b) - lvOf(a)
-                  : ordOf(a) - ordOf(b) || lvOf(b) - lvOf(a),
-        );
+        // Default order: rarity (highest first) -> costumes: owner (database order) then A-Z / items: level
+        const rk = (a, b) => ordOf(a) - ordOf(b);
+        const tie = co
+          ? (a, b) => a.ownerIdx - b.ownerIdx || a.name.localeCompare(b.name)
+          : (a, b) => lvOf(b) - lvOf(a);
+        const base = (a, b) => rk(a, b) || tie(a, b);
+        // Release date: items without a date always go last
+        const dateCmp = (dir) => (a, b) => {
+          const x = relTime(a.released), y = relTime(b.released);
+          if (x === null && y === null) return 0;
+          if (x === null) return 1;
+          if (y === null) return -1;
+          return (x - y) * dir;
+        };
+        const cmp = {
+          rarity: base,
+          "rarity-asc": (a, b) => -rk(a, b) || tie(a, b),
+          name: (a, b) => a.name.localeCompare(b.name),
+          "name-desc": (a, b) => b.name.localeCompare(a.name),
+          "released-new": (a, b) => dateCmp(-1)(a, b) || base(a, b),
+          "released-old": (a, b) => dateCmp(1)(a, b) || base(a, b),
+          favorite: (a, b) => +isFav(b) - +isFav(a) || base(a, b),
+          level: (a, b) => (co ? 0 : lvOf(b) - lvOf(a)) || base(a, b),
+        }[s] || base;
+        d.sort(cmp);
         $("grid").innerHTML =
           d
             .map(
@@ -908,7 +966,7 @@
         if (!c) return;
         modal(
           `<span>${c.name}${c.released ? `<span class="rel">📅 ${c.released}</span>` : ""}</span>`,
-          `<div class="sc" style="justify-content:center"><div class="cc ${tierCls(c.tier)}" style="flex:0 1 320px"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div></div>`,
+          `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div><div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div></div>`,
         );
       }
       function showIllust(id) {
@@ -1017,15 +1075,41 @@
             .join("")}</div>`,
         );
       }
+      // Tab bar shared by the Story / Quotes / Relationships pop-ups
+      function storyTabs(on) {
+        const i = cur;
+        const t = (k, label, fn) =>
+          `<button class="btn" style="background:${on == k ? "#8b5513" : "#c58a3a"}" onclick="${fn}()">${label}</button>`;
+        return `<div class="btns" style="padding:10px 14px">${t("story", "Story", "story")}${i.quotes ? t("quotes", "Quotes", "quotesView") : ""}${i.affection ? t("rel", "Relationships", "rel") : ""}</div>`;
+      }
       function story() {
         const i = cur;
-        const tabsH = `<div class="btns" style="padding:10px 14px"><button class="btn" style="background:#c58a3a" onclick="story()">Story</button>${i.affection ? `<button class="btn" style="background:#c58a3a" onclick="rel()">Relationships</button>` : ""}</div>`;
         modal(
           i.name + "'s Story",
-          tabsH +
+          storyTabs("story") +
+            (i.illust ? `<div class="sillust"><img src="${i.illust}" alt="${i.name}"></div>` : "") +
             (i.quote ? `<div class="quote">${i.quote}</div>` : "") +
             `<div class="txt">${i.story}</div>`,
         );
+      }
+      // Quote tables, shared by cookies/pets (Quotes tab) and costumes (right-hand pane)
+      function quoteSets(sets) {
+        const sec = (s) => {
+          if (s.rows)
+            return `<div class="qs">${s.title}</div>${s.rows.map((r, k) => `<div class="qrow${k % 2 ? " b" : ""}"><div class="ql">${r.label}</div><div class="qv">${r.text}</div></div>`).join("")}`;
+          const n = s.lines.length;
+          const cells = s.lines
+            .map((l, k) => `<div class="${Math.floor(k / 2) % 2 ? "b" : ""}${n == 1 || (k == n - 1 && n % 2) ? " w" : ""}">${l}</div>`)
+            .join("");
+          return `<div class="qs">${s.title}</div><div class="qr">${cells}</div>`;
+        };
+        return (sets || [])
+          .map((q) => `<div class="qh">${q.title}</div><div class="qt">${q.sections.map(sec).join("")}</div>`)
+          .join("");
+      }
+      function quotesView() {
+        const i = cur;
+        modal(i.name + "'s Quotes", storyTabs("quotes") + quoteSets(i.quotes));
       }
       // Avatar for a relationship entry: looked up from the cookie it credits (r.id -> cookie.avatar).
       // Falls back to an inline r.img if given; shows nothing if neither exists.
@@ -1038,7 +1122,7 @@
         const i = cur;
         modal(
           "Relationships",
-          `<div class="btns" style="padding:10px 14px"><button class="btn" style="background:#c58a3a" onclick="story()">Story</button></div><div class="aff"><b>Affection</b>${i.affection
+          `${storyTabs("rel")}<div class="aff"><b>Affection</b>${i.affection
             .slice()
             .reverse()
             .map(
