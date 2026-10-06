@@ -333,7 +333,7 @@ window.COOKIES = [
         },
 		{
           lv: 2,
-          desc: "Skill activates every 8.75 sec\n+156,000 pts for Allulose Shard Jellies",
+          desc: "Skill activates every 8.75 sec\n+39,300 pts for Allulose Shard Jellies",
           reward: "❤️+50",
         },
 		{

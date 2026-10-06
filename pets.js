@@ -129,74 +129,74 @@ window.PETS = [
         desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
         reward: "No Level Up Reward",
       },
-	  {
+      {
         lv: 2,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+480,000 pts for collecting honey\n+4,560,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
         reward: "🔥400  ❤️+20",
       },
       {
         lv: 3,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+520,000 pts for collecting honey\n+4,940,000 pts for Royal Honeydrop Jellies\n+5 Energy for Life Honeydrop Jellies",
         reward: "🔥800  ❤️+20",
       },
       {
         lv: 4,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+560,000 pts for collecting honey\n+5,320,000 pts for Royal Honeydrop Jellies\n+5 Energy for Life Honeydrop Jellies",
         reward: "🔥2,000  ❤️+20",
       },
       {
         lv: 5,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+600,000 pts for collecting honey\n+5,700,000 pts for Royal Honeydrop Jellies\n+6 Energy for Life Honeydrop Jellies",
         reward: "🔥4,000  ❤️+20",
-      },	
+      },
       {
         lv: 6,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+640,000 pts for collecting honey\n+6,080,000 pts for Royal Honeydrop Jellies\n+6 Energy for Life Honeydrop Jellies",
         reward: "🔥4,000  ❤️+20",
       },
       {
         lv: 7,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+680,000 pts for collecting honey\n+6,460,000 pts for Royal Honeydrop Jellies\n+7 Energy for Life Honeydrop Jellies",
         reward: "🔥5,000  ❤️+20",
       },
       {
         lv: 8,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+720,000 pts for collecting honey\n+6,840,000 pts for Royal Honeydrop Jellies\n+7 Energy for Life Honeydrop Jellies",
         reward: "🔥5,000  ❤️+20",
       },
       {
         lv: 9,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+760,000 pts for collecting honey\n+7,220,000 pts for Royal Honeydrop Jellies\n+7 Energy for Life Honeydrop Jellies",
         reward: "🔥5,000  ❤️+20",
-      },	  
-	  {
+      },
+      {
         lv: 10,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+800,000 pts for collecting honey\n+7,600,000 pts for Royal Honeydrop Jellies\n+8 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
       {
         lv: 11,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+840,000 pts for collecting honey\n+7,980,000 pts for Royal Honeydrop Jellies\n+8 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
-	  {
+      {
         lv: 12,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+880,000 pts for collecting honey\n+8,360,000 pts for Royal Honeydrop Jellies\n+9 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
       {
         lv: 13,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+920,000 pts for collecting honey\n+8,740,000 pts for Royal Honeydrop Jellies\n+9 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
-	  {
+      {
         lv: 14,
-        desc: "Skill activates every 20.85 sec\n+440,000 pts for collecting honey\n+4,180,000 pts for Royal Honeydrop Jellies\n+4 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+960,000 pts for collecting honey\n+9,120,000 pts for Royal Honeydrop Jellies\n+10 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
       {
         lv: 15,
-        desc: "Skill activates every 20.85 sec\n+1,000,000 pts for collecting honey\n9,500,000 pts for Royal Honeydrop Jellies\n+10 Energy for Life Honeydrop Jellies",
+        desc: "Skill activates every 20.85 sec\n+1,000,000 pts for collecting honey\n+9,500,000 pts for Royal Honeydrop Jellies\n+10 Energy for Life Honeydrop Jellies",
         reward: "🔥6,000  ❤️+20",
       },
     ],
