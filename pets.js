@@ -108,6 +108,7 @@ window.PETS = [
 	  {
         name: "Big Dipper Norigae",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/df/Crob_standard_big_dipper_norigae.png",
+		released: "September 11, 2026",
         tier: "epic",
         emoji: "🚁",
         info: "Kimchi Bell lingers at the edge of the Bridge Ritual. Easy to mistake it for a fancy ornament, but when a spirit's time to pass on comes, it rings out clear to show the way. Like the Big Dipper in a clear night sky, may the road ahead shine bright for all who depart!",
@@ -222,6 +223,7 @@ window.PETS = [
 	  {
         name: "Rosey Groundskeeper",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/3/33/Crob_standard_rosey_groundskeeper.png",
+		released: "July 29, 2026",
         tier: "epic",
         emoji: "🚁",
         info: "Despite being located in the farthest corner of the Allulose Empire, the Rose Nebula's garden blooms beautifully. It's all thanks to Grand Beehive's efforts! Its main duty: regularly making the rounds and releasing worker bees to tend to the flowers! Seeing the space roses sparkle like the stars beings the Pet just as much pride as watching the worker bees grow up. Perhaps it's that sense of pride that keeps the roses pristine and healthy,",
@@ -336,6 +338,7 @@ window.PETS = [
 	  {
         name: "Naptime Buddy",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/2/25/Crob_standard_naptime_buddy.png",
+		released: "October 27, 2025",
         tier: "epic",
         emoji: "🚁",
         info: "There are occasionally Cookies that cannot find their way to dreamland, even under Milky Way Cookie's guidance... And that's where Marshpillow comes in! It wiggles its way into bed next to Cookies who are tossing and turning, and before you know it, they're out like a light! Here's to hoping for a restful, dreamless sleep.",
@@ -343,6 +346,7 @@ window.PETS = [
 	  {
         name: "Cozy Travel Companion",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f5/Crob_standard_cozy_travel_companion.png",
+		released: "March 13, 2026",
         tier: "epic",
         emoji: "🚁",
         info: "No matter how exciting and thrilling it is to travel in the dream world, you're bound to end up sleepy at some point during the long trip. But when a passenger so much as lets out a yawn, Marshpillow sneaks up, ready to provide comfort! Hugging this friend tightly is guaranteed to help you dream dreams as sweet as the candies decorating the cabin of the Star Voyage Express.",
@@ -350,6 +354,7 @@ window.PETS = [
       {
         name: "Breadcopter",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/e/e3/Crob_standard_breadcopter.png",
+		released: "June 24th, 2026",
         tier: "epic",
         emoji: "🚁",
         info: "Marshpillow waddles in wearing a spinning Breadcopter hat, propeller whirring away. Whenever the Star Coal Express gives a sudden jolt, Marshpillow is already there, spinning that little propeller and pulling startled dream passengers into a warm, soft hug. Somehow, tucked into that cozy embrace, worries melt away and drowsy eyes grow even heavier... With Marshpillow on board, every passenger can sit back, relax, and drift into the sweetest of journeys in the World of Dreams!",
@@ -357,10 +362,126 @@ window.PETS = [
       {
         name: "Cozy Guide",
 		img: "https://cdn.wikimg.net/en/cookierunwiki/images/b/b3/Crob_standard_cozy_guide.png",
+		released: "September 23rd, 2026",
         tier: "sanrio",
         emoji: "☁️",
 		info: "Passengers who were used to the constant rattling of the train began drifting off one by one as it glided along the cozy, cushioned tracks! They look so peaceful—it would be a shame to wake them, wouldn't it? Marshpillow will keep them nice and snug so they can enjoy sweet dreams all the way to their destination.",
         shop: "Collab Shop",
+      },
+    ],
+  },
+  {
+    id: "spotlight-fan",
+    name: "Spotlight Fan",
+    rarity: "rare",
+    released: "September 27, 2016",
+    emoji: "🧸",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/6/6b/Crob_standard_spotlight_fan.png",
+    tags: ["Magnetism", "Energy Speed"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 35.2% slower during Spotlight Effect",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 38.4% slower during Spotlight Effect",
+        reward: "🔥720  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 41.6% slower during Spotlight Effect",
+        reward: "🔥2,400  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 44.8% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 48% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 51.2% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 54.4% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 57.6% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 60.8% slower during Spotlight Effect",
+        reward: "🔥3,500  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 64% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 67.2% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 70.4% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 73.6% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 76.8% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Shines a spotlight every 19.3 sec\nEnergy drains 80% slower during Spotlight Effect",
+        reward: "🔥4,000  ❤️+20",
+      },
+    ],
+	skillFull: "Shines a spotlight on the Cookie at given intervals. During the Spotlight Effect, Cookies can pass through obstacles, attract Jellies, and their Energy drains slower. Level Up for an even slower Energy drain during the Spotlight Effect.",
+    story:
+      "Spotlight Fan brings out the very best in every Cookie, making it a joy to run. When it shines above you, a warm vanilla fragrance fills the air around you. If all this attention is just too much to handle, step out from under the glowing spotlight.",
+    combi: [
+      {
+        type: "cookie",
+        id: "rockstar",
+        desc: "+30,000 pts for Music Jellies",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Spotlight Fan", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/6/6b/Crob_standard_spotlight_fan.png",	
+        equipped: true,
+	  },
+	  {
+        name: "Auditorium Star",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/2/2b/Crob_standard_auditorium_star.png",
+		released: "July 9, 2024",
+        tier: "epic",
+        emoji: "🚁",
+        info: "Even in a tiny school auditorium, all it takes is Spotlight Fan to rival a rock festival stage! No matter where it is, it can shine like a grand concert hall!",
       },
     ],
   },
