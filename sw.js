@@ -1,6 +1,6 @@
 // Service worker: lets the archive open offline after the first visit.
 // Bump VERSION whenever you update the data files to force a refresh.
-const VERSION = "ob-archive-v1";
+const VERSION = "ob-archive-v2";
 const CORE = ["./", "./index.html", "./cookies.js", "./pets.js", "./treasures.js",
   "./manifest.webmanifest", "./icons/apple-touch-icon.png", "./icons/icon-192.png", "./icons/icon-512.png"];
 
@@ -19,7 +19,7 @@ self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
   e.respondWith(
-    fetch(req)
+    fetch(req, new URL(req.url).origin === self.location.origin ? { cache: "no-cache" } : undefined)
       .then((res) => {
         if (res && (res.ok || res.type === "opaque")) {
           const copy = res.clone();

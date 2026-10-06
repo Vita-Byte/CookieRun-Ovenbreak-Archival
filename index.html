@@ -817,6 +817,35 @@
       }
       /* gallery frame: gradient border (the colors are gradients, so use the padding-box/border-box trick) */
       .gframe { border: 0; background: none; box-shadow: none; padding: 0; min-width: 0; min-height: 0; }
+
+      /* ===== Shimmer + sparkle on high rarities ===== */
+      @keyframes glint { 0%, 55% { transform: translateX(-130%); } 100% { transform: translateX(130%); } }
+      @keyframes flt { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes twk { 0%, 100% { opacity: 0; transform: scale(0.4) rotate(0); } 50% { opacity: 1; transform: scale(1.1) rotate(25deg); } }
+      .card:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg,.t-legendary,.t-champion,.t-superepic) .art { overflow: hidden; }
+      .left:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .badge { position: relative; overflow: hidden; display: inline-block; }
+      .card:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg,.t-legendary,.t-champion,.t-superepic) .art::after, .left:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .badge::after {
+        content: ""; position: absolute; inset: 0; pointer-events: none;
+        background: linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, 0.5) 50%, transparent 62%);
+        transform: translateX(-130%); animation: glint 3.6s ease-in-out infinite; animation-delay: calc(var(--n, 0) * 0.35s);
+      }
+      #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite { position: relative; animation: flt 4.5s ease-in-out infinite; }
+      #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::before, #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::after {
+        content: "✦"; position: absolute; color: #fff; text-shadow: 0 0 8px #fff; pointer-events: none; animation: twk 2.4s ease-in-out infinite;
+      }
+      #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::before { top: 12%; left: 14%; font-size: 24px; }
+      #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::after { top: 28%; right: 12%; font-size: 17px; animation-delay: 1.2s; }
+      /* ===== Illustration viewer ===== */
+      .ivw { position: relative; overflow: hidden; height: calc(92vh - 70px); touch-action: none; cursor: grab; }
+      .ivw img { position: absolute; left: 50%; top: 50%; max-width: 100%; max-height: 100%; transform: translate(-50%, -50%); user-select: none; -webkit-user-drag: none; animation: none; }
+      .inav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; width: 42px; height: 42px; border-radius: 50%; border: 2px solid #fff8; background: #0007; color: #fff; font-size: 26px; line-height: 1; padding: 0; }
+      .inav.l { left: 8px; } .inav.r { right: 8px; }
+      /* ===== Enhancement label, refresh UI ===== */
+      .lvbig .elv { display: block; font-size: 17px; color: #fff; margin-top: -2px; }
+      #ptr { position: fixed; top: env(safe-area-inset-top, 0px); left: 50%; transform: translate(-50%, -40px); opacity: 0; z-index: 30; background: #000a; padding: 6px 14px; border-radius: 999px; font-size: 14px; pointer-events: none; transition: opacity 0.15s; }
+      #toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 30px); opacity: 0; pointer-events: none; z-index: 40; background: #241046; border: 2px solid #ffe45e; border-radius: 999px; padding: 8px 8px 8px 16px; display: flex; gap: 10px; align-items: center; transition: 0.25s; }
+      #toast.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+      #toast button { background: #ffe45e; color: #3a1f00; border-radius: 999px; padding: 4px 12px; border: 0; text-shadow: none; }
     </style>
   </head>
   <body>
@@ -1064,11 +1093,47 @@
           `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>${c.ownerType == "cookie" ? `<div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div>` : ""}</div>`,
         );
       }
+      let ill = { list: [], i: 0, s: 1, x: 0, y: 0, sx: 0 }, ptrs = new Map(), pd = 0;
       function showIllust(id) {
         const c = TABS[tab].data().find((x) => x.id == id);
         if (!c || !c.illust) return;
-        $("sheet2").innerHTML = `<h2>${c.name}<button onclick="closeM2()">✖</button></h2><img src="${c.illust}" alt="${c.name}">`;
+        ill.list = TABS[tab].data().filter((x) => x.ownerId == c.ownerId && x.illust);
+        ill.i = Math.max(0, ill.list.findIndex((x) => x.id == id));
         $("modal2").style.display = "flex";
+        drawIll();
+      }
+      function drawIll() {
+        const c = ill.list[ill.i], n = ill.list.length;
+        ill.s = 1; ill.x = ill.y = 0;
+        $("sheet2").innerHTML = `<h2><span>${c.name}${n > 1 ? `<span class="rel">${ill.i + 1}/${n}</span>` : ""}</span><button onclick="closeM2()">✖</button></h2><div class="ivw" id="ivw">${n > 1 ? `<button class="inav l" onclick="illGo(-1)">‹</button><button class="inav r" onclick="illGo(1)">›</button>` : ""}<img id="iimg" src="${c.illust}" alt="${c.name}" draggable="false"></div>`;
+        bindIll();
+        applyIll();
+      }
+      const applyIll = () => { const m = $("iimg"); if (m) m.style.transform = `translate(-50%,-50%) translate(${ill.x}px,${ill.y}px) scale(${ill.s})`; };
+      function illGo(d) { const n = ill.list.length; ill.i = (ill.i + d + n) % n; drawIll(); }
+      function bindIll() {
+        const v = $("ivw"); ptrs.clear();
+        const zoom = (f) => { ill.s = Math.min(5, Math.max(1, ill.s * f)); if (ill.s == 1) ill.x = ill.y = 0; applyIll(); };
+        v.onpointerdown = (e) => {
+          if (e.target.closest(".inav")) return;
+          v.setPointerCapture(e.pointerId); ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); ill.sx = e.clientX; pd = 0;
+          if (ptrs.size == 2) { const [a, b] = [...ptrs.values()]; pd = Math.hypot(a.x - b.x, a.y - b.y); }
+        };
+        v.onpointermove = (e) => {
+          const p = ptrs.get(e.pointerId); if (!p) return;
+          if (ptrs.size == 2) {
+            ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+            const [a, b] = [...ptrs.values()], dd = Math.hypot(a.x - b.x, a.y - b.y);
+            if (pd) zoom(dd / pd); pd = dd;
+          } else if (ill.s > 1) { ill.x += e.clientX - p.x; ill.y += e.clientY - p.y; p.x = e.clientX; p.y = e.clientY; applyIll(); }
+        };
+        v.onpointerup = v.onpointercancel = (e) => {
+          const swipe = ptrs.size == 1 && ill.s == 1; ptrs.delete(e.pointerId); pd = 0;
+          const dx = e.clientX - ill.sx;
+          if (swipe && Math.abs(dx) > 60 && ill.list.length > 1) illGo(dx < 0 ? 1 : -1);
+        };
+        v.onwheel = (e) => { e.preventDefault(); zoom(e.deltaY < 0 ? 1.15 : 0.87); };
+        v.ondblclick = () => { ill.s = ill.s > 1 ? 1 : 2.5; ill.x = ill.y = 0; applyIll(); };
       }
       function closeM2() {
         $("modal2").style.display = "none";
@@ -1108,16 +1173,23 @@
       let galIdx = null, gX = 0;
       const powH = (x) => (x.power ? `<div class="pow"><span class="heart">❤️</span>${x.power}<small>/${x.power}</small></div>` : "");
       // Level slider: updates the panels in place
+      const enhHTML = (e) => (e ? `<div class="enh">${enhIcon()}<span>${hl(e.effect)}</span><button class="info" onclick="enhInfo()" title="Enhancement effect">!</button></div>` : "");
       function setLv(v) {
-        const i = cur, n = +v, L = i.levels[n], full = n == i.levels.length - 1, tot = lvOf(i);
-        $("lvb").innerHTML = `Lv.${L.lv}<small>/${tot}</small>`;
+        const i = cur, nb = i.levels.length - 1, n = +v, EN = enhList(i), L = i.levels[Math.min(n, nb)];
+        const e = n > nb ? EN[n - nb - 1] : null, full = n >= nb, tot = lvOf(i);
+        $("lvb").innerHTML = `Lv.${L.lv}<small>/${tot}</small>` + (e ? `<span class="elv">Enhancement Lv.${e.lv}</span>` : "");
         $("powb").innerHTML = powH(L);
         $("dtx").textContent = L.desc + (L.extra ? "\n\n" + L.extra : "");
-        $("enhw").style.display = full ? "" : "none";
+        $("enhw").innerHTML = enhHTML(e);
         const m = $("maxb");
         m.textContent = full ? "MAX!" : `Lv.${L.lv}/${tot}`;
         m.style.background = full ? "" : `linear-gradient(90deg,#f4b400 ${Math.round((L.lv / tot) * 100)}%,#5a3b00 0)`;
         $("doneb").textContent = full ? "Max Level Reached!" : L.reward ? (/^No /.test(L.reward) ? L.reward : "Level Up Reward: " + L.reward) : "No Level Up Reward";
+      }
+      function setCLv(v) {
+        const l = cLevels(cur.candy)[+v];
+        $("lvb").innerHTML = `Lv.${l.lv}<small>/${cMax(cur.candy)}</small>`;
+        $("dtx").textContent = l.desc + (l.extra ? "\n\n" + l.extra : "");
       }
       // Costume gallery (swipe or use the arrows)
       const gCls = (c) => (c.tier == "default" ? "t-common" : tierCls(c.tier));
@@ -1171,18 +1243,58 @@
         let right, left;
         if (view == "candy") {
           left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
-          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button>${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</div></div>`;
+          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig" id="lvb">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div>${cLevels(i.candy).length > 1 ? `<input type="range" class="lvs" min="0" max="${cLevels(i.candy).length - 1}" value="${cLevels(i.candy).length - 1}" oninput="setCLv(this.value)" aria-label="Level">` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</span></div></div>`;
           $("detail").innerHTML =
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;
         }
         left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
         right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}${relH}</div>
- <div class="lvbig" id="lvb">Lv.${L.lv}<small>/${lvOf(i)}</small></div>${i.levels.length > 1 ? `<input type="range" class="lvs" min="0" max="${i.levels.length - 1}" value="${i.levels.length - 1}" oninput="setLv(this.value)" aria-label="Level">` : ""}<div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
+ <div class="lvbig" id="lvb">Lv.${L.lv}<small>/${lvOf(i)}</small>${EL ? `<span class="elv">Enhancement Lv.${EL.lv}</span>` : ""}</div>${i.levels.length + enhList(i).length > 1 ? `<input type="range" class="lvs" min="0" max="${i.levels.length - 1 + enhList(i).length}" value="${i.levels.length - 1 + enhList(i).length}" oninput="setLv(this.value)" aria-label="Level">` : ""}<div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
  <div id="powb">${powH(L)}</div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</span></div><div id="enhw">${enhBox}</div><div class="max" id="maxb">MAX!</div><div class="done" id="doneb">Max Level Reached!</div>${jellyH}</div>`;
         $("detail").innerHTML =
           `<div class="dtop"><button class="back" onclick="backToList()">‹</button>${tab[0].toUpperCase() + tab.slice(1)} Details</div><div class="main">${left}${right}</div>${foot}`;
       }
+      // ---- Data updates: "new data" notice + pull-down to refresh ----
+      const DATA_FILES = ["index.html", "cookies.js", "pets.js", "treasures.js"];
+      async function dataHash() {
+        let h = 5381;
+        for (const f of DATA_FILES) {
+          const t = await (await fetch(f, { cache: "no-store" })).text();
+          for (let k = 0; k < t.length; k++) h = ((h << 5) + h + t.charCodeAt(k)) | 0;
+        }
+        return String(h);
+      }
+      function toast(msg, action) {
+        let t = $("toast");
+        if (!t) { t = document.createElement("div"); t.id = "toast"; document.body.appendChild(t); }
+        t.innerHTML = `<span>${msg}</span>${action ? `<button onclick="${action[1]}">${action[0]}</button>` : ""}`;
+        void t.offsetWidth; t.classList.add("on"); clearTimeout(t._h);
+        if (!action) t._h = setTimeout(() => t.classList.remove("on"), 2200);
+      }
+      async function checkData(manual) {
+        if (!location.protocol.startsWith("http")) { if (manual) toast("Nothing to refresh when opened as a file"); return; }
+        try {
+          const h = await dataHash(), old = localStorage.getItem("croHash");
+          if (!old) { localStorage.setItem("croHash", h); if (manual) toast("Up to date ✓"); return; }
+          if (h != old) { window._newHash = h; manual ? applyUpdate() : toast("✨ New data available", ["Refresh", "applyUpdate()"]); }
+          else if (manual) toast("Up to date ✓");
+        } catch (e) { if (manual) toast("Can't check while offline"); }
+      }
+      function applyUpdate() { localStorage.setItem("croHash", window._newHash); location.reload(); }
+      window.addEventListener("load", () => setTimeout(() => checkData(false), 1500));
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) checkData(false); });
+      (function () {
+        let y0 = null, dy = 0;
+        const ind = document.createElement("div"); ind.id = "ptr"; document.body.appendChild(ind);
+        const open = () => $("modal").style.display == "flex" || $("modal2").style.display == "flex";
+        addEventListener("touchstart", (e) => { const sc = !open() && e.target.closest("#grid,#detail .main"); y0 = sc && sc.scrollTop <= 0 ? e.touches[0].clientY : null; dy = 0; }, { passive: true });
+        addEventListener("touchmove", (e) => {
+          if (y0 === null) return; dy = e.touches[0].clientY - y0;
+          if (dy > 8) { ind.style.transform = `translate(-50%,${Math.min(dy / 2, 60)}px)`; ind.style.opacity = Math.min(dy / 100, 1); ind.textContent = dy > 110 ? "Release to refresh" : "Pull to refresh"; }
+        }, { passive: true });
+        addEventListener("touchend", () => { if (y0 === null) return; const go = dy > 110; y0 = null; ind.style.opacity = 0; ind.style.transform = "translate(-50%,-40px)"; if (go) checkData(true); }, { passive: true });
+      })();
       function modal(title, html) {
         $("sheet").innerHTML =
           `<h2>${title}<button onclick="closeM()">✖</button></h2>${html}`;
