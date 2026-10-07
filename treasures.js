@@ -261,7 +261,7 @@ window.TREASURES = [
       {
         type: "cookie",
         id: "scallion-kimchi",
-        desc: "+9,500 pts for Chili Powder Jellies Jellies",
+        desc: "+9,500 pts for Chili Powder Jellies",
       },
     ],
   },

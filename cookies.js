@@ -2110,7 +2110,7 @@ window.COOKIES = [
     levels: [
 	  {
         lv: 1,
-        power: 177,
+        power: 166,
         desc: "Skill activation every 29.3 sec\n+32,200 pts for Cherry Blossom Jellies",
         reward: "No Level Up Reward",
       },
@@ -2463,7 +2463,7 @@ window.COOKIES = [
       },
     ],
     combi: [
-      { type: "pet", id: "tea-cup", desc: "+52,000 pts for White Choco Jellies" },
+      { type: "pet", id: "tea-cup", desc: "+52,000 pts for Cherry Blossom Jellies" },
       {
         type: "treasure",
         id: "flowering-can",
