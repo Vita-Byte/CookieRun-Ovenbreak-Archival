@@ -274,7 +274,12 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Everything spoken in this garden is a secret.",
+              "Swear your loyalty to me! I shall grant you a future sweeter than honey.",
+			  "I feel so refreshed today. Let's write today's imperial decree in sunlight ink!",
+			  "The weight of the crown is too heavy to bear... Bring me a flower wreath!",
+			  "Following the Empress's word is... only natural, isn't it?",
+			  "I don't believe I've ever heard the word \"no.\" Is that a real thing?",
+			  "Everything spoken in this garden is a secret.",
               "This is the most beautiful garden in all the universe! Now, and forever!",
               "Just the two of us here... The perfect setting for a secret meeting, right?",
               "Fragrant roses, a beautiful garden... This universe has far too much to enjoy!",
@@ -928,14 +933,12 @@ window.COOKIES = [
       {
         who: "Space Doughnut",
         id: "space-doughnut",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/b/bf/Crob_head_space_doughnut.png/30px-Crob_head_space_doughnut.png",
         text: "What a fun passenger! Where would you like to go? Everywhere in the World of Dreams?",
         type: "Friendly",
       },
 	  {
         who: "Moonlight Cookie",
         id: "moonlight",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/3/30/Crob_head_moonlight.png/30px-Crob_head_moonlight.png",
         text: "I would go anywhere in the World of Dreams... or the entire universe, if the Slumbering Moon desired it!",
         type: "Trust",
       },
@@ -1003,7 +1006,12 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Just follow the sound of the train! You'll sleep really deep!",
+              "Choo choo! I'm your train conductor!",
+			  "Milky Way Cookie, your conductor made of delightful starshine!",
+			  "Welcome aboard! Your dreams are waiting...!",
+			  "Dreams are endless! Some are even intertwined with reality!",
+			  "The Slumbering Moon welcomes all guests to the World of Dreams..!",
+			  "Just follow the sound of the train! You'll sleep really deep!",
               "You'll sleep so deep you'll feel like a new Cookie tomorrow!",
               "You want a dreamless sleep? Are you sure?",
               "Welcome aboard! Next stop, a deep, deep sleep!",
@@ -1060,7 +1068,12 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "You're lucky you got to ride today! Here, have a present!",
+              "Choo choo! I'm your train conductor!",
+			  "Milky Way Cookie, your conductor made of delightful starshine!",
+			  "Welcome aboard! Your dreams are waiting...!",
+			  "Beep beep! Ticket inspection time!",
+			  "Close your eyes and imagine crossing the Milky Way..!",
+			  "You're lucky you got to ride today! Here, have a present!",
               "Today, we're only stopping at the sweetest stations!",
               "I like Jellies, but today I feel like eating candy!",
               "Enjoy the strawberry star candy buffet while on board!",
@@ -1116,7 +1129,10 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Choo choo! I'm your special train conductor and mechanic!",
+              "Milky Way Cookie, your conductor made of delightful starshine!",
+			  "Beep beep! Ticket inspection time!",
+			  "Close your eyes and imagine crossing the Milky Way..!",
+			  "Choo choo! I'm your special train conductor and mechanic!",
               "Coco Drop helpers! I'm in your debt!",
               "I've never run a Star Coal train before... It should be fine, right? Hehe!",
               "Star coal makes all sorts sparks dance and flicker!",
@@ -1512,7 +1528,9 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "The glass wings are colored with brilliant light...",
+              "My heart breaks whenever a flower withers...",
+			  "The place is safe... Fear does not live here.",
+			  "The glass wings are colored with brilliant light...",
               "I found a piece of memory colored with joy...",
               "I'm going to dance the dance of life that never withers...",
               "Let me show you a great performance with the swans...",
@@ -1571,7 +1589,10 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Everyone here seems to share the same thoughts...",
+              "The only thing I remember is the same colors, everywhere...",
+			  "My heart breaks whenever a flower withers...",
+			  "This place is safe... The perfect haven.",
+			  "Everyone here seems to share the same thoughts...",
               "The palace garden feels... lonely.",
               "If only I could have... done more...",
               "A rose window will suit this planet perfectly... don't you think so...?",
@@ -1928,7 +1949,12 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Tired of studying? Then it's time for some ROCK N' ROLL!",
+              "Oh, yeeeah!",
+			  "Rockstars rule the world!",
+			  "Who's your favorite rockstar?",
+			  "Are you ready to ROCK?",
+			  "Rock is in my blood!",
+			  "Tired of studying? Then it's time for some ROCK N' ROLL!",
               "As promised, I became a famous rockstar!",
               "SCREEAAAM! YEAH!!!",
               "Forget about your worries and rock on!",
@@ -1984,7 +2010,11 @@ window.COOKIES = [
           {
             title: "Cookie Info & Loading",
             lines: [
-              "Rock 'n' roll, baby!",
+              "Oh, yeeeah!",
+			  "Let's rock!",
+			  "Rockstars rule the world!",
+			  "Are you ready to ROCK?",
+			  "Rock 'n' roll, baby!",
               "Cookies! Ready for an epic shoooow?!	",
               "Put ya hands in the air!",
               "Rockin' like there's no new year!",

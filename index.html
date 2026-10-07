@@ -315,11 +315,11 @@
       }
       .rav {
         width: auto;
-        height: auto;
+        height: 1.8em; /* relationship avatar size */
         max-width: none;
         max-height: none;
         vertical-align: middle;
-        margin-right: 8px;
+        margin-right: 6px;
       }
       .lc .hp {
         display: block;
@@ -851,6 +851,20 @@
       #toast { position: fixed; left: 50%; bottom: calc(86px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 30px); opacity: 0; pointer-events: none; z-index: 40; background: #241046; border: 2px solid #ffe45e; border-radius: 999px; padding: 8px 8px 8px 16px; display: flex; gap: 10px; align-items: center; transition: 0.25s; }
       #toast.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
       #toast button { background: #ffe45e; color: #3a1f00; border-radius: 999px; padding: 4px 12px; border: 0; text-shadow: none; }
+
+      /* ===== Tap the cookie: speech bubble ===== */
+      .sprite { position: relative; cursor: pointer; }
+      .bubble {
+        position: absolute; left: 50%; top: -6px; z-index: 6; pointer-events: none;
+        width: max-content; max-width: min(280px, 80vw); padding: 10px 14px; border: 3px solid #2a1a3a; border-radius: 16px;
+        background: #fff; color: #2a1a3a; font-size: 18px; font-weight: 800; line-height: 1.25; text-align: center; text-shadow: none;
+        opacity: 0; transform: translate(-50%, -100%) scale(0.9); transition: opacity 0.4s, transform 0.25s;
+      }
+      .bubble.on { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+      .bubble::after {
+        content: ""; position: absolute; left: 50%; bottom: -13px; width: 16px; height: 16px; background: #fff;
+        border-right: 3px solid #2a1a3a; border-bottom: 3px solid #2a1a3a; transform: translateX(-50%) rotate(45deg);
+      }
     </style>
   </head>
   <body>
@@ -1186,6 +1200,50 @@
         $("detail").style.display = "none";
         $("list").style.display = "flex";
       }
+      // ---- Tap the cookie: random quote bubble (4-6 s, then fades) ----
+      let talkLast = "", talkTimer = 0;
+      // Which lines the cookie can say: its own quotes, or - when a costume is equipped - that costume's quotes.
+      // "Cookie Trial" quotes (a set or section titled that) are shared, so they are always included.
+      function talkLines(i) {
+        const out = new Set();
+        const add = (t) => {
+          t = String(t || "").replace(/<[^>]+>/g, "").trim();
+          if (t && !/^[\s?？]+$/.test(t)) out.add(t); // placeholder lines made only of "?" are skipped
+        };
+        const isTrial = (t) => /cookie\s*trial/i.test(t || "");
+        const collect = (sets, trialOnly) =>
+          (sets || []).forEach((q) =>
+            q.sections.forEach((sec) => {
+              if (trialOnly && !isTrial(q.title) && !isTrial(sec.title)) return;
+              (sec.lines || []).forEach(add);
+              (sec.rows || []).forEach((r) => add(r.text));
+            }),
+          );
+        const eq = (i.costumes || []).find((c) => c.equipped && c.tier != "default");
+        if (eq && eq.quotes && eq.quotes.length) {
+          collect(eq.quotes);
+          collect(i.quotes, true);
+        } else {
+          add(i.quote);
+          collect(i.quotes);
+        }
+        return [...out];
+      }
+      function talk(e) {
+        if (view != "main" || e.target.closest(".gnav, .gcap")) return;
+        const lines = talkLines(cur), sp = e.currentTarget;
+        if (!lines.length) return;
+        let b = sp.querySelector(".bubble");
+        if (!b) { b = document.createElement("div"); b.className = "bubble"; sp.appendChild(b); }
+        let t;
+        do t = lines[Math.floor(Math.random() * lines.length)]; while (lines.length > 1 && t == talkLast);
+        talkLast = t;
+        b.textContent = t;
+        void b.offsetWidth;
+        b.classList.add("on");
+        clearTimeout(talkTimer);
+        talkTimer = setTimeout(() => b.classList.remove("on"), 4000 + Math.random() * 2000);
+      }
       let galIdx = null, gX = 0;
       const powH = (x) => (x.power ? `<div class="pow"><span class="heart">❤️</span>${x.power}<small>/${x.power}</small></div>` : "");
       // Level slider: updates the panels in place
@@ -1266,7 +1324,7 @@
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;
         }
-        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
+        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite" onclick="talk(event)">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
         right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}${relH}</div>
  <div class="lvbig" id="lvb">Lv.${L.lv}<small>/${lvOf(i)}</small>${EL ? `<span class="elv">Enhancement Lv.${EL.lv}</span>` : ""}</div>${i.levels.length + enhList(i).length > 1 ? `<input type="range" class="lvs" min="0" max="${i.levels.length - 1 + enhList(i).length}" value="${i.levels.length - 1 + enhList(i).length}" oninput="setLv(this.value)" aria-label="Level">` : ""}<div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
  <div id="powb">${powH(L)}</div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</span></div><div id="enhw">${enhBox}</div><div class="max" id="maxb">MAX!</div><div class="done" id="doneb">Max Level Reached!</div>${jellyH}</div>`;
