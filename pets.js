@@ -1,6 +1,121 @@
 // PET DATABASE — same fields as cookies (no candy). costumes optional.
 window.PETS = [
   {
+    id: "wave-drop",
+    name: "Wave Drop",
+    rarity: "legendary",
+    released: "August 7, 2020",
+    emoji: "🧸",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/54/Wave_Drop.png",
+    tags: ["Score", "Recovery"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+352,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +2 times from Water Columns",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+384,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +2 times from Water Columns",
+        reward: "🔥2,000  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+416,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +2 times from Water Columns",
+        reward: "🔥3,000  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+448,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +2 times from Water Columns",
+        reward: "🔥3,000  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+480,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +2 times from Water Columns",
+        reward: "🔥3,000  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+512,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +3 times from Water Columns",
+        reward: "🔥3,000  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+544,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +3 times from Water Columns",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+576,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +3 times from Water Columns",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+608,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +3 times from Water Columns",
+        reward: "🔥5,000  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+640,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +3 times from Water Columns",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+672,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +4 times from Water Columns",
+        reward: "🔥8,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+704,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +4 times from Water Columns",
+        reward: "🔥8,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+736,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +4 times from Water Columns",
+        reward: "🔥8,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+768,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +4 times from Water Columns",
+        reward: "🔥8,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Summons Water Columns every 19.1 sec\nSummons Water Columns +5 times\n+800,000 pts for summoning Water Columns\n+2 Energy recovered from summoning Water Columns\nRecovers Energy +5 times from Water Columns",
+        reward: "🔥8,000  ❤️+20",
+      },
+    ],
+	skillFull: "Summons columns of water at given intervals. The columns will destroy nearby obstacles, granting Wave Summoning Points and restoring a set amount of Energy. Level Up for more Energy restored and more Wave Summoning Points.",
+    story:
+      "For time immemorial, the waves of the ocean longingly gazed up to the light of the moon. At the top of the Tower of Frozen Waves, Sea Fairy Cookie created a Pet which possessed the purest of hearts.\n\nAnd now, Wave Drop remains in the Tower, waiting... waiting. Towering waves reached towards the sky, eager to deliver Sea Fairy Cookie's heart to the moon, but to no avail. The belief and hope for even the briefest of encounters helps keep the smile alive.",
+    combi: [
+      {
+        type: "cookie",
+        id: "sea-fairy",
+        desc: "+48,000 pts for Sea Crystal Jellies",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Wave Drop", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/54/Wave_Drop.png",	
+        equipped: true,
+	  },
+	  {
+        name: "Fury of the Depths",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/45/Crob_standard_fury_of_the_depths.png",
+		released: "August 7, 2020",
+        tier: "legendary",
+        emoji: "🚁",
+        info: "A high wave rises as if it cuts through the calm sea and reaches the surface of the water. Wave Drop wanders near Sea Fairy Cookie, hovering around her with a dark expression.",
+      },
+    ],
+  },
+  {
     id: "kimchi-bell",
     name: "Kimchi Bell",
     rarity: "epic",
@@ -502,67 +617,67 @@ window.PETS = [
       },
 	  {
         lv: 2,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+32,120 pts for Cherry Blossom Jellies\n+4 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+35,040 pts for Cherry Blossom Jellies\n+4 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥400  ❤️+20",
       },
       {
         lv: 3,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+37,960 pts for Cherry Blossom Jellies\n+4 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥800  ❤️+20",
       },
       {
         lv: 4,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+40,880 pts for Cherry Blossom Jellies\n+5 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥2,000  ❤️+20",
       },
       {
         lv: 5,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+43,800 pts for Cherry Blossom Jellies\n+5 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥4,000  ❤️+20",
       },	
       {
         lv: 6,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+46,720 pts for Cherry Blossom Jellies\n+5 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥4,000  ❤️+20",
       },
       {
         lv: 7,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+49,640 pts for Cherry Blossom Jellies\n+6 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥5,000  ❤️+20",
       },
       {
         lv: 8,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+52,560 pts for Cherry Blossom Jellies\n+6 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥5,000  ❤️+20",
       },
       {
         lv: 9,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+55,480 pts for Cherry Blossom Jellies\n+7 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥5,000  ❤️+20",
       },	  
 	  {
         lv: 10,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+58,400 pts for Cherry Blossom Jellies\n+7 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥6,000  ❤️+20",
       },
       {
         lv: 11,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+61,320 pts for Cherry Blossom Jellies\n+8 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥6,000  ❤️+20",
       },
 	  {
         lv: 12,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+64,240 pts for Cherry Blossom Jellies\n+8 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥6,000  ❤️+20",
       },
       {
         lv: 13,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+67,160 pts for Cherry Blossom Jellies\n+9 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥6,000  ❤️+20",
       },
 	  {
         lv: 14,
-        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+70,080 pts for Cherry Blossom Jellies\n+9 for Energy recovery from Cherry Blossom Potions",
         reward: "🔥6,000  ❤️+20",
       },
       {

@@ -865,6 +865,29 @@
         content: ""; position: absolute; left: 50%; bottom: -13px; width: 16px; height: 16px; background: #fff;
         border-right: 3px solid #2a1a3a; border-bottom: 3px solid #2a1a3a; transform: translateX(-50%) rotate(45deg);
       }
+
+      /* ===== Image loading polish ===== */
+      .ldg { position: relative; }
+      .shim { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: 2;
+        background: linear-gradient(100deg, transparent 25%, rgba(255, 255, 255, 0.3) 50%, transparent 75%) 200% 0 / 200% 100% no-repeat, rgba(255, 255, 255, 0.08);
+        animation: shim 1.2s linear infinite; }
+      @keyframes shim { to { background-position: -200% 0, 0 0; } }
+      img.il { opacity: 0; }
+      .imgfb { font-size: inherit; line-height: 1; display: inline-flex; align-items: center; justify-content: center; opacity: 0.85; }
+      /* ===== Affection track ===== */
+      .atk { padding: 6px 14px 10px; }
+      .atk .ah { display: flex; justify-content: space-between; align-items: baseline; font-size: 18px; }
+      .atk .ah b { color: #5a3a22; }
+      .atk .ah span { color: #c0235f; font-weight: 800; }
+      .abar { position: relative; height: 16px; border-radius: 999px; background: #0002; margin: 16px 10px 8px; }
+      .afill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, #ff9ec3, #ff3d7f); transition: width 0.15s; }
+      .amk { position: absolute; top: 50%; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 3px solid #c98a9a; transform: translate(-50%, -50%); transition: 0.2s; }
+      .amk.on { background: #ff3d7f; border-color: #fff; box-shadow: 0 0 0 2px #ff3d7f; }
+      .atk .lvs { accent-color: #ff3d7f; margin: 0; }
+      .arow { display: flex; justify-content: space-between; gap: 10px; padding: 6px 10px; margin-top: 4px; border-radius: 8px; opacity: 0.45; transition: 0.2s; }
+      .arow.on { opacity: 1; background: #ffffff80; }
+      .arow small { display: block; color: #8a4a1a; font-weight: 600; }
+      .abonus { margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: #fff6; text-align: center; font-weight: 700; }
     </style>
   </head>
   <body>
@@ -1011,7 +1034,7 @@
         c.levels
           ? Math.max(...c.levels.map((l) => l.lv), 1)
           : parseInt(String(c.level).split("/")[1]) || cLast(c).lv;
-      const spr = (x) => (x.img ? `<img src="${x.img}" alt="">` : x.emoji || "❔");
+      const spr = (x) => (x.img ? `<img src="${x.img}" alt="" data-e="${x.emoji || ""}">` : x.emoji || "❔");
       const art = (i) => {
         const e = i.costumes && i.costumes.find((c) => c.equipped);
         return spr(e || i);
@@ -1244,6 +1267,54 @@
         clearTimeout(talkTimer);
         talkTimer = setTimeout(() => b.classList.remove("on"), 4000 + Math.random() * 2000);
       }
+      // ---- Affection track (drag to preview any affection level) ----
+      function affTrack(i) {
+        const ms = (i.affection || []).slice().sort((a, b) => a.n - b.n), max = ms.length ? ms[ms.length - 1].n : 0;
+        if (!max) return "";
+        return `<div class="atk"><div class="ah"><b>Affection</b><span id="aHeart"></span></div><div class="abar"><div class="afill" id="aFill"></div>${ms.map((m, k) => `<span class="amk" id="amk${k}" style="left:${(m.n / max) * 100}%"></span>`).join("")}</div><input type="range" class="lvs" min="0" max="${max}" step="1" value="${max}" oninput="setAff(this.value)" aria-label="Affection">${ms.map((m, k) => `<div class="arow" id="arow${k}"><span>❤ ${m.n} — ${m.name}</span>${m.bonus ? `<small>${m.bonus}</small>` : ""}</div>`).join("")}<div class="abonus" id="aBonus"></div></div>`;
+      }
+      function setAff(v) {
+        const ms = cur.affection.slice().sort((a, b) => a.n - b.n), max = ms[ms.length - 1].n, n = +v;
+        let rank = ms[0], bonus = "";
+        ms.forEach((m, k) => {
+          const on = m.n <= n;
+          if (on) { rank = m; if (m.bonus) bonus = m.bonus; }
+          $("amk" + k).classList.toggle("on", on);
+          $("arow" + k).classList.toggle("on", on);
+        });
+        $("aFill").style.width = (n / max) * 100 + "%";
+        $("aHeart").textContent = `❤ ${n} · ${rank.name}`;
+        $("aBonus").textContent = bonus ? "Active bonus: " + bonus : "No bonus yet";
+      }
+      // ---- Image loading polish: shimmer while loading, emoji fallback if an image fails ----
+      (function () {
+        const HOSTS = ".art, .jimg, .sp, .gframe, .sillust, .ivw, .sprite";
+        const settle = (h) => { if (!h.querySelector("img.il")) { h.classList.remove("ldg"); h.querySelectorAll(":scope > .shim").forEach((n) => n.remove()); } };
+        const fail = (m) => {
+          m.dataset.failed = 1; m.classList.remove("il");
+          const h = m.closest(HOSTS); if (h) settle(h);
+          if (m.classList.contains("rav") || m.closest(".rel")) return m.remove();
+          const f = document.createElement("span");
+          f.className = "imgfb"; f.title = "Image unavailable";
+          f.textContent = m.dataset.e || (m.closest(".jimg") ? "🍬" : "🖼️");
+          m.replaceWith(f);
+        };
+        document.addEventListener("load", (e) => { const m = e.target; if (m.tagName == "IMG") { m.classList.remove("il"); const h = m.closest(HOSTS); if (h) settle(h); } }, true);
+        document.addEventListener("error", (e) => { const m = e.target; if (m.tagName == "IMG" && !m.dataset.failed) fail(m); }, true);
+        const scan = (n) => {
+          if (n.nodeType != 1) return;
+          (n.tagName == "IMG" ? [n] : [...n.querySelectorAll("img")]).forEach((m) => {
+            if (m.dataset.seen || m.dataset.failed) return;
+            m.dataset.seen = 1;
+            if (m.complete) { if (m.getAttribute("src") && !m.naturalWidth) fail(m); return; }
+            m.classList.add("il");
+            const h = m.closest(HOSTS);
+            if (h && !h.querySelector(":scope > .shim")) { h.classList.add("ldg"); h.insertAdjacentHTML("beforeend", '<span class="shim"></span>'); }
+          });
+        };
+        new MutationObserver((ms) => ms.forEach((r) => r.addedNodes.forEach(scan))).observe(document.body, { childList: true, subtree: true });
+        scan(document.body);
+      })();
       let galIdx = null, gX = 0;
       const powH = (x) => (x.power ? `<div class="pow"><span class="heart">❤️</span>${x.power}<small>/${x.power}</small></div>` : "");
       // Level slider: updates the panels in place
@@ -1458,15 +1529,7 @@
         const i = cur;
         modal(
           "Relationships",
-          `${storyTabs("rel")}<div class="aff"><b>Affection</b>${i.affection
-            .slice()
-            .reverse()
-            .map(
-              (a) => `<div>❤ ${a.n} — ${a.name}${a.bonus ? "<br>" + a.bonus : ""}</div>`,
-            )
-            .join(
-              "",
-            )}</div><div class="aff"><b>Relationship Chart</b>${(i.relations || []).map((r) => `<div>${relAvatar(r)}${r.who}: “${r.text}” (${r.type})</div>`).join("")}</div>`,
+          `${storyTabs("rel")}${affTrack(i)}<div class="aff"><b>Relationship Chart</b>${(i.relations || []).map((r) => `<div>${relAvatar(r)}${r.who}: “${r.text}” (${r.type})</div>`).join("")}</div>`,
         );
       }
       function rewards() {
