@@ -486,6 +486,113 @@ window.PETS = [
     ],
   },
   {
+    id: "tea-cup",
+    name: "Tea Cup",
+    rarity: "epic",
+    released: "March 13, 2018",
+    emoji: "🧸",
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/99/Tea_Cup.png",
+    tags: ["Items", "Jellies", "Potions", "FlowerJellies"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+32,120 pts for Cherry Blossom Jellies\n+4 for Energy recovery from Cherry Blossom Potions",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+32,120 pts for Cherry Blossom Jellies\n+4 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥400  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥800  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥2,000  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥4,000  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥5,000  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Creates Cherry Blossom Potions every 26 sec\n+73,000 pts for Cherry Blossom Jellies\n+10 for Energy recovery from Cherry Blossom Potions",
+        reward: "🔥6,000  ❤️+20",
+      },
+    ],
+	skillFull: "Creates Cherry Blossom Potions on top of Basic Jellies at certain intervals. Collecting a Cherry Blossom Potion will cause Cherry Blossom Jellies to burst into the sky. Level Up for more Energy restored from Cherry Blossom Potions and more points for Cherry Blossom Jellies.",
+    story:
+      "The first thing Cherry Blossom Cookie does at a picnic is to drink tea from her lovely tea cup.\n\nNo matter what the weather is like, it maintains the perfect temperature and blend! With this kind of tea cup, you will want to go on a picnic every single day!",
+    combi: [
+      {
+        type: "cookie",
+        id: "cherry-blossom",
+        desc: "+52,000 points for Cherry Blossom Jellies",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Tea Cup", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/99/Tea_Cup.png",	
+        equipped: true,
+	  },
+    ],
+  },
+  {
     id: "spotlight-fan",
     name: "Spotlight Fan",
     rarity: "rare",

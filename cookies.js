@@ -1687,6 +1687,423 @@ window.COOKIES = [
     },
   },
   {
+    id: "cherry-blossom",
+    name: "Cherry Blossom Cookie",
+    rarity: "epic",
+    released: "March 13, 2018",
+    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/9/99/Crk_illustration_cherry_blossom.png/1280px-Crk_illustration_cherry_blossom.png",
+    jelly: {
+      img: "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Crob_affection_jelly_cherry_blossom.png",
+      story: "Cherry Blossom Cookie's basket can contain an enormous amount of food.",
+    },
+    img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/03/Crob_standard_cherry_blossom.png",
+    emoji: "🌙",
+    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Crob_head_cherry_blossom.png",
+    tags: ["Flight", "Speed", "Jellies", "FlowerJellies"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        power: 177,
+        desc: "Skill activation every 29.3 sec\n+32,200 pts for Cherry Blossom Jellies",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        power: 175,
+        desc: "Skill activation every 29.3 sec\n+36,900 pts for Cherry Blossom Jellies",
+        reward: "🔥400  ❤️+30",
+      },
+	  {
+        lv: 3,
+        power: 184,
+        desc: "Skill activation every 29.3 sec\n+41,600 pts for Cherry Blossom Jellies",
+        reward: "🔥800  ❤️+30",
+      },
+	  {
+        lv: 4,
+        power: 193,
+        desc: "Skill activation every 29.3 sec\n+46,300 pts for Cherry Blossom Jellies",
+        reward: "🔥2,000  ❤️+30",
+      },
+	  {
+        lv: 5,
+        power: 202,
+        desc: "Skill activation every 29.3 sec\n+51,000 pts for Cherry Blossom Jellies",
+        reward: "🔥4,000  ❤️+30",
+      },
+	  {
+        lv: 6,
+        power: 211,
+        desc: "Skill activation every 29.3 sec\n+55,700 pts for Cherry Blossom Jellies",
+        reward: "🔥4,000  ❤️+30",
+      },
+	  {
+        lv: 7,
+        power: 220,
+        desc: "Skill activation every 29.3 sec\n+60,400 pts for Cherry Blossom Jellies",
+        reward: "🔥4,000  ❤️+30",
+      },
+	  {
+        lv: 8,
+        power: 229,
+        desc: "Skill activation every 29.3 sec\n+65,100 pts for Cherry Blossom Jellies",
+        reward: "🔥4,000  ❤️+30",
+      },
+	  {
+        lv: 9,
+        power: 238,
+        desc: "Skill activation every 29.3 sec\n+69,800 pts for Cherry Blossom Jellies",
+        reward: "🔥5,000  ❤️+30",
+      },
+	  {
+        lv: 10,
+        power: 247,
+        desc: "Skill activation every 29.3 sec\n+74,500 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+	  {
+        lv: 11,
+        power: 256,
+        desc: "Skill activation every 29.3 sec\n+79,200 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+	  {
+        lv: 12,
+        power: 265,
+        desc: "Skill activation every 29.3 sec\n+83,900 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+      {
+        lv: 13,
+        power: 274,
+        desc: "Skill activation every 29.3 sec\n+88,600 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+      {
+        lv: 14,
+        power: 283,
+        desc: "Skill activation every 29.3 sec\n+93,300 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+      {
+        lv: 15,
+        power: 292,
+        desc: "Skill activation every 29.3 sec\n+98,000 pts for Cherry Blossom Jellies",
+        reward: "🔥6,000  ❤️+30",
+      },
+    ],
+    skillFull:
+      "Flies at given intervals, creating Cherry Blossom Jellies. Level Up for more points for Cherry Blossom Jellies.",
+    story:
+      "On a warm spring day, the first pink cherry blossoms were collected and then infused for a generous amount of time. Then this essence was used to create Cherry Blossom Cookie.\n\nJust by looking at her, you will feel splendid and warm inside, with a tingle on both your cheeks. On a perfect day, you can see her humming, trying to fly into the air with her umbrella open.\n\nShe is most adorable when she offers you delicious sandwiches and tea. But watch out, once she starts to chat, you will lose track of time!",
+    quote: "You didn't forget about our picnic, did you?",
+    quotes: [
+      {
+        title: "General",
+        sections: [
+          { title: "New", lines: ["You didn't forget about our picnic, did you?"] },
+          {
+            title: "Cookie Info & Loading",
+            lines: [
+              "Cherry blossom petals are so pretty!",
+              "Yay! Perfect weather for a picnic!",
+              "Let's go on a picnic!",
+              "Have a bite of my sandwich! Isn't it delicious?",
+              "Come with me!",
+              "The wind will carry us to magical places!",
+              "What kind of tea do you like?",
+              "Let's fly! Yay!",
+              "Let's go! I know a great spot for a picnic!",
+            ],
+          },
+          { title: "Tired", lines: ["Ouch..."] },
+        ],
+      },
+	  {
+        title: "Lobby",
+        sections: [
+          { title: "Daily Reward", lines: ["A perfect present for a picnic!"] },
+          {
+            title: "Tap",
+            lines: [
+              "Such a lovely, soft breeze.",
+              "Hi there! Do you like cherry blossoms?",
+              "Thanks! Another cup of tea?",
+              "I'd like to fly with the wind!",
+              "Come on! It's perfect weather for a picnic!",
+              "Thank you! Another sandwich?",
+            ],
+          },
+          {
+            title: "Gift",
+            rows: [
+              { label: "Neutral", text: "Um... A lovely gift!" },
+              { label: "Given <u>Pink Cherry Sprout</u>", text: "Ah, I'm dreaming of spring already..!" },
+              { label: "Given <u>Royal Golden Dough</u>", text: "Thanks for the dough!" },
+            ],
+          },
+        ],
+      },
+	  {
+        title: "Cookie Trials",
+        sections: [
+          {
+            title: "Trial Info",
+            lines: [
+              "Such a great day!",
+              "The weather is awesome!",
+              "Let's go on a picnic!",
+              "Play with me!",
+              "Let's fly!",
+            ],
+          },
+		  { title: "Tired", lines: ["It's going to be a great picnic!"] },
+        ],
+      },
+    ],
+    affection: [
+	  { n: 0, name: "Strangers" },
+	  { n: 200, name: "Almost Friends" },
+      { n: 400, name: "Friends" },
+      { n: 800, name: "Good Friends", bonus: "+250 pts for Cherry Blossom Jellies" },
+      { n: 1000, name: "Best Friends", bonus: "+500 pts for Cherry Blossom Jellies" },
+    ],
+    relations: [
+      {
+        who: "Cherry Cookie",
+        id: "cherry",
+        text: "Picnics are the best with fireworks!",
+        type: "Family",
+      },
+	  {
+        who: "Cocoa Cookie",
+        id: "cocoa",
+        text: "She knows everything about cocoa!",
+        type: "Trust",
+      },
+	  {
+        who: "Cotton Candy Cookie",
+        id: "cotton-candy",
+        text: "Finished writing? Time for a picnic!",
+        type: "Trust",
+      },
+	  {
+        who: "Peach Cookie",
+        id: "peach",
+        text: "I prepared dumplings for today's picnic!",
+        type: "Trust",
+      },
+	  {
+        who: "Hydrangea Cookie",
+        id: "hydrangea",
+        text: "Can we have a picnic in the hydrangea gardens?",
+        type: "Friendly",
+      },
+	  {
+        who: "Cherry Ball Cookie",
+        id: "cherry-ball",
+        text: "Why don't you get some rest and enjoy a nice picnic with me?",
+        type: "Family",
+      },
+	  {
+        who: "Pastel Meringue Cookie",
+        id: "pastel-meringue",
+        text: "Not only does he make super cute clothes, he also brews a delicious cup of tea!",
+        type: "Friendly",
+      },
+	  {
+        who: "Coffee Cookie",
+        id: "coffee",
+        text: "Coffee is nice, but tea goes better with picnics!",
+        type: "Friendly",
+      },
+	  {
+        who: "Longjing Tea Cookie",
+        id: "longjing-tea",
+        text: "I promise that every tea leaf will give you a different, equally wonderful aroma and flavor! Try some of my black tea!",
+        type: "Friendly",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Cherry Blossom Cookie",
+		img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/03/Crob_standard_cherry_blossom.png",
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🚂", equipped: true, 
+	  },
+      {
+        name: "Red Equinox",
+        img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/06/Red_Equinox.png",
+        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/2/23/Img_skinIllust_405102.png",
+        bonus: "+400 pts for Cherry Blossom Jellies",
+        released: "August 26, 2021",
+        quotes: [
+      {
+        title: "General",
+        sections: [
+          {
+            title: "Cookie Info & Loading",
+            lines: [
+              "Cherry blossom petals are so pretty!",
+			  "Let's fly! Yay!",
+			  "Do you like tea? Maybe green tea?",
+              "The wind will carry us to a magical place!",
+              "There are more flowers deeper into the mountains!",
+              "Do you like flowers? What about red flowers?",
+              "Have you come for a hike? Or a picnic?",
+			  "Let's have some fun! Follow me!",
+			  "Let's have some tea together. Forever.",
+			  "Where are you going? You can't leave. Ever.",
+            ],
+          },
+          { title: "Tired", lines: ["Flowers are wilting..."] },
+        ],
+      },
+	  {
+        title: "Lobby",
+        sections: [
+          { title: "Daily Reward", lines: ["You've come!"] },
+          {
+            title: "Tap",
+            lines: [
+              "Wherever I go, the flowers follow.",
+              "The flowers are lovely, aren't they? Aren't they?",
+              "Follow me. I will give you a delicious cup of tea!",
+              "Let's play like there's no tomorrow!",
+              "Come with me to see even more flowers!",
+              "I have been here since the flowers first bloomed.",
+            ],
+          },
+          {
+            title: "Gift",
+            rows: [
+              { label: "Neutral", text: "Can you help me bring this to my garden?" },
+              { label: "Given <u>Pink Cherry Sprout</u>", text: "I should plant this on the top of the mountain." },
+              { label: "Given <u>Royal Golden Dough</u>", text: "Thank you!" },
+            ],
+          },
+        ],
+      },
+    ],
+        tier: "superepic",
+        emoji: "🌙",
+        info: "Ancient legends claim a Cookie lives in the solitude of the mountains, surrounded by groves of cherry blossoms and flowers of the deepest crimson. When travelers stumble onto this secluded garden, the cherry blossoms gracefully fall and scarlet petals flutter into the air as if on cue! Some say that there is no escape from such a spectacle. Others who seek this grove would say something too, but they've yet to return...",
+      },
+	  {
+        name: "Hipster’s OOTD",
+        img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Hipsters_ootd.png",
+        bonus: "+100 pts for Cherry Blossom Jellies",
+        released: "March 14, 2023",
+		quotes: [
+      {
+        title: "General",
+        sections: [
+          {
+            title: "Cookie Info & Loading",
+            lines: [
+              "Cherry blossom petals are so pretty!",
+			  "The wind will carry us to magical places!",
+			  "What kind of tea is your favorite?",
+			  "Thank you! Let's take another picture, with this pose!",
+              "Let's fly! La-di-da... and *click*!",
+              "What a delight, I'm so happy I could fly!",
+              "Let's fly! La-di-da!",
+              "I know exactly what kind of tea goes well with this outfit!",
+			  "Let's take a picture in this lovely, soft breeze!",
+			  "Let's have a picnic and take tons of pictures!",
+            ],
+          },
+          { title: "Tired", lines: ["This isn't hip..."] },
+        ],
+      },
+    ],
+        tier: "rare",
+        emoji: "💝",
+        info: "Pink Candy headphones, a Hologram Jelly umbrella, and with a hip bag as a finishing touch to a sporty look! Cherry Blossom Cookie has emerged as a rising star for street fashion on social media. This peculiar path is said to have been started by the Cookie spilling tea on her usual clothes, but it ended up becoming a very popular style! The crop top is even waterproof, so there isn't even a need to worry about more tea spilling!",
+      },
+	  {
+        name: "Sweetest Picnic",
+        img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/4e/Sweetest_Picnic.png",
+        bonus: "+150 pts for Cherry Blossom Jellies",
+        released: "January 16, 2020",
+		quotes: [
+      {
+        title: "General",
+        sections: [
+          {
+            title: "Cookie Info & Loading",
+            lines: [
+              "Yay! Perfect weather for a picnic!",
+			  "The wind will carry us to a great picnic spot!",
+			  "Do you like tea?",
+			  "Sweet juice goes well with cherry blossoms!",
+              "This tea goes great with fresh, sweet Jellies!",
+              "What a delight, I'm so happy I could fly!",
+              "Fly! Fly! La de da!",
+              "A new Jelly! What a fruity aroma!",
+			  "Jellies go pop! How delightful!",
+			  "Come join me, dear! I know just the spot for a Jelly picnic.",
+            ],
+          },
+          { title: "Tired", lines: ["Haaa..."] },
+        ],
+      },
+    ],
+        tier: "rare",
+        emoji: "💝",
+        info: "On a warm, clear day, Cherry Blossom Cookie has come from afar for a very special outing! The more Jellies, the merrier the picnic!",
+      },
+    ],
+    combi: [
+      { type: "pet", id: "tea-cup", desc: "+52,000 pts for White Choco Jellies" },
+      {
+        type: "treasure",
+        id: "flowering-can",
+        desc: "+292,000 pts for Flower Jellies",
+      },
+    ],
+    candy: {
+      name: "Cherry Blossom Cookie's Magic Candy",
+	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/87/Crob_magic_candy_cherry_blossom.png",
+      levels: [
+        {
+          lv: 1,
+          desc: "Creates Red Petal Jellies\n+39,200 pts for Red Petal Jellies",
+          reward: "No Level Up Reward",
+        },
+		{
+          lv: 2,
+          desc: "Creates Red Petal Jellies\n+53,900 pts for Red Petal Jellies",
+          reward: "❤️+30",
+        },
+		{
+          lv: 3,
+          desc: "Creates Red Petal Jellies\n+68,600 pts for Red Petal Jellies",
+          reward: "❤️+30",
+        },
+		{
+          lv: 4,
+          desc: "Creates Red Petal Jellies\n+83,300 pts for Red Petal Jellies",
+          reward: "❤️+30",
+        },
+		{
+          lv: 5,
+          desc: "Creates Red Petal Jellies\n+98,000 pts for Red Petal Jellies",
+          reward: "❤️+30",
+        },
+      ],
+	  ingredient: {
+        name: "Pink Cherry Sprout",
+        img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/5e/Crob_magic_candy_ingredient_cherry_blossom.png",
+        text: "A little sprout that came out to greet the spring. Hello there!",
+      },
+	  skillFull: "Red Petal Jellies fall during the run. The stronger the enchanted power, the more points for Red Petal Jellies.",
+      emoji: "🍬",
+    },
+  },
+  {
     id: "rockstar",
     name: "Rockstar Cookie",
     rarity: "rare",
