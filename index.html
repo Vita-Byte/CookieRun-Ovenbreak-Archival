@@ -649,7 +649,7 @@
         text-shadow: none;
       }
       #modal2 { z-index: 12; }
-      #modal2 .sheet { max-width: 1100px; width: auto; }
+      #modal2 .sheet { width: min(1100px, 96vw); max-width: 96vw; }
       #modal2 img { display: block; max-width: 100%; max-height: calc(92vh - 70px); margin: 0 auto; }
       /* Release date + Affection Jelly */
       .rel {
@@ -836,10 +836,15 @@
       #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::before { top: 12%; left: 14%; font-size: 24px; }
       #detail:is(.r-legendary,.r-epic,.r-special,.r-sanrio,.r-teenieping,.r-ppg) .sprite::after { top: 28%; right: 12%; font-size: 17px; animation-delay: 1.2s; }
       /* ===== Illustration viewer ===== */
-      .ivw { position: relative; overflow: hidden; height: calc(92vh - 70px); touch-action: none; cursor: grab; }
+      .ivw { background: #120626; position: relative; overflow: hidden; height: calc(92vh - 70px); touch-action: none; cursor: grab; }
       .ivw img { position: absolute; left: 50%; top: 50%; max-width: 100%; max-height: 100%; transform: translate(-50%, -50%); user-select: none; -webkit-user-drag: none; animation: none; }
       .inav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; width: 42px; height: 42px; border-radius: 50%; border: 2px solid #fff8; background: #0007; color: #fff; font-size: 26px; line-height: 1; padding: 0; }
       .inav.l { left: 8px; } .inav.r { right: 8px; }
+      .inav.t { top: 12px; right: 8px; left: auto; transform: none; }
+      @media (max-width: 700px) {
+        #modal2 .sheet { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; border-radius: 0; }
+        .ivw { height: calc(100dvh - 64px); }
+      }
       /* ===== Enhancement label, refresh UI ===== */
       .lvbig .elv { display: block; font-size: 17px; color: #fff; margin-top: -2px; }
       #ptr { position: fixed; top: env(safe-area-inset-top, 0px); left: 50%; transform: translate(-50%, -40px); opacity: 0; z-index: 30; background: #000a; padding: 6px 14px; border-radius: 999px; font-size: 14px; pointer-events: none; transition: opacity 0.15s; }
@@ -1104,12 +1109,23 @@
       }
       function drawIll() {
         const c = ill.list[ill.i], n = ill.list.length;
-        ill.s = 1; ill.x = ill.y = 0;
-        $("sheet2").innerHTML = `<h2><span>${c.name}${n > 1 ? `<span class="rel">${ill.i + 1}/${n}</span>` : ""}</span><button onclick="closeM2()">✖</button></h2><div class="ivw" id="ivw">${n > 1 ? `<button class="inav l" onclick="illGo(-1)">‹</button><button class="inav r" onclick="illGo(1)">›</button>` : ""}<img id="iimg" src="${c.illust}" alt="${c.name}" draggable="false"></div>`;
+        ill.s = 1; ill.x = ill.y = 0; ill.r = 0;
+        $("sheet2").innerHTML = `<h2><span>${c.name}${n > 1 ? `<span class="rel">${ill.i + 1}/${n}</span>` : ""}</span><button onclick="closeM2()">✖</button></h2><div class="ivw" id="ivw">${n > 1 ? `<button class="inav l" onclick="illGo(-1)">‹</button><button class="inav r" onclick="illGo(1)">›</button>` : ""}<button class="inav t" onclick="illRot()" title="Rotate">⟳</button><img id="iimg" src="${c.illust}" alt="${c.name}" draggable="false"></div>`;
+        // portrait phone + wide picture: turn it sideways so it fills the screen (⟳ toggles)
+        $("iimg").onload = () => { const m = $("iimg"); if (matchMedia("(max-width:700px) and (orientation:portrait)").matches && m.naturalWidth > m.naturalHeight) { ill.r = 90; applyIll(); } };
         bindIll();
         applyIll();
       }
-      const applyIll = () => { const m = $("iimg"); if (m) m.style.transform = `translate(-50%,-50%) translate(${ill.x}px,${ill.y}px) scale(${ill.s})`; };
+      const applyIll = () => {
+        const m = $("iimg"), v = $("ivw");
+        if (!m || !v) return;
+        const r = ill.r || 0;
+        m.style.maxWidth = r ? v.clientHeight + "px" : "100%";
+        m.style.maxHeight = r ? v.clientWidth + "px" : "100%";
+        m.style.transform = `translate(-50%,-50%) translate(${ill.x}px,${ill.y}px) scale(${ill.s}) rotate(${r}deg)`;
+      };
+      function illRot() { ill.r = ill.r ? 0 : 90; ill.s = 1; ill.x = ill.y = 0; applyIll(); }
+      addEventListener("resize", () => { if ($("modal2").style.display == "flex") applyIll(); });
       function illGo(d) { const n = ill.list.length; ill.i = (ill.i + d + n) % n; drawIll(); }
       function bindIll() {
         const v = $("ivw"); ptrs.clear();
@@ -1242,8 +1258,10 @@
           : "";
         let right, left;
         if (view == "candy") {
+          const ing = i.candy.ingredient || {};
+          const ingH = `<div class="jelly"><div class="jimg">${ing.img ? `<img src="${ing.img}" alt="">` : "🍬"}</div><div class="jt"><small>Magic Candy Ingredient</small>${ing.name ? `<b>${ing.name}</b>` : ""}<p>${ing.text || "No ingredient info added yet."}</p></div></div>`;
           left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
-          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig" id="lvb">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div>${cLevels(i.candy).length > 1 ? `<input type="range" class="lvs" min="0" max="${cLevels(i.candy).length - 1}" value="${cLevels(i.candy).length - 1}" oninput="setCLv(this.value)" aria-label="Level">` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</span></div></div>`;
+          right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig" id="lvb">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div>${cLevels(i.candy).length > 1 ? `<input type="range" class="lvs" min="0" max="${cLevels(i.candy).length - 1}" value="${cLevels(i.candy).length - 1}" oninput="setCLv(this.value)" aria-label="Level">` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</span></div>${ingH}</div>`;
           $("detail").innerHTML =
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;

@@ -1201,6 +1201,11 @@ window.COOKIES = [
           reward: "❤️+30",
         },
       ],
+	  ingredient: {
+      name: "Galaxy Vuvuzela",
+      img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f9/Crob_magic_candy_ingredient_milky_way.png",
+      text: "You can hear its call echoing throughout the World of Dreams... If you ever get lost, don't fret! Just follow the sound!",
+      },
 	  skillFull: "The Star Voyage Express passes at certain intervals, dropping Milky Way Star Jellies. The stronger the enchanted power, the more points for Milky Way Star Jellies.",
       emoji: "🍬",
     },
