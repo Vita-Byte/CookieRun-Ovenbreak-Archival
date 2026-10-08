@@ -941,6 +941,25 @@
       @keyframes fo { to { opacity: 0; } }
       @keyframes dn { to { transform: translateY(24px) scale(0.98); opacity: 0; } }
       @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
+
+      /* ===== Relationship chart ===== */
+      .rtg { --bg: #8b8b94; display: inline-block; padding: 1px 16px 2px; border: 3px solid #000; border-radius: 999px; color: #fff; font: 800 15px/1.25 var(--disp); letter-spacing: 0.4px; white-space: nowrap;
+        background: linear-gradient(180deg, #ffffff55 0 42%, transparent 43%), var(--bg); box-shadow: inset 0 -3px 0 #0003, 0 2px 0 #0004;
+        paint-order: stroke fill; -webkit-text-stroke: 4px #000; text-shadow: 0 2px 0 #000; }
+      .rtg.friendly { --bg: #3fc23a; } .rtg.family { --bg: #9b4fd6; } .rtg.trust { --bg: #3f4bc4; }
+      .rtg.admiration { --bg: #f5c82e; } .rtg.tension { --bg: #8b8b94; } .rtg.rival { --bg: #e0302f; }
+      .rsum { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px 0 10px; border-bottom: 0 !important; }
+      .rsum button { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: transform 0.1s, opacity 0.2s; }
+      .rsum button small { font: 800 13px var(--disp); color: #5a3a22; }
+      .rsum button:active { transform: scale(0.94); }
+      .rsum.f button:not(.on) { opacity: 0.4; }
+      .rlist { display: flex; flex-direction: column; gap: 10px; }
+      .rc { display: flex !important; align-items: center; gap: 12px; padding: 10px 12px !important; border: 2px solid #0002 !important; border-radius: 16px; background: linear-gradient(180deg, #ffffffb0, #ffffff70); box-shadow: 0 3px 0 #0002, inset 0 1px 0 #fff; }
+      .rc .rav { height: 56px; width: auto; flex: none; margin: 0; filter: drop-shadow(0 3px 3px #0004); }
+      .rc .rb { min-width: 0; flex: 1; }
+      .rc .rh { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 4px; }
+      .rc .rn { font: 800 17px/1.1 var(--disp); color: #4a2a52; }
+      .rc .rq { font-weight: 700; line-height: 1.35; font-style: italic; }
     </style>
   </head>
   <body>
@@ -1614,11 +1633,29 @@
         const src = (c && c.avatar) || r.img;
         return src ? `<img class="rav" src="${src}" alt="">` : "";
       }
+      // Relationship tag: coloured pill, black border, white text with black outline
+      const relTag = (t) => `<span class="rtg ${String(t).toLowerCase()}">${t}</span>`;
+      const REL_ORDER = ["Friendly", "Family", "Trust", "Admiration", "Tension", "Rival"];
+      function relFilter(t) {
+        const box = $("sheet").querySelector(".rsum"), on = box.dataset.t === t ? "" : t;
+        box.dataset.t = on;
+        box.classList.toggle("f", !!on);
+        box.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.t === on));
+        $("sheet").querySelectorAll(".rc").forEach((c) => (c.style.display = !on || c.dataset.t === on ? "" : "none"));
+      }
+      function relChart(i) {
+        const rs = i.relations || [];
+        if (!rs.length) return "";
+        const types = [...new Set(rs.map((r) => r.type))].sort((a, b) => (REL_ORDER.indexOf(a) + 99) % 99 - (REL_ORDER.indexOf(b) + 99) % 99);
+        const sum = types.map((t) => `<button data-t="${t}" onclick="relFilter('${t}')">${relTag(t)}<small>×${rs.filter((r) => r.type == t).length}</small></button>`).join("");
+        const rows = rs.map((r) => `<div class="rc" data-t="${r.type}">${relAvatar(r)}<div class="rb"><div class="rh"><span class="rn">${r.who}</span>${relTag(r.type)}</div><div class="rq">“${r.text}”</div></div></div>`).join("");
+        return `<div class="aff"><b>Relationship Chart</b><div class="rsum">${sum}</div><div class="rlist">${rows}</div></div>`;
+      }
       function rel() {
         const i = cur;
         modal(
           "Relationships",
-          `${storyTabs("rel")}${affTrack(i)}<div class="aff"><b>Relationship Chart</b>${(i.relations || []).map((r) => `<div>${relAvatar(r)}${r.who}: “${r.text}” (${r.type})</div>`).join("")}</div>`,
+          `${storyTabs("rel")}${affTrack(i)}${relChart(i)}`,
         );
         if (i.affection && i.affection.length) setAff(Math.max(...i.affection.map((a) => a.n)));
       }
