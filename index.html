@@ -12,6 +12,9 @@
     <meta name="apple-mobile-web-app-title" content="OB Archive" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="theme-color" content="#6a0dad" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@600;700;800&display=swap" />
     <style>
       :root {
         --ink: #fff;
@@ -32,7 +35,7 @@
         -webkit-text-size-adjust: 100%;
         -webkit-tap-highlight-color: transparent;
         font:
-          700 15px/1.3 "Trebuchet MS",
+          700 15px/1.3 "Nunito", "Trebuchet MS",
           system-ui,
           sans-serif;
         color: var(--ink);
@@ -540,6 +543,10 @@
         font-size: 22px;
         z-index: 2;
       }
+      /* rarity tag images: general (detail page) and costume badges (left of the tier tag) */
+      img.rtag { height: 40px; width: auto; max-width: 100%; vertical-align: middle; filter: drop-shadow(0 2px 3px #0008); }
+      .tierw { display: inline-flex; align-items: center; gap: 6px; }
+      img.cbadge { height: 30px; width: auto; filter: drop-shadow(0 1px 2px #0007); }
       .sico { height: 1.15em; width: auto; vertical-align: -0.2em; margin: 0 2px; }
       .pow .sico { height: 1.1em; vertical-align: -0.15em; margin-right: 6px; }
       .pow {
@@ -890,6 +897,50 @@
       .arow.on { opacity: 1; background: #ffffff80; }
       .arow small { display: block; color: #8a4a1a; font-weight: 600; }
       .abonus { margin-top: 8px; padding: 8px 10px; border-radius: 10px; background: #fff6; text-align: center; font-weight: 700; }
+
+      /* ===== Upgrade: typography, depth & texture, transitions ===== */
+      :root { --disp: "Baloo 2", "Nunito", "Trebuchet MS", system-ui, sans-serif; }
+      h1, h2, .dtop, .nm, .nm2, .lvbig, .max, .done, .btn, .badge, .tier, .pow, .lc > b, .cc > b, .ah b, .abonus {
+        font-family: var(--disp);
+        letter-spacing: 0.3px;
+      }
+      h1, h2, .dtop, .nm2, .lvbig { font-weight: 800; text-shadow: 0 2px 0 #25156a, 0 4px 10px #0006; }
+      .nm2 { font-size: 26px; line-height: 1.1; }
+      .lvbig { font-size: 30px; }
+      .desc, .lbox, .txt, .g { font-weight: 700; line-height: 1.4; }
+      /* depth: layered shadows + inner highlights on panels, glossy buttons, glassy top bar */
+      .right, .desc, .pow, .lc, .cc, .atk, .aff, .jelly, .enh {
+        box-shadow: 0 10px 22px #0004, 0 2px 4px #0003, inset 0 1px 0 #ffffff2e, inset 0 -2px 6px #0003;
+      }
+      .right { background: linear-gradient(160deg, #ffffff12, #0005 45%), #0003; border: 1px solid #ffffff1c; }
+      .top { background: #00000050; backdrop-filter: blur(10px) saturate(1.3); -webkit-backdrop-filter: blur(10px) saturate(1.3); box-shadow: 0 6px 16px #0004, inset 0 -1px 0 #ffffff1c; position: sticky; top: 0; z-index: 5; }
+      .btn { background: linear-gradient(180deg, #dcc2ff, #b48cf0); box-shadow: 0 3px 0 #6a3fb0, 0 6px 10px #0004, inset 0 1px 0 #fff9; text-shadow: 0 1px 0 #5a2fa0; }
+      .btn:active { box-shadow: 0 1px 0 #6a3fb0, inset 0 1px 0 #fff9; transform: translateY(2px) scale(0.98); }
+      .card { box-shadow: 0 0 8px var(--g, #c0f), 0 8px 16px #0007, inset 0 1px 0 #ffffff40; }
+      @media (hover: hover) { .card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 0 14px var(--g, #c0f), 0 14px 24px #0008, inset 0 1px 0 #ffffff55; } }
+      .sprite img, .art img { filter: drop-shadow(0 6px 6px #0006); }
+      /* texture: faint halftone dots + soft vignette over everything (no pointer events) */
+      body::after {
+        content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 999; opacity: 0.55; mix-blend-mode: soft-light;
+        background:
+          radial-gradient(ellipse at center, transparent 55%, #0006 100%),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Ccircle cx='3.5' cy='3.5' r='1.3' fill='%23fff' fill-opacity='.35'/%3E%3Ccircle cx='10.5' cy='10.5' r='1.3' fill='%23fff' fill-opacity='.35'/%3E%3C/svg%3E");
+      }
+      /* transitions: list <-> detail slide (View Transitions API), modals ease out */
+      ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.34s; animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); }
+      ::view-transition-old(root) { animation-name: vt-out; }
+      ::view-transition-new(root) { animation-name: vt-in; }
+      :root.vt-back::view-transition-old(root) { animation-name: vt-out-b; }
+      :root.vt-back::view-transition-new(root) { animation-name: vt-in-b; }
+      @keyframes vt-out { to { opacity: 0; transform: translateX(-10%) scale(0.97); } }
+      @keyframes vt-in { from { opacity: 0; transform: translateX(14%); } }
+      @keyframes vt-out-b { to { opacity: 0; transform: translateX(14%); } }
+      @keyframes vt-in-b { from { opacity: 0; transform: translateX(-10%) scale(0.97); } }
+      .modal.out { animation: fo 0.18s forwards; }
+      .modal.out .sheet { animation: dn 0.18s forwards; }
+      @keyframes fo { to { opacity: 0; } }
+      @keyframes dn { to { transform: translateY(24px) scale(0.98); opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
     </style>
   </head>
   <body>
@@ -1024,6 +1075,18 @@
       // Turns the old emoji in reward text into the official icons: 🔥 = Escape Point, ❤️ = Affection
       const ico = (t) => String(t == null ? "" : t).replace(/🔥/g, sico("esc", "Escape Point")).replace(/❤️?/g, sico("aff", "Affection"));
       const enOf = (x) => (x.energy != null ? x.energy : x.power);
+      // Rarity tag images (save into images/rarity-tag/general and images/rarity-tag/costume)
+      const RTAG = {
+        legendary: "120px-Legendary.png", epic: "120px-Epic.png", special: "120px-Special.png", rare: "120px-Rare.png", common: "120px-Common.png",
+        teenieping: "120px-Teenieping.png", ppg: "120px-The_Powerpuff_Girls.png", sanrio: "Sanrio_characters.png",
+      };
+      const CBADGE = {
+        legendary: "53px-OvenBreak_Legendary_Costume.png", champion: "53px-OvenBreak_Champion_Costume.png", superepic: "53px-OvenBreak_Super_Epic_Costume.png",
+        epic: "53px-OvenBreak_Epic_Costume.png", rare: "45px-OvenBreak_Rare_Costume.png", common: "45px-OvenBreak_Common_Costume.png",
+      };
+      // If the image is missing the existing loader falls back to the text (data-e)
+      const rtag = (r) => (RTAG[r] ? `<img class="rtag" src="images/rarity-tag/general/${RTAG[r]}" alt="${RN[r]}" title="${RN[r]}" data-e="${RN[r]}">` : `<span class="badge">${RN[r]}</span>`);
+      const tierH = (t) => `<span class="tierw">${CBADGE[t] ? `<img class="cbadge" src="images/rarity-tag/costume/${CBADGE[t]}" alt="" data-e="">` : ""}<span class="tier">${tierName(t)}</span></span>`;
       const enhList = (i) => (i.enhancements || []).slice().sort((a, b) => a.lv - b.lv);
       let prevTab = null;
       let tab = "cookie",
@@ -1140,7 +1203,7 @@
         if (!c) return;
         modal(
           `<span>${c.name}${c.released ? `<span class="rel">📅 ${c.released}</span>` : ""}</span>`,
-          `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div><span class="tier">${tierName(c.tier)}</span><div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>${c.ownerType == "cookie" ? `<div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div>` : ""}</div>`,
+          `<div class="cosw"><div class="cc ${tierCls(c.tier)}"><div class="sp${c.illust ? " zoomable" : ""}" style="height:260px;background:var(--c)">${spr(c)}${c.illust ? `<button class="zoom" onclick="showIllust('${c.id}')" title="View illustration">🔍</button>` : ""}</div>${tierH(c.tier)}<div class="g">${c.bonus || c.desc || ""}</div>${c.shop ? `<div class="g">🛒 ${c.shop}</div>` : ""}<div class="g">${c.ownerName}</div><button class="p" style="background:#19b8d6" onclick="costumeOwner('${c.ownerType}','${c.ownerId}')">${c.ownerName} Details</button>${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>${c.ownerType == "cookie" ? `<div class="cq"><div class="qtitle">Quotes</div>${c.quotes && c.quotes.length ? quoteSets(c.quotes) : `<div class="cqe">No quotes added yet.</div>`}</div>` : ""}</div>`,
         );
       }
       let ill = { list: [], i: 0, s: 1, x: 0, y: 0, sx: 0 }, ptrs = new Map(), pd = 0;
@@ -1149,6 +1212,7 @@
         if (!c || !c.illust) return;
         ill.list = TABS[tab].data().filter((x) => x.ownerId == c.ownerId && x.illust);
         ill.i = Math.max(0, ill.list.findIndex((x) => x.id == id));
+        $("modal2").classList.remove("out");
         $("modal2").style.display = "flex";
         drawIll();
       }
@@ -1197,7 +1261,7 @@
         v.ondblclick = () => { ill.s = ill.s > 1 ? 1 : 2.5; ill.x = ill.y = 0; applyIll(); };
       }
       function closeM2() {
-        $("modal2").style.display = "none";
+        hideAnim($("modal2"));
       }
       $("modal2").onclick = (e) => {
         if (e.target.id == "modal2") closeM2();
@@ -1210,26 +1274,41 @@
       function find(id) {
         return TABS[tab].data().find((i) => i.id == id);
       }
+      // Smooth screen change (View Transitions API when available, instant otherwise)
+      function swap(fn, back) {
+        if (!document.startViewTransition || matchMedia("(prefers-reduced-motion: reduce)").matches) return fn();
+        document.documentElement.classList.toggle("vt-back", !!back);
+        document.startViewTransition(fn);
+      }
+      function hideAnim(el) {
+        if (el.style.display != "flex") return;
+        el.classList.add("out");
+        setTimeout(() => { if (el.classList.contains("out")) { el.style.display = "none"; el.classList.remove("out"); } }, 180);
+      }
       function openItem(id, type) {
         if (type) tab = type;
         cur = find(id);
         view = "main";
         galIdx = null;
-        renderDetail();
-        $("detail").classList.remove("enter");
-        void $("detail").offsetWidth;
-        $("detail").classList.add("enter");
-        $("list").style.display = "none";
-        $("detail").style.display = "flex";
+        swap(() => {
+          renderDetail();
+          $("detail").classList.remove("enter");
+          void $("detail").offsetWidth;
+          $("detail").classList.add("enter");
+          $("list").style.display = "none";
+          $("detail").style.display = "flex";
+        }, false);
       }
       function backToList() {
-        if (prevTab) {
-          tab = prevTab;
-          prevTab = null;
-          renderList();
-        }
-        $("detail").style.display = "none";
-        $("list").style.display = "flex";
+        swap(() => {
+          if (prevTab) {
+            tab = prevTab;
+            prevTab = null;
+            renderList();
+          }
+          $("detail").style.display = "none";
+          $("list").style.display = "flex";
+        }, true);
       }
       // ---- Tap the cookie: random quote bubble (4-6 s, then fades) ----
       let talkLast = "", talkTimer = 0;
@@ -1398,13 +1477,13 @@
         if (view == "candy") {
           const ing = i.candy.ingredient || {};
           const ingH = `<div class="jelly"><div class="jimg">${ing.img ? `<img src="${ing.img}" alt="">` : "🍬"}</div><div class="jt"><small>Magic Candy Ingredient</small>${ing.name ? `<b>${ing.name}</b>` : ""}<p>${ing.text || "No ingredient info added yet."}</p></div></div>`;
-          left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
+          left = `<div class="left r-${i.rarity}">${rtag(i.rarity)}<div class="nm2">${i.candy.name}</div><div class="sprite">${spr(i.candy)}</div></div>`;
           right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${relH}</div><div class="lvbig" id="lvb">Lv.${cLast(i.candy).lv}<small>/${cMax(i.candy)}</small></div>${cLevels(i.candy).length > 1 ? `<input type="range" class="lvs" min="0" max="${cLevels(i.candy).length - 1}" value="${cLevels(i.candy).length - 1}" oninput="setCLv(this.value)" aria-label="Level">` : ""}<div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(cLast(i.candy).desc)}${cLast(i.candy).extra ? "\n\n" + hl(cLast(i.candy).extra) : ""}</span></div>${ingH}</div>`;
           $("detail").innerHTML =
             `<div class="dtop"><button class="back" onclick="view='main';renderDetail()">‹</button>Cookie Details</div><div class="main">${left}${right}</div><div class="foot"><button class="cs" onclick="view='main';renderDetail()" style="width:auto;height:auto;border-radius:12px;padding:8px 14px;font-size:16px">🍪 Cookie</button></div>`;
           return;
         }
-        left = `<div class="left r-${i.rarity}"><span class="badge">${RN[i.rarity]}</span><div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite" onclick="talk(event)">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
+        left = `<div class="left r-${i.rarity}">${rtag(i.rarity)}<div class="nm2">${i.name} <button class="star${isFav(i) ? " on" : ""}" onclick="toggleFav()" title="Favorite">★</button></div><div>${i.bonus ? '<button class="green" onclick="combi()">Bonus</button>' : ""}</div><div class="sprite" onclick="talk(event)">${galHTML(i)}</div>${cand ? `<button class="candybtn" onclick="view='candy';renderDetail()" title="Magic Candy">${spr(i.candy)}</button>` : ""}${i.costumes ? `<button class="cs" onclick="costumes()">👕</button>` : ""}</div>`;
         right = `<div class="right"><div class="btns"><button class="btn" onclick="levels()">Level Info</button>${i.story ? `<button class="btn" onclick="story()">❤ Story</button>` : ""}${relH}</div>
  <div class="lvbig" id="lvb">Lv.${L.lv}<small>/${lvOf(i)}</small>${EL ? `<span class="elv">Enhancement Lv.${EL.lv}</span>` : ""}</div>${i.levels.length + enhList(i).length > 1 ? `<input type="range" class="lvs" min="0" max="${i.levels.length - 1 + enhList(i).length}" value="${i.levels.length - 1 + enhList(i).length}" oninput="setLv(this.value)" aria-label="Level">` : ""}<div class="tags">${(i.tags || []).map((t) => `<span>#${t}</span>`).join("")}</div>
  <div id="powb">${powH(L)}</div><div class="desc"><button class="info" onclick="skillInfo()" title="Skill details">!</button><span id="dtx">${hl(L.desc)}${L.extra ? "\n\n" + hl(L.extra) : ""}</span></div><div id="enhw">${enhBox}</div><div class="max" id="maxb">MAX!</div><div class="done" id="doneb">Max Level Reached!</div>${jellyH}</div>`;
@@ -1454,10 +1533,11 @@
       function modal(title, html) {
         $("sheet").innerHTML =
           `<h2>${title}<button onclick="closeM()">✖</button></h2>${html}`;
+        $("modal").classList.remove("out");
         $("modal").style.display = "flex";
       }
       function closeM() {
-        $("modal").style.display = "none";
+        hideAnim($("modal"));
       }
       $("modal").onclick = (e) => {
         if (e.target.id == "modal") closeM();
@@ -1557,7 +1637,7 @@
               const on =
                 c.equipped ||
                 (c.tier == "default" && !i.costumes.some((x) => x.equipped));
-              return `<div class="cc ${c.tier == "default" ? "t-common" : tierCls(c.tier)}"><b>${c.name}</b><div class="sp">${c.tier == "default" && !c.img ? spr(i) : spr(c)}</div>${c.tier != "default" ? `<span class="tier">${tierName(c.tier)}</span>` : ""}<div class="g">${c.bonus || c.desc || ""}</div>${on ? `<button class="eq">✔ Equipped</button>` : `<button onclick="equip(${n})">Equip</button>`}${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>`;
+              return `<div class="cc ${c.tier == "default" ? "t-common" : tierCls(c.tier)}"><b>${c.name}</b><div class="sp">${c.tier == "default" && !c.img ? spr(i) : spr(c)}</div>${c.tier != "default" ? tierH(c.tier) : ""}<div class="g">${c.bonus || c.desc || ""}</div>${on ? `<button class="eq">✔ Equipped</button>` : `<button onclick="equip(${n})">Equip</button>`}${c.info ? `<div class="g" style="margin-top:6px;text-align:left">${c.info}</div>` : ""}</div>`;
             })
             .join("")}</div>`,
         );
