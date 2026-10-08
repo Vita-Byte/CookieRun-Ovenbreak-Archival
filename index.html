@@ -540,6 +540,8 @@
         font-size: 22px;
         z-index: 2;
       }
+      .sico { height: 1.15em; width: auto; vertical-align: -0.2em; margin: 0 2px; }
+      .pow .sico { height: 1.1em; vertical-align: -0.15em; margin-right: 6px; }
       .pow {
         position: relative;
       }
@@ -1016,6 +1018,12 @@
       // Skill text is shown exactly as written (no number highlighting)
       const hl = (t) => String(t);
       const hlg = (t) => String(t);
+      // Special icons (save the images into the special-icon folder)
+      const SICO = { energy: "images/special-icon/Energy_Potion.png", aff: "images/special-icon/30px-Icon_affection.png", esc: "images/special-icon/42px-Escape_Level.png" };
+      const sico = (k, alt) => `<img class="sico" src="${SICO[k]}" alt="${alt}">`;
+      // Turns the old emoji in reward text into the official icons: 🔥 = Escape Point, ❤️ = Affection
+      const ico = (t) => String(t == null ? "" : t).replace(/🔥/g, sico("esc", "Escape Point")).replace(/❤️?/g, sico("aff", "Affection"));
+      const enOf = (x) => (x.energy != null ? x.energy : x.power);
       const enhList = (i) => (i.enhancements || []).slice().sort((a, b) => a.lv - b.lv);
       let prevTab = null;
       let tab = "cookie",
@@ -1271,7 +1279,7 @@
       function affTrack(i) {
         const ms = (i.affection || []).slice().sort((a, b) => a.n - b.n), max = ms.length ? ms[ms.length - 1].n : 0;
         if (!max) return "";
-        return `<div class="atk"><div class="ah"><b>Affection</b><span id="aHeart"></span></div><div class="abar"><div class="afill" id="aFill"></div>${ms.map((m, k) => `<span class="amk" id="amk${k}" style="left:${(m.n / max) * 100}%"></span>`).join("")}</div><input type="range" class="lvs" min="0" max="${max}" step="1" value="${max}" oninput="setAff(this.value)" aria-label="Affection">${ms.map((m, k) => `<div class="arow" id="arow${k}"><span>❤ ${m.n} — ${m.name}</span>${m.bonus ? `<small>${m.bonus}</small>` : ""}</div>`).join("")}<div class="abonus" id="aBonus"></div></div>`;
+        return `<div class="atk"><div class="ah"><b>Affection</b><span id="aHeart"></span></div><div class="abar"><div class="afill" id="aFill"></div>${ms.map((m, k) => `<span class="amk" id="amk${k}" style="left:${(m.n / max) * 100}%"></span>`).join("")}</div><input type="range" class="lvs" min="0" max="${max}" step="1" value="${max}" oninput="setAff(this.value)" aria-label="Affection">${ms.map((m, k) => `<div class="arow" id="arow${k}"><span>${sico("aff", "Affection")} ${m.n} — ${m.name}</span>${m.bonus ? `<small>${m.bonus}</small>` : ""}</div>`).join("")}<div class="abonus" id="aBonus"></div></div>`;
       }
       function setAff(v) {
         const ms = cur.affection.slice().sort((a, b) => a.n - b.n), max = ms[ms.length - 1].n, n = +v;
@@ -1283,7 +1291,7 @@
           $("arow" + k).classList.toggle("on", on);
         });
         $("aFill").style.width = (n / max) * 100 + "%";
-        $("aHeart").textContent = `❤ ${n} · ${rank.name}`;
+        $("aHeart").innerHTML = `${sico("aff", "Affection")} ${n} · ${rank.name}`;
         $("aBonus").textContent = bonus ? "Active bonus: " + bonus : "No bonus yet";
       }
       // ---- Image loading polish: shimmer while loading, emoji fallback if an image fails ----
@@ -1317,7 +1325,7 @@
         scan(document.body);
       })();
       let galIdx = null, gX = 0;
-      const powH = (x) => (x.power ? `<div class="pow"><span class="heart">❤️</span>${x.power}<small>/${x.power}</small></div>` : "");
+      const powH = (x) => (enOf(x) ? `<div class="pow">${sico("energy", "Energy")}${enOf(x)}<small>/${enOf(x)}</small></div>` : "");
       // Level slider: updates the panels in place
       const enhHTML = (e) => (e ? `<div class="enh">${enhIcon()}<span>${hl(e.effect)}</span><button class="info" onclick="enhInfo()" title="Enhancement effect">!</button></div>` : "");
       function setLv(v) {
@@ -1330,7 +1338,7 @@
         const m = $("maxb");
         m.textContent = full ? "MAX!" : `Lv.${L.lv}/${tot}`;
         m.style.background = full ? "" : `linear-gradient(90deg,#f4b400 ${Math.round((L.lv / tot) * 100)}%,#5a3b00 0)`;
-        $("doneb").textContent = full ? "Max Level Reached!" : L.reward ? (/^No /.test(L.reward) ? L.reward : "Level Up Reward: " + L.reward) : "No Level Up Reward";
+        $("doneb").innerHTML = full ? "Max Level Reached!" : L.reward ? (/^No /.test(L.reward) ? L.reward : "Level Up Reward: " + ico(L.reward)) : "No Level Up Reward";
       }
       function setCLv(v) {
         const l = cLevels(cur.candy)[+v];
@@ -1457,7 +1465,7 @@
       function levels() {
         const l = view == "candy" ? cLevels(cur.candy) : cur.levels;
         const card = (x) =>
-          `<div class="lc"><b>Lv.${x.lv}</b>${x.power ? `<b>❤️ ${x.power}</b>` : ""}<div class="lbox">${hlg(x.desc)}${x.extra ? "\n\n" + hlg(x.extra) : ""}</div>${x.reward ? `<div class="rw2">Level Up Reward:\n${x.reward}</div>` : ""}</div>`;
+          `<div class="lc"><b>Lv.${x.lv}</b>${enOf(x) ? `<b>${sico("energy", "Energy")} ${enOf(x)}</b>` : ""}<div class="lbox">${hlg(x.desc)}${x.extra ? "\n\n" + hlg(x.extra) : ""}</div>${x.reward ? `<div class="rw2">Level Up Reward:\n${ico(x.reward)}</div>` : ""}</div>`;
         const main = l[l.length - 1].desc;
         const enh =
           view == "candy"
