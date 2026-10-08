@@ -8,14 +8,14 @@ window.COOKIES = [
     name: "Allulose Nova Cookie",
     rarity: "legendary",
     released: "July 29, 2026",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/d/d3/Crob_illustration_allulose_nova.png/599px-Crob_illustration_allulose_nova.png",
+    illust: "images/599px-Crob_illustration_allulose_nova.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/a/a1/Crob_affection_jelly_allulose_nova.png",
+      img: "images/Crob_affection_jelly_allulose_nova.png",
       story: "Sincerity is not something that bows to power. And so, when it comes freely... one cannot help but treasure it.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/5b/Crob_standard_allulose_nova.png",
+    img: "images/Crob_standard_allulose_nova.png",
     emoji: "👘",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/1/15/Crob_head_allulose_nova.png",
+    avatar: "images/Crob_head_allulose_nova.png",
     tags: ["Flight", "Speed", "Jellies", "SuperMagnetism"],
     bonus: true,
     levels: [
@@ -256,15 +256,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Allulose Nova Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/5b/Crob_standard_allulose_nova.png",
+		img: "images/Crob_standard_allulose_nova.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "👘", equipped: true, 
 	  },
       {
         name: "Secret Rose Nebula",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/7/78/Crob_standard_secret_rose_nebula.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/1/17/Crob_illustration_secret_rose_nebula.png",
+        img: "images/Crob_standard_secret_rose_nebula.png",
+        illust: "images/Crob_illustration_secret_rose_nebula.png",
         bonus: "+2,000 pts for Allulose Shard Jellies",
         released: "July 29, 2026",
         quotes: [
@@ -329,7 +329,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Allulose Nova Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/7/78/Crob_magic_candy_allulose_nova.png/150px-Crob_magic_candy_allulose_nova.png",
+	  img: "images/150px-Crob_magic_candy_allulose_nova.png",
       levels: [
         {
           lv: 1,
@@ -359,7 +359,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Noble Crown of Allulose",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/b/b7/Crob_magic_candy_ingredient_allulose_nova.png",
+        img: "images/Crob_magic_candy_ingredient_allulose_nova.png",
         text: "The Empress's crown, symbolizing absolute power and authority. Let any who dare defy the Empress know they make an enemy of the entire empire.",
       },
 	  skillFull: "Opens a portal at certain intervals to fire projectiles and create Allulose Shard Jellies. If additional obstacles are nearby, it chains up to 2 times. The stronger the enchanted power, the more points for Allulose Shard Jellies.",
@@ -371,14 +371,14 @@ window.COOKIES = [
     name: "Sea Fairy Cookie",
     rarity: "legendary",
     released: "August 30, 2017",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/0/09/Crk_illustration_sea_fairy.png/1024px-Crk_illustration_sea_fairy.png",
+    illust: "images/1024px-Crk_illustration_sea_fairy.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/b/b5/Crob_affection_jelly_sea_fairy.png",
+      img: "images/Crob_affection_jelly_sea_fairy.png",
       story: "This is what Sea Fairy Cookie’s heart must look like...",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/43/Sea_Fairy_Cookie.png",
+    img: "images/Sea_Fairy_Cookie.png",
     emoji: "👘",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/1/19/Crob_head_sea_fairy.png",
+    avatar: "images/Crob_head_sea_fairy.png",
     tags: ["Flight", "Speed", "Jellies", "Recovery", "SuperMagnetism"],
     bonus: true,
     levels: [
@@ -603,15 +603,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Sea Fairy Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/43/Sea_Fairy_Cookie.png",
+		img: "images/Sea_Fairy_Cookie.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "👘", equipped: true, 
 	  },
       {
         name: "Dread Trident of the Abyss",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/a/a8/Dread_Trident_of_the_Abyss.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/a/ad/Img_skinIllust_406502.png",
+        img: "images/Dread_Trident_of_the_Abyss.png",
+        illust: "images/Img_skinIllust_406502.png",
         bonus: "+750 pts for Sea Crystal Jellies",
         released: "July 28, 2020",
         quotes: [
@@ -671,8 +671,8 @@ window.COOKIES = [
       },
 	  {
         name: "Luminous Coral",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/c/cc/Luminous_Coral.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/3/39/Img_skinIllust_406501.png",
+        img: "images/Luminous_Coral.png",
+        illust: "images/Img_skinIllust_406501.png",
         bonus: "+500 pts for Sea Crystal Jellies",
         released: "July 28, 2020",
         quotes: [
@@ -735,7 +735,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Sea Fairy Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/2/2a/Crob_magic_candy_sea_fairy.png",
+	  img: "images/Crob_magic_candy_sea_fairy.png",
       levels: [
         {
           lv: 1,
@@ -765,7 +765,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Shimmering Moonlit Coral",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/dd/Crob_magic_candy_ingredient_sea_fairy.png",
+        img: "images/Crob_magic_candy_ingredient_sea_fairy.png",
         text: "A shard of coral that grew while bathed in moonlight. It shines the brightest on a moonless night, for it is said this coral was born from the heart of the sea.",
       },
 	  skillFull: "An Essence of the Ocean follows the Cookie. The Essence of the Ocean will shoot Wave Beads at certain intervals. Wave Beads destroy obstacles, create Sea Crystal Jellies, and restore a portion of the Cookie's Energy. The stronger the enchanted power, the more points for Sea Crystal Jellies.",
@@ -777,14 +777,14 @@ window.COOKIES = [
     name: "White Kimchi Cookie",
     rarity: "epic",
     released: "September 11, 2026",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/6/6f/Crob_illustration_white_kimchi.png",
+    illust: "images/Crob_illustration_white_kimchi.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f9/Crob_affection_jelly_white_kimchi.png",
+      img: "images/Crob_affection_jelly_white_kimchi.png",
       story: "Always offbeat, always out of step! She was known for having two left feet in the family. Yet whenever she danced in rituals, her dough would move like flowing water.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/7/77/Crob_white_kimchi_standard.png",
+    img: "images/Crob_white_kimchi_standard.png",
     emoji: "👘",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f2/Crob_head_white_kimchi.png",
+    avatar: "images/Crob_head_white_kimchi.png",
     tags: ["Speed", "Jellies", "Blast"],
     bonus: true,
     levels: [
@@ -1037,15 +1037,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "White Kimchi Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/a/aa/Crob_standard_white_kimchi.png",
+		img: "images/Crob_standard_white_kimchi.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "👘", equipped: true, 
 	  },
       {
         name: "Serene Star Shaman",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/1e/Crob_standard_serene_star_shaman.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/8/8a/Crob_illustration_serene_star_shaman.png",
+        img: "images/Crob_standard_serene_star_shaman.png",
+        illust: "images/Crob_illustration_serene_star_shaman.png",
         bonus: "+1,000 pts for Cabbage Spirit Jellies",
         released: "September 11, 2026", // costume release date (shown next to its name)
         quotes: [
@@ -1110,7 +1110,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "White Kimchi Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/7/75/Crob_magic_candy_white_kimchi.png/186px-Crob_magic_candy_white_kimchi.png",
+	  img: "images/186px-Crob_magic_candy_white_kimchi.png",
       levels: [
         {
           lv: 1,
@@ -1140,7 +1140,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Refreshing White Kimchi Talisman",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/9b/Crob_magic_candy_ingredient_white_kimchi.png",
+        img: "images/Crob_magic_candy_ingredient_white_kimchi.png",
         text: "May lingering regrets and sorrows be washed away...!",
       },
 	  skillFull: "White Kimchi Roll Jellies appear at regular intervals. Collecting a White Kimchi Roll Jelly will grant a Talisman charge. While a Talisman charge is available, jumping changes the Slide button into the White Kimchi Talisman button. Tap the button to throw a White Kimchi Talisman forward. The Talisman attaches to an obstacle, causing White Kimchi Talisman Jellies to appear. The stronger the enchanted power, the more points for White Kimchi Talisman Jellies.",
@@ -1152,14 +1152,14 @@ window.COOKIES = [
     name: "Milky Way Cookie",
     rarity: "epic",
     released: "October 27, 2025",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/0/07/Img_updateHighlight_milky_way.png/800px-Img_updateHighlight_milky_way.png",
+    illust: "images/800px-Img_updateHighlight_milky_way.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/c/cf/Crob_affection_jelly_milky_way.png",
+      img: "images/Crob_affection_jelly_milky_way.png",
       story: "She gets a bit worn out greeting all the drivers on the Stardust Platforms, but the welcoming feeling is nice all the same.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/87/Crob_standard_milky_way.png",
+    img: "images/Crob_standard_milky_way.png",
     emoji: "🌙",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/e/e4/Crob_head_milky_way.png",
+    avatar: "images/Crob_head_milky_way.png",
     tags: ["Flight", "Speed", "Jellies", "Star Jellies"],
     bonus: true,
     levels: [
@@ -1394,15 +1394,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Milky Way Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/87/Crob_standard_milky_way.png",
+		img: "images/Crob_standard_milky_way.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "🚂", equipped: true, 
 	  },
       {
         name: "Guide to Sweet Dreams",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/92/Guide_to_sweet_dreams.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/e/ef/Img_skinIllust_457301.png",
+        img: "images/Guide_to_sweet_dreams.png",
+        illust: "images/Img_skinIllust_457301.png",
         bonus: "+1,600 pts for Milky Way Star Jellies",
         released: "October 27, 2025",
         quotes: [
@@ -1463,8 +1463,8 @@ window.COOKIES = [
       },
 	  {
         name: "Sweet Travel Gift",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/a/a8/Crob_standard_sweet_travel_gift.png",
-		illust: "https://cdn.wikimg.net/en/cookierunwiki/images/0/00/Crob_illustration_sweet_travel_gift.png",
+        img: "images/Crob_standard_sweet_travel_gift.png",
+		illust: "images/Crob_illustration_sweet_travel_gift.png",
         bonus: "+1,600 pts for Milky Way Star Jellies",
         released: "March 13, 2026",
 		quotes: [
@@ -1525,7 +1525,7 @@ window.COOKIES = [
       },
       {
         name: "Star Coal Express Engineer",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/2/27/Crob_standard_star_coal_express_engineer.png",
+		img: "images/Crob_standard_star_coal_express_engineer.png",
 		released: "June 24th, 2026",
         bonus: "+800 pts for Milky Way Star Jellies",
 		quotes: [
@@ -1586,7 +1586,7 @@ window.COOKIES = [
       },
       {
         name: "Fluffy Like Cinnamoroll",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/82/Crob_standard_fluffy_like_cinnamoroll.png",
+		img: "images/Crob_standard_fluffy_like_cinnamoroll.png",
 		released: "September 23rd, 2026",
         bonus: "+400 pts for Milky Way Star Jellies",
         tier: "sanrio",
@@ -1605,7 +1605,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Milky Way Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/0/0a/Crob_magic_candy_milky_way.png/150px-Crob_magic_candy_milky_way.png",
+	  img: "images/150px-Crob_magic_candy_milky_way.png",
       levels: [
         {
           lv: 1,
@@ -1635,7 +1635,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Galaxy Vuvuzela",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f9/Crob_magic_candy_ingredient_milky_way.png",
+        img: "images/Crob_magic_candy_ingredient_milky_way.png",
         text: "You can hear its call echoing throughout the World of Dreams... If you ever get lost, don't fret! Just follow the sound!",
       },
 	  skillFull: "The Star Voyage Express passes at certain intervals, dropping Milky Way Star Jellies. The stronger the enchanted power, the more points for Milky Way Star Jellies.",
@@ -1647,14 +1647,14 @@ window.COOKIES = [
     name: "Sugar Glass Cookie",
     rarity: "epic",
     released: "November 12, 2021",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/7/7f/Sugar_glass_cookie_default.png",
+    illust: "images/Sugar_glass_cookie_default.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_affection_jelly_sugar_glass.png",
+      img: "images/Crob_affection_jelly_sugar_glass.png",
       story: "The wizards did not reveal why they built this place.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/e/ed/Crob_standard_sugar_glass.png",
+    img: "images/Crob_standard_sugar_glass.png",
     emoji: "🌙",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/7/7d/Crob_head_sugar_glass.png",
+    avatar: "images/Crob_head_sugar_glass.png",
     tags: ["Flight", "Speed", "Score", "Jellies", "SpecialControl"],
     bonus: true,
     levels: [
@@ -1916,15 +1916,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Sugar Glass Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/e/ed/Crob_standard_sugar_glass.png",
+		img: "images/Crob_standard_sugar_glass.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "🚂", equipped: true, 
 	  },
       {
         name: "Butterfly Fairy's Ballet",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/42/Butterfly_fairys_ballet.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/c/c3/Img_skinIllust_418901.png",
+        img: "images/Butterfly_fairys_ballet.png",
+        illust: "images/Img_skinIllust_418901.png",
         bonus: "+3,400 pts for Sugarglass Shard Jellies",
         released: "September 26, 2023",
         quotes: [
@@ -1985,7 +1985,7 @@ window.COOKIES = [
       },
 	  {
         name: "Memoria Aurea",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/ff/Crob_standard_memoria_aurea.png",
+        img: "images/Crob_standard_memoria_aurea.png",
         bonus: "+1,700 pts for Sugarglass Shard Jellies",
         released: "July 29, 2026",
 		quotes: [
@@ -2055,7 +2055,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Sugar Glass Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/3/30/Crob_magic_candy_sugar_glass.png",
+	  img: "images/Crob_magic_candy_sugar_glass.png",
       levels: [
         {
           lv: 1,
@@ -2085,7 +2085,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Sugar Glass Wings",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/9/98/Crob_magic_candy_ingredient_sugar_glass.png",
+        img: "images/Crob_magic_candy_ingredient_sugar_glass.png",
         text: "Glass wings made from ornate, stained sugar glass. They seem like they could flutter into the air on their own!",
       },
 	  skillFull: "Sugar Flowers start growing on obstacles at given intervals. Obstacles with Sugar Flowers on them are destroyed shortly afterward, creating Sugar Flower Petal Jellies. The stronger the enchanted power, the more points earned from Sugar Flower Petal Jellies.",
@@ -2097,14 +2097,14 @@ window.COOKIES = [
     name: "Cherry Blossom Cookie",
     rarity: "epic",
     released: "March 13, 2018",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/9/99/Crk_illustration_cherry_blossom.png/1280px-Crk_illustration_cherry_blossom.png",
+    illust: "images/1280px-Crk_illustration_cherry_blossom.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Crob_affection_jelly_cherry_blossom.png",
+      img: "images/Crob_affection_jelly_cherry_blossom.png",
       story: "Cherry Blossom Cookie's basket can contain an enormous amount of food.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/03/Crob_standard_cherry_blossom.png",
+    img: "images/Crob_standard_cherry_blossom.png",
     emoji: "🌙",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Crob_head_cherry_blossom.png",
+    avatar: "images/Crob_head_cherry_blossom.png",
     tags: ["Flight", "Speed", "Jellies", "FlowerJellies"],
     bonus: true,
     levels: [
@@ -2334,15 +2334,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Cherry Blossom Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/03/Crob_standard_cherry_blossom.png",
+		img: "images/Crob_standard_cherry_blossom.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "🚂", equipped: true, 
 	  },
       {
         name: "Red Equinox",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/06/Red_Equinox.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/2/23/Img_skinIllust_405102.png",
+        img: "images/Red_Equinox.png",
+        illust: "images/Img_skinIllust_405102.png",
         bonus: "+400 pts for Cherry Blossom Jellies",
         released: "August 26, 2021",
         quotes: [
@@ -2399,7 +2399,7 @@ window.COOKIES = [
       },
 	  {
         name: "Hipster’s OOTD",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Hipsters_ootd.png",
+        img: "images/Hipsters_ootd.png",
         bonus: "+100 pts for Cherry Blossom Jellies",
         released: "March 14, 2023",
 		quotes: [
@@ -2431,7 +2431,7 @@ window.COOKIES = [
       },
 	  {
         name: "Sweetest Picnic",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/4/4e/Sweetest_Picnic.png",
+        img: "images/Sweetest_Picnic.png",
         bonus: "+150 pts for Cherry Blossom Jellies",
         released: "January 16, 2020",
 		quotes: [
@@ -2472,7 +2472,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Cherry Blossom Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/87/Crob_magic_candy_cherry_blossom.png",
+	  img: "images/Crob_magic_candy_cherry_blossom.png",
       levels: [
         {
           lv: 1,
@@ -2502,7 +2502,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Pink Cherry Sprout",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/5/5e/Crob_magic_candy_ingredient_cherry_blossom.png",
+        img: "images/Crob_magic_candy_ingredient_cherry_blossom.png",
         text: "A little sprout that came out to greet the spring. Hello there!",
       },
 	  skillFull: "Red Petal Jellies fall during the run. The stronger the enchanted power, the more points for Red Petal Jellies.",
@@ -2514,14 +2514,14 @@ window.COOKIES = [
     name: "Rockstar Cookie",
     rarity: "rare",
     released: "September 27, 2016",
-    illust: "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/e/e0/Crk_illustration_rockstar.png/1280px-Crk_illustration_rockstar.png",
+    illust: "images/1280px-Crk_illustration_rockstar.png",
     jelly: {
-      img: "https://cdn.wikimg.net/en/cookierunwiki/images/6/60/Crob_affection_jelly_rockstar.png",
+      img: "images/Crob_affection_jelly_rockstar.png",
       story: "This Jelly is supposed to remind Rockstar Cookie of his first concert.",
     },
-    img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Crob_standard_rockstar.png",
+    img: "images/Crob_standard_rockstar.png",
     emoji: "🌙",
-    avatar: "https://cdn.wikimg.net/en/cookierunwiki/images/8/84/Crob_head_rockstar.png",
+    avatar: "images/Crob_head_rockstar.png",
     tags: ["Slide", "Magnetism", "Jellies", "Note Jellies"],
     bonus: true,
     levels: [
@@ -2754,15 +2754,15 @@ window.COOKIES = [
     costumes: [
       { 
 	    name: "Rockstar Cookie",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Crob_standard_rockstar.png",
+		img: "images/Crob_standard_rockstar.png",
 		desc: "Default Costume", 
 		tier: "default", 
 		emoji: "🚂", equipped: true, 
 	  },
       {
         name: "School Superstar",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/7/75/School_superstar.png",
-        illust: "https://cdn.wikimg.net/en/cookierunwiki/images/a/ab/Img_skinIllust_402704.png",
+        img: "images/School_superstar.png",
+        illust: "images/Img_skinIllust_402704.png",
         bonus: "+200 pts for Note Jellies",
         released: "July 9, 2024",
         quotes: [
@@ -2823,7 +2823,7 @@ window.COOKIES = [
       },
 	  {
         name: "Epic Year's End Concert",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/d/dc/Epic_Year%27s_End_Concert.png",
+        img: "images/Epic_Year_s_End_Concert.png",
         bonus: "+100 pts for Note Jellies",
         released: "November 26, 2020",
 		quotes: [
@@ -2880,7 +2880,7 @@ window.COOKIES = [
       },
       {
         name: "Flaming Guitar",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/c/c1/Flaming_Guitar.png",
+		img: "images/Flaming_Guitar.png",
         bonus: "+50 pts for Note Jellies",
 		released: "May 1, 2017",
         tier: "rare",
@@ -2889,7 +2889,7 @@ window.COOKIES = [
       },
       {
         name: "Future Rockstar",
-		img: "https://cdn.wikimg.net/en/cookierunwiki/images/f/f2/Future_Rockstar.png",
+		img: "images/Future_Rockstar.png",
 		released: "April 16, 2018",
         bonus: "+20 pts for Note Jellies",
 		quotes: [
@@ -2928,7 +2928,7 @@ window.COOKIES = [
     ],
     candy: {
       name: "Rockstar Cookie's Magic Candy",
-	  img: "https://cdn.wikimg.net/en/cookierunwiki/images/8/85/Crob_magic_candy_rockstar.png",
+	  img: "images/Crob_magic_candy_rockstar.png",
       levels: [
         {
           lv: 1,
@@ -2958,7 +2958,7 @@ window.COOKIES = [
       ],
 	  ingredient: {
         name: "Rock Spirit Guitar String",
-        img: "https://cdn.wikimg.net/en/cookierunwiki/images/1/1b/Crob_magic_candy_ingredient_rockstar.png",
+        img: "images/Crob_magic_candy_ingredient_rockstar.png",
         text: "This magical guitar string is filled with the spirit of rock! Only truly skilled guitarists can handle the powerful vibrations that emanates from this string.",
       },
 	  skillFull: "After creating a certain number of Note Jellies, Rockstar Cookie begins his Flaming Guitar Solo. In this mode, sliding continuously creates Note Jellies. The stronger the enchanted power, the more points earned from Note Jellies.",
