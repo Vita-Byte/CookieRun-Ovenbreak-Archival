@@ -231,6 +231,121 @@ window.PETS = [
     ],
   },
   {
+    id: "agarlotl",
+    name: "Agarlotl",
+    rarity: "epic",
+    released: "March 31, 2026",
+    emoji: "🧸",
+    img: "images/pets/Crob_standard_agarlotl.png",
+    tags: ["Jellies"],
+    bonus: true,
+    levels: [
+	  {
+        lv: 1,
+        desc: "Skill activates every 14.96 sec\n+317,460 pts for Agar Jellies",
+        reward: "No Level Up Reward",
+      },
+	  {
+        lv: 2,
+        desc: "Skill activates every 14.96 sec\n+346,320 pts for Agar Jellies.",
+        reward: "🔥400  ❤️+20",
+      },
+      {
+        lv: 3,
+        desc: "Skill activates every 14.96 sec\n+375,180 pts for Agar Jellies.",
+        reward: "🔥800  ❤️+20",
+      },
+      {
+        lv: 4,
+        desc: "Skill activates every 14.96 sec\n+404,040 pts for Agar Jellies.",
+        reward: "🔥2,000  ❤️+20",
+      },
+      {
+        lv: 5,
+        desc: "Skill activates every 14.96 sec\n+432,900 pts for Agar Jellies.",
+        reward: "🔥4,000  ❤️+20",
+      },	
+      {
+        lv: 6,
+        desc: "Skill activates every 14.96 sec\n+461,760 pts for Agar Jellies.",
+        reward: "🔥4,000  ❤️+20",
+      },
+      {
+        lv: 7,
+        desc: "Skill activates every 14.96 sec\n+490,620 pts for Agar Jellies.",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 8,
+        desc: "Skill activates every 14.96 sec\n+519,480 pts for Agar Jellies.",
+        reward: "🔥5,000  ❤️+20",
+      },
+      {
+        lv: 9,
+        desc: "Skill activates every 14.96 sec\n+548,340 pts for Agar Jellies.",
+        reward: "🔥5,000  ❤️+20",
+      },	  
+	  {
+        lv: 10,
+        desc: "Skill activates every 14.96 sec\n+577,200 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 11,
+        desc: "Skill activates every 14.96 sec\n+606,060 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 12,
+        desc: "Skill activates every 14.96 sec\n+634,920 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 13,
+        desc: "Skill activates every 14.96 sec\n+663,780 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+	  {
+        lv: 14,
+        desc: "Skill activates every 14.96 sec\n+692,640 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+      {
+        lv: 15,
+        desc: "Skill activates every 14.96 sec\n+721,500 pts for Agar Jellies.",
+        reward: "🔥6,000  ❤️+20",
+      },
+    ],
+	skillFull: "Moves forward at certain intervals, gathering energy before slicing forward using the built-up energy and creating Agar Jellies. Level Up for more points for Agar Jellies.",
+    story:
+      "A little piece of agar agar that followed Icon Agar Agar Cookie out of the well into a much bigger world. With nothing to rely upon except the very Cookie it followed after, it has even gone as far to mimic Agar Agar Cookie as she mimics Icon Pomegranate Cookie!\n\nIts mimicry can be a bit bland compared to Agar Agar Cookie, and as the Cookie completes incredible feats that bend nature to her will, the little Pet does no more than pop out small Agar Jellies. However, these Jellies hold the Pet's most sincere wishes to soothe Agar Agar Cookie's unquenchable hunger.\n\nSince it's the thought that counts, these Jellies should at least fill up the Cookie's heart!",
+    combi: [
+      {
+        type: "cookie",
+        id: "agar-agar",
+        desc: "+24,000,000 pts for Mimicked Elemental Power Points",
+      },
+    ],
+    costumes: [
+      { 
+	    name: "Agarlotl", 
+		desc: "Default Costume", 
+		tier: "default", 
+		emoji: "🧸",
+		img: "images/pets/Crob_standard_agarlotl.png",	
+        equipped: true,
+	  },
+	  {
+        name: "Acolyte of Despair",
+		img: "images/costumes/pet/Crob_standard_acolyte_of_despair.png",
+		released: "March 31, 2026",
+        tier: "epic",
+        emoji: "🚁",
+        info: "As an acolyte, Agarlotl does everything in its power to serve the Harbinger of the Depths. When the Cookie places sins and anguish upon the alter, over time a soft, squishy presence makes them all fade away without a trace. Do not let your guard down simply because your wrongdoings have disappeared, though, for your karma will be waiting there, unseen, for the day you fall into darkness.",
+      },
+    ],
+  },
+  {
     id: "grand-beehive",
     name: "Grand Beehive",
     rarity: "epic",
