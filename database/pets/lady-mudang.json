@@ -3,7 +3,7 @@
   "name": "Lady Mudang",
   "rarity": "epic",
   "released": "August 27, 2026",
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8c/Crob_standard_lady_mudang.png",
+  "img": "images/pets/Crob_standard_lady_mudang.png",
   "tags": [
     "Jellies",
     "Potions"
@@ -98,14 +98,14 @@
   "costumes": [
     {
       "name": "Lady Mudang",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8c/Crob_standard_lady_mudang.png",
+      "img": "images/pets/Crob_standard_lady_mudang.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Jakdu Headbutt",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e8/Crob_standard_jakdu_headbutt.png",
+      "img": "images/costumes/pet/Crob_standard_jakdu_headbutt.png",
       "tier": "epic",
       "info": "Lady Mudang serves as the spearhead of the procession, leading the way though the ritual site as the shaman possessed with the spirits of Great Generals raises her blades. The Pet flies towards the wicked spirits with the fierce strength of a jakdu, refusing to back down no matter what it may face. If you think you saw it waver getting dizzy after yet another powerful headbutt... maybe the spirits are just making you see things."
     }

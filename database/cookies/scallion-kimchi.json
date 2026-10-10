@@ -3,13 +3,13 @@
   "name": "Scallion Kimchi Cookie",
   "rarity": "epic",
   "released": "August 27, 2026",
-  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/3/3c/Crob_illustration_scallion_kimchi_wikiver.png",
+  "illust": "images/cookie-illustrations/Crob_illustration_scallion_kimchi_wikiver.png",
   "jelly": {
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c5/Crob_affection_jelly_scallion_kimchi.png",
+    "img": "images/affection-jelly/Crob_affection_jelly_scallion_kimchi.png",
     "story": "The deep sorrow pent up within her dough seems to disperse a bit each time she performs a sword dance."
   },
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e1/Crob_standard_scallion_kimchi.png",
-  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/3/36/Crob_head_scallion_kimchi.png",
+  "img": "images/cookies/Crob_standard_scallion_kimchi.png",
+  "avatar": "images/cookie-heads/Crob_head_scallion_kimchi.png",
   "tags": [
     "BearJellies",
     "Speed",
@@ -313,15 +313,15 @@
   "costumes": [
     {
       "name": "Scallion Kimchi Cookie",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e1/Crob_standard_scallion_kimchi.png",
+      "img": "images/cookies/Crob_standard_scallion_kimchi.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Piquant General Shaman",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/69/Crob_standard_piquant_general_shaman.png",
-      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a8/Crob_illustration_piquant_general_shaman.png",
+      "img": "images/costumes/cookie/Crob_standard_piquant_general_shaman.png",
+      "illust": "images/costume-illustrations/Crob_illustration_piquant_general_shaman.png",
 	  "released": "August 27, 2026",
       "quotes": [
         {
@@ -412,7 +412,7 @@
   ],
   "candy": {
     "name": "Scallion Kimchi Cookie's Magic Candy",
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/57/Crob_magic_candy_scallion_kimchi.png",
+    "img": "images/magic-candy/Crob_magic_candy_scallion_kimchi.png",
     "levels": [
       {
         "lv": 1,
@@ -442,7 +442,7 @@
     ],
     "ingredient": {
       "name": "Well-Brined Sacred Blade",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c8/Crob_magic_candy_ingredient_scallion_kimchi.png",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_scallion_kimchi.png",
 	  "text": "A fresh washing of the most concentrated and sacred of kimchi brines is sure to chase away all evil and malice."
     },
     "skillFull": "An additional Bear Jelly Wraith appears during the skill. Exorcise the wraith to create additional Scallion Kimchi Bear Jellies. The stronger the enchanted power, the more points for Scallion Kimchi Bear Jellies.",

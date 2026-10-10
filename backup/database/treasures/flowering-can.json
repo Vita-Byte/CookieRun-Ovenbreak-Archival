@@ -1,0 +1,126 @@
+{
+  "id": "flowering-can",
+  "name": "Flowering Can",
+  "rarity": "epic",
+  "released": "August 26, 2021",
+  "emoji": "🔮",
+  "img": "images/treasures/Flowering_Can.png",
+  "avatar": "images/treasure-icons/Flowering_can.png",
+  "tags": [
+    "Jellies",
+    "FlowerJellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+73,750 pts for Flower Crystal Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+147,500 pts for Flower Crystal Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+221,250 pts for Flower Crystal Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+295,000 pts for Flower Crystal Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+368,750 pts for Flower Crystal Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+442,500 pts for Flower Crystal Jellies"
+    }
+  ],
+  "skillFull": "Flower seeds appear at certain intervals. Flowers begin to bloom after collecting a seed. At the tip of the fully grown flowers, a highly valuable Flower Crystal Jelly will also appear. Level Up for more points for Flower Crystal Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+817,300 pts for Flower Crystal Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+925,500 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,033,700 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,141,900 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,250,100 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,358,300 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,466,500 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,574,700 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,682,900 pts for Flower Crystal Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,791,100 pts for Flower Crystal Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+1,899,300 pts for Flower Crystal Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Flower Seed Jellies every 14.6 sec\n+500,000 pts for Flower Seed Jellies\n+2,007,500 pts for Flower Crystal Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Use this magical Flowering Can to make your flowers, well... FLOWER! Take care of your seeds with this tool, give them lots of sunshine, and you too can become a top gardener!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "herb",
+      "desc": "+292,000 pts for Flower Crystal Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "cherry-blossom",
+      "desc": "+292,000 pts for Flower Crystal Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "rose",
+      "desc": "+292,000 pts for Flower Crystal Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "spinach",
+      "desc": "+292,000 pts for Flower Crystal Jellies"
+    }
+  ]
+}
