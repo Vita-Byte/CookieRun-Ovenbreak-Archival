@@ -1,0 +1,491 @@
+{
+  "id": "crowberry",
+  "name": "Crowberry Cookie",
+  "rarity": "epic",
+  "released": "February 14, 2022",
+  "illust": "https://static.wikia.nocookie.net/cookierun/images/7/7b/Img_cookie0194.png/revision/latest?cb=20250323025505",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/68/Crowberry_Cookie_Jelly.png",
+	"story": "Who could these feathers have originally belonged to?"
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d8/Crowberry_Cookie.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_head_crowberry.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Score",
+    "Jellies",
+    "FixedSpeed"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 160,
+      "desc": "Skill activation every 33sec(sic)\n+11,160 pts for Jewel Shard Jellies\n+80,000 pts per Stolen Jewel\n+6,200 pts for Crowfeather Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 169,
+      "desc": "Skill activation every 33sec(sic)\n+23,220 pts for Jewel Shard Jellies\n+160,000 pts per Stolen Jewel\n+12,900 pts for Crowfeather Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 178,
+      "desc": "Skill activation every 33sec(sic)\n+35,280 pts for Jewel Shard Jellies\n+240,000 pts per Stolen Jewel\n+19,600 pts for Crowfeather Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 187,
+      "desc": "Skill activation every 33sec(sic)\n+47,340 pts for Jewel Shard Jellies\n+320,000 pts per Stolen Jewel\n+26,300 pts for Crowfeather Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 196,
+      "desc": "Skill activation every 33sec(sic)\n+59,400 pts for Jewel Shard Jellies\n+400,000 pts per Stolen Jewel\n+33,000 pts for Crowfeather Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 205,
+      "desc": "Skill activation every 33sec(sic)\n+71,460 pts for Jewel Shard Jellies\n+480,000 pts per Stolen Jewel\n+39,700 pts for Crowfeather Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 214,
+      "desc": "Skill activation every 33sec(sic)\n+83,520 pts for Jewel Shard Jellies\n+560,000 pts per Stolen Jewel\n+46,400 pts for Crowfeather Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 223,
+      "desc": "Skill activation every 33sec(sic)\n+95,580 pts for Jewel Shard Jellies\n+640,000 pts per Stolen Jewel\n+53,100 pts for Crowfeather Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 232,
+      "desc": "Skill activation every 33sec(sic)\n+107,640 pts for Jewel Shard Jellies\n+720,000 pts per Stolen Jewel\n+59,800 pts for Crowfeather Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 241,
+      "desc": "Skill activation every 33sec(sic)\n+119,700 pts for Jewel Shard Jellies\n+800,000 pts per Stolen Jewel\n+66,500 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 250,
+      "desc": "Skill activation every 33sec(sic)\n+131,760 pts for Jewel Shard Jellies\n+880,000 pts per Stolen Jewel\n+73,200 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 259,
+      "desc": "Skill activation every 33sec(sic)\n+143,820 pts for Jewel Shard Jellies\n+960,000 pts per Stolen Jewel\n+79,900 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 268,
+      "desc": "Skill activation every 33sec(sic)\n+155,880 pts for Jewel Shard Jellies\n+1,040,000 pts per Stolen Jewel\n+86,600 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 277,
+      "desc": "Skill activation every 33sec(sic)\n+167,940 pts for Jewel Shard Jellies\n+1,120,000 pts per Stolen Jewel\n+93,300 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 286,
+      "desc": "Skill activation every 33sec(sic)\n+180,000 pts for Jewel Shard Jellies\n+1,200,000 pts per Stolen Jewel\n+100,000 pts for Crowfeather Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Transforms into a crow at given intervals, taking to the skies. Fly around the tower, and steal jewels as you get close to them. Stealing a jewel creates Jewel Shard Jellies, granting you points. Successfully steal all 3 jewels to receive bonus points based on the number of Stolen Jewels collected, as well as create Crowfeather Jellies relative to the number of Stolen Jewels. When the skill finishes, the Cookie rides a broomstick and Blasts for a certain period of time. Level up for more points for Jewel Shard Jellies, more points per stolen jewel, as well as points for Crowfeather Jellies. (If you get too close to a window getting cleaned by a Cookie, you drop all Stolen Jewels.)",
+  "story": "If you ever happen upon a crow aimlessly wandering close by a jewel-filled treasure chest you're about to open, watch out! It might just be the shapeshifting Crowberry Cookie, looking for the next jewel to snatch! This Cookie is decorated with so many sparkling crowberries that actual crows mistake it for a piece of jewelry! Crowberry Cookie flies around in the air, only coming down to grab the next gleaming keepsake. If you take your eyes off the feathery pointed hat for a second, this Cookie is covered by large, black wings, only to be gone the next instant. All the stolen ornaments end up fancily decorating a far-away tower; however, the Cookie claims to just put them in fitting places. Even after such an unbelievable statement, you can't seem to help to nod in agreement after seeing the Cookie's friendly smile! Can you be sure you haven't been put under a spell?",
+  "quote": "My tower is filled with pretty things.",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "My tower is filled with pretty things."
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "If I'm a crow or a Cookie...? Is that really important?",
+            "Do I need a reason for liking shiny things?",
+            "I enjoy flying high in the air.",
+            "Gleaming things are easily seen from above.",
+            "Jewels are both beautiful and quiet.",
+            "I'm not stealing anything. I just redecorate them in a prettier place.",
+            "I climbed the tower because I felt like it.",
+            "This Treasure has found its owner.",
+            "It's been a while since I turned back into a Cookie.",
+            "I get tingles inside whenever I see shiny things."
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "My wings are heavy..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "These friends wanted to meet you."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Jewels finding their way to me makes me happy.",
+            "I don't lie. It is all the truth to me.",
+            "Why would I give you back your Treasure?",
+            "For those who don't know its true value, a jewel is but a shiny stone.",
+            "I always get what I desire.",
+            "Feathers have to be beautiful too.",
+            "I hate loud noises, but Cookies keep losing their way and end up here."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "This is not jewels."
+            },
+            {
+              "label": "Given <u></u>",
+              "text": "This is a good friend and a part of my family."
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "This is so shiny… Do you want to come with me?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "I was just taking a stroll through the woods.",
+            "I can tell at the first glance if a jewel is for me.",
+            "You have so many shining jewels with you.",
+            "Follow me, and you might just find it.",
+            "Are you searching for the Raven Tower?",
+            "We will both gain what we desire."
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+2,500 pts for Jewel Shard Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+5,000 pts for Jewel Shard Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Kumiho Cookie",
+      "id": "kumiho",
+      "text": "I simply turn into what I want to look like.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Werewolf Cookie",
+      "id": "werewolf",
+      "text": "I have seen a beautiful wolf in the forest... That was you?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Wizard Cookie",
+      "id": "wizard",
+      "text": "I was flying in the sky before you were even baked.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Squid Ink Cookie",
+      "id": "squid-ink",
+      "text": "We both gather shiny things in our own separate places.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Roguefort Cookie",
+      "id": "roguefort",
+      "text": "Jewels have the right to choose their owners too.",
+      "type": "Tension"
+    },
+    {
+      "who": "Cookiemals",
+      "id": "cookiemals",
+      "text": "I'll play with you, if you bring me shinies.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Candlelight Cookie",
+      "id": "candlelight",
+      "text": "Such a nice Cookie, collecting and cleaning Treasures for me.",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Crowberry Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d8/Crowberry_Cookie.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Embracer of the Night",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/83/Embracer_of_the_night.png",
+	  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fe/Img_skinIllust_419402.png",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Ah, to see me on the battlefield... You should feel lucky.",
+                "A single flap of my wings will create a path of light.",
+                "Even a small sparkle of a gem in a distant can't escape my eyes.",
+                "Did you know that stars that fall from the sky become gems?",
+                "The stars have come to their rightful owner.",
+                "Do I need a reason for liking shiny things?",
+                "It's been a while since I turned back into a Cookie.",
+                "I get tingles inside whenever I see shiny things.",
+                "I'm not stealing anything. I just redecorate them in a prettier place.",
+                "Gleaming things are easily seen from above."
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "The night is coming to an end..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "The sparkle cannot be hidden."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "When the sunsets, I shall fly from the western sky.",
+                "Watching the stars gradually scatter is an unforgettable sight.",
+                "It takes immense skills to follow the path of a bird that soars through the night.",
+                "You have encountered the embodiment of victory.",
+                "Feathers that shine like a chest full of jewelry.",
+                "I sometimes hide behind the clouds from all the Cookies who bother me...",
+                "Did you follow the Milky Way?",
+                "I am impressed... Only the skilled ones can enter here...",
+                "Night falls when these wings spread wide.",
+                "Can you tell the stars are happy too?"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "No sparkle in this one..."
+                },
+                {
+                  "label": "Given <u></u>",
+                  "text": "Beautiful... Look how it shines.."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "This will be useful for embroidering the star trails."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Crowberry Cookie, who carefully chose the most radiant stars from the Celestial Temple, cradles in her wings. Spreading her beautiful dark wings as she soars across the battlefield, a legend speaks of the victory, weaving an everlasting path of stars above."
+    },
+    {
+      "name": "Feathered Flamestealer",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Feathered_Flamestealer.png",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "If you want to hear my prophecy, I need something of equal value in return.",
+                "You should be aware of the events that are about to unfold.",
+                "Something unimaginable will happen to you.",
+                "Do you grasp what the bird's flames signify?",
+                "I get tingles inside whenever I see shiny things.",
+                "I enjoy flying high in the air.",
+                "It's been a while since I turned back into a Cookie.",
+                "I climbed the tower because I felt like it.",
+                "Gleaming things are easily seen from above.",
+                "What kind of bird I am...? Is that really important?"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I should...shut my beak..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "No matter the catastrophe, leaving empty handed is not an option."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Do you need proof this bird is real?",
+                "The flames of the bird are both a rare and a beautiful sight.",
+                "Something unimaginable will happen to Cookies.",
+                "Did you see the flames thrown by the bird?",
+                "Instead of making conversation, you may want to run as far away as you can.",
+                "Not many can tear their eyes from the flickering of the flames.",
+                "The bird's flames seem just like red jewels.",
+                "If you want to know more, you would have to pay the price."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Neither I nor the bird want this."
+                },
+                {
+                  "label": "Given <u></u>",
+                  "text": "I have worn this since before the bird's first flames."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "???"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "info": "According to ancient legends, there was a tall tower beyond the mountains, where a fiery bird resided. The bird, said to have come from the Dragon's Valley, lived in silence, until suddenly releasing a cry accompanied by violet flames... What could it be trying to warn the Cookies about?"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "eggsquisite-brooch",
+      "desc": "+685,000 pts for Jewel Shard Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "peaceful-dove-bun",
+      "desc": "+150,000 pts for Peaceful Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "starlight-nightlight",
+      "desc": "+60,000 pts for Starlight Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Crowberry Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/5d/Crob_magic_candy_crowberry.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Crowfeather Jellies turn into Golden Crowfeather Jellies\n+104,000 pts for Golden Crowfeather Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Crowfeather Jellies turn into Golden Crowfeather Jellies\n+143,000 pts for Golden Crowfeather Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Crowfeather Jellies turn into Golden Crowfeather Jellies\n+182,000 pts for Golden Crowfeather Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Crowfeather Jellies turn into Golden Crowfeather Jellies\n+221,000 pts for Golden Crowfeather Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Crowfeather Jellies turn into Golden Crowfeather Jellies\n+260,000 pts for Golden Crowfeather Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Mysterious Ornate Necklace",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/b6/Crob_magic_candy_ingredient_crowberry.png",
+	  "text": "A mysterious purple ornate necklace. You can’t seem to keep your eyes away from the mystical color, and you slowly feel your strength draining away..."
+    },
+    "skillFull": "During Blast, the created Crowfeather Jellies become Golden Crowfeather Jellies. The stronger the enchanted power, the more points for Golden Crowfeather Jellies.",
+    "emoji": "🍬"
+  }
+}

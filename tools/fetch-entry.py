@@ -152,7 +152,9 @@ class Doc(HTMLParser):
 
 
 def parse(html):
-    d = Doc(); d.feed(html); d.close(); d.flush()
+    d = Doc()
+    if "mw-content-text" not in html: d.cstart = 0  # unknown skin: read the whole page
+    d.feed(html); d.close(); d.flush()
     return d.blocks, re.sub(r"\s+", " ", d.title).strip()
 
 
@@ -353,19 +355,34 @@ def complete(known, total, energy, rewards):
 
 
 def combi_of(bl, kind):
+    """Combo partners from the 'Combi Pet / Combi Treasure / Combi Cookie' headings. One block can list several partners
+    (name line, bonus line, name line, bonus line, ...)."""
     out = []
     for i, b in enumerate(bl):
         if b["k"] == "h" and "combi" in b["t"].lower():
             typ = "pet" if "pet" in b["t"].lower() else "cookie" if "cookie" in b["t"].lower() else "treasure" if "treasure" in b["t"].lower() else {"cookie": "pet", "pet": "cookie", "treasure": "cookie"}[kind]
             for x in bl[i + 1:]:
                 if x["k"] == "h": break
-                if x["k"] in ("p", "li"):
-                    c = x["c"]; nm = next((t for t, _ in c["a"] if t), "")
-                    if nm: out.append({"type": typ, "id": slug(nm), "desc": c["t"].replace(nm, "", 1).strip(" \n:").replace("\n", " ")})
+                if x["k"] not in ("p", "li"): continue
+                c = x["c"]
+                names = list(dict.fromkeys(t for t, _ in c["a"] if t))
+                lines = [l.strip() for l in c["t"].split("\n") if l.strip()]
+                for k, nm in enumerate(names):
+                    at = next((j for j, l in enumerate(lines) if l == nm or l.startswith(nm)), None)
+                    if at is None: continue
+                    stop = min((j for j, l in enumerate(lines) if j > at and any(l == n or l.startswith(n) for n in names[k + 1:])), default=len(lines))
+                    desc = " ".join(lines[at:stop]).replace(nm, "", 1).strip(" :")
+                    out.append({"type": typ, "id": slug(nm), "desc": desc})
     return out
 
 
-KNOWN = {"new", "cookie info & loading", "tired", "pre-pull", "daily reward", "tap", "gift", "trial info", "new cookie cup end", "conditional"}
+KEEP = {"new", "cookie info & loading", "tired", "pre-pull", "daily reward", "tap", "gift", "trial info", "new cookie cup end"}
+TRIAL_OK = {"trial info", "new cookie cup end", "tired"}
+GROUPS = {"general": "General", "lobby": "Lobby", "cookie trials": "Cookie Trials", "cookie trial": "Cookie Trials"}
+GROUP_ORDER = ["General", "Lobby", "Cookie Trials"]
+SEC_ORDER = {"General": ["New", "Cookie Info & Loading", "Pre-pull", "Tired"], "Lobby": ["Daily Reward", "Tap", "Gift"], "Cookie Trials": ["Trial Info", "New Cookie Cup End", "Tired"]}
+GIFT_ORDER = ["Neutral", "Given <u></u>", "Given <u>Royal Golden Dough</u>"]
+SKIPPED = []
 
 
 def gift_label(lbl):
@@ -377,42 +394,94 @@ def gift_label(lbl):
     return l
 
 
+def tidy(groups):
+    """Drop empty sections/groups; New Cookie Cup End needs a real line (blank / ? / ?? / ??? = skipped)."""
+    out = []
+    for g in groups:
+        secs = []
+        for s in g["secs"]:
+            lines = s["lines"]
+            if s["title"].lower() == "new cookie cup end": lines = [t for t in lines if not re.fullmatch(r"[?\s*]*", t)]
+            rows = sorted(s["rows"], key=lambda r: GIFT_ORDER.index(r["label"]) if r["label"] in GIFT_ORDER else 9)
+            if lines or rows: secs.append({k: v for k, v in (("title", s["title"]), ("lines", lines), ("rows", rows)) if k == "title" or v})
+        if secs: out.append({"title": g["title"], "sections": secs})
+    return out
+
+
 def parse_quotes(bl, cosnames):
     """Quotes tab -> (base groups, {costume name: groups}, [headings that matched no costume]).
-    Section titles = rows with ONE non-empty cell that is a header cell or a known title; every other row is quote text."""
-    base, cos, unmatched, target, grp, have_base = [], {}, [], None, None, False
+    Section titles = rows with ONE non-empty cell that is a header cell or a known title; every other row is quote text.
+    Only the sections in KEEP are kept; other sections (and everything after a non-quote block in Cookie Trials) are skipped."""
+    base, cos, unmatched, target, grp, have_base, skipgrp = [], {}, [], None, None, False, False
     for b in bl:
         if b["k"] == "h":
             if b["lv"] <= 2:
-                grp = None
+                grp, skipgrp = None, False
                 t = re.sub(r"^(.+?)\s+\1$", r"\1", b["t"].strip())  # "X X" -> "X"
                 m = max((n for n in cosnames if n.lower() in t.lower()), key=len, default=None)
                 if m: target = cos.setdefault(m, [])
                 elif re.search(r"base", t, re.I) or (not have_base and not re.fullmatch(r"(ingredients|contents)", t, re.I)):
                     target, have_base = base, True
                 else: target = cos.setdefault("?" + t, []); unmatched.append(t)  # never merged into the base quotes
-            elif target is not None: grp = {"title": b["t"], "secs": []}; target.append(grp)
-        elif b["k"] == "table" and target is not None:
+            elif target is not None:
+                gt = GROUPS.get(b["t"].strip().lower())
+                if gt: grp, skipgrp = {"title": gt, "secs": []}, False; target.append(grp)
+                else: grp, skipgrp = None, True; SKIPPED.append(b["t"])
+        elif b["k"] == "table" and target is not None and not skipgrp:
             if grp is None: grp = {"title": "General", "secs": []}; target.append(grp)
-            sec = None
+            sec, skipping = None, False
             for r in b["rows"]:
+                if grp.get("closed"): break
                 ne = [c["t"].strip().replace("\n", " ") for c in r if c["t"].strip()]
                 if not ne: continue
-                if len(ne) == 1 and (any(c["th"] for c in r) or ne[0].lower() in KNOWN or ne[0].lower().startswith("conditional")):
-                    sec = {"title": re.sub(r"\s*\(.*$", "", ne[0]).strip(), "lines": [], "rows": []}; grp["secs"].append(sec); continue
+                if len(ne) == 1 and (any(c["th"] for c in r) or ne[0].lower() in KEEP or re.match(r"(conditional|retired)", ne[0], re.I)):
+                    title = re.sub(r"\s*\(.*$", "", ne[0]).strip()
+                    ok = title.lower() in KEEP and (grp["title"] != "Cookie Trials" or title.lower() in TRIAL_OK)
+                    if ok: sec, skipping = {"title": title, "lines": [], "rows": []}, False; grp["secs"].append(sec)
+                    else:
+                        sec, skipping = None, True; SKIPPED.append(title)
+                        if grp["title"] == "Cookie Trials": grp["closed"] = True  # what follows are event quotes, not trial quotes
+                    continue
+                if skipping: continue
                 if sec is None: sec = {"title": grp["title"], "lines": [], "rows": []}; grp["secs"].append(sec)
-                st = sec["title"].lower()
-                if st.startswith("conditional"): continue  # lobby-condition quotes are not kept
-                if st == "gift" and len(ne) >= 2: sec["rows"].append({"label": gift_label(ne[0]), "text": ne[1]})
-                elif st == "new cookie cup end": sec["lines"] += [t for t in ne if not re.fullmatch(r"[?\s*]*", t)]  # blank / ? / ?? / ??? = skip this title
-                else: sec["lines"] += ne  # (placeholder ??? lines elsewhere are kept, like in your data)
-    def clean_g(gs):
-        out = []
-        for g in gs:
-            secs = [{k: v for k, v in s.items() if k == "title" or v} for s in g["secs"] if not s["title"].lower().startswith("conditional") and (s["lines"] or s["rows"])]
-            if secs: out.append({"title": g["title"], "sections": secs})
-        return out
-    return clean_g(base), {k: clean_g(v) for k, v in cos.items() if not k.startswith("?")}, unmatched
+                if sec["title"].lower() == "gift" and len(ne) >= 2: sec["rows"].append({"label": gift_label(ne[0]), "text": ne[1]})
+                else: sec["lines"] += ne  # (placeholder ??? lines are kept, like in your data)
+    return tidy(base), {k: tidy(v) for k, v in cos.items() if not k.startswith("?")}, unmatched
+
+
+def parse_page_quotes(bl, costume=False):
+    """Quotes written straight on the main page (no Quotes subpage): '## Quotes' > ### New / General / Tired / Cookie Trial / Lobby
+    (> #### Daily Gift / Tap / Gift), each a bullet list. Retired sections are skipped. Returns your quote groups, in your order."""
+    lv, qs = sect(bl, r"^quotes$")
+    if lv is None: return []
+    if any(b["k"] == "table" for b in qs):  # the page uses the same tables as the subpage
+        base, _, _ = parse_quotes([{"k": "h", "lv": 2, "t": "Base Appearance"}] + qs, [])
+        return base
+    where = {"new": ("General", "New"), "general": ("General", "Cookie Info & Loading"), "tired": ("General", "Tired"),
+             "cookie trial": ("Cookie Trials", "Trial Info"), "cookie trials": ("Cookie Trials", "Trial Info"),
+             "new cookie cup end": ("Cookie Trials", "New Cookie Cup End"),
+             "daily gift": ("Lobby", "Daily Reward"), "daily reward": ("Lobby", "Daily Reward"), "tap": ("Lobby", "Tap"), "gift": ("Lobby", "Gift")}
+    groups, cur = {}, None
+    for b in qs:
+        if b["k"] == "h":
+            t = b["t"].strip(); tl = t.lower()
+            cur = where.get(tl) if "retired" not in tl else None
+            if costume and cur and cur[1] in ("New", "Trial Info", "New Cookie Cup End"): cur = None  # costumes only keep General + Lobby sections
+            if cur is None and tl != "lobby": SKIPPED.append(t)
+        elif b["k"] == "li" and cur:
+            text = b["c"]["t"].replace("\n", " ").strip()
+            if not text: continue
+            g = groups.setdefault(cur[0], {"title": cur[0], "secs": []})
+            sec = next((s for s in g["secs"] if s["title"] == cur[1]), None)
+            if sec is None: sec = {"title": cur[1], "lines": [], "rows": []}; g["secs"].append(sec)
+            m = re.match(r"^(.*?)\s*\((Given .+|Neutral)\)\s*$", text) if cur[1] == "Gift" else None
+            if m: sec["rows"].append({"label": gift_label(m.group(2)), "text": m.group(1).strip()})
+            elif cur[1] != "Gift": sec["lines"].append(text)
+    ordered = []
+    for gt in GROUP_ORDER:
+        if gt in groups:
+            g = groups[gt]; g["secs"].sort(key=lambda s: SEC_ORDER[gt].index(s["title"])); ordered.append(g)
+    return tidy(ordered)
 
 
 def extract(kind, bl, title, name, gal, cbl, qbl, ref):
@@ -522,16 +591,21 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
             ill = next((u for u in mine if "illustration" in u.lower()), "")
             if ill and kind == "cookie" and c["tier"] in BIGTIERS: c["illust"] = ill
         rep.append(("costumes", bool(cos)))
-        if qbl:
-            base, cq, unm = parse_quotes(qbl, [c["name"] for c in cos])
-            e["quotes"] = base
-            gen = next((g for g in base if g["title"].lower() == "general"), base[0] if base else None)
-            nw = next((s for s in gen["sections"] if s["title"].lower() == "new"), None) if gen else None
-            s0 = nw or (gen["sections"][0] if gen else None)
-            e["quote"] = (s0.get("lines") or [""])[0] if s0 else ""
-            for c in cos:
-                if cq.get(c["name"]): c["quotes"] = cq[c["name"]]
-            NOTES.append(f"quotes: {sum(len(g['sections']) for g in base)} base sections; costume quotes found for {sum(1 for c in cos if c.get('quotes'))} of {len(cos)} costume(s)" + (f"; headings matching no costume (not added): {unm}" if unm else ""))
+        if kind == "cookie":
+            base, cq, unm, src = [], {}, [], ""
+            if qbl: base, cq, unm = parse_quotes(qbl, [c["name"] for c in cos]); src = "Quotes subpage"
+            if not base:
+                base = parse_page_quotes(bl); cq, unm = {}, []
+                if base: src = "main page (no usable Quotes subpage; costume quotes are not available there)"
+            if base:
+                e["quotes"] = base
+                gen = next((g for g in base if g["title"].lower() == "general"), base[0])
+                s0 = next((s for s in gen["sections"] if s["title"].lower() == "new"), gen["sections"][0])
+                e["quote"] = (s0.get("lines") or [""])[0]
+                for c in cos:
+                    if cq.get(c["name"]): c["quotes"] = cq[c["name"]]
+                NOTES.append(f"quotes from the {src}: {sum(len(g['sections']) for g in base)} base sections; costume quotes found for {sum(1 for c in cos if c.get('quotes'))} of {len(cos)} costume(s)" + (f"; headings matching no costume (not added): {unm}" if unm else ""))
+                if SKIPPED: NOTES.append("quote sections skipped (not kept in your data): " + ", ".join(dict.fromkeys(SKIPPED)))
             rep.append(("quotes", bool(base)))
         d = {"name": e["name"], "img": e.get("img", ""), "desc": "Default Costume", "tier": "default", "equipped": True}
         e["costumes"] = [d] + cos
@@ -597,6 +671,39 @@ def fetch(title, refresh=False):
     return txt
 
 
+FANDOM = "https://cookierun.fandom.com/wiki/"
+FUA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+
+def fetch_fandom(name, refresh=False):
+    """(html, reason). Cached as .cache/fandom_<name>.html - you can also save the page there yourself (browser: Save Page As)."""
+    os.makedirs(CACHE, exist_ok=True)
+    cf = os.path.join(CACHE, "fandom_" + re.sub(r"[^A-Za-z0-9._-]", "_", name) + ".html")
+    if os.path.exists(cf) and not refresh: return open(cf, encoding="utf-8").read(), ""
+    url = FANDOM + urllib.parse.quote(name.replace(" ", "_"), safe="/:()',!")
+    try:
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": FUA}), timeout=30) as r: txt = r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as ex:
+        return None, "no such page on Fandom" if ex.code == 404 else f"Fandom refused the download (HTTP {ex.code}); open {url} in your browser, use Save Page As (HTML only) to .cache/{os.path.basename(cf)} and run again"
+    except (urllib.error.URLError, OSError) as ex:
+        return None, f"could not reach Fandom ({ex}); you can save {url} as .cache/{os.path.basename(cf)} yourself"
+    open(cf, "w", encoding="utf-8").write(txt); time.sleep(1)
+    return txt, ""
+
+
+def fandom_costume_quotes(e, refresh):
+    """Costumes that have no quotes on cookierun.wiki: try the Fandom wiki page of the costume (text is CC BY-SA)."""
+    for c in e.get("costumes", []):
+        if c.get("tier") == "default" or c.get("quotes"): continue
+        html, why = fetch_fandom(c["name"], refresh)
+        if not html: NOTES.append(f"costume quotes for '{c['name']}': {why}"); continue
+        qs = parse_page_quotes(parse(html)[0], costume=True)
+        if not qs: NOTES.append(f"costume quotes for '{c['name']}': Fandom page found but it has no quotes section"); continue
+        c["quotes"] = qs
+        secs = [s["title"] for g in qs for s in g["sections"]]
+        NOTES.append(f"costume quotes for '{c['name']}' taken from Fandom ({', '.join(secs)})" + ("; no separate Tired section there, so check whether one of the General lines belongs in a Tired section" if "Tired" not in secs else ""))
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     flags = [a for a in sys.argv[1:] if a.startswith("--")]
@@ -627,6 +734,7 @@ def main():
             if debug and sub[s]: dump(sub[s], os.path.join(CACHE, s.lower() + ".blocks.txt"))
             if not h: print(f"  (no {s} subpage)")
     e, rep = extract(kind, bl, title, name, sub.get("Gallery", []), sub.get("Costumes", []), sub.get("Quotes", []), reference())
+    if kind == "cookie" and fi < 0: fandom_costume_quotes(e, refresh)
     folder = os.path.join(HERE, "database", FOLDER[kind])
     path = os.path.join(folder, e["id"] + ".json") if os.path.isdir(folder) else os.path.join(OUT, f"{kind}-{e['id']}.json")
     if os.path.exists(path) and "--force" not in flags:

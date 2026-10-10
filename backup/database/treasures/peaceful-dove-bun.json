@@ -1,0 +1,116 @@
+{
+  "id": "peaceful-dove-bun",
+  "name": "Peaceful Dove Bun",
+  "rarity": "epic",
+  "released": "February 13, 2019",
+  "emoji": "🕊️",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/11/Peaceful_Dove_Bun.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f5/Peaceful_dove_bun.png",
+  "tags": [
+    "Jellies",
+    "Distance"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+45,000 pts for Peaceful Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+90,000 pts for Peaceful Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+135,000 pts for Peaceful Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+180,000 pts for Peaceful Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+225,000 pts for Peaceful Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+270,000 pts for Peaceful Jellies"
+    }
+  ],
+  "skillFull": "Run without collisions for some time to make the Peaceful Dove Bun appear and reward you. Level Up for more points for Peaceful Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+804,000 pts for Peaceful Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+870,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+936,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,002,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,068,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,134,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,200,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,266,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,332,000 pts for Peaceful Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,398,000 pts for Peaceful Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,464,000 pts for Peaceful Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Pigeons appear if there is no collision while running the distance of 2,990px\n+1,530,000 pts for Peaceful Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Gently carrying an olive branch in its beak, this Peaceful Dove Bun glides through the air bestowing peace and happiness on all the Cookies.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "crowberry",
+      "desc": "+150,000 pts for Peaceful Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "cotton-candy",
+      "desc": "+150,000 pts for Peaceful Jellies"
+    }
+  ]
+}
