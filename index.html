@@ -985,9 +985,9 @@
     <div id="detail"></div>
     <div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
     <div class="modal" id="modal2"><div class="sheet" id="sheet2"></div></div>
-    <script src="cookies.js"></script>
-    <script src="pets.js"></script>
-    <script src="treasures.js"></script>
+    <script src="database/cookies.js"></script>
+    <script src="database/pets.js"></script>
+    <script src="database/treasures.js"></script>
     <script>
       const RN = {
         legendary: "LEGENDARY",
@@ -1510,7 +1510,7 @@
           `<div class="dtop"><button class="back" onclick="backToList()">‹</button>${tab[0].toUpperCase() + tab.slice(1)} Details</div><div class="main">${left}${right}</div>${foot}`;
       }
       // ---- Data updates: "new data" notice + pull-down to refresh ----
-      const DATA_FILES = ["index.html", "cookies.js", "pets.js", "treasures.js"];
+      const DATA_FILES = ["index.html", "database/cookies.js", "database/pets.js", "database/treasures.js"];
       async function dataHash() {
         let h = 5381;
         for (const f of DATA_FILES) {

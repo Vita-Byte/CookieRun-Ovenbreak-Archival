@@ -1,0 +1,4 @@
+TREASURE DATABASE — rarity: legendary | epic | rare | special
+enhancements (optional): shown after the treasure reaches its max level.
+[{ lv: 1..6, effect: "+x pts for ...", desc?: "(overrides main skill text)", reward?: "..." }]
+The LAST entry is displayed in the "Enhancement Effect" box; all of them appear in Level Info.

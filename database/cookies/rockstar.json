@@ -1,0 +1,548 @@
+{
+  "id": "rockstar",
+  "name": "Rockstar Cookie",
+  "rarity": "rare",
+  "released": "September 27, 2016",
+  "illust": "images/cookie-illustrations/1280px-Crk_illustration_rockstar.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_rockstar.png",
+    "story": "This Jelly is supposed to remind Rockstar Cookie of his first concert."
+  },
+  "img": "images/cookies/Crob_standard_rockstar.png",
+  "emoji": "🌙",
+  "avatar": "images/cookie-heads/Crob_head_rockstar.png",
+  "tags": [
+    "Slide",
+    "Magnetism",
+    "Jellies",
+    "Note Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 182,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+10,600 pts for Note Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 191,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+12,200 pts for Note Jellies",
+      "reward": "🔥720  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 200,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+13,800 pts for Note Jellies",
+      "reward": "🔥2,400  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 209,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+15,400 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 218,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+17,000 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 227,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+18,600 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 236,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+20,200 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 245,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+21,800 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 254,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+23,400 pts for Note Jellies",
+      "reward": "🔥3,500  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 263,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+25,000 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 272,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+26,600 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 281,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+28,200 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 290,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+29,800 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 299,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+31,400 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 308,
+      "desc": "Skill activation on getting up after sliding\nCreates 35 Note Jellies\n+33,000 pts for Note Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Slide to activate a Magnetic Aura and fill the gauge. Fill the gauge with Slides to fire Note Jellies and destroy obstacles. Level Up for more points for Note Jellies.",
+  "story": "Amidst all the sounds in the sizzling oven, Rockstar Cookie discovered the spirit of rock 'n' roll.\n\nHe realized that in order to move the audience one must not only be talented, but give a stunning performance as well. During the ceaseless tuning of his style, he came to master his signature Slide Blast technique.\n\nNow he's a shining star amongst the Cookies.",
+  "quote": "Let's rock!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Let's rock!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Know any good songs?",
+            "Oh, yeeeah!",
+            "Let's rock!",
+            "Rockstars rule the world!",
+            "Who's your favorite rockstar?",
+            "Are you ready to ROCK?",
+            "Rock is in my blood!",
+            "Let's hit the stage!",
+            "I am the king of rock!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "Rock never dies..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Got a rockin' gift for ya!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "I will rock forever!",
+            "I'm the icon of rock music!",
+            "You want an autograph? Or a selfie?",
+            "This song's for Cookies who got cavities from too much Black Sugar!",
+            "He-ey! Wanna rock?",
+            "Aw yeah!",
+            "Grateful from the bottom of my big heart!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "A gift from a fan? Holy Jelly!"
+            },
+            {
+              "label": "Given <u>Rock Spirit Guitar String</u>",
+              "text": "Yeah! That's the spirit of ROCK!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Thanks for the dough!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+100 pts for Note Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+200 pts for Note Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "DJ Cookie",
+      "id": "djcookie",
+      "text": "That music's got no soul! Rock-n-roll forever!",
+      "type": "Rival"
+    },
+    {
+      "who": "Carol Cookie",
+      "id": "carol",
+      "text": "Carol's the best at writing lyrics!",
+      "type": "Admiration"
+    },
+    {
+      "who": "Kiwi Cookie",
+      "id": "kiwi",
+      "text": "Kiwi's my true soulmate!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mint Choco Cookie",
+      "id": "mint-choco",
+      "text": "He might enjoy classics, but he's a rocker at heart!",
+      "type": "Trust"
+    },
+    {
+      "who": "Popping Candy Cookie",
+      "id": "popping-candy",
+      "text": "Listen to rock? Ya know your music!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Shining Glitter Cookie",
+      "id": "shining-glitter",
+      "text": "That's even bigger than MY Audience!?",
+      "type": "Rival"
+    },
+    {
+      "who": "Choco Ball Cookie",
+      "id": "choco-ball",
+      "text": "Choco FC home games always play my songs!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Vagabond Cookie",
+      "id": "vagabond",
+      "text": "Making any place your stage! That's true rock spirit!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Currant Cream Cookie",
+      "id": "currant-cream",
+      "text": "This is the Cookie who makes my stage costumes. Whatever she comes up with, it's always shocking!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Butter Squid Cookie",
+      "id": "butter-squid",
+      "text": "If I get a biography film, will the audience rock out to my music on the soundtrack?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Strawberry Stick Cookie",
+      "id": "strawberry-stick",
+      "text": "This Cookie's just got rollin', but her beats already got the spirit of ROCK!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mint Wafer Cookie",
+      "id": "mint-wafer",
+      "text": "Love how you capture the emotions perfectly in your lyrics!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Rockstar Cookie",
+      "img": "images/cookies/Crob_standard_rockstar.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "emoji": "🚂",
+      "equipped": true
+    },
+    {
+      "name": "School Superstar",
+      "img": "images/costumes/cookie/School_superstar.png",
+      "illust": "images/costume-illustrations/Img_skinIllust_402704.png",
+      "bonus": "+200 pts for Note Jellies",
+      "released": "July 9, 2024",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Oh, yeeeah!",
+                "Rockstars rule the world!",
+                "Who's your favorite rockstar?",
+                "Are you ready to ROCK?",
+                "Rock is in my blood!",
+                "Tired of studying? Then it's time for some ROCK N' ROLL!",
+                "As promised, I became a famous rockstar!",
+                "SCREEAAAM! YEAH!!!",
+                "Forget about your worries and rock on!",
+                "The encore is the school song! I arranged it into rock!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Tough crowd..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Can't focus studying? Think about the rock spirit within you! YEAH!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Lots of welcoming energy from everyone! It's like a rock festival!",
+                "I'd love to play at the graduation ceremony too!",
+                "Standing on the school stage feels more nerve-racking than at a concert hall!",
+                "It's been a while visiting my school!",
+                "A rockstar shines anywhere!",
+                "There's a huge poster of me at the school!",
+                "Arranging the school song into rock isn't easy, you know!",
+                "So nice to see my teachers again!",
+                "There are a lot of students waiting for me at the gate!",
+                "I'm here to keep my promise with friends from school!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Hey, no need! You should use it to buy yourself some jellies!"
+                },
+                {
+                  "label": "Given <u>Rock Spirit Guitar String</u>",
+                  "text": "I'll give you the best performance ever!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "WOW! It's like receiving an award!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "emoji": "🌙",
+      "info": "Rockstar Cookie has come to the school for a special performance! Even with just a few accessories added to his uniform, Rockstar Cookie's unique star power shines through. He once declared to his classmates that he would become a famous star one day, and look-he did it! Bravo! The school's ultimate superstar!"
+    },
+    {
+      "name": "Epic Year's End Concert",
+      "img": "images/costumes/cookie/Epic_Year_s_End_Concert.png",
+      "bonus": "+100 pts for Note Jellies",
+      "released": "November 26, 2020",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Oh, yeeeah!",
+                "Let's rock!",
+                "Rockstars rule the world!",
+                "Are you ready to ROCK?",
+                "Rock 'n' roll, baby!",
+                "Cookies! Ready for an epic shoooow?!\t",
+                "Put ya hands in the air!",
+                "Rockin' like there's no new year!",
+                "I've got rock in my DOUGH!",
+                "SING ALONG!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I'm not done yet!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Take it! It's signed!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "The world that loves only the sweet can go TO THE OVEN!",
+                "Everyone, ready to rock? YEAH!",
+                "Catch your breath now, no intermissions tonight!",
+                "Show me some dancin' moves tonight, Cookies!",
+                "I know you've been waitin' for it!",
+                "The epic rockstar HAS RETURNED!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Yeah, you may leave it in my dressing room!"
+                },
+                {
+                  "label": "Given <u>Rock Spirit Guitar String</u>",
+                  "text": "Got my special strings installed for tonight!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Oooh, reminds me of sunrise!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "emoji": "💝",
+      "info": "Everyone's been waiting for this performance. And Rockstar Cookie is here to deliver: the legend of rock has returned for his year's end concert! Prepare for a truly epic show. What to prepare, you ask? Your hands to put in the air and voices to sing along, of course!"
+    },
+    {
+      "name": "Flaming Guitar",
+      "img": "images/costumes/cookie/Flaming_Guitar.png",
+      "bonus": "+50 pts for Note Jellies",
+      "released": "May 1, 2017",
+      "tier": "rare",
+      "emoji": "🚂",
+      "info": "Playtime is over. Prepare yourself for a guitar performance like you've never heard before. Let the flaming spirit of rock run through your body!"
+    },
+    {
+      "name": "Future Rockstar",
+      "img": "images/costumes/cookie/Future_Rockstar.png",
+      "released": "April 16, 2018",
+      "bonus": "+20 pts for Note Jellies",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Can I sign you anything?",
+                "Hey! Don't be so mean! I'll be famous, you'll see!",
+                "What do you want me to write?",
+                "Rock music's gonna save the world!",
+                "You DO want an autograph? *_*",
+                "Here, take my signature! It's gonna cost a fortune soon!",
+                "One, two... Oops! Wait, lemme start over!",
+                "I'm gonna be a big star!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Oh..."
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "common",
+      "emoji": "☁️",
+      "info": "If the classroom suddenly gets noisy, it is probably because of Rockstar Cookie's singing. He keeps telling everyone that he is going to become a famous musician in the future and gives his autographs in advance."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "spotlight-fan",
+      "desc": "+30,000 pts for Music Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "candy-dynamite",
+      "desc": "+280,000 Explosion Points"
+    }
+  ],
+  "candy": {
+    "name": "Rockstar Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_rockstar.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Activates Flaming Guitar Solo after using skill 6 times\n150 Note Jellies created during Flaming Guitar Solo\nBlast Mode creates additional Note Jellies during Flaming Guitar Solo\n+2,000 pts for Musical Note Jellies",
+        "reward": "No Level Up Reward"
+      },
+      {
+        "lv": 2,
+        "desc": "Activates Flaming Guitar Solo after using skill 6 times\n150 Note Jellies created during Flaming Guitar Solo\nBlast Mode creates additional Note Jellies during Flaming Guitar Solo\n+5,000 pts for Musical Note Jellies",
+        "reward": "❤️+20"
+      },
+      {
+        "lv": 3,
+        "desc": "Activates Flaming Guitar Solo after using skill 6 times\n150 Note Jellies created during Flaming Guitar Solo\nBlast Mode creates additional Note Jellies during Flaming Guitar Solo\n+8,000 pts for Musical Note Jellies",
+        "reward": "❤️+20"
+      },
+      {
+        "lv": 4,
+        "desc": "Activates Flaming Guitar Solo after using skill 6 times\n150 Note Jellies created during Flaming Guitar Solo\nBlast Mode creates additional Note Jellies during Flaming Guitar Solo\n+11,000 pts for Musical Note Jellies",
+        "reward": "❤️+20"
+      },
+      {
+        "lv": 5,
+        "desc": "Activates Flaming Guitar Solo after using skill 6 times\n150 Note Jellies created during Flaming Guitar Solo\nBlast Mode creates additional Note Jellies during Flaming Guitar Solo\n+14,000 pts for Musical Note Jellies",
+        "reward": "❤️+20"
+      }
+    ],
+    "ingredient": {
+      "name": "Rock Spirit Guitar String",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_rockstar.png",
+      "text": "This magical guitar string is filled with the spirit of rock! Only truly skilled guitarists can handle the powerful vibrations that emanates from this string."
+    },
+    "skillFull": "After creating a certain number of Note Jellies, Rockstar Cookie begins his Flaming Guitar Solo. In this mode, sliding continuously creates Note Jellies. The stronger the enchanted power, the more points earned from Note Jellies.",
+    "emoji": "🍬"
+  }
+}

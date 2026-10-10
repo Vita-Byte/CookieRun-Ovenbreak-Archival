@@ -1,0 +1,4 @@
+COOKIE DATABASE — add one object per cookie.
+rarity: legendary | epic | rare | common | sanrio | teenieping | ppg | special
+img: optional image path/URL for the sprite (emoji used if omitted)
+avatar: optional head icon. Relationship entries use "id" (a cookie id) to pull this avatar automatically.

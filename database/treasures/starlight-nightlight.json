@@ -1,0 +1,127 @@
+{
+  "id": "starlight-nightlight",
+  "name": "Starlight Nightlight",
+  "rarity": "epic",
+  "released": "March 26, 2021",
+  "emoji": "🔮",
+  "img": "images/treasures/Starlight_Nightlight.png",
+  "avatar": "images/treasure-icons/Starlight_nightlight.png",
+  "tags": [
+    "Jellies",
+    "StarJellies",
+    "Distance"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+20,250 pts for Starlight Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+40,500 pts for Starlight Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+60,750 pts for Starlight Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+81,000 pts for Starlight Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+101,250 pts for Starlight Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+121,500 pts for Starlight Jellies"
+    }
+  ],
+  "skillFull": "Starlight shines down from the sky at certain intervals, creating Starlight Jellies. Level Up for more points for Starlight Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+361,800 pts for Starlight Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+391,500 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+421,200 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+450,900 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+480,600 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+510,300 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+540,000 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+569,700 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+599,400 pts for Starlight Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+629,100 pts for Starlight Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+658,800 pts for Starlight Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Starlight Jellies every 1,200px run\n+688,500 pts for Starlight Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "A nightlight with twinkling little stars! Put it near your bed if you're afraid of the dark!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "chestnut",
+      "desc": "+60,000 pts for Starlight Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "tiramisu",
+      "desc": "+60,000 pts for Starlight Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "crowberry",
+      "desc": "+60,000 pts for Starlight Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "milky-way",
+      "desc": "+60,000 pts for Starlight Jellies"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "spicy-chili-powder-jar",
+  "name": "Spicy Chili Powder Jar",
+  "rarity": "epic",
+  "released": "August 27, 2026",
+  "emoji": "📔",
+  "img": "images/treasures/Crob_sprite_background_spicy_chili_powder_jar.png",
+  "avatar": "images/treasure-icons/Crob_sprite_spicy_chili_powder_jar.png",
+  "tags": [
+    "Jellies",
+    "Destruction"
+  ],
+  "bonus": true,
+  "skillFull": "A jar of red chili powder flutters forward at certain intervals, sprinkling spicy Chili Powder Jellies in its wake. Obstacles in its path turn bright red as they struggle to handle the spice. Destroy them for extra destruction points. Level Up for more points for Chili Powder Jellies and more destruction points for red obstacles.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 19 sec\n+40,200 pts for Chili Powder Jellies\n+44,300 destruction pts for red obstacles",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 19 sec\n+43,500 pts for Chili Powder Jellies\n+48,000 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 19 sec\n+46,800 pts for Chili Powder Jellies\n+51,700 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 19 sec\n+50,100 pts for Chili Powder Jellies\n+55,400 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 19 sec\n+53,400 pts for Chili Powder Jellies\n+59,100 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 19 sec\n+56,700 pts for Chili Powder Jellies\n+62,800 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 19 sec\n+60,000 pts for Chili Powder Jellies\n+66,500 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 19 sec\n+63,300 pts for Chili Powder Jellies\n+70,200 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 19 sec\n+66,600 pts for Chili Powder Jellies\n+73,900 destruction pts for red obstacles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 19 sec\n+69,900 pts for Chili Powder Jellies\n+77,600 destruction pts for red obstacles",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 19 sec\n+73,200 pts for Chili Powder Jellies\n+81,300 destruction pts for red obstacles",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 19 sec\n+76,500 pts for Chili Powder Jellies\n+85,000 destruction pts for red obstacles",
+      "reward": "🔥6,000"
+    }
+  ],
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+2,250 pts for Chili Powder Jellies\n+2,500 destruction points for red obstacles"
+    },
+    {
+      "lv": 2,
+      "effect": "+4,500 pts for Chili Powder Jellies\n+5,000 destruction points for red obstacles"
+    },
+    {
+      "lv": 3,
+      "effect": "+6,750 pts for Chili Powder Jellies\n+7,500 destruction points for red obstacles"
+    },
+    {
+      "lv": 4,
+      "effect": "+9,000 pts for Chili Powder Jellies\n+10,000 destruction points for red obstacles"
+    },
+    {
+      "lv": 5,
+      "effect": "+11,250 pts for Chili Powder Jellies\n+12,500 destruction points for red obstacles"
+    },
+    {
+      "lv": 6,
+      "effect": "+13,500 pts for Chili Powder Jellies\n+15,000 destruction points for red obstacles"
+    }
+  ],
+  "story": "Packed with sun-dried chili powder said to ward off evil spirits! It's so spicy that ghosts run away just by sprinkling it in the air.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "scallion-kimchi",
+      "desc": "+9,500 pts for Chili Powder Jellies"
+    }
+  ]
+}

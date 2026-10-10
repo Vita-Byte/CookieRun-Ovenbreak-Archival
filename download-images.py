@@ -3,7 +3,8 @@
 download-images.py  -  archive every wiki image locally, sorted into folders.
 
 What it does (safe to run any number of times):
-  1. Reads cookies.js, pets.js and treasures.js (next to this script).
+  1. Reads every entry file in database/cookies, database/pets and database/treasures (the .json files);
+     if there is no database/ folder it falls back to the old cookies.js / pets.js / treasures.js.
   2. Finds every image link that starts with http(s):// (png/jpg/jpeg/webp/gif).
   3. Works out what each image is (cookie sprite, Magic Candy, costume, ...) from where it sits
      in your data, and downloads it into the matching folder under  images/ :
@@ -25,8 +26,9 @@ What it does (safe to run any number of times):
         images/rarity-tag/costume/           costume rarity badges
         images/misc/                         anything it could not classify
 
-  4. Rewrites each link in the .js file to the local path, e.g.  images/magic-candy/Crob_magic_candy_milky_way.png
+  4. Rewrites each link in the data file to the local path, e.g.  images/magic-candy/Crob_magic_candy_milky_way.png
   5. Keeps a backup of your original files in  backup/  (first run only).
+  6. Afterwards run  python build-database.py  to rebuild the files index.html loads.
 
 Adding new entries later: paste the wiki links as usual, then run this script again.
 It only touches links that are still http(s):// - already-converted ones are left alone.
@@ -35,10 +37,10 @@ Usage:   python download-images.py            (python3 on Mac/Linux)
          python download-images.py --dry-run  (just list what it would do)
 Needs:   Python 3.8+ (no extra packages).
 """
-import hashlib, os, re, shutil, sys, time, urllib.parse, urllib.request
+import hashlib, json, os, re, shutil, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FILES = {"cookies.js": "cookie", "pets.js": "pet", "treasures.js": "treasure"}
+FOLDERS = (("cookies", "cookie"), ("pets", "pet"), ("treasures", "treasure"))
 IMG_DIR = "images"
 URL_RE = re.compile(r'https?://[^\s"\'()<>]+?\.(?:png|jpe?g|webp|gif)(?=["\'\s)<>]|$)', re.I)
 UA = "Mozilla/5.0 (compatible; personal-archive-downloader)"
@@ -73,6 +75,29 @@ TOKEN = re.compile(
 def read(p):
     with open(p, encoding="utf-8", newline="") as f:  # newline="" keeps your line endings
         return f.read()
+
+
+def sources():
+    """(relative path, kind, is_json) for every data file."""
+    out = []
+    for folder, kind in FOLDERS:
+        dd = os.path.join(HERE, "database", folder)
+        if os.path.isdir(dd): out += [(f"database/{folder}/{fn}", kind, True) for fn in sorted(os.listdir(dd)) if fn.endswith(".json") and not fn.startswith("_")]
+        elif os.path.exists(os.path.join(HERE, folder + ".js")): out.append((folder + ".js", kind, False))
+    return out
+
+
+def classify_json(obj, kind):
+    """Same idea as classify(), but for .json entries: the keys around a link tell us what it is."""
+    found = {}
+    def walk(v, path, key):
+        if isinstance(v, dict):
+            for k, x in v.items(): walk(x, path + [k], k)
+        elif isinstance(v, list):
+            for x in v: walk(x, path, key)
+        elif isinstance(v, str) and URL_RE.fullmatch(v): found.setdefault(v, folder_for(kind, key, path[:-1]))
+    walk(obj, [], None)
+    return found
 
 
 def folder_for(kind, key, stack):
@@ -153,14 +178,13 @@ def download(url, dest, tries=3):
 
 def main():
     texts, cats = {}, {}
-    for name, kind in FILES.items():
-        p = os.path.join(HERE, name)
-        if os.path.exists(p):
-            texts[name] = read(p)
-            for u, f in classify(texts[name], kind).items():
-                cats.setdefault(u, f)
-        else:
-            print(f"(skipping {name}: not found)")
+    srcs = sources()
+    if not srcs: print("No data files found (expected database/cookies, database/pets, database/treasures).")
+    for name, kind, isjson in srcs:
+        texts[name] = read(os.path.join(HERE, *name.split("/")))
+        try: found = classify_json(json.loads(texts[name]), kind) if isjson else classify(texts[name], kind)
+        except ValueError as ex: print(f"  ! {name} is not valid JSON ({ex}) - skipped"); texts.pop(name); continue
+        for u, f in found.items(): cats.setdefault(u, f)
     # links the classifier could not place (e.g. unusual formatting) still get downloaded
     for t in texts.values():
         for u in URL_RE.findall(t):
@@ -200,19 +224,20 @@ def main():
     bdir = os.path.join(HERE, "backup")  # backups: first run only, originals are never overwritten
     os.makedirs(bdir, exist_ok=True)
     for name, t in texts.items():
-        b = os.path.join(bdir, name)
+        b = os.path.join(bdir, *name.split("/"))
         if not os.path.exists(b):
+            os.makedirs(os.path.dirname(b), exist_ok=True)
             with open(b, "w", encoding="utf-8", newline="") as f:
                 f.write(t)
         for u, rel in ok.items():
             t = t.replace(u, f"{IMG_DIR}/{rel}")  # only successfully downloaded links are rewritten
-        with open(os.path.join(HERE, name), "w", encoding="utf-8", newline="") as f:
+        with open(os.path.join(HERE, *name.split("/")), "w", encoding="utf-8", newline="") as f:
             f.write(t)
     bad = len(mapping) - len(ok)
     print(f"\nDone. {len(ok)} images saved under '{IMG_DIR}/', {bad} failed (those links were left as they were).")
     if bad:
         print("Run the script again to retry the failed ones.")
-    print("Now upload the .js files and the images folder to GitHub.")
+    print("Now run  python build-database.py  and then upload the database and images folders to GitHub.")
 
 
 if __name__ == "__main__":

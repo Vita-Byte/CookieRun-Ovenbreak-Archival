@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Entry Builder</title>
+<style>
+  :root { --ink:#ece6fa; --bg:#120e1d; --card:#1c1630; --row:#241c3c; --in:#140f24; --acc:#9d6bff; --line:#3a3157; --mut:#a798c8; color-scheme:dark; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.4 system-ui,"Segoe UI",sans-serif; color:var(--ink); background:var(--bg); }
+  header { padding:12px 16px; background:#241a40; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:10px; align-items:center; position:sticky; top:0; z-index:5; }
+  header h1 { margin:0 8px 0 0; font-size:19px; color:#fff; }
+  header button { border:2px solid var(--line); background:transparent; color:var(--ink); padding:6px 16px; border-radius:99px; font:inherit; font-weight:700; cursor:pointer; }
+  header button.on { background:var(--acc); border-color:var(--acc); color:#fff; }
+  .wrap { display:grid; grid-template-columns:1fr minmax(320px,42%); gap:16px; padding:16px; align-items:start; }
+  @media (max-width:900px) { .wrap { grid-template-columns:1fr; } }
+  fieldset { background:var(--card); border:1px solid var(--line); border-radius:12px; margin:0 0 14px; padding:10px 14px 14px; min-width:0; }
+  legend { font-weight:800; color:var(--acc); padding:0 6px; }
+  label { display:block; font-weight:700; margin-top:10px; }
+  small { display:block; font-weight:400; color:var(--mut); }
+  input[type=text], select, textarea { width:100%; padding:7px 9px; border:1px solid var(--line); border-radius:8px; font:inherit; background:var(--in); color:var(--ink); }
+  input:focus, select:focus, textarea:focus { outline:2px solid var(--acc); outline-offset:-1px; }
+  option { background:#1c1630; }
+  textarea { resize:vertical; font-family:ui-monospace,Consolas,monospace; font-size:13px; }
+  ::placeholder { color:#6f6390; }
+  .g2 { display:grid; grid-template-columns:1fr 1fr; gap:0 12px; }
+  @media (max-width:560px) { .g2 { grid-template-columns:1fr; } }
+  .ck { display:flex; gap:8px; align-items:center; font-weight:700; margin-top:12px; }
+  details.cos { border:1px solid var(--line); border-radius:10px; padding:6px 12px 12px; margin-top:10px; background:var(--row); }
+  details.cos summary { cursor:pointer; font-weight:800; display:flex; justify-content:space-between; gap:8px; align-items:center; }
+  button.s { border:0; background:var(--acc); color:#fff; padding:7px 14px; border-radius:8px; font:inherit; font-weight:700; cursor:pointer; margin:10px 8px 0 0; }
+  button.s.x { background:#a5384b; padding:4px 10px; margin:0; }
+  button.s.g { background:#3a3157; }
+  .row { display:flex; gap:8px; align-items:flex-start; margin-top:8px; padding:8px; background:var(--row); border:1px solid var(--line); border-radius:10px; }
+  .row .c { flex:1; min-width:0; } .row .c.n { flex:0 0 88px; }
+  .row .ix { flex:0 0 40px; font-weight:800; color:var(--acc); padding-top:22px; }
+  .row > button { margin-top:20px; }
+  .h { display:block; font-weight:700; font-size:12px; color:var(--mut); margin-bottom:2px; }
+  @media (max-width:560px) { .row { flex-wrap:wrap; } .row .c { flex:1 1 100%; } .row .c.n { flex:1 1 40%; } .row .ix { padding-top:0; } .row > button { margin-top:0; } }
+  .grp { border:1px solid var(--acc); border-radius:12px; padding:10px; margin-top:12px; background:#1a1330; }
+  .sec { border:1px solid var(--line); border-radius:10px; padding:8px 10px 10px; margin-top:10px; background:var(--card); }
+  .gh { display:flex; gap:8px; align-items:center; } .gh b { flex:0 0 auto; color:var(--acc); } .gh input { flex:1; }
+  .sub { margin-top:10px; font-weight:700; color:var(--mut); font-size:13px; }
+  #out { position:sticky; top:62px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px; }
+  @media (max-width:900px) { #out { position:static; } }
+  #o { height:55vh; }
+  #st { font-size:13px; margin:6px 0; color:var(--mut); } #st b { color:#ff7b8f; } code { color:#cdb6ff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Entry Builder</h1>
+  <button data-t="cookie">Cookie</button><button data-t="pet">Pet</button><button data-t="treasure">Treasure</button>
+</header>
+<datalist id="dl-g"><option>General</option><option>Lobby</option><option>Story</option><option>Battle</option></datalist>
+<datalist id="dl-s"><option>New</option><option>Cookie Info &amp; Loading</option><option>Tired</option><option>Daily Reward</option><option>Tap</option><option>Gift</option></datalist>
+<div class="wrap">
+  <form id="f" onsubmit="return false"></form>
+  <aside id="out">
+    <b id="ot"></b>
+    <div id="st"></div>
+    <textarea id="o" readonly spellcheck="false"></textarea>
+    <button class="s" id="cp">Copy JSON</button><button class="s g" id="dl">Download .json</button><button class="s x" id="rs" style="padding:7px 14px">Clear form</button>
+    <div id="rv" style="margin-top:12px"></div>
+  </aside>
+</div>
+<script>
+/* ---------- pure helpers (no DOM) ---------- */
+const L = (s) => (s || "").split("\n").map((x) => x.trim()).filter(Boolean);
+const P = (l) => l.split("|").map((x) => x.trim());
+const nl = (s) => String(s || "").replace(/\r/g, "").replace(/\s*\/\/\s*/g, "\n").trim();
+const num = (s) => Number(String(s == null ? "" : s).replace(/[^\d.]/g, "")) || 0;
+const slug = (s) => s.toLowerCase().replace(/\s+cookie$/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const T = (s) => String(s == null ? "" : s).trim();
+
+function ser(v, d = 0) {
+  const p = "  ".repeat(d + 1), q = "  ".repeat(d);
+  if (Array.isArray(v)) {
+    if (!v.length) return "[]";
+    if (v.every((x) => typeof x != "object")) return "[" + v.map((x) => JSON.stringify(x)).join(", ") + "]";
+    return "[\n" + v.map((x) => p + ser(x, d + 1) + ",").join("\n") + "\n" + q + "]";
+  }
+  if (v && typeof v == "object")
+    return "{\n" + Object.keys(v).map((k) => p + (/^[A-Za-z_]\w*$/.test(k) ? k : JSON.stringify(k)) + ": " + ser(v[k], d + 1) + ",").join("\n") + "\n" + q + "}";
+  return JSON.stringify(v);
+}
+const clean = (all, order) => {
+  const o = {};
+  order.forEach((k) => { const x = all[k]; if (x === undefined || x === "" || x === false || (Array.isArray(x) && !x.length) || (x && typeof x == "object" && !Array.isArray(x) && !Object.keys(x).length)) return; o[k] = x; });
+  return o;
+};
+const levels = (rows, energy) => (rows || []).filter((r) => r && (T(r.desc) || T(r.energy))).map((r, i) => {
+  const o = { lv: i + 1 };
+  if (energy) o.energy = num(r.energy);
+  o.desc = nl(r.desc); o.reward = T(r.reward) || "No Level Up Reward";
+  return o;
+});
+const quotes = (gs) => (gs || []).map((g) => ({
+  title: T(g.title) || "General",
+  sections: (g.secs || []).map((s) => {
+    const o = { title: T(s.title) || T(g.title) || "General" };
+    const ls = L(s.lines); if (ls.length) o.lines = ls;
+    const rw = (s.rows || []).filter((r) => T(r.label) || T(r.text)).map((r) => ({ label: T(r.label), text: T(r.text) }));
+    if (rw.length) o.rows = rw;
+    return o;
+  }).filter((s) => s.lines || s.rows),
+})).filter((g) => g.sections.length);
+
+const ORDER = {
+  cookie: ["id","name","rarity","released","illust","jelly","img","emoji","avatar","tags","bonus","levels","skillFull","story","quote","quotes","affection","relations","costumes","combi","candy"],
+  pet: ["id","name","rarity","released","emoji","img","tags","bonus","levels","skillFull","story","combi","costumes"],
+  treasure: ["id","name","rarity","released","emoji","img","avatar","tags","bonus","skillFull","levels","story","combi","enhancements"],
+};
+const COSORDER = ["name","img","illust","desc","bonus","released","quotes","tier","emoji","info"];
+function build(type, S) {
+  const v = S.v || {}, R = S.L || {}, cos = S.cos || [];
+  const combi = L(v.combi).map((l) => { const p = P(l); return { type: p[0], id: p[1], desc: p.slice(2).join(" | ") }; });
+  const all = {
+    id: v.id, name: v.name, rarity: v.rarity || "legendary", released: v.released, emoji: v.emoji,
+    illust: v.illust, img: v.img, avatar: v.avatar,
+    jelly: clean({ img: v.jellyImg, story: v.jellyStory }, ["img", "story"]),
+    tags: (v.tags || "").split(",").map((x) => x.trim()).filter(Boolean),
+    bonus: combi.length > 0, skillFull: v.skillFull, story: v.story, quote: v.quote,
+    levels: levels(R.levels, type == "cookie"),
+    quotes: quotes(R.quotes),
+    affection: (R.affection || []).filter((r) => T(r.name) || T(r.n)).map((r) => clean({ n: num(r.n), name: T(r.name), bonus: T(r.bonus) }, ["n", "name", "bonus"])),
+    relations: (R.relations || []).filter((r) => T(r.who)).map((r) => ({ who: T(r.who), id: T(r.id), text: T(r.text), type: r.type || "Friendly" })),
+    costumes: cos.map((c) => {
+      const o = clean(Object.assign({}, c, { quotes: quotes(c.quotes) }), COSORDER);
+      if (c.equipped) o.equipped = true; return o;
+    }),
+    combi,
+    enhancements: L(v.enh).map((l, i) => ({ lv: i + 1, effect: l })),
+    candy: clean({
+      name: v.candyName, img: v.candyImg, levels: levels(R.candyLevels, false),
+      ingredient: clean({ name: v.ingName, img: v.ingImg, text: v.ingText }, ["name", "img", "text"]),
+      skillFull: v.candySkill, emoji: v.candyName || (R.candyLevels || []).length ? "🍬" : "",
+    }, ["name", "img", "levels", "ingredient", "skillFull", "emoji"]),
+  };
+  all.relations.forEach((r) => { if (!r.id) delete r.id; });
+  const o = clean(all, ORDER[type]);
+  const warn = [];
+  if (!v.name) warn.push("name is empty");
+  if (!v.id) warn.push("id is empty");
+  if (!o.levels) warn.push("no levels");
+  combi.forEach((c) => { if (!["cookie", "pet", "treasure"].includes(c.type) || !c.id) warn.push("check combo line: " + c.type + " | " + c.id); });
+  return { text: "  " + ser(o, 1) + ",", o, combi, warn };
+}
+//--DOM
+/* ---------- form definition ---------- */
+const RAR = ["legendary","epic","special","rare","common","teenieping","ppg","sanrio"];
+const TIER = ["default","common","rare","epic","superepic","champion","legendary","special","sanrio"];
+const REL = ["Friendly","Family","Trust","Admiration","Tension","Rival"];
+// field: [key, label, kind(t=text a=area r=rarity s=tier y=relation type), hint, rows]
+const BASIC = [["name","Name","t","e.g. Allulose Nova Cookie"],["id","ID (auto from name)","t","lowercase-with-dashes"],["rarity","Rarity","r"],["released","Release date","t","e.g. July 29, 2026"],["emoji","Emoji (fallback)","t",""],["tags","Tags","t","comma separated: Flight, Speed, Jellies"]];
+const COL = {
+  levelsC: [["energy","Energy","t","n"],["desc","Description","a"],["reward","Level Up Reward","t"]],
+  levels: [["desc","Description","a"],["reward","Level Up Reward","t"]],
+  affection: [["n","Points","t","n"],["name","Rank name","t"],["bonus","Bonus (optional)","t"]],
+  relations: [["who","Who","t"],["id","Cookie id","t"],["type","Type","y","n"],["text","Quote","a"]],
+  candy: [["desc","Description","a"],["reward","Level Up Reward","t"]],
+};
+// section: [title, fields]  |  [title, "rows", path, cols, lvLabel]  |  [title, "quotes"] | [title, "cos"]
+const SECT = {
+  cookie: [
+    ["Basics", BASIC],
+    ["Images (paste wiki links or images/... paths)", [["img","Sprite (img)","t"],["avatar","Head icon (avatar)","t"],["illust","Illustration","t"],["jellyImg","Affection Jelly image","t"]]],
+    ["Text", [["skillFull","Full skill description","a","",3],["story","Story","a","",4],["quote","Main quote","a","",2],["jellyStory","Affection Jelly story","a","",3]]],
+    ["Levels", "rows", "L.levels", COL.levelsC, 1],
+    ["Quotes", "quotes", "L.quotes"],
+    ["Affection milestones", "rows", "L.affection", COL.affection],
+    ["Relationship chart", "rows", "L.relations", COL.relations],
+    ["Magic Candy", [["candyName","Candy name","t"],["candyImg","Candy image","t"],["candySkill","Candy full skill","a","",3],["ingName","Ingredient name","t"],["ingImg","Ingredient image","t"],["ingText","Ingredient text","a","",3]]],
+    ["Magic Candy levels", "rows", "L.candyLevels", COL.candy, 1],
+    ["Costumes", "cos"],
+    ["Combi bonus", [["combi","One per line:  type | id | bonus text","a","type = cookie, pet or treasure. A combo turns the Bonus button on automatically.",4]]],
+  ],
+  pet: [
+    ["Basics", BASIC],
+    ["Images", [["img","Sprite (img)","t"]]],
+    ["Text", [["skillFull","Full skill description","a","",3],["story","Story","a","",4]]],
+    ["Levels", "rows", "L.levels", COL.levels, 1],
+    ["Costumes", "cos"],
+    ["Combi bonus", [["combi","One per line:  type | id | bonus text","a","",4]]],
+  ],
+  treasure: [
+    ["Basics", BASIC],
+    ["Images", [["img","Sprite (img)","t"],["avatar","Small icon (avatar)","t"]]],
+    ["Text", [["skillFull","Full skill description","a","",3],["story","Story","a","",4]]],
+    ["Levels", "rows", "L.levels", COL.levels, 1],
+    ["Enhancements", [["enh","One effect per line (Lv.1, Lv.2, ... in order)","a","",6]]],
+    ["Combi bonus", [["combi","One per line:  type | id | bonus text","a","",4]]],
+  ],
+};
+const CF = [["name","Name","t"],["tier","Rarity tier","s"],["emoji","Emoji","t"],["released","Release date","t"],["img","Sprite","t"],["illust","Illustration","t","c"],["bonus","Bonus","t"],["desc","Short desc (default costume: Default Costume)","t"],["info","Info / lore","a"]];
+
+/* ---------- state + path helpers ---------- */
+let type = "cookie", S = { v: {}, L: {}, cos: [] };
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+const key = () => "eb2-" + type;
+const save = () => { try { localStorage.setItem(key(), JSON.stringify(S)); } catch (e) {} };
+const load = () => { try { S = JSON.parse(localStorage.getItem(key())) || {}; } catch (e) { S = {}; } S.v = S.v || {}; S.L = S.L || {}; S.cos = S.cos || []; };
+const get = (p) => p.split(".").reduce((o, k) => (o == null ? undefined : o[k]), S);
+const set = (p, val) => { const ks = p.split("."), last = ks.pop(); const o = ks.reduce((o, k) => o[k], S); o[last] = val; };
+const arr = (p) => { const ks = p.split("."), last = ks.pop(); const o = ks.reduce((o, k) => o[k], S); return (o[last] = o[last] || []); };
+const BLANK = { quotes: () => ({ title: "", secs: [] }), secs: () => ({ title: "", lines: "", rows: [] }), rows: () => ({ label: "", text: "" }), relations: () => ({ type: "Friendly" }) };
+
+/* ---------- renderers ---------- */
+const input = (kind, p, val, hint, rows) => {
+  if (kind == "a") return `<textarea data-p="${p}" rows="${rows || 2}" placeholder="${esc(hint || "")}">${esc(val)}</textarea>`;
+  if (kind == "r" || kind == "s" || kind == "y") { const def = kind == "r" ? "legendary" : kind == "s" ? "default" : "Friendly"; const cur = val || def;
+    return `<select data-p="${p}">${(kind == "r" ? RAR : kind == "s" ? TIER : REL).map((o) => `<option${o == cur ? " selected" : ""}>${o}</option>`).join("")}</select>`; }
+  return `<input type="text" data-p="${p}" value="${esc(val)}" placeholder="${esc(hint || "")}">`;
+};
+const fld = (f, p, val) => { const [, label, kind, hint, rows] = f; return `<label>${esc(label)}${hint && kind != "t" ? `<small>${esc(hint)}</small>` : ""}${input(kind, p, val, kind == "t" ? hint : "", rows)}</label>`; };
+const rowsEd = (path, cols, ix) => {
+  const rows = get(path) || [];
+  return rows.map((r, i) => `<div class="row"><span class="ix">${ix ? "Lv." + (i + 1) : "#" + (i + 1)}</span>` +
+    cols.map((c) => `<div class="c ${c[3] == "n" ? "n" : ""}"><span class="h">${esc(c[1])}</span>${input(c[2], `${path}.${i}.${c[0]}`, r[c[0]], "", 2)}</div>`).join("") +
+    `<button type="button" class="s x" data-del="${path}.${i}">✕</button></div>`).join("") +
+    `<button type="button" class="s" data-add="${path}">+ Add row</button><button type="button" class="s g" data-add="${path}" data-n="5">+ Add 5 rows</button>`;
+};
+const quoteEd = (path) => {
+  const gs = get(path) || [];
+  return gs.map((g, gi) => `<div class="grp"><div class="gh"><b>Group</b><input type="text" list="dl-g" data-p="${path}.${gi}.title" value="${esc(g.title)}" placeholder="e.g. General, Lobby"><button type="button" class="s x" data-del="${path}.${gi}">Remove</button></div>` +
+    (g.secs || []).map((s, si) => { const sp = `${path}.${gi}.secs.${si}`;
+      return `<div class="sec"><div class="gh"><b>Section</b><input type="text" list="dl-s" data-p="${sp}.title" value="${esc(s.title)}" placeholder="e.g. Tap, Tired, Daily Reward"><button type="button" class="s x" data-del="${sp}">✕</button></div>` +
+        `<label>Quotes<small>one quote per line</small><textarea data-p="${sp}.lines" rows="4">${esc(s.lines)}</textarea></label>` +
+        `<div class="sub">Gift / reaction rows (optional)</div>` +
+        rowsEd(`${sp}.rows`, [["label","Label (e.g. Neutral, Given <u>Item</u>)","t"],["text","Text","a"]]) + `</div>`; }).join("") +
+    `<button type="button" class="s" data-add="${path}.${gi}.secs">+ Add section</button></div>`).join("") +
+    `<button type="button" class="s" data-add="${path}">+ Add group</button>`;
+};
+const cosCard = (c, i) =>
+  `<details class="cos" open><summary><span>${esc(c.name || "Costume " + (i + 1))}</span><button type="button" class="s x" data-del="cos.${i}">Remove</button></summary><div class="g2">` +
+  CF.filter((f) => type == "cookie" || f[3] != "c").map((f) => fld(f, `cos.${i}.${f[0]}`, c[f[0]])).join("") +
+  `</div><label class="ck"><input type="checkbox" data-p="cos.${i}.equipped" ${c.equipped ? "checked" : ""}> Equipped by default</label>` +
+  (type == "cookie" ? `<div class="sub">Costume quotes</div>${quoteEd(`cos.${i}.quotes`)}` : "") + `</details>`;
+
+function render() {
+  const y = window.scrollY;
+  load();
+  document.querySelectorAll("header button").forEach((b) => b.classList.toggle("on", b.dataset.t == type));
+  $("f").innerHTML = SECT[type].map((s) => {
+    const [title, a, path, cols, ix] = s;
+    if (a == "cos") return `<fieldset><legend>Costumes</legend>${S.cos.map(cosCard).join("")}<button type="button" class="s" id="addc">+ Add costume</button><button type="button" class="s g" id="addd">+ Add default costume (copies name, sprite, emoji)</button></fieldset>`;
+    if (a == "rows") return `<fieldset><legend>${title}</legend>${rowsEd(path, cols, ix)}</fieldset>`;
+    if (a == "quotes") return `<fieldset><legend>${title}</legend>${quoteEd(path)}</fieldset>`;
+    return `<fieldset><legend>${title}</legend><div class="${title == "Basics" || title.startsWith("Images") ? "g2" : ""}">${a.map((f) => fld(f, "v." + f[0], S.v[f[0]])).join("")}</div></fieldset>`;
+  }).join("");
+  window.scrollTo(0, y);
+  update();
+}
+function update() {
+  const r = build(type, S);
+  $("ot").textContent = `Save as database/${type == "cookie" ? "cookies" : type == "pet" ? "pets" : "treasures"}/${S.v.id || "<id>"}.json`;
+  $("o").value = JSON.stringify(r.o, null, 2) + "\n";
+  $("st").innerHTML = `${r.o.levels ? r.o.levels.length : 0} levels · ${S.cos.length} costumes · ${r.combi.length} combos` + (r.warn.length ? " · <b>" + r.warn.join("; ") + "</b>" : "") +
+    `<br>Put the file in the folder shown above, then run <code>python build-database.py</code>.`;
+  $("rv").innerHTML = r.combi.length
+    ? "<b>Reverse combo lines</b><small>Add each to its partner's <code>combi: [ ]</code> and fill in the bonus text:</small><textarea readonly style=\"height:" + (r.combi.length * 54) + "px\">" +
+      esc(r.combi.map((c) => `// in ${c.type} "${c.id}":\n{ type: "${type}", id: "${S.v.id || ""}", desc: "" },`).join("\n")) + "</textarea>" : "";
+  save();
+}
+$("f").addEventListener("input", (e) => {
+  const t = e.target, p = t.dataset.p; if (!p) return;
+  set(p, t.type == "checkbox" ? t.checked : t.value);
+  if (p == "v.id") S.v._idManual = true;
+  if (p == "v.name" && !S.v._idManual) { S.v.id = slug(t.value); const i = $("f").querySelector('[data-p="v.id"]'); if (i) i.value = S.v.id; }
+  const m = p.match(/^cos\.(\d+)\.name$/);
+  if (m) { const s = t.closest("details").querySelector("summary span"); if (s) s.textContent = t.value || "Costume " + (+m[1] + 1); }
+  update();
+});
+$("f").addEventListener("click", (e) => {
+  const t = e.target;
+  if (t.dataset.del) { e.preventDefault(); const ks = t.dataset.del.split("."), i = +ks.pop(); arr(ks.join(".")).splice(i, 1); save(); render(); }
+  else if (t.dataset.add) { const path = t.dataset.add, a = arr(path), name = path.split(".").pop(), n = +t.dataset.n || 1; for (let i = 0; i < n; i++) a.push((BLANK[name] || (() => ({})))()); save(); render(); }
+  else if (t.id == "addc") { S.cos.push({ tier: "rare" }); save(); render(); }
+  else if (t.id == "addd") { S.cos.push({ name: S.v.name || "", img: S.v.img || "", desc: "Default Costume", tier: "default", emoji: S.v.emoji || "", equipped: !S.cos.some((c) => c.equipped) }); save(); render(); }
+});
+document.querySelectorAll("header button").forEach((b) => (b.onclick = () => { type = b.dataset.t; render(); window.scrollTo(0, 0); }));
+$("cp").onclick = () => { $("o").select(); try { navigator.clipboard.writeText($("o").value); } catch (e) { document.execCommand("copy"); } $("cp").textContent = "Copied!"; setTimeout(() => ($("cp").textContent = "Copy JSON"), 1200); };
+$("dl").onclick = () => { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([$("o").value], { type: "application/json" })); a.download = (S.v.id || "entry") + ".json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); };
+$("rs").onclick = () => { if (confirm("Clear everything you typed for this " + type + "?")) { S = { v: {}, L: {}, cos: [] }; save(); render(); } };
+render();
+</script>
+</body>
+</html>
