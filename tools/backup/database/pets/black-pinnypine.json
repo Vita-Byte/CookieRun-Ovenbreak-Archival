@@ -1,0 +1,120 @@
+{
+  "id": "black-pinnypine",
+  "name": "Black Pinnypine",
+  "rarity": "epic",
+  "released": "March 14, 2023",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0c/Crob_standard_black_pinnypine.png",
+  "tags": [
+    "BearJellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Activates skill every 17.5 sec\n+387,200 pts for Pinned Bear Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Activates skill every 17.5 sec\n+422,400 pts for Pinned Bear Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Activates skill every 17.5 sec\n+457,600 pts for Pinned Bear Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Activates skill every 17.5 sec\n+492,800 pts for Pinned Bear Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Activates skill every 17.5 sec\n+528,000 pts for Pinned Bear Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Activates skill every 17.5 sec\n+563,200 pts for Pinned Bear Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Activates skill every 17.5 sec\n+598,400 pts for Pinned Bear Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Activates skill every 17.5 sec\n+633,600 pts for Pinned Bear Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Activates skill every 17.5 sec\n+668,800 pts for Pinned Bear Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Activates skill every 17.5 sec\n+704,000 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Activates skill every 17.5 sec\n+739,200 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Activates skill every 17.5 sec\n+774,400 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Activates skill every 17.5 sec\n+809,600 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Activates skill every 17.5 sec\n+844,800 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Activates skill every 17.5 sec\n+880,000 pts for Pinned Bear Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Curls up and rolls ahead at given intervals. On the way back Bear Jellies are impaled by the pins on its back, which then are returned to the Cookie. Level Up for more points for Pinned Bear Jellies.",
+  "story": "Born without spines, Black Pinnypine desperately wanted to become spiky and had decided needles were the best option. One day, while hiding out in the Crown Punky workshop, waiting alertly for the chance to strike, Black Pinnypine saw a sewing pin gleaming in the moonlight and immediately fell in love. It was precisely that moment when Currant Cream Cookie, who had been up all night working, sleepily mistook the small pet for a pin cushion that Black Pinnypine rushed to the opportunity. The small creature curled up into the shape of a pin cushion, waiting to be spike-ified. While not a bad idea, what about the prick of the needle?!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "currant-cream",
+      "desc": "+7,400,000 Punk Fashion Points"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Black Pinnypine",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0c/Crob_standard_black_pinnypine.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Crown Punky's Mascot Crown Punky's Mascot",
+	  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c4/Crob_standard_crown_punkys_mascot.png",
+	  "released": "March 14, 2023",
+      "tier": "epic",
+	  "info": "\"A mascot should encompass the very essence of a brand, and Black Pinnypine's hat is the perfect example of this. Decorated with buckles and skulls; all it needs is a cherry on top! A bit over-kill, you say? Try asking Crown Punky fans! Minimalism is out, Punky maximalism is all the rage!\"\n- Cogue Magazine"
+    },
+    {
+      "name": "Meow Meow",
+	  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/90/Crob_standard_meow_meow.png",
+	  "released": "October 27, 2023",
+      "tier": "rare",
+	  "info": "Wearing a cat hat crafted from spare cloth hidden among the overflowing pules of fabrics, Black Pinnypine took on an unusual demeanor. It sits by the window on moonlit nights, meowing as if casting a spell, transforming Cookies, who has touched the pins, into cats!"
+    }
+  ]
+}

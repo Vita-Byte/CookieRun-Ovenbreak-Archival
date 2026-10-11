@@ -1,6 +1,6 @@
 // Service worker: lets the archive open offline after the first visit.
 // Bump VERSION whenever you update the data files to force a refresh.
-const VERSION = "ob-archive-v7";
+const VERSION = "ob-archive-v8";
 const CORE = ["./", "./index.html", "./database/cookies.js", "./database/pets.js", "./database/treasures.js",
   "./manifest.webmanifest", "./icons/apple-touch-icon.png", "./icons/icon-192.png", "./icons/icon-512.png"];
 

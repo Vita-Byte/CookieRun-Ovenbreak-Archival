@@ -1,0 +1,129 @@
+{
+  "id": "jelly-cream-whisk",
+  "name": "Jelly Cream Whisk",
+  "rarity": "epic",
+  "released": "October 24, 2019",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d5/Jelly_Cream_Whisk.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/2/28/Jelly_cream_whisk.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+73,100 pts for Cupcake Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+146,200 pts for Cupcake Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+219,300 pts for Cupcake Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+292,400 pts for Cupcake Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+365,500 pts for Cupcake Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+438,600 pts for Cupcake Jellies"
+    }
+  ],
+  "skillFull": "Whisks Jellies on the map at certain intervals. Depending on the ratio of whisked Jellies, it will create either a Basic Cupcake Jelly, Yellow Cupcake Jelly, Pink Cupcake Jelly, or Frozen Cupcake Jelly. Level Up for more points per Cupcake Jelly.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,181,100 points for Cupcake Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,288,400 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,395,700 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,503,000 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,610,300 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,717,600 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,824,900 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+1,932,200 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+2,039,500 points for Cupcake Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+2,146,800 points for Cupcake Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+2,254,100 points for Cupcake Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Cupcake Jellies every 13 sec\n+2,361,400 points for Cupcake Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Need to whisk up some fluffy, lighter-than-air Jelly cream? Then you need the essential utensil! Introducing the Jelly Cream Whisk!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "firecracker",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "butter-pretzel",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "pastel-meringue",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "currant-cream",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "everything-pie",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    }
+  ]
+}

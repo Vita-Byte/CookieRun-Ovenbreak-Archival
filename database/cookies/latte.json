@@ -3,13 +3,13 @@
   "name": "Latte Cookie",
   "rarity": "epic",
   "released": "July 14, 2026",
-  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/9/97/Crob_illustration_latte.png",
+  "illust": "images/cookie-illustrations/Crob_illustration_latte.png",
   "jelly": {
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/ea/Crob_affection_jelly_latte.png",
+    "img": "images/affection-jelly/Crob_affection_jelly_latte.png",
     "story": "Only by enduring moments of anxiety and unease can one learn the true art of taking things one cup at a time."
   },
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0b/Crob_standard_latte.png",
-  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/8/86/Crob_head_latte.png",
+  "img": "images/cookies/Crob_standard_latte.png",
+  "avatar": "images/cookie-heads/Crob_head_latte.png",
   "tags": [
     "Jellies"
   ],
@@ -107,7 +107,7 @@
     }
   ],
   "skillFull": "Casts a coffee spell at certain intervals to create Latte Art, creating Latte Foam Jellies along the edges and gathering nearby Jellies. Jellies gathered by the Latte Art grant bonus points. After casting a certain number of spells, a larger and more powerful Latte Art is created. Level Up for more points for Latte Foam Jellies.",
-  "story": "Coffee or milk... that is the question. Why not both? Latte Cookie's dough was formed with coffee most bitter and acrid, balanced with the creamiest and smoothest blend of milk. With her etched staff in hand, she gracefully draws beautifully patterned Latte Glyphs in the air while daydreaming. But watch out! By chance, one of these Glyphs could be a powerful sigil for a grand spell! During her years as a student, she spearheaded research on the development of Coffee Magic with a rather eccentric afficionado of coffee. Thanks to her efforts, Latte Cookie was granted a professorship at the Parfaedia Magic Institute. You'd think that a professor would be more punctual, especially with their own lectures. But not Latte Cookie! She's more invested in savoring a warm latte before class. Though far from achieving the Professor of the Year Reward, she knows a thing or two about inspiring her students. With her genuine compliments and encoraging smile, Latte Cookie is already the favorite professor of many.",
+  "story": "Coffee or milk... that is the question. Why not both? Latte Cookie's dough was formed with coffee most bitter and acrid, balanced with the creamiest and smoothest blend of milk. With her etched staff in hand, she gracefully draws beautifully patterned Latte Glyphs in the air while daydreaming. But watch out! By chance, one of these Glyphs could be a powerful sigil for a grand spell!\n\nDuring her years as a student, she spearheaded research on the development of Coffee Magic with a rather eccentric afficionado of coffee. Thanks to her efforts, Latte Cookie was granted a professorship at the Parfaedia Magic Institute. You'd think that a professor would be more punctual, especially with their own lectures. But not Latte Cookie! She's more invested in savoring a warm latte before class.\n\nThough far from achieving the Professor of the Year Reward, she knows a thing or two about inspiring her students. With her genuine compliments and encoraging smile, Latte Cookie is already the favorite professor of many.",
   "quote": "Care for a latte?",
   "quotes": [
     {
@@ -174,7 +174,7 @@
               "text": "Hm... This really isn't my style."
             },
             {
-              "label": "Given <u></u>",
+              "label": "Given <u>Well-Loved Steam Pitcher</u>",
               "text": "I always have time for a latte!"
             },
             {
@@ -273,15 +273,17 @@
   "costumes": [
     {
       "name": "Latte Cookie",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0b/Crob_standard_latte.png",
+      "img": "images/cookies/Crob_standard_latte.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Sunset Vacation",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/54/Crob_standard_sunset_vacation.png",
-      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/1/1a/Crob_illustration_sunset_vacation.png",
+      "img": "images/costumes/cookie/Crob_standard_sunset_vacation.png",
+      "illust": "images/costume-illustrations/Crob_illustration_sunset_vacation.png",
+	  "bonus": "+3,300 pts for Latte Foam Jellies",
+	  "released": "July 14, 2026",
       "quotes": [
         {
           "title": "General",
@@ -341,7 +343,7 @@
                   "text": "Oh my! Is this for me? I'll treasure it as a keepsake!"
                 },
                 {
-                  "label": "Given <u></u>",
+                  "label": "Given <u>Well-Loved Steam Pitcher</u>",
                   "text": "I wonder if I could create a latte spell to capture this moment forever...?"
                 },
                 {
@@ -371,17 +373,38 @@
   ],
   "candy": {
     "name": "Latte Cookie's Magic Candy",
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_magic_candy_latte.png",
+    "img": "images/magic-candy/Crob_magic_candy_latte.png",
     "levels": [
       {
+        "lv": 1,
+        "desc": "+2,600,000 pts for small Latte Art Cream Jellies\n+5,200,000 pts for large Latte Art Cream Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "+3,575,000 pts for small Latte Art Cream Jellies\n+7,150,000 pts for large Latte Art Cream Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "+4,550,000 pts for small Latte Art Cream Jellies\n+9,100,000 pts for large Latte Art Cream Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "+5,525,000 pts for small Latte Art Cream Jellies\n+11,050,000 pts for large Latte Art Cream Jellies",
+        "reward": "❤️+30"
+      },
+	  {
         "lv": 5,
         "desc": "+6,500,000 pts for small Latte Art Cream Jellies\n+13,000,000 pts for large Latte Art Cream Jellies",
         "reward": "❤️+30"
       }
     ],
     "ingredient": {
-      "name": "Magic Candy Ingredient",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/89/Crob_magic_candy_ingredient_latte.png"
+      "name": "Well-Loved Steam Pitcher",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_latte.png",
+	  "text": "A steam pitcher worn smooth at the handle from years of faithful use. The way it pours, even the most intricate latte art seems to flow out effortlessly!"
     },
     "skillFull": "Creates additional Latte Art Cream Jellies when Latte Art dissipates. Larger Latte Art creates more valuable Latte Art Cream Jellies. The stronger the enchanted power, the more points for Latte Art Cream Jellies.",
     "emoji": "🍬"

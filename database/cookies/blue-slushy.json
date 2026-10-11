@@ -1,0 +1,342 @@
+{
+  "id": "blue-slushy",
+  "name": "Blue Slushy Cookie",
+  "rarity": "epic",
+  "released": "September 26, 2023",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_blue_slushy.png",
+    "story": "Your nose might tingle from eating a cold shaved ice dessert!"
+  },
+  "img": "images/cookies/Crob_standard_blue_slushy.png",
+  "avatar": "images/cookie-heads/Crob_head_blue_slushy.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 177,
+      "desc": "Skill activation every 25.5 sec\n+96,400 pts for Blue Slushy Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 186,
+      "desc": "Skill activation every 25.5 sec\n+109,800 pts for Blue Slushy Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 195,
+      "desc": "Skill activation every 25.5 sec\n+123,200 pts for Blue Slushy Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 204,
+      "desc": "Skill activation every 25.5 sec\n+136,600 pts for Blue Slushy Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 213,
+      "desc": "Skill activation every 25.5 sec\n+150,000 pts for Blue Slushy Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 222,
+      "desc": "Skill activation every 25.5 sec\n+163,400 pts for Blue Slushy Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 231,
+      "desc": "Skill activation every 25.5 sec\n+176,800 pts for Blue Slushy Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 240,
+      "desc": "Skill activation every 25.5 sec\n+190,200 pts for Blue Slushy Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 249,
+      "desc": "Skill activation every 25.5 sec\n+203,600 pts for Blue Slushy Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 258,
+      "desc": "Skill activation every 25.5 sec\n+217,000 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 267,
+      "desc": "Skill activation every 25.5 sec\n+230,400 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 276,
+      "desc": "Skill activation every 25.5 sec\n+243,800 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 285,
+      "desc": "Skill activation every 25.5 sec\n+257,200 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 294,
+      "desc": "Skill activation every 25.5 sec\n+270,600 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 303,
+      "desc": "Skill activation every 25.5 sec\n+284,000 pts for Blue Slushy Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Launches Blue Slushy Arrows and takes flight at regular intervals. While in flight, the launched arrows descend one by one, destroying nearby obstacles and creating Blue Slushy Jellies. Level Up for more points for Blue Slushy Jellies.",
+  "story": "In Dessert Paradise, above the sky was a bluebird Cookie nestled beneath the cool soda waterfall. Blue Slushy Cookie is known for her relentless chirping! The large scoop of frozen blue soda on top of the refreshing frozen lake water has given her a crisp and delightful voice. From the moment Blue Slushy Cookie began to flutter her wings, she dreamt of becoming a Dessert Guardian. Oddly enough, the Cookie showed little interest in training but was always busy soaring through Dessert Paradise to bring back the latest news. Blue Slushy Cookie is overflowing with enthusiasm, even though her ambition might be greater than her skills for now. Nevertheless, if she continues to chase her dreams, who knows? She just might stand by Sugar Swan Cookie's side as an invaluable guardian someday!",
+  "quote": "I'm the future Dessert Guardian!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "I'm the future Dessert Guardian!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Wanna see my perfect flying skills?",
+            "Huh...? B-But it was so perfect in my head...",
+            "Oooh! I wanna try! I can do it too!",
+            "Heh... It was just a small mistake! I can try again!",
+            "I don't look back nor dwell on the small stuff!",
+            "Oooh! What is it? Huh? What is it? What is it? I wanna know!",
+            "Hehe...! My dream is to become Sugar Swan's entourage!",
+            "You know what they say! Dream big and sweet!",
+            "There are so many things I wanna try!",
+            "Wanna tour the Dessert Paradise? Then follow me!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "I know I can do better..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Let's cheer for each other!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "I know I'm supposed to be cautious of outside Cookies, but I'm just so curious!",
+            "If you see any Acorn Jellies or Fruit Jellies, let me know! I'm gonna give it to the Sugar Swan!",
+            "You know of the Great Swan? I really want to meet the Sugar Swan too!",
+            "I just need to pass the last test to become an official Dessert Guardian!",
+            "If I put my mind to it, I can soar through the sky like no one else can!",
+            "Hehe... Wait and see! I've got this!",
+            "Are you from the land below? What's it like there? Do dessert animals live there too?",
+            "Ahem! I am the Guardian of Dessert Paradise!",
+            "My wings are pretty cool, right? I can sing too! Wanna hear it?",
+            "Shooting my ice arrows are as easy as eating a Jelly!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Ooh! Ooh! What's this? What does it do? Is it something nice?"
+            },
+            {
+              "label": "Given <u></u>",
+              "text": "Having this on means you have become a guardian!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "This perfectly suits me! How do I look?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Huh? Why... Let's try again!",
+            "Do you wish to become a guardian too?",
+            "Ahem, do you want me to teach you?",
+            "Hehe... Me? I'm...!",
+            "Run and make the swan proud!",
+            "Try shooting an ice arrow like me!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+550 pts for Blue Slushy Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+1,100 pts for Blue Slushy Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Whipped Cream Cookie",
+      "id": "whipped-cream",
+      "text": "Dances beautifully to the sound of my singing!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Pilot Cookie",
+      "id": "pilot",
+      "text": "The Cookie who taught me to never give up on my dreams!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Wind Archer Cookie",
+      "id": "wind-archer",
+      "text": "Ahem! I'm his only apprentice!",
+      "type": "Admiration"
+    },
+    {
+      "who": "Millennial Tree Cookie",
+      "id": "millennial-tree",
+      "text": "Wow... What a beautiful tree...!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Poison Mushroom Cookie",
+      "id": "poison-mushroom",
+      "text": "Are you a Cookie? Mushroom? What mushroom is this one? Can I eat it? What's it taste like?",
+      "type": "Tension"
+    },
+    {
+      "who": "Pomegranate Cookie",
+      "id": "pomegranate",
+      "text": "I heard you sometimes curse the forest... I'm gonna keep an eye on you!",
+      "type": "Tension"
+    },
+    {
+      "who": "Sugar Swan Cookie",
+      "id": "sugar-swan",
+      "text": "I swore to protect you and the paradise no matter what!",
+      "type": "Admiration"
+    },
+    {
+      "who": "Red Panna Cotta Cookie",
+      "id": "red-panna-cotta",
+      "text": "When I become Sugar Swan's entourage, you can become my entourage!",
+      "type": "Trust"
+    },
+    {
+      "who": "Black Sugar Swan Cookie",
+      "id": "black-sugar-swan",
+      "text": "You may look like Sugar Swan Cookie, but I won't be fooled! Her entourage can see through your tricks!",
+      "type": "Tension"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Blue Slushy Cookie",
+      "img": "images/cookies/Crob_standard_blue_slushy.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Glacial Waltz",
+      "img": "images/costumes/cookie/Glacial_waltz.png",
+      "tier": "superepic",
+      "info": "Meet Blue Slushy Cookie, now graced with the wings of a true guardian. Wearing lavender shoes, she soars over the lake, making ice pillars rise up with little stars. The movement of this dream-fulfilled bird resemble a joyful waltz!"
+    },
+    {
+      "name": "Yakgwa Village Envoy",
+      "img": "images/costumes/cookie/Crob_standard_yakgwa_village_envoy.png",
+      "tier": "epic",
+      "info": "Today's mission: Bring delicious treats from Yakgwa Village all the way back to Dessert Paradise! Blue Slushy Cookie takes on this crucial mission with pride, even topping her icing with a special feathered hat marking her as a Dessert Guardian. One glance across Yakgwa Village reveals countless new, fascinating things to see—from clothing carefully crafted from honey and flour to eye-catching fan dance performances paired with music to make any Cookie's dough move! The Dessert Guardian's eyes sparkle as she explores the village until sundown."
+    },
+    {
+      "name": "Dessert Forest Elf",
+      "img": "images/costumes/cookie/Dessert_forest_elf.png",
+      "tier": "rare",
+      "info": "Get ready for the fantasy film of the year, The Fellowship of the Jelly. It's about a journey to rid the One Jelly that will taint the world with wickedness. Taking on the role of an elf from the Dessert Forest is none other than Blue Slushy Cookie. While giving it her all on set because \"acting is in her nature,\" there's a slight hiccup! It turns out that shooting rubber arrows a bit too high makes them stick to the lights. Let's aim a little lower next time!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "icy-birdie",
+      "desc": "+222,000 pts for Blue Slushy Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "butterfly-brooch",
+      "desc": "+32,000 Scale Powder Jelly Points"
+    }
+  ],
+  "candy": {
+    "name": "Blue Slushy Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_blue_slushy.png",
+    "levels": [
+      {
+        "lv": 5,
+        "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+97,000 pts for Blue Slushy Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Magic Candy Ingredient",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_blue_slushy.png"
+    },
+    "skillFull": "Blue Slushy Arrow Jellies are created at regular intervals. Upon obtaining a Blue Slushy Arrow Jelly, you can fire a Blue Slushy Arrow ahead to destroy obstacles and create Blue Slushy Jellies. The stronger the enchanted power, the more points obtained from Blue Slushy Jellies.",
+    "emoji": "🍬"
+  }
+}

@@ -960,6 +960,17 @@
       .rc .rh { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 4px; }
       .rc .rn { font: 800 17px/1.1 var(--disp); color: #4a2a52; }
       .rc .rq { font-weight: 700; line-height: 1.35; font-style: italic; }
+
+      /* ===== Phone layout fixes ===== */
+      /* 1) Rows keep their natural height; the grid scrolls instead of squashing the cards to fit the screen */
+      #grid { grid-auto-rows: max-content; }
+      /* 2) Page height: --app-h is set by a small script (iPhone home-screen apps report the page about a status bar too short);
+            falls back to 100% */
+      html, body { height: var(--app-h, 100%); }
+      /* 3) Home-bar space is added once: by the tab bar at the bottom, not again by the page */
+      body { padding-bottom: 0; }
+      #detail { padding-bottom: env(safe-area-inset-bottom); }
+      @media (min-width: 701px) { #list { padding-bottom: env(safe-area-inset-bottom); } }
     </style>
   </head>
   <body>
@@ -1304,6 +1315,21 @@
         el.classList.add("out");
         setTimeout(() => { if (el.classList.contains("out")) { el.style.display = "none"; el.classList.remove("out"); } }, 180);
       }
+      // Keep the app exactly as tall as the screen. Some iPhones report window.innerHeight about a status bar (44px) shorter than the
+      // real screen in home-screen mode, which left an empty strip under the tab bar. Only small corrections (<= 60px) are applied.
+      function fitHeight() {
+        let h = window.innerHeight;
+        const ios = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform == "MacIntel" && navigator.maxTouchPoints > 1);
+        const app = navigator.standalone || matchMedia("(display-mode: standalone)").matches;
+        if (ios && app) {
+          const sh = window.innerWidth > window.innerHeight ? Math.min(screen.width, screen.height) : Math.max(screen.width, screen.height);
+          if (sh > h && sh - h <= 60) h = sh;
+        }
+        document.documentElement.style.setProperty("--app-h", h + "px");
+      }
+      fitHeight();
+      ["resize", "orientationchange", "pageshow", "visibilitychange"].forEach((ev) => addEventListener(ev, () => setTimeout(fitHeight, 60)));
+      document.addEventListener("focusout", () => setTimeout(() => { fitHeight(); window.scrollTo(0, 0); }, 120)); // keyboard closed
       function openItem(id, type) {
         if (type) tab = type;
         cur = find(id);

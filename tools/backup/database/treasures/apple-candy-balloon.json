@@ -1,0 +1,124 @@
+{
+  "id": "apple-candy-balloon",
+  "name": "Apple Candy Balloon",
+  "rarity": "epic",
+  "released": "April 29, 2020",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/9a/Apple_Candy_Balloon.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e4/Apple_candy_balloon.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+167 points for all Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+333 points for all Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+500 points for all Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+667 points for all Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+833 points for all Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+1,000 points for all Jellies"
+    }
+  ],
+  "skillFull": "Creates a balloon after collecting a certain number of Jellies. When the balloon bursts, various Candy Jellies appear. Level Up for more points per Candy Jelly.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+71,430 points for Candy Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+77,300 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+83,170 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+89,040 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+94,910 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+100,780 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+106,650 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+112,520 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+118,390 points for Candy Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+124,260 points for Candy Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+130,130 points for Candy Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Makes balloons with 500 Jellies\nCreates 20 Candy Jellies\n+136,000 points for Candy Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "All the young Cookies run with this candy balloon. The spring breeze rocks it back and forth, then BANG! All sorts of candies burst forth. What a surprise!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "sparkling",
+      "desc": "+650 pts for all Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "whipped-cream",
+      "desc": "+650 pts for all Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "hydrangea",
+      "desc": "+650 pts for all Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "candy-corn",
+      "desc": "+650 pts for all Jellies"
+    }
+  ]
+}

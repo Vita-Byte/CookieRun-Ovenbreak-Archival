@@ -1,0 +1,110 @@
+{
+  "id": "bear-jelly-boomerang",
+  "name": "Bear Jelly Boomerang",
+  "rarity": "epic",
+  "released": "December 29, 2017",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/2/28/Bear_Jelly_Boomerang.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/7/70/Bear_jelly_boomerang.png",
+  "tags": [
+    "Jellies",
+    "Score"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+1,833 points for Jellies caught by boomerang"
+    },
+    {
+      "lv": 2,
+      "effect": "+3,667 points for Jellies caught by boomerang"
+    },
+    {
+      "lv": 3,
+      "effect": "+5,500 points for Jellies caught by boomerang"
+    },
+    {
+      "lv": 4,
+      "effect": "+7,333 points for Jellies caught by boomerang"
+    },
+    {
+      "lv": 5,
+      "effect": "+9,167 points for Jellies caught by boomerang"
+    },
+    {
+      "lv": 6,
+      "effect": "+11,000 points for Jellies caught by boomerang"
+    }
+  ],
+  "skillFull": "Throws boomerangs at given intervals. Boomerangs destroy obstacles and catch Jellies. Extra points if you manage to catch the returning boomerang. Level Up for more points.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Boomerang every 13 sec\n+989,000 Boomerang Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Boomerang every 13 sec\n+1,070,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Boomerang every 13 sec\n+1,151,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Boomerang every 13 sec\n+1,232,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Boomerang every 13 sec\n+1,313,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Boomerang every 13 sec\n+1,394,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Boomerang every 13 sec\n+1,475,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Boomerang every 13 sec\n+1,556,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Boomerang every 13 sec\n+1,637,000 Boomerang Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Boomerang every 13 sec\n+1,718,000 Boomerang Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Boomerang every 13 sec\n+1,799,000 Boomerang Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Boomerang every 13 sec\n+1,880,000 Boomerang Points",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Mysterious Bear Jelly Boomerang that will return to you no matter how far you throw it! We advise you to practice a little before throwing.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "hydrangea",
+      "desc": "+260,000 Boomerang Points"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "name": "Meowcchiato",
   "rarity": "epic",
   "released": "July 14, 2026",
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fa/Crob_standard_meowcchiato.png",
+  "img": "images/pets/Crob_standard_meowcchiato.png",
   "tags": [
     "Jellies"
   ],
@@ -97,14 +97,15 @@
   "costumes": [
     {
       "name": "Meowcchiato",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fa/Crob_standard_meowcchiato.png",
+      "img": "images/pets/Crob_standard_meowcchiato.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Sunset Goggles",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/ef/Crob_standard_sunset_goggles.png",
+      "img": "images/costumes/pet/Crob_standard_sunset_goggles.png",
+	  "released": "July 14, 2026",
       "tier": "epic",
       "info": "After a long day of splashing around, Meowcchiato settles in beside Latte Cookie as the evening rolls in. The goggles perched on its head reflect the warm glow of an orange sunset. As the sound of the waves washes over them and the sea breeze ruffles their soft fur... everything feels golden"
     }

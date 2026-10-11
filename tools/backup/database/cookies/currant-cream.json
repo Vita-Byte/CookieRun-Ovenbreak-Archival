@@ -1,0 +1,375 @@
+{
+  "id": "currant-cream",
+  "name": "Currant Cream Cookie",
+  "rarity": "epic",
+  "released": "March 14, 2023",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0e/Crob_affection_jelly_currant_cream.png",
+    "story": "In school, she was the drummer of a rock band."
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Crob_standard_currant_cream.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_head_currant_cream.png",
+  "tags": [
+    "Speed",
+    "Score",
+    "Jellies",
+    "SpecialControl"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 175,
+      "desc": "Skill activation every 33 sec\n+400,000 Cookie Casting Points\n+480,000 Punk Fashion Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 184,
+      "desc": "Skill activation every 33 sec\n+550,000 Cookie Casting Points\n+660,000 Punk Fashion Points",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 193,
+      "desc": "Skill activation every 33 sec\n+700,000 Cookie Casting Points\n+840,000 Punk Fashion Points",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 202,
+      "desc": "Skill activation every 33 sec\n+850,000 Cookie Casting Points\n+1,020,000 Punk Fashion Points",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 211,
+      "desc": "Skill activation every 33 sec\n+1,000,000 Cookie Casting Points\n+1,200,000 Punk Fashion Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 220,
+      "desc": "Skill activation every 33 sec\n+1,150,000 Cookie Casting Points\n+1,380,000 Punk Fashion Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 229,
+      "desc": "Skill activation every 33 sec\n+1,300,000 Cookie Casting Points\n+1,560,000 Punk Fashion Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 238,
+      "desc": "Skill activation every 33 sec\n+1,450,000 Cookie Casting Points\n+1,740,000 Punk Fashion Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 247,
+      "desc": "Skill activation every 33 sec\n+1,600,000 Cookie Casting Points\n+1,920,000 Punk Fashion Points",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 256,
+      "desc": "Skill activation every 33 sec\n+1,750,000 Cookie Casting Points\n+2,100,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 265,
+      "desc": "Skill activation every 33 sec\n+1,900,000 Cookie Casting Points\n+2,280,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 274,
+      "desc": "Skill activation every 33 sec\n+2,050,000 Cookie Casting Points\n+2,460,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 283,
+      "desc": "Skill activation every 33 sec\n+2,200,000 Cookie Casting Points\n+2,640,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 292,
+      "desc": "Skill activation every 33 sec\n+2,350,000 Cookie Casting Points\n+2,820,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 301,
+      "desc": "Skill activation every 33 sec\n+2,500,000 Cookie Casting Points\n+3,000,000 Punk Fashion Points",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Casts Cookies from the streets to become punk fashion models at given intervals. The Cookies are located at different heights, and are cast by using the platforms to reach them. When all Cookies are cast, a stage appear(sic) and the Cookies walk up on it. Press both buttons repeatedly to turn the Cookies. After turning the Cookies a certain amount, they put on punk fashion clothing, earning Punk Fashion Points. Level Up for more Cookie Casting Points and Punk Fashion Points.",
+  "story": "What do you get when you combine currant fruit as dark as the night, and light, soft cream, delicate like the sunlight of spring? Chaos itself, of course! That intense acidity that makes your mouth water and the soft sweetness of cream meets to create the most unique Cookie you've ever seen. A rebel of the fashion world who refuses to be limited in her self-expression, it's Currant Cream Cookie! Crown Punky's signature designs include t-shirts decorated with dangerously sharp studs or shocking strawberry jam splatter. This up-and-coming designer, who has started to gain popularity with the Cookies of the in-crowd, is also famous for her outspoken attempts to turn punk rock concert stages into runways, and her two-sided mysterious smile. Everything has a dark side, and it definitely seems like this Cookie has a secret of some kind... Cookies are not just what they present to the world after all!",
+  "quote": "The punk mentality that breaks down prejudice, now that's fashion!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "The punk mentality that breaks down prejudice, now that's fashion!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Don't disturb me.",
+            "My taste is peculiar? You must mean unique...",
+            "Fashion should strike a chord within you. Like the spirit of rock!",
+            "Don't overthink it. As long you like it, what else is there to worry about?",
+            "Can't you see I'm concentrating.",
+            "You're saying chains and skulls are scary? That's what makes them cool...",
+            "Nothing is set in stone... Don't put yourself in a box!",
+            "You're not strange for standing out a little.",
+            "There are way too many Cookies unaware of their own charms...",
+            "I'm working right now, could you let me be?"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "To think you measured it incorrectly..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Have this. It will bring out the best in you."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "The spirit of rock inspires me now and again.",
+            "... What is it? Can't you come back later?",
+            "Oh really? Thanks. I guess you have good taste after all.",
+            "You came by earlier? I was too concentrated to notice, sorry!",
+            "As if born from the same Cookie cutter... So dull, isn't it?",
+            "I'm always doing research on how to bring out the charms of each individual Cookie in the best way.",
+            "The star studs fall off quite easily, so don't touch them(sic)",
+            "What? The music is too loud! Could you repeat that?",
+            "If you want to feel true liberation... Wear our clothes!",
+            "They look dangerous because they're so sharp? The danger factor is what makes this piece..."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Thank you. You can leave it over there."
+            },
+            {
+              "label": "Given <u>Studded Chain Choker</u>",
+              "text": "Don't I look tough? I feel like I could overcome anything!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Golden stitching on leather jelly... This is very retro punk!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "How long have you been here? You startled me!",
+            "I don't hear anything when I'm focused...",
+            "I think chains would go nice with that jacket.",
+            "Too much? It's unique though...",
+            "Your style is a mess!",
+            "How about showing off your charm?"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+25,000 Punk Fashion Points"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+50,000 Punk Fashion Points"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Sour Belt Cookie",
+      "id": "sour-belt",
+      "text": "This Cookie always keeps up with current trends. That's a designer I can respect.",
+      "type": "Rival"
+    },
+    {
+      "who": "Chocolate Bonbon Cookie",
+      "id": "chocolate-bonbon",
+      "text": "Although her designs are nothing groundbreaking, I have to acknowledge this Cookie's needlework.",
+      "type": "Rival"
+    },
+    {
+      "who": "Vampire Cookie",
+      "id": "vampire",
+      "text": "Oh, we both have fangs... I think this Cookie fits the image of my brand.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mustard Cookie",
+      "id": "mustard",
+      "text": "She helps me out by drawing graffiti designs for my graphic print t-shirts now and then.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Rockstar Cookie",
+      "id": "rockstar",
+      "text": "I listen to this Cookie's songs whenever I need some inspiration.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Werewolf Cookie",
+      "id": "werewolf",
+      "text": "This lonesome yet dangerous aura is so punk...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Dr. Bones Cookie",
+      "id": "dr-bones",
+      "text": "So cool... Now this is a talented Cookie.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Pastel Meringue Cookie",
+      "id": "pastel-meringue",
+      "text": "A slightly sensitive but fun neighbor!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Currant Cream Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/07/Crob_standard_currant_cream.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Purrfect Tailor",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/1b/Purrfect_tailor.png",
+	  "bonus": "+12,000 pts for Punk Fashion Points",
+	  "released": "October 27, 2023",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "This fabric is so soft... I want to press it with my paws...",
+                "Meow... Once I'm done with tailoring, I'm going to have a glass of milk.",
+                "There are way too many Cookies unaware of their own charms... Meow.",
+                "I just might sneak up on you...",
+                "The cat ears are strange? I think it's clawsome.",
+                "You should always wear what you like.",
+                "Looking at a ball of yarn makes me want to unravel it.",
+                "Don't disturb me.",
+                "Don't overthink it. As long you(sic) like it, what else is there to worry about?",
+                "I'm working right now, could you let me be?"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "The threads are tangled up..."
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "rare"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "black-pinnypine",
+      "desc": "+7,400,000 Punk Fashion Points"
+    },
+    {
+      "type": "treasure",
+      "id": "jelly-cream-whisk",
+      "desc": "+260,000 pts for Cupcake Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Currant Cream Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d6/Crob_magic_candy_currant_cream.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Creates +15 Button Jellies during the skill\n+460,000 pts for Button Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Creates +15 Button Jellies during the skill\n+495,000 pts for Button Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Creates +15 Button Jellies during the skill\n+630,000 pts for Button Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Creates +15 Button Jellies during the skill\n+765,000 pts for Button Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Creates +15 Button Jellies during the skill\n+900,000 pts for Button Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Studded Chain Choker",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0a/Crob_magic_candy_ingredient_currant_cream.png",
+	  "text": "Sharp sugar crystals have been added to jet black leather jelly to complete this bold chain choker, showcasing the true punk spirit."
+    },
+    "skillFull": "Creates Button Jellies while the Cookie is putting on Punk Fashion on the stage. The stronger the enchanted power, the more points for Button Jellies.",
+    "emoji": "🍬"
+  }
+}

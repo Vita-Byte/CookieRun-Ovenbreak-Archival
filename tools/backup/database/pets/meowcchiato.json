@@ -1,0 +1,113 @@
+{
+  "id": "meowcchiato",
+  "name": "Meowcchiato",
+  "rarity": "epic",
+  "released": "July 14, 2026",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fa/Crob_standard_meowcchiato.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activation every 15.8 sec\n+419,320 pts for Milk Foam Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activation every 15.8 sec\n+457,440 pts for Milk Foam Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activation every 15.8 sec\n+495,560 pts for Milk Foam Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activation every 15.8 sec\n+533,680 pts for Milk Foam Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activation every 15.8 sec\n+571,800 pts for Milk Foam Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activation every 15.8 sec\n+609,920 pts for Milk Foam Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activation every 15.8 sec\n+648,040 pts for Milk Foam Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activation every 15.8 sec\n+686,160 pts for Milk Foam Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activation every 15.8 sec\n+724,280 pts for Milk Foam Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activation every 15.8 sec\n+762,400 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activation every 15.8 sec\n+800,520 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activation every 15.8 sec\n+838,640 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activation every 15.8 sec\n+876,760 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activation every 15.8 sec\n+914,880 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activation every 15.8 sec\n+953,000 pts for Milk Foam Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "A latte cup appears at certain intervals. The Pet hops right in and spins around to create Milk Foam Jellies. Level Up for more points for Milk Foam Jellies.",
+  "story": "\"Hello there, Meowcchiato!\" Everyone who wanders into the Latte Atelier always greets this adorable Milk Foam Cat first! One evening, Latte Cookie trudged home while pondering the perfect coffee-to-milk ratio—cup in hand, no time for a proper sit-down. Somehow, without noticing, a certain tiny someone had already made themselves at home in her cup! Meowcchiato loves a good nap on the windowsill. But fill a mug with warm latte, and they'll appear as if by magic, curled up and toasty before you even set it down. Plain black coffee? Not a chance! If you want to say hello to this fluffy kitty, you need to remember one question. Got milk?",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "latte",
+      "desc": "+630,000 pts for Latte Foam Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Meowcchiato",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fa/Crob_standard_meowcchiato.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Sunset Goggles",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/ef/Crob_standard_sunset_goggles.png",
+	  "released": "July 14, 2026",
+      "tier": "epic",
+      "info": "After a long day of splashing around, Meowcchiato settles in beside Latte Cookie as the evening rolls in. The goggles perched on its head reflect the warm glow of an orange sunset. As the sound of the waves washes over them and the sea breeze ruffles their soft fur... everything feels golden"
+    }
+  ]
+}
