@@ -1,0 +1,118 @@
+{
+  "id": "perfect-treasure-map",
+  "name": "Perfect Treasure Map",
+  "rarity": "epic",
+  "released": "September 16, 2018",
+  "img": "images/treasures/Perfect_Treasure_Map.png",
+  "avatar": "images/treasure-icons/Perfect_treasure_map.png",
+  "tags": [
+    "GiantMode",
+    "BlastMode",
+    "Items",
+    "Jellies",
+    "Potions"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+14,000 points for Map Fragment Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+28,000 points for Map Fragment Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+42,000 points for Map Fragment Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+56,000 points for Map Fragment Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+70,500 points for Map Fragment Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+85,000 points for Map Fragment Jellies"
+    }
+  ],
+  "skillFull": "Map Fragment Jellies appear at regular intervals. Collect enough Map Fragment Jellies to discover a hidden chest filled with Map Fragment Jellies, various Gem Jellies, and items. Level Up for more points for Gem Jellies found in the chest.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+25,100 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+41,000 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+56,900 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+72,800 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+88,700 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+104,600 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+120,500 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+136,400 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+152,300 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+168,200 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+184,100 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Map Fragment Jellies appear every 3.2 sec\nCollect 7 Map Fragment Jellies to discover a treasure chest\n+115,000 points for Map Fragment Jellies\n+200,000 points for Treasure Jellies\n+2 Energy recovered by Life Treasure Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "An unknown Cookie has searched high and low for the fragments of this map. Now that it's complete, it will help you find a treasure!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "cauliflower",
+      "desc": "+64,000 pts for Map Fragment Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "chili-pepper",
+      "desc": "+64,000 pts for Map Fragment Jellies"
+    }
+  ]
+}

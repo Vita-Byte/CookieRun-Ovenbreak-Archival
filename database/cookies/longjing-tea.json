@@ -1,0 +1,439 @@
+{
+  "id": "longjing-tea",
+  "name": "Longjing Tea Cookie",
+  "rarity": "epic",
+  "released": "May 28, 2026",
+  "illust": "images/cookie-illustrations/Crob_illustration_longjing_tea.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_longjing_tea.png",
+    "story": "The teas he once sought simply to ease the bitter taste of prescribed elixirs gradually became an anticipated part of his daily routine."
+  },
+  "img": "images/cookies/Crob_standard_longjing_tea.png",
+  "avatar": "images/cookie-heads/Crob_head_longjing_tea.png",
+  "tags": [
+    "BearJellies",
+    "Jellies",
+    "Destruction",
+    "JellyParty"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 176,
+      "desc": "Skill activates every 8 sec\n+48,600 pts for Tea Leaf Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 185,
+      "desc": "Skill activates every 8 sec\n+53,200 pts for Tea Leaf Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 194,
+      "desc": "Skill activates every 8 sec\n+57,800 pts for Tea Leaf Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 203,
+      "desc": "Skill activates every 8 sec\n+62,400 pts for Tea Leaf Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 212,
+      "desc": "Skill activates every 8 sec\n+67,000 pts for Tea Leaf Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 221,
+      "desc": "Skill activates every 8 sec\n+71,600 pts for Tea Leaf Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 230,
+      "desc": "Skill activates every 8 sec\n+76,200 pts for Tea Leaf Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 239,
+      "desc": "Skill activates every 8 sec\n+80,800 pts for Tea Leaf Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 248,
+      "desc": "Skill activates every 8 sec\n+85,400 pts for Tea Leaf Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 257,
+      "desc": "Skill activates every 8 sec\n+90,000 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 266,
+      "desc": "Skill activates every 8 sec\n+94,600 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 275,
+      "desc": "Skill activates every 8 sec\n+99,200 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 284,
+      "desc": "Skill activates every 8 sec\n+103,800 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 293,
+      "desc": "Skill activates every 8 sec\n+108,400 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 302,
+      "desc": "Skill activates every 8 sec\n+113,000 pts for Tea Leaf Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Waves his fan at certain intervals, sending forth a gust of wind imbued with the fragrance of green tea. Jellies caressed by this wind are transformed into corresponding types of Tea Leaf Jellies. The final gust of wind is enhanced, creating double the number of corresponding Jellies. Level up for more points for Tea Leaf Jellies.",
+  "story": "Atop a mist-shrouded peak, the most talented artisans and minds of the Cookie world gather within the Tea Clan to refine the wisdom of the realm as if brewing the finest of teas. Longjing Tea Cookie, baking with tea leaves that have withstood the greatest of hardships, stands as the young head of the clan, always giving off an air of elegance worthy of the clan's name.\n\nPerhaps, though, the tea leaves used within his dough were roasted a bit too harshly. Any Cookie who spends time with this clean head may notice his pallor as he seeks out yet another cup of tea, looking as if he might crumble at any moment. However, these same struggles granted him keen insight into all of the world's secrets. From the simplest of martial arts techniques to the whereabouts of the land's greatest Cookies, everything within the realm flows according to the tea leaves carefully set out by this Cookie alone.\n\nThe moment he unleashes his secret technique, leading all pieces of any battle fall right into his carefully steeped plan, it is said that even the greatest brute force cannot stop him. His tea props mesh together like the most fine-tuned gears, slowly tightening around his opponents in an intricate trap thus far inescapable by any Cookie within the realm.",
+  "quote": "The wisdom of the realm cannot be discussed without my Clan.",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "The wisdom of the realm cannot be discussed without my Clan."
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "I would not recommend discounting me just for lacking brute force.",
+            "Can you read what the tea leaves are telling you?",
+            "Within my formation, the battlefield might as well be within my tea cup.",
+            "Life is short... so should it not be written that much more meticulously?",
+            "What would you say to a cup of fragrant tea?",
+            "The gifted and talented gather in the Tea Clan's domain.",
+            "The perfect formation is one undetected by your foes.",
+            "Your every move is already worked into my calculations.",
+            "I am fine. I'm used to this much pai—COUGH!!!",
+            "A single teapot contains the principles of this very universe..."
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "I can't... let it end here... COUGH...!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "It has been a pleasure talking with you."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "The tea's aroma... It is ready. Take a seat.",
+            "Learn how to savor a tea's aroma. Only then... will you understand what the tea is telling you.",
+            "I prepared these tea leaves myself early this morning. I am glad the tea is to your liking.",
+            "Allow me to show you around the Tea Clan... *Cough...* Allow me to catch my breath...",
+            "This teapot is more than a mere tool. Its shape, its warmth... All are part of a well-calculated formation.",
+            "Oh, this? Merely a chair for mobility... For Cookies who may have trouble getting around... *Cough!*",
+            "Sharing conversation over tea is much like a charged competition between each party's wits.",
+            "My dough's weakness... Simply means I must make the most of each moment I have.",
+            "No need to be surprised. This was not a prediction, but the result of carefully leading you to make this choice.",
+            "There is more than meets the eye. The moment you rely on what's seen, you are bound to lose your way."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "You've wasted my time. Not the choice I would have made..."
+            },
+            {
+              "label": "Given <u>Young Tea Leaf Fan</u>",
+              "text": "Did I lose consciousness...? I... I am fine. No need for concern."
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Aah... It resembles a tea steeped with only the freshest, most golden of tea leaves."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "*Cough...* It appears... I pushed myself too hard.",
+            "What brings you to the Tea Clean?",
+            "Can you see through this formation?",
+            "The fragrance of tea calms my heart.",
+            "Stay on guard. There are traps everywhere...",
+            "You wish to learn to read the flow of the universe?"
+          ]
+        },
+        {
+          "title": "New Cookie Cup End",
+          "lines": [
+            "I shall lend my wisdom where there is a will to use it."
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+200 pts for Tea Leaf Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+400 pts for Tea Leaf Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Matcha Cookie",
+      "id": "matcha",
+      "text": "While I am not one to rely on mere intuition... Something tells me you are quite dangerous. Tsk.",
+      "type": "Tension"
+    },
+    {
+      "who": "Cherry Blossom Cookie",
+      "id": "cherry-blossom",
+      "text": "If you are so insistent that all teas are equally pleasant, what would you say to sharing a cup of green tea?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Plum Cookie",
+      "id": "plum",
+      "text": "You are quite tactful and sincere. Unlike... a certain someone I know.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Peach Cookie",
+      "id": "peach",
+      "text": "Inherently talented, and yet quite rash in behavior. This will lead to great struggles... Far too chaotic to keep nearby. Tsk.",
+      "type": "Friendly"
+    },
+    {
+      "who": "White Peach Cookie",
+      "id": "white-peach",
+      "text": "Pray tell, how are you able to maintain clarity of mind and stability of dough wielding as much poison as you are?",
+      "type": "Tension"
+    },
+    {
+      "who": "Obscure Umbra Cookie",
+      "id": "obscure-umbra",
+      "text": "I shall perfect a formation able to halt this Cookie... even if it becomes the last thing I accomplish before my dough succumbs to its ailments.",
+      "type": "Tension"
+    },
+    {
+      "who": "Bamboo Blade Cookie",
+      "id": "bamboo-blade",
+      "text": "The reappearance of the Spirit Weapons simply serves as proof of how critical of a situation we are in.",
+      "type": "Trust"
+    },
+    {
+      "who": "Halite Gauntlet Cookie",
+      "id": "halite-gauntlet",
+      "text": "Powerful and resilient. I would love to take the time to learn from you... but I do not think time will allow it... *COUGH!*",
+      "type": "Trust"
+    },
+    {
+      "who": "Nimbus Cake Cookie",
+      "id": "nimbus-cake",
+      "text": "Something has lead you to believe you are the leader of our group... However, I cannot deny your remarkable abilities.",
+      "type": "Trust"
+    },
+    {
+      "who": "Xiaolongbao Cookie",
+      "id": "xiaolongbao",
+      "text": "Stop mindlessly throwing me over your shoulder like luggage. This is your warning.",
+      "type": "Trust"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Longjing Tea Cookie",
+      "img": "images/cookies/Crob_standard_longjing_tea.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Alliance's Grand Strategist",
+	  "img": "images/costumes/cookie/Crob_standard_alliances_grand_strategist.png",
+	  "illust": "images/costume-illustrations/Crob_illustration_alliances_grand_strategist.png",
+	  "bonus": "+400 pts for Tea Leaf Jellies",
+	  "released": "May 28, 2026",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "The Tea Clan's gardens appear tranquil... But is that truly the case?",
+                "The gifted and talented gather in the Tea Clan's domain.*",
+                "I would not recommend discounting me just for lacking brute force.*",
+                "This single glass of tea could change your fate.",
+                "Whether there is a next time... Depends on you alone.",
+                "Hmm... Is the tea to your favor today?",
+                "What would you say to a cup of fragrant tea?*",
+                "Your every move is already worked into my calculations.*",
+                "Not just any Cookie is worthy of sharing tea with us here.",
+                "Can you read what the tea leaves are telling you?*"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "That was a valuable conversation. I shall be keeping my eyes on you."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "No need to go through the trouble of trying to win my favor... I prefer things simple.",
+                "Savor your tea. If you cannot understand its depth, you are not qualified to sit here.",
+                "Was your journey easy? This pavilion... is my favorite place within our tea gardens.",
+                "You wish to know why I've called you here? I believe that is for you to prove for yourself.",
+                "You are well versed in recognizing the depth of a tea's flavor and aroma. I look forward to our conversation.",
+                "You navigated the mechanisms and formations quite well to have reached this pavilion...",
+                "*Cough...* Excuse me a moment... Talking this much has run down my energy...",
+                "How about you prepare the tea? I shall be watching... very closely.",
+                "The position of Grand Strategist is lonely... However, it is bearable so long as this warm glass lays in my hand.",
+                "What sets you apart from the other countless Cookies out there? Well? I'm waiting."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "*Cough... COUGH...!* I... I appreciate the thought..."
+                },
+                {
+                  "label": "Given <u>Young Tea Leaf Fan</u>",
+                  "text": "This clears my mind. I believe we can continue our conversation."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Are you attempting to pay for your Longjing Tea...? I assure you, it is quite priceless..."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "The Grand Strategist of the Seal Alliance often sets up in a pavillion located in the middle of a brilliant tea field on the Tea Clan's grounds, especially when the plants are in full bloom. There, where the sound of tea flowing mimics the resonant sound of rolling jade beads, he savors tea brewed from only the highest quality tender, golden tea leaves. Cookies flock to the tea field in hopes of sharing a single cup and connecting with the strategist... The Cookie who will ultimately raise a teacup with the wise strategist after his long silence has yet to be seen."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "steeped-steward",
+      "desc": "+62,000 pts for Tea Leaf Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "fresh-tea-leaves",
+      "desc": "+2,400 pts for Jellies in Green Tea Bubbles"
+    }
+  ],
+  "candy": {
+    "name": "Longjing Tea Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_longjing_tea.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Obstacles destroyed by Green Tea Gust create Tea Leaf Jellies\n+200 pts for Tea Leaf Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Obstacles destroyed by Green Tea Gust create Tea Leaf Jellies\n+6,150 pts for Tea Leaf Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Obstacles destroyed by Green Tea Gust create Tea Leaf Jellies\n+12,100 pts for Tea Leaf Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Obstacles destroyed by Green Tea Gust create Tea Leaf Jellies\n+18,050 pts for Tea Leaf Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Obstacles destroyed by Green Tea Gust create Tea Leaf Jellies\n+24,000 pts for Tea Leaf Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Young Tea Leaf Fan",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_longjing_tea.png",
+	  "text": "One wave of this fan clears even the cloudiest of minds. Imbued with the life of the youngest tea leaves, it has been passed down through the heads of the Tea Clan for ages."
+    },
+    "skillFull": "The final gust of wind creates additional Tea Leaf Jellies when destorying obstacles. The stronger the enchanted power, the more points for Tea Leaf Jellies.",
+    "emoji": "🍬"
+  }
+}

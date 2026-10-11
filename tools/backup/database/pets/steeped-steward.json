@@ -1,0 +1,114 @@
+{
+  "id": "steeped-steward",
+  "name": "Steeped Steward/OvenBreak",
+  "rarity": "epic",
+  "released": "May 28, 2026",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/91/Crob_standard_steeped_steward.png",
+  "tags": [
+    "Items",
+    "Potions"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 19.2 sec\n+1,144,000 pts for Green Tea Potions\n+4 Energy recovered from Green Tea Potions",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 19.2 sec\n+1,248,000 pts for Green Tea Potions\n+4 Energy recovered from Green Tea Potions",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 19.2 sec\n+1,352,000 pts for Green Tea Potions\n+5 Energy recovered from Green Tea Potions",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 19.2 sec\n+1,456,000 pts for Green Tea Potions\n+5 Energy recovered from Green Tea Potions",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 19.2 sec\n+1,560,000 pts for Green Tea Potions\n+6 Energy recovered from Green Tea Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 19.2 sec\n+1,664,000 pts for Green Tea Potions\n+6 Energy recovered from Green Tea Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 19.2 sec\n+1,768,000 pts for Green Tea Potions\n+7 Energy recovered from Green Tea Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 19.2 sec\n+1,872,000 pts for Green Tea Potions\n+7 Energy recovered from Green Tea Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 19.2 sec\n+1,976,000 pts for Green Tea Potions\n+7 Energy recovered from Green Tea Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 19.2 sec\n+2,080,000 pts for Green Tea Potions\n+8 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 19.2 sec\n+2,184,000 pts for Green Tea Potions\n+8 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 19.2 sec\n+2,288,000 pts for Green Tea Potions\n+9 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activates every 19.2 sec\n+2,392,000 pts for Green Tea Potions\n+9 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activates every 19.2 sec\n+2,496,000 pts for Green Tea Potions\n+10 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activates every 19.2 sec\n+2,600,000 pts for Green Tea Potions\n+10 Energy recovered from Green Tea Potions",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Leaps into tea at certain intervals. After steeping until the rich fragrance of tea spreads, it creates a Green Tea Potion. Level Up for more Energy restored by Green Tea Potions.",
+  "story": "Steeped Steward unsparingly shares its clear, aromatic energy with its master, a certain clan head who tends to overwork himself. The Cookie stays up until all hours of the night to finish his duties until his dough gives out on him, so Steeped Steward steeps only the purest of energy to offer up to Longjing Tea Cookie when his mind is at its cloudiest. As these nights are quite common and this Pet's devotion has no limit, it's said that now even steeping multiple times only results in the mildest of tea. However, you should not underestimate it due to its wrinkled, tired appearance. Word around the realm says that Steeped Steward was once a great hero rivaling the great martial arts master who first introduced the arts to the Cookie world!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "longjing-tea",
+      "desc": "+62,000 pts for Tea Leaf Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Steeped Steward/OvenBreak",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/91/Crob_standard_steeped_steward.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Tea Garden Inspector",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/50/Crob_standard_tea_garden_inspector.png",
+	  "released": "May 28, 2026",
+      "tier": "epic",
+      "info": "???"
+    }
+  ]
+}

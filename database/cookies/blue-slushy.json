@@ -3,6 +3,7 @@
   "name": "Blue Slushy Cookie",
   "rarity": "epic",
   "released": "September 26, 2023",
+  "illust": "images/cookie-illustrations/Updatehighlight_blue_slushy_cookie.png",
   "jelly": {
     "img": "images/affection-jelly/Crob_affection_jelly_blue_slushy.png",
     "story": "Your nose might tingle from eating a cold shaved ice dessert!"
@@ -108,7 +109,7 @@
     }
   ],
   "skillFull": "Launches Blue Slushy Arrows and takes flight at regular intervals. While in flight, the launched arrows descend one by one, destroying nearby obstacles and creating Blue Slushy Jellies. Level Up for more points for Blue Slushy Jellies.",
-  "story": "In Dessert Paradise, above the sky was a bluebird Cookie nestled beneath the cool soda waterfall. Blue Slushy Cookie is known for her relentless chirping! The large scoop of frozen blue soda on top of the refreshing frozen lake water has given her a crisp and delightful voice. From the moment Blue Slushy Cookie began to flutter her wings, she dreamt of becoming a Dessert Guardian. Oddly enough, the Cookie showed little interest in training but was always busy soaring through Dessert Paradise to bring back the latest news. Blue Slushy Cookie is overflowing with enthusiasm, even though her ambition might be greater than her skills for now. Nevertheless, if she continues to chase her dreams, who knows? She just might stand by Sugar Swan Cookie's side as an invaluable guardian someday!",
+  "story": "In Dessert Paradise, above the sky was a bluebird Cookie nestled beneath the cool soda waterfall. Blue Slushy Cookie is known for her relentless chirping!\n\nThe large scoop of frozen blue soda on top of the refreshing frozen lake water has given her a crisp and delightful voice. From the moment Blue Slushy Cookie began to flutter her wings, she dreamt of becoming a Dessert Guardian. Oddly enough, the Cookie showed little interest in training but was always busy soaring through Dessert Paradise to bring back the latest news.\n\nBlue Slushy Cookie is overflowing with enthusiasm, even though her ambition might be greater than her skills for now.\n\nNevertheless, if she continues to chase her dreams, who knows? She just might stand by Sugar Swan Cookie's side as an invaluable guardian someday!",
   "quote": "I'm the future Dessert Guardian!",
   "quotes": [
     {
@@ -175,7 +176,7 @@
               "text": "Ooh! Ooh! What's this? What does it do? Is it something nice?"
             },
             {
-              "label": "Given <u></u>",
+              "label": "Given <u>Ice Feather Brooch</u>",
               "text": "Having this on means you have become a guardian!"
             },
             {
@@ -294,18 +295,122 @@
     {
       "name": "Glacial Waltz",
       "img": "images/costumes/cookie/Glacial_waltz.png",
+	  "illust": "images/costume-illustrations/Img_skinIllust_423001.png",
+	  "bonus": "+1,100 pts for Blue Slushy Jellies",
+	  "released": "September 26, 2023",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Start boldly, end elegantly...",
+                "Ahem! I can't lose my dignity as a guardian!",
+                "I'm going to perform for Sugar Swan!",
+                "I have been waiting for this day...",
+                "Can you believe it? The whole forest is watching me!",
+                "Watch the flowers and the birds dance in harmony!",
+                "Every movement creates beautiful ice sculptures!",
+                "Every note of nature dances within me!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I wanna... dance... a little... more..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "The most clear and beautiful sounds...!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Would you like to waltz with me?",
+                "Sugar Swan came back... It's like I'm dreaming...",
+                "Look at my beautiful wings!",
+                "Let's dance the night away!",
+                "I'm gonna perform a dance under the moonlight!",
+                "Always remember this dance for Sugar Swan!",
+                "Did you see that? The water droplets became snowflakes!",
+                "I'm going to dance embracing the sound of the forest!",
+                "One, two, step...! Go with the flow... Become one with the music!",
+                "With faith, I made through the long nights."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Thanks, but I'm too busy dancing right now..."
+                },
+                {
+                  "label": "Given <u>Ice Feather Brooch</u>",
+                  "text": "Finally! I'm so happy!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "This is beautiful...! I'll have this beside the ice sculpture!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "tier": "superepic",
       "info": "Meet Blue Slushy Cookie, now graced with the wings of a true guardian. Wearing lavender shoes, she soars over the lake, making ice pillars rise up with little stars. The movement of this dream-fulfilled bird resemble a joyful waltz!"
     },
     {
       "name": "Yakgwa Village Envoy",
       "img": "images/costumes/cookie/Crob_standard_yakgwa_village_envoy.png",
+	  "bonus": "+550 pts for Blue Slushy Jellies",
+	  "released": "August 27, 2026",
       "tier": "epic",
       "info": "Today's mission: Bring delicious treats from Yakgwa Village all the way back to Dessert Paradise! Blue Slushy Cookie takes on this crucial mission with pride, even topping her icing with a special feathered hat marking her as a Dessert Guardian. One glance across Yakgwa Village reveals countless new, fascinating things to see—from clothing carefully crafted from honey and flour to eye-catching fan dance performances paired with music to make any Cookie's dough move! The Dessert Guardian's eyes sparkle as she explores the village until sundown."
     },
     {
       "name": "Dessert Forest Elf",
       "img": "images/costumes/cookie/Dessert_forest_elf.png",
+	  "bonus": "+300 pts for Blue Slushy Jellies",
+	  "released": "February 29, 2024",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "I'm an elf, which means I'm Sugar Swan Cookie's best guardian... This isn't in the script?",
+                "Wanna see my perfect archery skills?",
+                "Here to join the journey... Adventure? Trip? What was my line...?",
+                "I may have not memorized my lines, but acting I can do!",
+                "Oopsie! The rubber arrow got stuck on the light!",
+                "Heh... It was just a small mistake! I can try again!",
+                "Huh...? B-But it was so perfect in my head...",
+                "I don't look back nor dwell on the small stuff!",
+                "Oooh! What is it? Huh? What is it? What is it? I wanna know!",
+                "You know what they say! Dream big and sweet!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Forgot my lines..."
+              ]
+            }
+          ]
+        }
+      ],
       "tier": "rare",
       "info": "Get ready for the fantasy film of the year, The Fellowship of the Jelly. It's about a journey to rid the One Jelly that will taint the world with wickedness. Taking on the role of an elf from the Dessert Forest is none other than Blue Slushy Cookie. While giving it her all on set because \"acting is in her nature,\" there's a slight hiccup! It turns out that shooting rubber arrows a bit too high makes them stick to the lights. Let's aim a little lower next time!"
     }
@@ -327,14 +432,35 @@
     "img": "images/magic-candy/Crob_magic_candy_blue_slushy.png",
     "levels": [
       {
+        "lv": 1,
+        "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+7,600 pts for Blue Slushy Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+29,950 pts for Blue Slushy Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+52,300 pts for Blue Slushy Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+74,650 pts for Blue Slushy Jellies",
+        "reward": "❤️+30"
+      },
+	  {
         "lv": 5,
         "desc": "Creates Blue Slushy Arrow Jellies every 8.5 sec\n+97,000 pts for Blue Slushy Jellies",
         "reward": "❤️+30"
       }
     ],
     "ingredient": {
-      "name": "Magic Candy Ingredient",
-      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_blue_slushy.png"
+      "name": "Ice Feather Brooch",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_blue_slushy.png",
+	  "text": "This brooch, crafted with precision from sparkling soda ice, will remain unscathed no matter what challenges come its way!"
     },
     "skillFull": "Blue Slushy Arrow Jellies are created at regular intervals. Upon obtaining a Blue Slushy Arrow Jelly, you can fire a Blue Slushy Arrow ahead to destroy obstacles and create Blue Slushy Jellies. The stronger the enchanted power, the more points obtained from Blue Slushy Jellies.",
     "emoji": "🍬"

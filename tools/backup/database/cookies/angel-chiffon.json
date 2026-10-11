@@ -1,0 +1,418 @@
+{
+  "id": "angel-chiffon",
+  "name": "Angel Chiffon Cookie",
+  "rarity": "epic",
+  "released": "February 27, 2026",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/5/52/Crob_illustration_angel_chiffon.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fc/Crob_affection_jelly_angel_chiffon.png",
+    "story": "She's known what she wants to name her pastry shop ever since she began dreaming of becoming a pâtissière."
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Crob_standard_angel_chiffon.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/2/2d/Crob_head_angel_chiffon.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 176,
+      "desc": "Skill activates every 30.9 sec\n+576,000 pts for Chiffon Cake Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 185,
+      "desc": "Skill activates every 30.9 sec\n+667,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 194,
+      "desc": "Skill activates every 30.9 sec\n+758,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 203,
+      "desc": "Skill activates every 30.9 sec\n+849,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 212,
+      "desc": "Skill activates every 30.9 sec\n+940,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 221,
+      "desc": "Skill activates every 30.9 sec\n+1,031,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 230,
+      "desc": "Skill activates every 30.9 sec\n+1,122,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 239,
+      "desc": "Skill activates every 30.9 sec\n+1,213,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 248,
+      "desc": "Skill activates every 30.9 sec\n+1,304,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 257,
+      "desc": "Skill activates every 30.9 sec\n+1,395,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 266,
+      "desc": "Skill activates every 30.9 sec\n+1,486,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 275,
+      "desc": "Skill activates every 30.9 sec\n+1,577,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 284,
+      "desc": "Skill activates every 30.9 sec\n+1,668,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 293,
+      "desc": "Skill activates every 30.9 sec\n+1,759,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 302,
+      "desc": "Skill activates every 30.9 sec\n+1,850,000 pts for Chiffon Cake Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Flies up wielding a piping bag at given intervals. Squeezing the piping bag creates whipped cream fairies, which fly towards cakes to complete them. A large Cake appears at the end of the skill, which even more whipped cream fairies decorate. Level Up for more points for Chiffon Cake Jellies.",
+  "story": "This Cookie's sincerity when baking for another shimmers more brilliantly than anything else in Earthbread! Truly, the simplicity of her pure motivations is what makes this Cookie baked with the most basic of cake ingredients stand out among the crowd.\n\nWhile at first glance you might think there's not much more to her than her fluffy chiffon texture... she may just surprise you with her super palate! One bite of a dessert, however complex it may be, and she immediately knows exactly which ingredients went into it. With this special talent, one may think she has everything it takes to make the most delicious of desserts... but because she puts her feelings above any recipe, sometimes the results have something a bit lacking.\n\nThat does not mean Angel Chiffon Cookie will give up, though! Wiping away the worries left behind by previous mistakes, she takes up her piping bag to make yet another dessert, insisting one day her desserts will make all Cookies happy. Her refusal to give up is her greatest talent, and the very one that caused her to be selected by the angel of baking!",
+  "quote": "I'll make desserts that can make all Cookies happy!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "I'll make desserts that can make all Cookies happy!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "I... I can sense the ingredients in this dessert...!",
+            "I... I've got it! I figured out how to make this dessert!",
+            "Dear Baking fairy! Please make this a delicious dessert!",
+            "When baking, it's the heart that counts!",
+            "One bite of tasty desserts can make anyone happy!",
+            "A sweet dessert always helps when the world's got you feeling bitter!",
+            "I hope my desserts bring a smile to Cookies' faces!",
+            "I want to make desserts that give Cookies courage and comfort!",
+            "I wanna win, no matter what! I'll do my best!",
+            "I'll do even better in the next round!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "My best... wasn't enough..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Are you feeling a bit happier today? I hope you are, at least!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "I need to get better...! I won't be able to win with my skills as they are.",
+            "I'm going to give it my all in this next round!",
+            "It may not be the fanciest... but I wanted to make a dessert that I could put my heart into!",
+            "I haven't been making desserts for long, but I work extra hard to make up for it!",
+            "Hehe, I'm going to be a pâtissier that brings happiness to Cookies with my desserts!",
+            "Once I was so focused on baking late into the night that I got locked inside my school, hehe...",
+            "I want to open my own pastry shop! I even know what I want to name it, hehe!",
+            "What does it take for a dessert to truly move a Cookie's heart...? I have to figure it out to win...",
+            "You're my fan..? Thank you so much! I'll make sure to win.",
+            "I hope that Bread Fairy sticks with me even if I win...!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "I'm not so sure this will go well in my cake..."
+            },
+            {
+              "label": "Given <u>Magic Piping Bag</u>",
+              "text": "Yay, I can make even more desserts now!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Wowww! It almost feels like I was just handed the winning trophy!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Are you taking part in the baking show?",
+            "Which desserts are you best at making?",
+            "Wow, how did you make that? It looks super sweet!",
+            "Let's work together to reach a whole new level of baking!",
+            "You're my competition and my colleague, right?",
+            "I'm not going to lose!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+4,000 pts for Chiffon Cake Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+9,000 pts for Chiffon Cake Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Chili Pepper Cookie",
+      "id": "chili-pepper",
+      "text": "It's almost like you're pioneering an entire new world of desserts! I... I can't eat them though. Too spicy...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Caramel Choux Cookie",
+      "id": "caramel-choux",
+      "text": "Your passion is so inspiring! I can't believe you bake desserts after a long shift in the Town Square!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Carrot Cookie",
+      "id": "carrot",
+      "text": "I love carrot cake! Even more than real carrots!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Spinach Cookie",
+      "id": "spinach",
+      "text": "This Cookie's welcoming smile selling vegetables at the morning market always cheers me right up!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Everything Pie Cookie",
+      "id": "everything-pie",
+      "text": "I don't strive for perfection... I just want to be proud and like the cake that I bake myself!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Entremet Cookie",
+      "id": "entremet",
+      "text": "I respect you so much! DO you mind if I call you my mentor...?!",
+      "type": "Admiration"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Angel Chiffon Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Crob_standard_angel_chiffon.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Strawberry Festival Mascot",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/1e/Crob_standard_strawberry_festival_mascot.png",
+      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c5/Crob_illustration_strawberry_festival_mascot.png",
+	  "bonus": "+9,000 pts for Chiffon Cake Jellies",
+	  "released": "February 27, 2026",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "This is my first time baking for a dessert festival myself!",
+                "I picked a cake that hopefully should help the ingredients shine!",
+                "I put extra love into making the strawberry decorations... Can you tell?",
+                "When baking, it's the heart that counts! *",
+                "It tastes magical, like a fairy made it? Hehe... I wonder if it's listening.",
+                "A sweet dessert always helps when the world's got you feeling bitter! *",
+                "I want to make desserts that give Cookies courage and comfort! *",
+                "I hope my desserts bring a smile to Cookies' faces! *",
+                "One bite of a tasty dessert can make anyone happy! *",
+                "It may look simple, but I promise the flavor isn't!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "The festival's over...?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Your smile when eating desserts is the best reward for me!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Wow, thanks for choosing my cake from all the desserts here!",
+                "I wanted to pick something that was simple but not so boring that you'd get tired of it!",
+                "I made the dessert that called to me, regardless of what the voting outcome may be!",
+                "I was baking, and when I looked up at out customers they were all smiling! It made me so happy.",
+                "You ate an entire strawberry cream cake on your own?! Thank you for enjoying it!",
+                "We're running low on strawberries? But... I can't just make plain cream cakes...",
+                "I can never hold back at dessert buffets! It's not just me... right? Hehe...",
+                "I want to try the other desserts prepared by the other pâtissiers... I'll ask to share later!",
+                "I was invited to participate in another dessert festival!",
+                "If these cakes do have a magic spell on them, I hope it's a spell that makes Cookies happy!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Oh, I appreciate it! But I'll take it once the festival's over..."
+                },
+                {
+                  "label": "Given <u>Magic Piping Bag</u>",
+                  "text": "I'll make a cake with all my heart, that's almost like casting a magic spell on it!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "It'll look even better with a strawberry on top!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Strawberries are in season, and every Cookie knows what that means—it's time for a strawberry festival! Angel Chiffon Cookie's strawberry cream cake is a huge hit, even among all the delicious strawberry desserts. Its simple exterior belies its undeniably delicious flavor, so flavorful, its(sic) almost as if a magic spell has been placed upon it... Nobody can deny Angel Chiffon Cookie's baking is truly magical!"
+    },
+	{
+      "name": "Kind Like My Melody",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/2/2d/Crob_standard_kind_like_my_melody.png",
+      "released": "September 23rd, 2026",
+      "bonus": "+2,200 pts for Chiffon Cake Jellies",
+      "tier": "sanrio",
+      "emoji": "☁️",
+      "info": "Angel Chiffon Cookie wears an adorable pink strawberry hood that looks just like My Melody Cookie's! She's busy baking a special almond pound cake for friends visiting the Cookie World. All her kindness and care will be baked right into the cake, making it extra soft and fluffy!",
+      "shop": "Sanrio characters! Costume Shop"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "bread-fairy",
+      "desc": "+1,850,000 pts for Chiffon Cake Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "doughy-rolling-pin",
+      "desc": "+152,000 pts for Dough Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Angel Chiffon Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/7/77/Crob_magic_candy_angel_chiffon.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Skill activates every 5.15 sec\n+660,000 pts for mini Chiffon Cake Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Skill activates every 5.15 sec\n+907,500 pts for mini Chiffon Cake Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Skill activates every 5.15 sec\n+1,155,000 pts for mini Chiffon Cake Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Skill activates every 5.15 sec\n+1,402,500 pts for mini Chiffon Cake Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Skill activates every 5.15 sec\n+1,650,000 pts for mini Chiffon Cake Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Magic Piping Bag",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e5/Crob_magic_candy_ingredient_angel_chiffon.png",
+	  "text": "A mysterious piping bag that magically creates the most delicious of desserts! But is the magic from the bag, or the Cookie that wields it...?"
+    },
+    "skillFull": "Creates tiny whipped cream fairies at given intervals. The fairies fly a certain distance before creating mini Chiffon Cake Jellies. The stronger the enchanted power, the more points for mini Chiffon Cake Jellies.",
+    "emoji": "🍬"
+  }
+}

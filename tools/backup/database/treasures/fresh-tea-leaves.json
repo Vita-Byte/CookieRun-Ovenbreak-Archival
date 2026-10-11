@@ -1,0 +1,109 @@
+{
+  "id": "fresh-tea-leaves",
+  "name": "Fresh Tea Leaves",
+  "rarity": "epic",
+  "released": "May 28, 2026",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/bf/Crob_sprite_background_fresh_tea_leaves.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/1/16/Crob_sprite_fresh_tea_leaves.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+725 pts for Jellies in Green Tea Bubbles"
+    },
+    {
+      "lv": 2,
+      "effect": "+1,450 pts for Jellies in Green Tea Bubbles"
+    },
+    {
+      "lv": 3,
+      "effect": "+2,175 pts for Jellies in Green Tea Bubbles"
+    },
+    {
+      "lv": 4,
+      "effect": "+2,900 pts for Jellies in Green Tea Bubbles"
+    },
+    {
+      "lv": 5,
+      "effect": "+3,625 pts for Jellies in Green Tea Bubbles"
+    },
+    {
+      "lv": 6,
+      "effect": "+4,350 pts for Jellies in Green Tea Bubbles"
+    }
+  ],
+  "skillFull": "A gentle breeze imbued with the fragance of green tea blows at certain intervals, surrounding Jellies with Green Tea Bubbles. Jellies in Green Tea Bubbles gain magnetism and are worth more points. Level Up for more points for Jellies in Green Tea Bubbles.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 16 sec\n+12,950 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 16 sec\n+13,923 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 16 sec\n+14,895 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 16 sec\n+15,868 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 16 sec\n+16,841 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 16 sec\n+17,814 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 16 sec\n+18,786 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 16 sec\n+19,759 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 16 sec\n+20,732 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 16 sec\n+21,705 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 16 sec\n+22,677 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 16 sec\n+23,650 pts for Jellies surrounded by Green Tea Bubbles",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "A basket of fresh, tender tea leaves. One cup of this tea will gently restore energy to dough weary from running.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "longjing-tea",
+      "desc": "+2,400 pts for Jellies in Green Tea Bubbles"
+    }
+  ]
+}

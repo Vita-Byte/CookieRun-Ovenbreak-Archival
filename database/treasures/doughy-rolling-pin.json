@@ -1,0 +1,109 @@
+{
+  "id": "doughy-rolling-pin",
+  "name": "Doughy Rolling Pin",
+  "rarity": "epic",
+  "released": "Feburary 27, 2026",
+  "img": "images/treasures/Crob_sprite_background_doughy_rolling_pin.png",
+  "avatar": "images/treasure-icons/Crob_sprite_doughy_rolling_pin.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+47,500 pts for Dough Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+95,000 pts for Dough Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+142,500 pts for Dough Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+190,000 pts for Dough Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+237,500 pts for Dough Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+285,000 pts for Dough Jellies"
+    }
+  ],
+  "skillFull": "A rolling pin rolls forward at given intervals. While rolling, it flattens Jellies and obstacles, rolling them out into Dough Jellies. Level Up for more points for Dough Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 22.8 sec\n+1,092,500 pts for Dough Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 22.8 sec\n+1,140,000 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 22.8 sec\n+1,187,500 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 22.8 sec\n+1,235,000 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 22.8 sec\n+1,282,500 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 22.8 sec\n+1,330,000 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 22.8 sec\n+1,377,500 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 22.8 sec\n+1,425,000 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 22.8 sec\n+1,472,500 pts for Dough Jellies",
+	  "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 22.8 sec\n+1,520,000 pts for Dough Jellies",
+	  "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 22.8 sec\n+1,567,500 pts for Dough Jellies",
+	  "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 22.8 sec\n+1,615,000 pts for Dough Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Dough rolled with this rolling pin is guaranteed to become the softest bread you ever had the pleasure of eating! That doesn't mean that you can take it easy as far as baking goes, though.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "angel-chiffon",
+      "desc": "+152,000 pts for Dough Jellies"
+    }
+  ]
+}
