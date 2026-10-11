@@ -105,12 +105,14 @@
     {
       "name": "Call of the Black Swan",
       "img": "images/costumes/pet/Crob_standard_call_of_the_black_swan.png",
+	  "released": "February 14, 2022",
       "tier": "epic",
       "info": "Eggsquisite Brooch wrapped itself in silky, black feathers. While as elegant as a ballet performance, this Pet silently waits... but for what? Could the legends, speaking of the Black Swan singing just before it awakens, be true?"
     },
     {
-      "name": "Cradle of the stars",
+      "name": "Cradle of The Stars",
       "img": "images/costumes/pet/Crob_standard_cradle_of_the_stars.png",
+	  "released": "December 6, 2023",
       "tier": "epic",
       "info": "Eggsquisite Brooch knows the stories of countless stars born and disappearing in the dark night sky. With pristine feathers adorned with golden embellishments, the Pet peacefully slumbers. What dreams could be unfolding in its silent slumber?"
     }

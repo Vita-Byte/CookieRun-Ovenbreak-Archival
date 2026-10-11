@@ -283,6 +283,8 @@
       "name": "Embracer of the Night",
       "img": "images/costumes/cookie/Embracer_of_the_night.png",
 	  "illust": "images/costume-illustrations/Img_skinIllust_419402.png",
+	  "bonus": "+5,000 pts for Jewel Shard Jellies",
+	  "released": "December 6, 2023",
       "quotes": [
         {
           "title": "General",
@@ -360,6 +362,8 @@
     {
       "name": "Feathered Flamestealer",
       "img": "images/costumes/cookie/Feathered_Flamestealer.png",
+	  "bonus": "+2,250 pts for Jewel Shard Jellies",
+	  "released": "February 14, 2022",
       "quotes": [
         {
           "title": "General",

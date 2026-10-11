@@ -302,6 +302,8 @@
       "name": "Primordial Light",
       "img": "images/costumes/cookie/Primordial_Light.png",
 	  "illust": "images/costume-illustrations/Img_skinIllust_404904.png",
+	  "bonus": "+600 pts for Star Powder Jellies",
+	  "released": "October 26, 2021",
       "quotes": [
         {
           "title": "General",
@@ -383,6 +385,8 @@
       "name": "Alluring Crescent Moon",
       "img": "images/costumes/cookie/Alluring_Crescent_Moon.png",
 	  "illust": "images/costume-illustrations/Img_skinIllust_404903.png",
+	  "bonus": "+800 pts for Twinkling Star Jellies",
+	  "released": "January 10, 2019",
       "quotes": [
         {
           "title": "General",
@@ -456,6 +460,8 @@
       "name": "Blissful Full Moon",
       "img": "images/costumes/cookie/Blissful_Full_Moon.png",
 	  "illust": "images/costume-illustrations/Img_skinIllust_404902.png",
+	  "bonus": "+800 pts for Twinkling Star Jellies",
+	  "released": "January 10, 2019",
       "quotes": [
         {
           "title": "General",
@@ -487,6 +493,8 @@
     {
       "name": "Milky Way",
       "img": "images/costumes/cookie/Milky_Way.png",
+	  "bonus": "+800 pts for Twinkling Star Jellies",
+	  "released": "June 19, 2017",
       "tier": "superepic",
       "info": "Countless stars twinkle in the twilight of an endless dream. Close your eyes, and you'll hear a lovely lullaby."
     }
