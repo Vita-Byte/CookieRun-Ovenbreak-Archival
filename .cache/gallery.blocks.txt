@@ -1,0 +1,70 @@
+
+## Official Artwork
+[li] Running Sprite Sheet   ['Running Sprite Sheet']
+[li] General Sprite Sheet   ['General Sprite Sheet']
+[li] Skill Effect Sprite Sheet   ['Skill Effect Sprite Sheet']
+[li] Skill Effect Sprite Sheet   ['Skill Effect Sprite Sheet']
+[li] Skill Effect Sprite Sheet   ['Skill Effect Sprite Sheet']
+[li] Skill Tile   ['Skill Tile']
+[li] Skill Background   ['Skill Background']
+[li] Skill Background   ['Skill Background']
+[li] Magic Candy   ['Magic Candy']
+[li] Magic Candy Ingredient   ['Magic Candy Ingredient']
+[li] Affection Jelly   ['Affection Jelly']
+[li] Lobby Sprite Sheet   ['Lobby Sprite Sheet']
+[li] Standing Sprite Sheet   ['Standing Sprite Sheet']
+[li] Base Sprite   ['Base Sprite']
+[li] Base Sprite (Exhausted)   ['Base Sprite (Exhausted)']
+[li] Relay Icon   ['Relay Icon']
+[li] Relay Icon (Exhausted)   ['Relay Icon (Exhausted)']
+[li] Cookie Head Icon   ['Cookie Head Icon']
+[li] High Resolution Sprite   ['High Resolution Sprite']
+[li] High Resolution Sprite   ['High Resolution Sprite']
+[li] The Witch's Mystic Attic Title Screen   ["The Witch's Mystic Attic Title Screen"]
+
+## Costumes
+
+### Feathered Flamestealer
+[table]
+   | <th>Gallery
+   | Running Sprite Sheet / General Sprite Sheet / Skill Sprite Sheet / Skill Sprite Sheet / Sk
+
+### Embracer of the Night
+[table]
+   | <th>Gallery
+   | Gacha Illustration / Running Sprite Sheet / General Sprite Sheet / Skill Effect Sprite She
+
+## Story Assets
+[li] Standard Sprite   ['Standard Sprite']
+[li] Smile Sprite   ['Smile Sprite']
+[li] Sad Sprite   ['Sad Sprite']
+[li] Happy Sprite   ['Happy Sprite']
+[li] Crow Sprite   ['Crow Sprite']
+[li] The Witch's Mystic Attic Cutscene   ["The Witch's Mystic Attic Cutscene"]
+[li] The Witch's Mystic Attic Cutscene   ["The Witch's Mystic Attic Cutscene"]
+[li] The Witch's Mystic Attic Cutscene   ["The Witch's Mystic Attic Cutscene"]
+[li] The Witch's Mystic Attic Cutscene   ["The Witch's Mystic Attic Cutscene"]
+[li] The Witch's Mystic Attic Cutscene   ["The Witch's Mystic Attic Cutscene"]
+[li] Cookie Detective: The Lost Holiday Cutscene   ['Cookie Detective: The Lost Holiday Cutscene']
+
+## Other Appearances
+[li] The Witch's Mystic Attic Cutscene Art Sketch   ["The Witch's Mystic Attic Cutscene Art Sketch"]
+[li] The Witch's Mystic Attic Cutscene Art Sketch   ["The Witch's Mystic Attic Cutscene Art Sketch"]
+[li] The Witch's Mystic Attic Cutscene Art Sketch   ["The Witch's Mystic Attic Cutscene Art Sketch"]
+[li] Concept Art   ['Concept Art']
+[li] Concept Art   ['Concept Art']
+[li] Concept Art   ['Concept Art']
+[li] Concept Art   ['Concept Art']
+[li] Concept Art   ['Concept Art']
+[p]    []
+[p] Load video   []
+[p] YouTube   []
+[p] YouTube might collect personal data. Privacy Policy   []
+[p] Continue Dismiss   []
+[p] Gameplay Preview   []
+[p]    []
+
+## Miscellaneous
+[li] Beta Skill Effect Sprite Sheet   ['Beta Skill Effect Sprite Sheet']
+
+### Other

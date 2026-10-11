@@ -1,0 +1,431 @@
+{
+  "id": "allulose-nova",
+  "name": "Allulose Nova Cookie",
+  "rarity": "legendary",
+  "released": "July 29, 2026",
+  "illust": "images/cookie-illustrations/599px-Crob_illustration_allulose_nova.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_allulose_nova.png",
+    "story": "Sincerity is not something that bows to power. And so, when it comes freely... one cannot help but treasure it."
+  },
+  "img": "images/cookies/Crob_standard_allulose_nova.png",
+  "emoji": "👘",
+  "avatar": "images/cookie-heads/Crob_head_allulose_nova.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Jellies",
+    "SuperMagnetism"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 193,
+      "desc": "Skill activates every 35 sec\n+200 pts for Allulose Shard Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 205,
+      "desc": "Skill activates every 35 sec\n+19,600 pts for Allulose Shard Jellies",
+      "reward": "🔥2,000  ❤️+50"
+    },
+    {
+      "lv": 3,
+      "energy": 217,
+      "desc": "Skill activates every 35 sec\n+39,000 pts for Allulose Shard Jellies",
+      "reward": "🔥3,000  ❤️+50"
+    },
+    {
+      "lv": 4,
+      "energy": 229,
+      "desc": "Skill activates every 35 sec\n+58,400 pts for Allulose Shard Jellies",
+      "reward": "🔥3,000  ❤️+50"
+    },
+    {
+      "lv": 5,
+      "energy": 241,
+      "desc": "Skill activates every 35 sec\n+77,800 pts for Allulose Shard Jellies",
+      "reward": "🔥3,000  ❤️+50"
+    },
+    {
+      "lv": 6,
+      "energy": 253,
+      "desc": "Skill activates every 35 sec\n+97,200 pts for Allulose Shard Jellies",
+      "reward": "🔥3,000  ❤️+50"
+    },
+    {
+      "lv": 7,
+      "energy": 265,
+      "desc": "Skill activates every 35 sec\n+116,600 pts for Allulose Shard Jellies",
+      "reward": "🔥5,000  ❤️+50"
+    },
+    {
+      "lv": 8,
+      "energy": 277,
+      "desc": "Skill activates every 35 sec\n+136,000 pts for Allulose Shard Jellies",
+      "reward": "🔥4,000  ❤️+50"
+    },
+    {
+      "lv": 9,
+      "energy": 289,
+      "desc": "Skill activates every 35 sec\n+155,400 pts for Allulose Shard Jellies",
+      "reward": "🔥5,000  ❤️+50"
+    },
+    {
+      "lv": 10,
+      "energy": 301,
+      "desc": "Skill activates every 35 sec\n+174,800 pts for Allulose Shard Jellies",
+      "reward": "🔥5,000  ❤️+50"
+    },
+    {
+      "lv": 11,
+      "energy": 313,
+      "desc": "Skill activates every 35 sec\n+194,200 pts for Allulose Shard Jellies",
+      "reward": "🔥8,000  ❤️+50"
+    },
+    {
+      "lv": 12,
+      "energy": 313,
+      "desc": "Skill activates every 35 sec\n+242,650 pts for Allulose Shard Jellies",
+      "reward": "🔥8,000  ❤️+50"
+    },
+    {
+      "lv": 13,
+      "energy": 313,
+      "desc": "Skill activates every 35 sec\n+291,100 pts for Allulose Shard Jellies",
+      "reward": "🔥8,000  ❤️+50"
+    },
+    {
+      "lv": 14,
+      "energy": 313,
+      "desc": "Skill activates every 35 sec\n+339,550 pts for Allulose Shard Jellies",
+      "reward": "🔥8,000  ❤️+50"
+    },
+    {
+      "lv": 15,
+      "energy": 313,
+      "desc": "Skill activates every 35 sec\n+388,000 pts for Allulose Shard Jellies",
+      "reward": "🔥8,000  ❤️+50"
+    }
+  ],
+  "skillFull": "Spreads her wings and takes flight at certain intervals. While airborne, opens portals to strike panels ahead. Destroyed panels create Allulose Shards which are absorbed into the Queen's Wings. Each absorbed Allulose Shard strengthens the Queen's Wings. Once fully charged, she unleashes the Queen's Flight, opening portals in rapid succession to continuously strike and destroy panels ahead, creating Allulose Shard Jellies. Level up for more points for Allulose Shard Jellies.",
+  "story": "Planet Allulose, a luminous empire where golden stars bathe the galaxy in radiant splendor. Endless glided palaces stretch across the horizon, victory cannons thunder through the sky, and the most formidable armada in the known universe patrols its borders. At the heart of it all stands the Empress herself, Allulose Nova Cookie, ever-smiling with an effortless grin.\n\nIt was the tireless might of the planet's Worker Bee Cookies, advancing in perfect service to their sovereign's will, that transformed this small hive into a magnificent empire. Culture and arts flourished, and songs of praise for the Empress rang out across every corner of the realm. And yet, even amid such sweet prosperity, the Empress's thrist remain unquenched. Boredom finds her all too easily.\n\nWith a single wave of her hand, the military band strikes up a march and the armada shifts its banners in unison. None dare question her absolute authority. Days of splendor blur together... rare jewels chosen as casually as fruit, commands issued as though playing a game. Yet in quiet moments, her gaze drifts to the stars beyond the palace windows, and something stirs behind those eyes. An unnamed longing that refuses to lie dormant...\nWill the radiant glory of her empire remains forever caged within the monotonous bounds of Planet Allulose?",
+  "quote": "Ohohoho! All subjects of Planet Allulose, hear me!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Ohohoho! All subjects of Planet Allulose, hear me!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Grand jewels, magnificent music... This universe has far too much to enjoy!",
+            "I shall host a grand ball! I want everyone to waltz like butterflies and bees!",
+            "Following the Empress's word is... only natural, isn't it?",
+            "I don't believe I've ever heard the word \"no.\" Is that a real thing?",
+            "Swear your loyalty to me! I shall grant you a future sweeter than honey.",
+            "The weight of the crown is too heavy to bear... Bring me a flower wreath!",
+            "If I want it, it's already mine. The getting is just a formality.",
+            "My subjects! Not enjoying this magnificent empire would simply be a waste!",
+            "I feel so refreshed today. Let's write today's imperial decree in sunlight ink!",
+            "Everyone always seems to know just what I want!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "No one defies me twice. Choose your next move very, very carefully."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Consider this a blessing bestowed upon you by your Empress."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "So many stars, sparkling eternally... There's still so much in this universe for me to enjoy, isn't there?",
+            "Ohohoho! Surely it goes without saying that my empire shines brightest in all the galaxy?",
+            "The glory of the stars is only just beginning. Devote yourselves to me!",
+            "I'd love it if the entire universe were mine... Surely that's not too grand a wish.",
+            "With one wave of my hand, everything I desire just happens. So why should I worry?",
+            "I cherish my empire and subjects. So everyone must be happy. I've decided it shall be so. Ohohoho!",
+            "Just because I seem carefree doesn't mean the weight of the crown is something I take lightly...",
+            "Have you come to seek an audience with me?",
+            "Which palace shall I retire to tonight? Each one feels unique, but equally comfortable!",
+            "My wants are quite modest. Shining, dazzling and beautiful things. That's all!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "How dare you offer something so worthless... To the dungeons with you!"
+            },
+            {
+              "label": "Given <u>Noble Crown of Allulose</u>",
+              "text": "My subjects! Emerge from your hives and march forth to the very stars themselves!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "As dazzling as the victory cannons fired by the Allulose Armada! Ohohoho!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "My empire overflows with honey and song.",
+            "Getting what you want isn't so hard.",
+            "I promise you eternal prosperity.",
+            "Ah, my empire is beautiful, as always.",
+            "My loyal subjects! Obey my words, and mine alone!",
+            "All shall bow before my radiant presence! Ohohoho!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+1,000 pts for Allulose Shard Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+2,000 pts for Allulose Shard Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Space Doughnut",
+      "id": "space-doughnut",
+      "text": "Rolling around freely through my empire? I'll allow it, as long as you're not here to start an invastion. Ohoho!",
+      "type": "Tension"
+    },
+    {
+      "who": "Cheesecake Cookie",
+      "id": "cheesecake",
+      "text": "You are hereby invited to the imperial ball! There's a special seat for you in the VIP section.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mint Choco Cookie",
+      "id": "mint-choco",
+      "text": "I hear your music is quite magical. Your melodies might suit my empire. Oh, and this isn't a request. See you soon!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Fig Cookie",
+      "id": "fig",
+      "text": "Does your forest flow with honey too? You may be worthy to join my empire.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Amber Sugar Cookie",
+      "id": "amber-sugar",
+      "text": "You'd dare to smash your way out of my palace? You'd make a decent worker bee... with some training first.",
+      "type": "Tension"
+    },
+    {
+      "who": "Astronaut Cookie",
+      "id": "astronaut",
+      "text": "Ohoho! Welcome to my empire! I sense a most delightful sweetness in your heart...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Xylitol Nova Cookie",
+      "id": "xylitol-nova",
+      "text": "Surely you know that within my empire... my word is the absolute law?",
+      "type": "Family"
+    },
+    {
+      "who": "Agent Jjajang Cookie",
+      "id": "agent-jjajang",
+      "text": "The universe is vast and full of surprises. How many more agents like you are there? And how many planets and stars have been discovered?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Stevia Nova Cookie",
+      "id": "stevia-nova",
+      "text": "I used to love how fresh and bright you were. Well, you're not bad now either. Care for some tea?",
+      "type": "Family"
+    },
+    {
+      "who": "Helios Honey Cookie",
+      "id": "helios-nova",
+      "text": "On the day I come to possess the entire universe, I shall give you a grand and magnificent palace!",
+      "type": "Trust"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Allulose Nova Cookie",
+      "img": "images/cookies/Crob_standard_allulose_nova.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "emoji": "👘",
+      "equipped": true
+    },
+    {
+      "name": "Secret Rose Nebula",
+      "img": "images/costumes/cookie/Crob_standard_secret_rose_nebula.png",
+      "illust": "images/costume-illustrations/Crob_illustration_secret_rose_nebula.png",
+      "bonus": "+2,000 pts for Allulose Shard Jellies",
+      "released": "July 29, 2026",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Swear your loyalty to me! I shall grant you a future sweeter than honey.",
+                "I feel so refreshed today. Let's write today's imperial decree in sunlight ink!",
+                "The weight of the crown is too heavy to bear... Bring me a flower wreath!",
+                "Following the Empress's word is... only natural, isn't it?",
+                "I don't believe I've ever heard the word \"no.\" Is that a real thing?",
+                "Everything spoken in this garden is a secret.",
+                "This is the most beautiful garden in all the universe! Now, and forever!",
+                "Just the two of us here... The perfect setting for a secret meeting, right?",
+                "Fragrant roses, a beautiful garden... This universe has far too much to enjoy!",
+                "My lovely space roses... Obey me! Be in full bloom when I return!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I think I'll rest in the garden..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "The space roses belong to me alone. I'll give you something else instead."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "This place is a secret to everyone but those who tend to it.",
+                "It's been a while... The roses have bloomed even more beautifully.",
+                "Any Cookie who tries to enter this garden without permission shall be dealt with... severely.",
+                "Even if we just gaze at the garden in silence together... It's still a successful outing.",
+                "The garden is so far from the palace. It's hard to visit often! I am a very busy Empress, after all.",
+                "As long as my empire endures, this secret rose garden shall endure too, ohohoho!",
+                "Every last petal stays fresh. After all, everything in the Allulose Empire is pristine!",
+                "Even the rose thorns bow in my presence!",
+                "This garden was Helios Honey Cookie's initiative. He always knows exactly what I want!",
+                "What we talk about when it's just the two of us is, of course, a secret."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Oh. Do you want this thing to be buried in the garden?"
+                },
+                {
+                  "label": "Given <u>Noble Crown of Allulose</u>",
+                  "text": "A crown woven from rose petals would have been lovelier!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Even this distant Rose Nebula is bathed in our empire's radiance!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "emoji": "💫",
+      "info": "Few within the empire know that, at the heart of the Allulose Rose Nebula, lies a secret rose garden... made for the Empress's eyes alone! Only the Empress and her one true confidant ever set foot there. Officially, it's said to be the site of important meetings and grave discussions about imperial politics... But if you listen closely, you can hear the sound of laughter coming from beyond the rose petals. Could it be that this secret garden is just a regular garden for a secret getaway?"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "grand-beehive",
+      "desc": "+426,000 pts for Allulose Shard Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Allulose Nova Cookie's Magic Candy",
+    "img": "images/magic-candy/150px-Crob_magic_candy_allulose_nova.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Skill activates every 8.75 sec\n+400 pts for Allulose Shard Jellies",
+        "reward": "No Level Up Reward"
+      },
+      {
+        "lv": 2,
+        "desc": "Skill activates every 8.75 sec\n+39,300 pts for Allulose Shard Jellies",
+        "reward": "❤️+50"
+      },
+      {
+        "lv": 3,
+        "desc": "Skill activates every 8.75 sec\n+78,200 pts for Allulose Shard Jellies",
+        "reward": "❤️+50"
+      },
+      {
+        "lv": 4,
+        "desc": "Skill activates every 8.75 sec\n+117,100 pts for Allulose Shard Jellies",
+        "reward": "❤️+50"
+      },
+      {
+        "lv": 5,
+        "desc": "Skill activates every 8.75 sec\n+156,000 pts for Allulose Shard Jellies",
+        "reward": "❤️+50"
+      }
+    ],
+    "ingredient": {
+      "name": "Noble Crown of Allulose",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_allulose_nova.png",
+      "text": "The Empress's crown, symbolizing absolute power and authority. Let any who dare defy the Empress know they make an enemy of the entire empire."
+    },
+    "skillFull": "Opens a portal at certain intervals to fire projectiles and create Allulose Shard Jellies. If additional obstacles are nearby, it chains up to 2 times. The stronger the enchanted power, the more points for Allulose Shard Jellies.",
+    "emoji": "🍬"
+  }
+}

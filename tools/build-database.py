@@ -9,9 +9,10 @@ build-database.py  -  keep every cookie / pet / treasure in its own .json file, 
       cookies.js, pets.js, treasures.js                      <- GENERATED for index.html (never edit by hand)
 
 Usage:
-    python build-database.py --split    one-time: convert your old cookies.js / pets.js / treasures.js into the folders above
-    python build-database.py            check everything, then rebuild database/cookies.js, pets.js, treasures.js
-    python build-database.py --check    only check (changes nothing)
+    python tools/build-database.py --split    one-time: convert your old cookies.js / pets.js / treasures.js into the folders above
+    python tools/build-database.py            check everything, then rebuild database/cookies.js, pets.js, treasures.js
+    python tools/build-database.py --check    only check (changes nothing)
+(Run these from the project folder, or drop "tools/" and run them from inside the tools folder - both work.)
 
 Safety: if ANY .json file has a mistake, nothing is rebuilt and the old generated files stay as they were,
 and you get the file name + line + column of the problem. Warnings (missing images, unknown combo ids, ...) never block the build.
@@ -20,7 +21,11 @@ Works with a double-clicked index.html because the website still loads plain .js
 import json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DB = os.path.join(HERE, "database")
+# Works from the project folder or from a tools/ subfolder: data (database/, images/) is always in the project folder,
+# the tool's own scratch folders (.cache, drafts, backup) stay next to the script.
+ROOT = os.path.dirname(HERE) if os.path.basename(HERE).lower() == "tools" else HERE
+RUN = "python tools/" if ROOT != HERE else "python "
+DB = os.path.join(ROOT, "database")
 KINDS = {"cookies": ("COOKIES", "cookie"), "pets": ("PETS", "pet"), "treasures": ("TREASURES", "treasure")}
 RARITIES = {"legendary", "epic", "rare", "common", "special", "teenieping", "ppg", "sanrio"}
 RELT = {"Friendly", "Family", "Trust", "Admiration", "Tension", "Rival"}
@@ -63,7 +68,7 @@ def write(path, text):
 
 def split(force):
     for folder, (var, kind) in KINDS.items():
-        src, out = os.path.join(HERE, folder + ".js"), os.path.join(DB, folder)
+        src, out = os.path.join(ROOT, folder + ".js"), os.path.join(DB, folder)
         if not os.path.exists(src): print(f"  (skipping {folder}.js: not found)"); continue
         if os.path.isdir(out) and any(f.endswith(".json") for f in os.listdir(out)) and not force:
             print(f"  {folder}: database/{folder}/ already has files - skipped (use --force to overwrite)"); continue
@@ -79,10 +84,10 @@ def split(force):
         notes = head_comments(src)
         if notes: write(os.path.join(out, "_notes.txt"), "\n".join(notes) + "\n")
         print(f"  {folder}: {len(ids)} entries -> database/{folder}/")
-    print("\nNow run:  python build-database.py")
+    print(f"\nNow run:  {RUN}build-database.py")
 
 
-def rel(p): return os.path.relpath(p, HERE).replace("\\", "/")
+def rel(p): return os.path.relpath(p, ROOT).replace("\\", "/")
 
 
 def build(check_only):
@@ -125,7 +130,7 @@ def build(check_only):
     def walk(v, who):
         if isinstance(v, dict): [walk(x, who) for x in v.values()]
         elif isinstance(v, list): [walk(x, who) for x in v]
-        elif isinstance(v, str) and v.startswith("images/") and not os.path.exists(os.path.join(HERE, *v.split("/"))): miss.append(f"{who}: {v}")
+        elif isinstance(v, str) and v.startswith("images/") and not os.path.exists(os.path.join(ROOT, *v.split("/"))): miss.append(f"{who}: {v}")
     for folder in merged:
         for e in merged[folder]: walk(e, e["id"])
     if miss: warns += [f"missing image: {m}" for m in miss[:15]] + ([f"... and {len(miss) - 15} more missing images"] if len(miss) > 15 else [])

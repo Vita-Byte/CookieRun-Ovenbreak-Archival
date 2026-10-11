@@ -1,0 +1,430 @@
+{
+  "id": "strawberry-crepe",
+  "name": "Strawberry Crepe Cookie",
+  "rarity": "epic",
+  "released": "July 28, 2025",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/3/32/Img_updateHighlight_strawberry_crepe_wikiver.png/599px-Img_updateHighlight_strawberry_crepe_wikiver.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8e/Crob_affection_jelly_strawberry_crepe.png",
+    "story": "The sharper the exterior, the softer and sweeter the ingredients inside are."
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e1/Crob_standard_strawberry_crepe.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/a/ad/Crob_head_strawberry_crepe.png",
+  "tags": [
+    "Speed",
+    "Score",
+    "SpecialControl"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 182,
+      "desc": "Skill activates every 26.4 sec\n+530,000 Crepe Punch Points\n+3,210,000 Crepe Crash Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 191,
+      "desc": "Skill activates every 26.4 sec\n+610,000 Crepe Punch Points\n+3,695,000 Crepe Crash Points",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 200,
+      "desc": "Skill activates every 26.4 sec\n+690,000 Crepe Punch Points\n+4,180,000 Crepe Crash Points",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 209,
+      "desc": "Skill activates every 26.4 sec\n+770,000 Crepe Punch Points\n+4,665,000 Crepe Crash Points",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 218,
+      "desc": "Skill activates every 26.4 sec\n+850,000 Crepe Punch Points\n+5,150,000 Crepe Crash Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 227,
+      "desc": "Skill activates every 26.4 sec\n+930,000 Crepe Punch Points\n+5,635,000 Crepe Crash Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 236,
+      "desc": "Skill activates every 26.4 sec\n+1,010,000 Crepe Punch Points\n+6,120,000 Crepe Crash Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 245,
+      "desc": "Skill activates every 26.4 sec\n+1,090,000 Crepe Punch Points\n+6,605,000 Crepe Crash Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 254,
+      "desc": "Skill activates every 26.4 sec\n+1,170,000 Crepe Punch Points\n+7,090,000 Crepe Crash Points",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 263,
+      "desc": "Skill activates every 26.4 sec\n+1,250,000 Crepe Punch Points\n+7,575,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 272,
+      "desc": "Skill activates every 26.4 sec\n+1,330,000 Crepe Punch Points\n+8,060,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 281,
+      "desc": "Skill activates every 26.4 sec\n+1,410,000 Crepe Punch Points\n+8,545,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 290,
+      "desc": "Skill activates every 26.4 sec\n+1,490,000 Crepe Punch Points\n+9,030,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 299,
+      "desc": "Skill activates every 26.4 sec\n+1,570,000 Crepe Punch Points\n+9,515,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 308,
+      "desc": "Skill activates every 26.4 sec\n+1,650,000 Crepe Punch Points\n+10,000,000 Crepe Crash Points",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Summons and equips giant Crepe Arms at fixed intervals. Tap the Slide button while they are equipped to swing the Crepe Arms, swiping at nearby Jellies and obstacles, earning Crepe Punch Points. Before the end of the skill, the Cookie holds together their Crepe Arms and fires off a blast of Crepe Energy, blasting away Jellies and obstacles over a wider area and earning Crepe Crash Points. Level Up for more Crepe Punch and Crepe Crash Points.",
+  "story": "Sweet strawberry cream, crispy waffles, and chubby fresh strawberries—is there a cuter combination? Meet Strawberry Crepe Cookie with an unyielding sparkle of curiosity in their eyes. And this curiosity is a force to be reckoned with: Strawberry Crepe Cookie will stop at nothing to find an answer to every question! Having grown up with Wafflebots, this Cookie preferred tinkering with robotic parts to playing with toys. This little genius's cute waffle headset is a tiny engineering marvel on it own. But don' touch it! Or you risk witnessing a change from the cute Strawberry Crepe Cookie to the furious one.",
+  "quote": "Cookies are too weak. BORING!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Cookies are too weak. BORING!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Do YOU know how Cookies are made?",
+            "Your curiosity protocols are intriguing...",
+            "Hmmm, how long will it take to liquefy a Rainbow Bear Jelly?",
+            "What? Your watch stopped? Then go fix it! D'uh!",
+            "How curious! Can I disassemble that?",
+            "Let me inspect your circuitry!",
+            "The Wafflebots are my friends and family!",
+            "You leave a scratch on my Wafflebot, you deal with me!",
+            "A Cookie was damaged? I can try and repair them!",
+            "Cookies crumble too easily! But I can install upgrades!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "SO BORING...!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Hey, take this!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "*YAWN* Hey you, I'm bored!",
+            "I'm gonna do what I want!",
+            "What a dull place! Maybe I should annihilate it!",
+            "Too noisy! The Wafflebots were always quiet.",
+            "Machines won't last without proper care!",
+            "There's no Cookie smarter than me!",
+            "I'm unstoppable!",
+            "Hmm, just how DO you run on those flat legs?",
+            "Hmm, just why are Cookies so crispy and frail?",
+            "Stop poking me! I hate it!",
+            "Who needs... a boring... nap... Zzz... (When placed in the Naptime at Conch's Cradle Nursery Lobby)",
+            "I can walk around Neo Sugarteara all on my own!!! (When placed in a Lobby with Blue Whale Cookie)"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "*YAWN* I'm bored!"
+            },
+            {
+              "label": "Given <u>Wafflebot Crepe</u>",
+              "text": "I programmed the BESET(sic) recipe into the Wafflebots, of COURSE it tastes great!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "This is going right on a Wafflebot!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Are you a weak Cookie?",
+            "I need data! How far can you run?",
+            "Let's find out how far Cookies can really run!",
+            "Your dough contains 37% perseverance!",
+            "Running is... fun? For you, maybe...!",
+            "What're you eating? Is it fuel? What's it made of?"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+7,500 Crepe Punch Points"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+15,000 pts Crepe Punch Points"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Strawberry Cookie",
+      "id": "strawberry",
+      "text": "Your dough has 0% strawberries, but you're called Strawberry Cookie? Is that really your name...?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mocha Ray Cookie",
+      "id": "mocha-ray",
+      "text": "What did the old temple at Sugarteara look like? What was old Sugarteara like? Tell me!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Bell Pepper Cookie",
+      "id": "bell-pepper",
+      "text": "Let's see whose robot is better! My Wafflebots are, obviously!",
+      "type": "Rival"
+    },
+    {
+      "who": "Flat Tofu Cookie",
+      "id": "flat-tofu",
+      "text": "You woke up to find the entire world changed too, didn't you?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Muscle Cookie",
+      "id": "muscle",
+      "text": "The components of your dough are too obvious! BORING!",
+      "type": "Tension"
+    },
+    {
+      "who": "Lobster Cookie",
+      "id": "lobster",
+      "text": "I could install enhanced security protocols onto the Wafflebots and have them guard the city!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Aloe Cookie",
+      "id": "aloe",
+      "text": "What did you use to build your robots? Can I analyze their components?!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Blue Whale Cookie",
+      "id": "blue-whale",
+      "text": "Stop hugging me! I said I'm okay with just the Wafflebots!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Strawberry Shortcake Cookie",
+      "id": "strawberry-shortcake",
+      "text": "Half Cookie, half Cake Hound?! Hey, let me analyze your dough composition! I have so many questions!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Strawberry Crepe Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e1/Crob_standard_strawberry_crepe.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Endless Summer Fun",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/b8/Endless_summer_fun.png",
+	  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/6/69/Img_skinIllust_451801.png",
+	  "released": "July 28, 2025",
+	  "bonus": "+15,000 Crepe Punch Points",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "I'm gonna flood the world with my Wafflebots!",
+                "I'm gonna build a sandcastle as sturdy as a Wafflebot!",
+                "I wonder how big I can make this sandcastle!",
+                "Hmm, how exactly(sic) how deep can a Cookie dive into the ocean?",
+                "This ocean contains 20% more salt content, so you won't get too soggy!",
+                "Do YOU know how Cookies are made?",
+                "Your curiosity protocols are intriguing...",
+                "Let me inspect your circuitry!",
+                "Hmmm, how long does it take to liquefy a Rainbow Bear Jelly?",
+                "The Wafflebots are my friends and family!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "But I'm not done building my sandcastles..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Done building sandcastles! Time to go home!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "There's so many Cookies here on vacation!",
+                "I'm gonna build an army of Sand Wafflebots!",
+                "It'd be so cool if these Sand Wafflebots became real ones!",
+                "I wonder if I can get these Sand Wafflebots to move!",
+                "I didn't come here to play! I'm here to find materials for my new Wafflebots!",
+                "The angularity of the sand particles here are perfect for sandcastles!",
+                "I'm gonna build more Wafflebots...! After I build just one more sandcastle.",
+                "Don't touch the sandcastles! I built them, so I get to wreck them!",
+                "The sun's setting already?! I guess I'll search for Wafflebot parts tomorrow!",
+                "Building sandcastles isn't as boring as I thought...",
+                "Haha! Isn't this the coolest sandcastle you've ever seen? (When placed in a Lobby with Little Lifeguard)",
+                "I'm gonna fill this entire beach with Sand Wafflebots! (When placed in the Sunny Soda Beach Lobby)"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "What's this? I can't use this to make sandcastles..."
+                },
+                {
+                  "label": "Given <u>Wafflebot Crepe</u>",
+                  "text": "That was pretty tasty! Do you have any more? Like, can I have some now?"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "I can put this on top of my biggest sandcastle!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "\"This summer, I'm gonna flood the world with Wafflebots!\" Fueled with a grand dream, Strawberry Crepe Cookie dashed to and fro collecting materials and scrap. But after growing bored with the tedious gathering, the young Cookie decided to take a break on the beach... and started building a sandcastle. Before long, Strawberry Crepe Cookie became completely absorbed, almost forgetting their original plan entirely and coming up with a new one: a world filled with Sand Wafflebots!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "wind-up-wafflepup",
+      "desc": "+2,700,000 Crepe Punch Points"
+    },
+    {
+      "type": "treasure",
+      "id": "waffle-headset",
+      "desc": "+45,000 pts for Strawberry Crepe Note Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Strawberry Crepe Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/4/46/Crob_magic_candy_strawberry_crepe.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Crepe rockets reloaded every 8.8 sec\n+600,000 Crepe Rocket Points",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Crepe rockets reloaded every 8.8 sec\n+825,000 Crepe Rocket Points",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Crepe rockets reloaded every 8.8 sec\n+1,500,000 Crepe Rocket Points",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Crepe rockets reloaded every 8.8 sec\n+1,275,000 Crepe Rocket Points",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Crepe rockets reloaded every 8.8 sec\n+1,500,000 Crepe Rocket Points",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Wafflebot Crepe",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/bd/Crob_magic_candy_ingredient_strawberry_crepe.png",
+	  "text": "A crepe topped with a ginormous strawberry! Carefully and calculatedly made by the Wafflebots, you're guaranteed the same great taste with every bite."
+    },
+    "skillFull": "Creates Crepe Rockets at fixed intervals. The rockets get fired off all at once, destroying obstacles. The stronger the enchanted power, the higher the Crepe Rocket Points.",
+    "emoji": "🍬"
+  }
+}

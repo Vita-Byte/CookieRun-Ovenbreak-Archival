@@ -1,0 +1,113 @@
+{
+  "id": "wind-up-wafflepup",
+  "name": "Wind-up Wafflepup",
+  "rarity": "epic",
+  "released": "July 28, 2025",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/7/7b/Wind-up_wafflepup.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 18.1 sec\n+99,440 pts for Waffle Cream Jellies\n+994,400 pts for Waffle Strawberry Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 18.1 sec\n+108,480 pts for Waffle Cream Jellies\n+1,084,800 pts for Waffle Strawberry Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 18.1 sec\n+117,520 pts for Waffle Cream Jellies\n+1,175,200 pts for Waffle Strawberry Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 18.1 sec\n+126,560 pts for Waffle Cream Jellies\n+1,265,600 pts for Waffle Strawberry Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 18.1 sec\n+135,600 pts for Waffle Cream Jellies\n+1,356,000 pts for Waffle Strawberry Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 18.1 sec\n+144,640 pts for Waffle Cream Jellies\n+1,446,400 pts for Waffle Strawberry Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 18.1 sec\n+153,680 pts for Waffle Cream Jellies\n+1,536,800 pts for Waffle Strawberry Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 18.1 sec\n+162,720 pts for Waffle Cream Jellies\n+1,627,200 pts for Waffle Strawberry Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 18.1 sec\n+171,760 pts for Waffle Cream Jellies\n+1,717,600 pts for Waffle Strawberry Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 18.1 sec\n+180,800 pts for Waffle Cream Jellies\n+1,808,000 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 18.1 sec\n+189,840 pts for Waffle Cream Jellies\n+1,898,400 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 18.1 sec\n+198,880 pts for Waffle Cream Jellies\n+1,988,800 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activates every 18.1 sec\n+207,920 pts for Waffle Cream Jellies\n+2,079,200 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activates every 18.1 sec\n+216,960 pts for Waffle Cream Jellies\n+2,169,600 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activates every 18.1 sec\n+226,000 pts for Waffle Cream Jellies\n+2,260,000 pts for Waffle Strawberry Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Becomes a rocket and flies forward at fixed intervals. It creates Waffle Cream Jellies while spinning in the air, and Waffle Strawberry Jellies when it finally explodes. Level Up for more points for Waffle Cream Jellies and Waffle Strawberry Jellies.",
+  "story": "Strawberry Crepe Cookie wanted a little friend to play with, leading them to create the Wind-Up Wafflepup with discarded parts they found! They waited with bated breath for the very moment the pup would open their mechanical eyes to play... but it has yet to cycle out of rest mode. Fearing it may be due to a fault in the parts or-Wafflebots forbid-an error in their own engineering, the Cookie continuously made adjustments to their build and programming. Regardless of Strawberry Crepe Cookie's efforts, the pup is just as much of a sleepyhead up until this very day! It's been noted, however, that as Strawberry Crepe Cookie prepares to head out for the day Wind-up Wafflepup will sleepily toddle after them, following them to the door with its eyes half open. The Cookie now simply posits that the robotic pet requires more energy than previously expected. Awake or asleep, nothing changes the fact this tiny pup is a dear friend.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "strawberry-crepe",
+      "desc": "+2,700,000 Crepe Punch Points"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Wind-up Wafflepup",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/7/7b/Wind-up_wafflepup.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Kick Back & Relax",
+	  "img": "images/costumes/pet/Crob_standard_kick_back_and_relax.png",
+	  "released": "July 28, 2025",
+      "tier": "epic",
+      "info": "One sweltering hot day, Strawberry Crepe Cookie decided to conduct an engineering test for their summer vacation homework. Wind-up Wafflepup followed the young Cookie, thinking it would be a quick and short outing. But alas, the poor Pet ended up totally drained from the heat!"
+    }
+  ]
+}

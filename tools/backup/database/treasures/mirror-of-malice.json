@@ -1,0 +1,131 @@
+{
+  "id": "mirror-of-malice",
+  "name": "Mirror of Malice",
+  "rarity": "epic",
+  "released": "September 28, 2018",
+  "emoji": "🔮",
+  "img": "images/treasures/Mirror_of_Malice.png",
+  "avatar": "images/treasure-icons/Mirror_of_malice.png",
+  "tags": [
+    "Jellies",
+    "Destruction"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+4,050 pts for Malicious Spirit Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+8,100 pts for Malicious Spirit Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+12,150 pts for Malicious Spirit Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+16,200 pts for Malicious Spirit Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+20,250 pts for Malicious Spirit Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+24,300 pts for Malicious Spirit Jellies"
+    }
+  ],
+  "skillFull": "Dark Stone Jellies appear at certain intervals. Collect a certain number of Dark Stone Jellies to release the Beam of Malice, destroying obstacles and creating Malicious Spirit Jellies. Level Up for more points for Dark Malicious Spirit Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+21,360 pts for Malicious Spirit Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+27,300 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+33,240 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+39,180 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+45,120 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+51,060 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+57,000 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+62,940 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+68,880 pts for Malicious Spirit Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+74,820 pts for Malicious Spirit Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+80,760 pts for Malicious Spirit Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Dark Stone Jellies appear every 5 sec\nFires Beam of Malice after collecting 5 Dark Stone Jellies\n+500,000 pts for Dark Stone Jellies\n+86,700 pts for Malicious Spirit Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "This mysterious magic mirror that shines with a haunted light even in complete darkness.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "agar-agar",
+      "desc": "+12,000 pts for Malicious Spirit Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "red-velvet",
+      "desc": "+12,000 pts for Malicious Spirit Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "licorice",
+      "desc": "+12,000 pts for Malicious Spirit Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "truffle",
+      "desc": "+12,000 pts for Malicious Spirit Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "pomegranate",
+      "desc": "+12,000 pts for Malicious Spirit Jellies"
+    }
+  ]
+}

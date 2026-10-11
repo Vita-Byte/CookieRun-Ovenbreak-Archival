@@ -1,0 +1,109 @@
+{
+  "id": "waffle-headset",
+  "name": "Waffle Headset",
+  "rarity": "epic",
+  "released": "July 28, 2025",
+  "img": "images/treasures/Waffle_headset_bg.png",
+  "avatar": "images/treasure-icons/Waffle_headset.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+13,500 pts for Strawberry Cream Note Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+27,000 pts for Strawberry Cream Note Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+40,500 pts for Strawberry Cream Note Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+54,000 pts for Strawberry Cream Note Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+67,500 pts for Strawberry Cream Note Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+81,000 pts for Strawberry Cream Note Jellies"
+    }
+  ],
+  "skillFull": "Creates a crepe speaker at fixed intervals. The crepe speaker creates Strawberry Cream Note Jellies following the beat. Level Up for more points for Strawberry Cream Note Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 13.5 sec\n+241,200 pts for Strawberry Cream Note Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 13.5 sec\n+261,000 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 13.5 sec\n+280,800 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 13.5 sec\n+300,600 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 13.5 sec\n+320,400 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 13.5 sec\n+340,200 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 13.5 sec\n+360,000 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 13.5 sec\n+379,800 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 13.5 sec\n+399,600 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 13.5 sec\n+419,400 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 13.5 sec\n+439,200 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 13.5 sec\n+459,000 pts for Strawberry Cream Note Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "A headset hand-crafted by a Cookie well-versed in magichanical engineering. It is said any Cookie wearing it has their eyes suddenly filled with a glimmer of brilliance... Maybe it's more than just an accessory?!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "strawberry-crepe",
+      "desc": "+45,000 pts for Strawberry Crepe Note Jellies"
+    }
+  ]
+}

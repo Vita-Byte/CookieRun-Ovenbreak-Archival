@@ -1,0 +1,121 @@
+{
+  "id": "butterfly-brooch",
+  "name": "Butterfly Brooch",
+  "rarity": "epic",
+  "released": "October 27, 2022",
+  "emoji": "🔮",
+  "img": "images/treasures/Butterfly_Brooch.png",
+  "avatar": "images/treasure-icons/Butterfly_brooch.png",
+  "tags": [
+    "Score",
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+10,800 Scale Powder Jelly Points"
+    },
+    {
+      "lv": 2,
+      "effect": "+21,600 Scale Powder Jelly Points"
+    },
+    {
+      "lv": 3,
+      "effect": "+32,400 Scale Powder Jelly Points"
+    },
+    {
+      "lv": 4,
+      "effect": "+43,200 Scale Powder Jelly Points"
+    },
+    {
+      "lv": 5,
+      "effect": "+54,000 Scale Powder Jelly Points"
+    },
+    {
+      "lv": 6,
+      "effect": "+64,800 Scale Powder Jelly Points"
+    }
+  ],
+  "skillFull": "Butterflies appear at certain intervals. Reaching a butterfly grants points, and collecting a pair creates Scale Powder Jellies as the butterflies fly away together. Level Up for more points for Scale Powder Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+92,960 pts for Scale Powder Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+108,800 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+124,640 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+140,480 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+156,320 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+172,160 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+188,000 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+203,840 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+219,680 pts for Scale Powder Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+235,520 pts for Scale Powder Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+251,360 pts for Scale Powder Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates butterfly every 9 sec\nSkill activation after collecting 2 butterflies\n+1,000,000 Butterfly Points\n+267,200 pts for Scale Powder Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "It may seem like just one butterfly, but it is a brooch made of two butterflies attached together. Friendship shines brighter than any gem in the world!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "sugar-glass",
+      "desc": "+32,000 Scale Powder Jelly Points"
+    },
+    {
+      "type": "cookie",
+      "id": "blue-lily",
+      "desc": "+32,000 Scale Powder Jelly Points"
+    },
+    {
+      "type": "cookie",
+      "id": "blue-slushy",
+      "desc": "+32,000 Scale Powder Jelly Points"
+    }
+  ]
+}

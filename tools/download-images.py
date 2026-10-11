@@ -5,7 +5,9 @@ download-images.py  -  archive every wiki image locally, sorted into folders.
 What it does (safe to run any number of times):
   1. Reads every entry file in database/cookies, database/pets and database/treasures (the .json files);
      if there is no database/ folder it falls back to the old cookies.js / pets.js / treasures.js.
-  2. Finds every image link that starts with http(s):// (png/jpg/jpeg/webp/gif).
+  2. Finds every image link that starts with http(s):// (png/jpg/jpeg/webp/gif). This includes Fandom image links such as
+       https://static.wikia.nocookie.net/cookierun/images/7/7b/Img_cookie0194.png/revision/latest?cb=20250323025505
+     (saved as Img_cookie0194.png in the folder that fits where you pasted it, e.g. "illust" -> images/cookie-illustrations/).
   3. Works out what each image is (cookie sprite, Magic Candy, costume, ...) from where it sits
      in your data, and downloads it into the matching folder under  images/ :
 
@@ -28,21 +30,28 @@ What it does (safe to run any number of times):
 
   4. Rewrites each link in the data file to the local path, e.g.  images/magic-candy/Crob_magic_candy_milky_way.png
   5. Keeps a backup of your original files in  backup/  (first run only).
-  6. Afterwards run  python build-database.py  to rebuild the files index.html loads.
+  6. Afterwards run  python tools/build-database.py  to rebuild the files index.html loads.
 
 Adding new entries later: paste the wiki links as usual, then run this script again.
 It only touches links that are still http(s):// - already-converted ones are left alone.
 
-Usage:   python download-images.py            (python3 on Mac/Linux)
-         python download-images.py --dry-run  (just list what it would do)
+Usage:   python tools/download-images.py            (python3 on Mac/Linux; run from the project folder)
+         python tools/download-images.py --dry-run  (just list what it would do)
+         (from inside the tools folder, drop "tools/" - both work. Images go to ../images, the backup to tools/backup)
 Needs:   Python 3.8+ (no extra packages).
 """
 import hashlib, json, os, re, shutil, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# Works from the project folder or from a tools/ subfolder: data (database/, images/) is always in the project folder,
+# the tool's own scratch folders (.cache, drafts, backup) stay next to the script.
+ROOT = os.path.dirname(HERE) if os.path.basename(HERE).lower() == "tools" else HERE
+RUN = "python tools/" if ROOT != HERE else "python "
 FOLDERS = (("cookies", "cookie"), ("pets", "pet"), ("treasures", "treasure"))
 IMG_DIR = "images"
-URL_RE = re.compile(r'https?://[^\s"\'()<>]+?\.(?:png|jpe?g|webp|gif)(?=["\'\s)<>]|$)', re.I)
+# An image link: ...name.png  - optionally followed by Fandom's  /revision/latest?cb=123  tail (or ?query)
+URL_RE = re.compile(r'https?://[^\s"\'()<>]+?\.(?:png|jpe?g|webp|gif)(?:/revision/[^\s"\'()<>?]*)?(?:\?[^\s"\'()<>]*)?(?=["\'\s)<>]|$)', re.I)
+IMG_EXT = re.compile(r"\.(?:png|jpe?g|webp|gif)$", re.I)
 UA = "Mozilla/5.0 (compatible; personal-archive-downloader)"
 DRY = "--dry-run" in sys.argv
 # Fixed UI images used by index.html (not found in the .js data files): URL -> folder/file under images/
@@ -81,9 +90,9 @@ def sources():
     """(relative path, kind, is_json) for every data file."""
     out = []
     for folder, kind in FOLDERS:
-        dd = os.path.join(HERE, "database", folder)
+        dd = os.path.join(ROOT, "database", folder)
         if os.path.isdir(dd): out += [(f"database/{folder}/{fn}", kind, True) for fn in sorted(os.listdir(dd)) if fn.endswith(".json") and not fn.startswith("_")]
-        elif os.path.exists(os.path.join(HERE, folder + ".js")): out.append((folder + ".js", kind, False))
+        elif os.path.exists(os.path.join(ROOT, folder + ".js")): out.append((folder + ".js", kind, False))
     return out
 
 
@@ -147,7 +156,9 @@ def classify(text, kind):
 
 def local_name(url, folder, taken):
     """File name inside the folder; if two different links share a name, add a short hash."""
-    base = urllib.parse.unquote(os.path.basename(urllib.parse.urlparse(url).path))
+    parts = [s for s in urllib.parse.urlparse(url).path.split("/") if s]
+    # the file name is the last path part that ends in an image extension (Fandom links end in .../name.png/revision/latest)
+    base = urllib.parse.unquote(next((s for s in reversed(parts) if IMG_EXT.search(s)), parts[-1] if parts else "image"))
     base = re.sub(r"[^A-Za-z0-9._-]", "_", base)
     key = (folder, base.lower())  # Windows/macOS treat "Foo.png" and "foo.png" as the same file
     if taken.get(key, url) != url:
@@ -158,8 +169,13 @@ def local_name(url, folder, taken):
     return base
 
 
+def referer_for(url):
+    """Fandom's image server (static.wikia.nocookie.net) is asked as if the request came from the Fandom wiki."""
+    return "https://cookierun.fandom.com/" if "wikia.nocookie.net" in url else "https://cookierunwiki.com/"
+
+
 def download(url, dest, tries=3):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": "https://cookierunwiki.com/"})
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Referer": referer_for(url)})
     err = None
     for n in range(1, tries + 1):
         try:
@@ -181,7 +197,7 @@ def main():
     srcs = sources()
     if not srcs: print("No data files found (expected database/cookies, database/pets, database/treasures).")
     for name, kind, isjson in srcs:
-        texts[name] = read(os.path.join(HERE, *name.split("/")))
+        texts[name] = read(os.path.join(ROOT, *name.split("/")))
         try: found = classify_json(json.loads(texts[name]), kind) if isjson else classify(texts[name], kind)
         except ValueError as ex: print(f"  ! {name} is not valid JSON ({ex}) - skipped"); texts.pop(name); continue
         for u, f in found.items(): cats.setdefault(u, f)
@@ -191,7 +207,7 @@ def main():
             cats.setdefault(u, "misc")
     # fixed UI images: downloaded if missing, never rewritten in the .js files
     for u, rel in SPECIAL.items():
-        dest = os.path.join(HERE, IMG_DIR, *rel.split("/"))
+        dest = os.path.join(ROOT, IMG_DIR, *rel.split("/"))
         if os.path.exists(dest) and os.path.getsize(dest) > 0:
             continue
         print(f"UI image: {rel}" + ("  (dry run)" if DRY else ""))
@@ -211,7 +227,7 @@ def main():
         return
     ok = {}
     for k, (u, rel) in enumerate(mapping.items(), 1):
-        dest = os.path.join(HERE, IMG_DIR, *rel.split("/"))
+        dest = os.path.join(ROOT, IMG_DIR, *rel.split("/"))
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         if os.path.exists(dest) and os.path.getsize(dest) > 0:
             print(f"[{k}/{len(mapping)}] have  {rel}")
@@ -231,13 +247,13 @@ def main():
                 f.write(t)
         for u, rel in ok.items():
             t = t.replace(u, f"{IMG_DIR}/{rel}")  # only successfully downloaded links are rewritten
-        with open(os.path.join(HERE, *name.split("/")), "w", encoding="utf-8", newline="") as f:
+        with open(os.path.join(ROOT, *name.split("/")), "w", encoding="utf-8", newline="") as f:
             f.write(t)
     bad = len(mapping) - len(ok)
     print(f"\nDone. {len(ok)} images saved under '{IMG_DIR}/', {bad} failed (those links were left as they were).")
     if bad:
         print("Run the script again to retry the failed ones.")
-    print("Now run  python build-database.py  and then upload the database and images folders to GitHub.")
+    print(f"Now run  {RUN}build-database.py  and then upload the database and images folders to GitHub.")
 
 
 if __name__ == "__main__":

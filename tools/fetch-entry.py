@@ -3,9 +3,10 @@
 fetch-entry.py  -  draft a cookies.js / pets.js / treasures.js entry from the Cookie Run Wiki.
 
 Usage:
-    python fetch-entry.py cookie   "Allulose Nova Cookie"
-    python fetch-entry.py pet      "Grand Beehive"
-    python fetch-entry.py treasure "Noble Crown of Allulose"
+    python tools/fetch-entry.py cookie   "Allulose Nova Cookie"
+    python tools/fetch-entry.py pet      "Grand Beehive"
+    python tools/fetch-entry.py treasure "Noble Crown of Allulose"
+(run from the project folder; from inside the tools folder drop "tools/". Cache and drafts live in tools/.cache and tools/drafts)
 
 Options:
     --file page.html   parse a saved copy of the main page instead of downloading it
@@ -15,7 +16,7 @@ Options:
 
 Output: database/<cookies|pets|treasures>/<id>.json  (a finished entry file; nothing to paste).
         An existing entry is never overwritten: the new one goes to drafts/ instead (use --force to overwrite).
-        If there is no database/ folder yet, it goes to drafts/. Then run:  python build-database.py
+        If there is no database/ folder yet, it goes to drafts/. Then run:  python tools/build-database.py
 Levels the wiki skips are calculated (equal steps between the levels it shows); level-up rewards, the first 3 affection tiers and
 the candy name follow the rules/paths found in your own data files. Anything else the wiki lacks (emoji, ...) is left out.
 Needs Python 3.8+, no extra packages. Pages are cached in .cache/ and requests are spaced 1 s apart.
@@ -27,6 +28,10 @@ from fractions import Fraction
 from html.parser import HTMLParser
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# Works from the project folder or from a tools/ subfolder: data (database/, images/) is always in the project folder,
+# the tool's own scratch folders (.cache, drafts, backup) stay next to the script.
+ROOT = os.path.dirname(HERE) if os.path.basename(HERE).lower() == "tools" else HERE
+RUN = "python tools/" if ROOT != HERE else "python "
 CACHE, OUT = os.path.join(HERE, ".cache"), os.path.join(HERE, "drafts")
 BASE = "https://cookierun.wiki/w/"
 UA = "Mozilla/5.0 (compatible; personal-archive-fetcher)"
@@ -37,7 +42,7 @@ RELT = ["Friendly", "Family", "Trust", "Admiration", "Tension", "Rival"]
 ORDER = {
     "cookie": ["id","name","rarity","released","illust","jelly","img","emoji","avatar","tags","bonus","levels","skillFull","story","quote","quotes","affection","relations","costumes","combi","candy"],
     "pet": ["id","name","rarity","released","emoji","img","tags","bonus","levels","skillFull","story","combi","costumes"],
-    "treasure": ["id","name","rarity","released","emoji","img","avatar","tags","bonus","skillFull","levels","story","combi","enhancements"],
+    "treasure": ["id","name","rarity","released","emoji","img","avatar","tags","bonus","enhancements","skillFull","levels","story","combi"],
 }
 NOTES = []
 DEFLV = {"cookie": 15, "pet": 15, "treasure": 12}
@@ -236,20 +241,41 @@ def level_tables(bl):
     return res
 
 
+TYPO = re.compile(r"(\d{1,3}(?:,\d{3})*,)(\d{4,})(?!\d)")
+
+
+def fix_typos(s):
+    """Wiki typo like '804,0000' (a comma group with 4+ digits): keep 3 digits, and tell the user."""
+    def f(m):
+        fixed = m.group(1) + m.group(2)[:3]
+        NOTES.append(f"wiki text has a likely typo '{m.group(0)}' - read as '{fixed}'; please check it")
+        return fixed
+    return TYPO.sub(f, s)
+
+
 def read_levels(tbl, hi, energy):
     rows, out = tbl["rows"], []
     for r in rows[hi + 1:]:
         t = [c["t"].strip() for c in r]
         if len(t) < 2 or not re.fullmatch(r"\d+", t[0]): continue
         o = {"lv": int(t[0])}
-        if energy and len(t) >= 3: o["energy"] = num(t[1]); o["desc"] = t[2]
-        else: o["desc"] = t[-1]
+        if energy and len(t) >= 3: o["energy"] = num(t[1]); o["desc"] = fix_typos(t[2])
+        else: o["desc"] = fix_typos(t[-1])
         out.append(o)
     desc = ""
     for r in rows[:hi]:
         for c in r:
             if len(c["t"]) > len(desc) and not re.search(r"skill$", c["t"].strip(), re.I): desc = c["t"].replace("\n", " ")
     return out, desc
+
+
+RARF = {"legendary": "legendary", "epic": "epic", "rare": "rare", "common": "common", "special": "special", "teenieping": "teenieping",
+        "the_powerpuff_girls": "ppg", "powerpuff_girls": "ppg", "sanrio_characters": "sanrio"}
+
+
+def rarity_of_src(src):
+    stem = os.path.splitext(os.path.basename(urllib.parse.urlparse(src).path))[0]
+    return RARF.get(re.sub(r"^\d+px-", "", stem).lower(), "")
 
 
 def tier_of(txt):
@@ -282,7 +308,7 @@ def load_js(path):
 
 def entries(folder):
     """All existing entries of one type: database/<folder>/*.json, or the old <folder>.js file."""
-    d = os.path.join(HERE, "database", folder)
+    d = os.path.join(ROOT, "database", folder)
     if os.path.isdir(d):
         out = []
         for fn in sorted(os.listdir(d)):
@@ -290,17 +316,18 @@ def entries(folder):
                 try: out.append(json.load(open(os.path.join(d, fn), encoding="utf-8")))
                 except ValueError: print(f"  ! {fn} is not valid JSON - ignored")
         return out
-    return load_js(os.path.join(HERE, folder + ".js"))
+    return load_js(os.path.join(ROOT, folder + ".js"))
 
 
 def reference():
     """Level-up reward paths per rarity, level counts and the shared affection tiers, taken from YOUR data files."""
-    ref = {"lv": {}, "n": {}, "cand": {}, "n_cand": 5, "aff3": [], "names": {}}
+    ref = {"lv": {}, "n": {}, "cand": {}, "n_cand": 5, "n_enh": 6, "aff3": [], "names": {}}
     for kind, folder in (("cookie", "cookies"), ("pet", "pets"), ("treasure", "treasures")):
         for e in entries(folder):
             lv, r = e.get("levels") or [], e.get("rarity")
             if lv:
                 ref["n"].setdefault(kind, len(lv)); ref["lv"].setdefault((kind, r), [l.get("reward") for l in lv])
+            if kind == "treasure" and e.get("enhancements"): ref["n_enh"] = len(e["enhancements"])
             cd = e.get("candy") or {}
             if cd.get("levels"): ref["n_cand"] = len(cd["levels"]); ref["cand"].setdefault(r, [l.get("reward") for l in cd["levels"]])
             if kind == "cookie":
@@ -355,24 +382,29 @@ def complete(known, total, energy, rewards):
 
 
 def combi_of(bl, kind):
-    """Combo partners from the 'Combi Pet / Combi Treasure / Combi Cookie' headings. One block can list several partners
-    (name line, bonus line, name line, bonus line, ...)."""
+    """Combo partners from the 'Combi Pet / Combi Treasure / Combi Cookie / Combi Bonus' headings.
+    A block lists names and bonus lines: 'name, bonus, name, bonus' or 'name, name, bonus' (one bonus shared by all)."""
     out = []
     for i, b in enumerate(bl):
         if b["k"] == "h" and "combi" in b["t"].lower():
-            typ = "pet" if "pet" in b["t"].lower() else "cookie" if "cookie" in b["t"].lower() else "treasure" if "treasure" in b["t"].lower() else {"cookie": "pet", "pet": "cookie", "treasure": "cookie"}[kind]
+            hl = b["t"].lower()
+            typ = "pet" if "pet" in hl else "cookie" if "cookie" in hl else "treasure" if "treasure" in hl else None
             for x in bl[i + 1:]:
                 if x["k"] == "h": break
                 if x["k"] not in ("p", "li"): continue
                 c = x["c"]
                 names = list(dict.fromkeys(t for t, _ in c["a"] if t))
                 lines = [l.strip() for l in c["t"].split("\n") if l.strip()]
+                t = typ or ("cookie" if any("crob_head_" in s.lower() for _, s in c["im"]) else {"cookie": "pet", "pet": "cookie", "treasure": "cookie"}[kind])
+                found = []
                 for k, nm in enumerate(names):
                     at = next((j for j, l in enumerate(lines) if l == nm or l.startswith(nm)), None)
                     if at is None: continue
                     stop = min((j for j, l in enumerate(lines) if j > at and any(l == n or l.startswith(n) for n in names[k + 1:])), default=len(lines))
-                    desc = " ".join(lines[at:stop]).replace(nm, "", 1).strip(" :")
-                    out.append({"type": typ, "id": slug(nm), "desc": desc})
+                    found.append([nm, " ".join(lines[at:stop]).replace(nm, "", 1).strip(" :")])
+                for k in range(len(found) - 1, -1, -1):  # a name with no bonus line of its own shares the next one
+                    if not found[k][1] and k + 1 < len(found): found[k][1] = found[k + 1][1]
+                out += [{"type": t, "id": slug(nm), "desc": d} for nm, d in found]
     return out
 
 
@@ -495,6 +527,9 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
             for alt, _ in c["im"]:
                 r = r or RAR.get(alt.lower().strip(), "")
     if not r:
+        _, rs = sect(bl, r"^rarity$")
+        r = next((rarity_of_src(s) for b in rs + bl[:25] for c in cells(b) for a, s in c["im"] if s and "treasures" not in a.lower() and rarity_of_src(s)), "")
+    if not r:
         m = re.search(r"\bis an? (legendary|epic|rare|common|special)\b", " ".join(paras(bl)[:4]), re.I)
         r = m.group(1).lower() if m else ""
     e["rarity"] = r or ""
@@ -512,6 +547,10 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     rep.append(("release date", bool(e["released"])))
     e["img"] = first_img(bl[:25], "crob_standard_") or first_img(bl[:25], avoid=("icon", "_head_", "rarit"))
     if kind == "cookie": e["illust"] = first_img(bl[:25], "crob_illustration_")
+    if kind == "treasure":  # infobox tabs: "With Background" (hexagon badge) = img, "Icon" (plain sprite) = avatar
+        pick = lambda names, bad="": next((full(s) for b in bl[:30] for c in cells(b) for a, s in c["im"] if s and a.strip().lower() in names and (not bad or bad not in s.lower())), "")
+        bg, ic = pick(("with background", "base sprite (background)")), pick(("icon", "base sprite"), "crob_head_")
+        e["img"], e["avatar"] = bg or ic or e.get("img", ""), ic if bg else ""
     _, st = sect(bl, r"^story$")
     e["story"] = "\n\n".join(paras(lead(st)))
     rep.append(("story", bool(e["story"])))
@@ -519,10 +558,11 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     if kind == "cookie" and (jl or gal):
         e["jelly"] = {"img": first_img(jl + gal, "affection_jelly"), "story": " ".join(paras(jl))}
     lts, cand = level_tables(bl), None
+    enh_t = next((x for x in lts if x[0]["rows"] and any("enhanced effect" in c["t"].lower() for c in x[0]["rows"][0])), None) if kind == "treasure" else None
     if kind == "cookie":
         main = next((x for x in lts if "energy" in x[2]), None)
         cand = next((x for x in lts if x is not main and "energy" not in x[2]), None)
-    else: main = lts[0] if lts else None
+    else: main = next((x for x in lts if x is not enh_t), None)
     if main:
         lv, desc = read_levels(main[0], main[1], kind == "cookie")
         e["levels"], note = complete(lv, ref["n"].get(kind) or DEFLV[kind], kind == "cookie", ref["lv"].get((kind, e["rarity"])))
@@ -610,9 +650,15 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
         d = {"name": e["name"], "img": e.get("img", ""), "desc": "Default Costume", "tier": "default", "equipped": True}
         e["costumes"] = [d] + cos
     if kind == "treasure":
-        _, en = sect(bl, r"enhance")
-        rows = [[c["t"].strip() for c in r] for b in en if b["k"] == "table" for r in b["rows"]]
-        enh = [{"lv": int(r[0]), "effect": r[-1]} for r in rows if len(r) >= 2 and re.fullmatch(r"\d+", r[0])]
+        enh = []
+        if enh_t:
+            known, _ = read_levels(enh_t[0], enh_t[1], False)
+            if known:
+                n_known = len(known)
+                if n_known == 1: known = [{"lv": 0, "desc": NUM.sub("0", known[0]["desc"])}] + known  # one level shown: starts from 0
+                out, note = complete(known, max(ref["n_enh"], known[-1]["lv"]), False, None)
+                enh = [{"lv": o["lv"], "effect": o["desc"]} for o in out if o["lv"] >= 1]
+                NOTES.append(f"enhancements: wiki shows {n_known} level(s); the rest are calculated in equal steps" + (" starting from 0" if n_known == 1 else ""))
         if enh: e["enhancements"] = enh
         rep.append(("enhancements", bool(enh)))
     return e, rep
@@ -735,14 +781,14 @@ def main():
             if not h: print(f"  (no {s} subpage)")
     e, rep = extract(kind, bl, title, name, sub.get("Gallery", []), sub.get("Costumes", []), sub.get("Quotes", []), reference())
     if kind == "cookie" and fi < 0: fandom_costume_quotes(e, refresh)
-    folder = os.path.join(HERE, "database", FOLDER[kind])
+    folder = os.path.join(ROOT, "database", FOLDER[kind])
     path = os.path.join(folder, e["id"] + ".json") if os.path.isdir(folder) else os.path.join(OUT, f"{kind}-{e['id']}.json")
     if os.path.exists(path) and "--force" not in flags:
         path = os.path.join(OUT, f"{kind}-{e['id']}.json")
-        print(f"  note: '{e['id']}' already exists in database/ - not overwritten; the new version is saved as {os.path.relpath(path, HERE)}")
+        print(f"  note: '{e['id']}' already exists in database/ - not overwritten; the new version is saved as {os.path.relpath(path, ROOT)}")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     open(path, "w", encoding="utf-8", newline="\n").write(json.dumps(entry_obj(kind, e), ensure_ascii=False, indent=2) + "\n")
-    print(f"\nEntry written: {os.path.relpath(path, HERE)}\n")
+    print(f"\nEntry written: {os.path.relpath(path, ROOT)}\n")
     for k, ok in rep: print(f"  {'ok     ' if ok else 'MISSING'}  {k}")
     for n in NOTES: print("  note:", n)
     print("\nNot on the wiki (fill in yourself): emoji" + (", ingredient text (and name if the Gallery has no caption), costume release dates" if kind == "cookie" else ""))

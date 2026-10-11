@@ -1,0 +1,83 @@
+{
+  "id": "glittering-dream-orb",
+  "name": "Glittering Dream Orb",
+  "rarity": "legendary",
+  "released": "October 27, 2025",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f1/Crob_sprite_background_glittering_dream_orb.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/1/14/Crob_sprite_glittering_dream_orb.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "skillFull": "When its skill is first activated, a large Dreamcloud appears in the sky for a certain amount of time, during which multiple Dreamclouds descend from the sky. The final Dreamcloud contains a hidden Dream Orb Jelly. After this phase ends, Dreamclouds continue to descend from the sky, creating Dreamcloud Jellies. Level up for more points for Dreamcloud Jellies and Dream Orb Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+91,000 pts for Dreamcloud Jellies\n+800,000 pts for Dream Orb Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+114,000 pts for Dreamcloud Jellies\n+1,000,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+137,000 pts for Dreamcloud Jellies\n+1,200,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+160,000 pts for Dreamcloud Jellies\n+1,400,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+183,000 pts for Dreamcloud Jellies\n+1,600,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+206,000 pts for Dreamcloud Jellies\n+1,800,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+229,000 pts for Dreamcloud Jellies\n+2,000,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+252,000 pts for Dreamcloud Jellies\n+2,200,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+275,000 pts for Dreamcloud Jellies\n+2,400,000 pts for Dream Orb Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+298,000 pts for Dreamcloud Jellies\n+2,600,000 pts for Dream Orb Jellies",
+      "reward": "🔥8,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+321,000 pts for Dreamcloud Jellies\n+2,800,000 pts for Dream Orb Jellies",
+      "reward": "🔥8,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Large Dreamcloud cooldown 32.2 sec\nSkill active for 11 sec after activation\n+344,000 pts for Dreamcloud Jellies\n+3,000,000 pts for Dream Orb Jellies",
+      "reward": "🔥12,000"
+    }
+  ],
+  "story": "A Dream Orb that sparkles and glitters with the condensed light of the moon and all the stars in the sky. It will light the way so that no dreaming Cookies get lost.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "dreamweaver",
+      "desc": "+27,500 pts for Dreamcloud Jellies"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "marshpillow",
+  "name": "Marshpillow",
+  "rarity": "epic",
+  "released": "October 27, 2025",
+  "emoji": "🧸",
+  "img": "images/pets/Marshpillow.png",
+  "tags": [
+    "Jellies",
+    "Energy Speed",
+    "Destruction"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Energy Drain −3.7%\nSkill activates every 19.6 sec\n+985,600 pts for Obstacle Slumber Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Energy Drain −4.1%\nSkill activates every 19.6 sec\n+1,075,200 pts for Obstacle Slumber Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Energy Drain −4.4%\nSkill activates every 19.6 sec\n+1,164,800 pts for Obstacle Slumber Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Energy Drain −4.8%\nSkill activates every 19.6 sec\n+1,254,400 pts for Obstacle Slumber Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Energy Drain −5.1%\nSkill activates every 19.6 sec\n+1,344,000 pts for Obstacle Slumber Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Energy Drain −5.4%\nSkill activates every 19.6 sec\n+1,433,600 pts for Obstacle Slumber Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Energy Drain −5.8%\nSkill activates every 19.6 sec\n+1,523,200 pts for Obstacle Slumber Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Energy Drain −6.1%\nSkill activates every 19.6 sec\n+1,612,800 pts for Obstacle Slumber Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Energy Drain −6.5%\nSkill activates every 19.6 sec\n+1,702,400 pts for Obstacle Slumber Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Energy Drain −6.8%\nSkill activates every 19.6 sec\n+1,792,000 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Energy Drain −7.1%\nSkill activates every 19.6 sec\n+1,881,600 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Energy Drain −7.5%\nSkill activates every 19.6 sec\n+1,971,200 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Energy Drain −7.8%\nSkill activates every 19.6 sec\n+2,060,800 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Energy Drain −8.2%\nSkill activates every 19.6 sec\n+2,150,400 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Energy Drain −8.5%\nSkill activates every 19.6 sec\n+2,240,000 pts for Obstacle Slumber Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Reduces Energy Drain. Searches for obstacles to put to sleep at certain intervals. When it spots one, it rushes in and creates Obstacle Slumber Jellies. Level up for further reduced Energy Drain and more points for Obstacle Slumber Jellies.",
+  "story": "Oh, what to do when you do not feel rested no matter how much sleep you get? Marshpillow is so tired, it even makes all the Cookies around it feel ready to drop straight into dreamland! Even this is a temporary way to lessen the call to slumber, as it soon is overcome with sleepiness once again.\n\nOne day, it happened to wander upon Milky Way Cookie's bustling train, and all of a sudden it didn't have a single moment for some peaceful shut-eye! If anything, it is shuffling around, eyes glittering as it offers to work in Milky Way Cookie's stead, so she can get some well-deserved rest.\n\nAnother day, another Dream Voyage!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "milky-way",
+      "desc": "+300,000 pts for Milky Way Star Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Marshpillow",
+      "desc": "Default Costume",
+      "tier": "default",
+      "emoji": "🧸",
+      "img": "images/pets/Marshpillow.png",
+      "equipped": true
+    },
+    {
+      "name": "Naptime Buddy",
+      "img": "images/costumes/pet/Crob_standard_naptime_buddy.png",
+      "released": "October 27, 2025",
+      "tier": "epic",
+      "emoji": "🚁",
+      "info": "There are occasionally Cookies that cannot find their way to dreamland, even under Milky Way Cookie's guidance... And that's where Marshpillow comes in! It wiggles its way into bed next to Cookies who are tossing and turning, and before you know it, they're out like a light! Here's to hoping for a restful, dreamless sleep."
+    },
+    {
+      "name": "Cozy Travel Companion",
+      "img": "images/costumes/pet/Crob_standard_cozy_travel_companion.png",
+      "released": "March 13, 2026",
+      "tier": "epic",
+      "emoji": "🚁",
+      "info": "No matter how exciting and thrilling it is to travel in the dream world, you're bound to end up sleepy at some point during the long trip. But when a passenger so much as lets out a yawn, Marshpillow sneaks up, ready to provide comfort! Hugging this friend tightly is guaranteed to help you dream dreams as sweet as the candies decorating the cabin of the Star Voyage Express."
+    },
+    {
+      "name": "Breadcopter",
+      "img": "images/costumes/pet/Crob_standard_breadcopter.png",
+      "released": "June 24th, 2026",
+      "tier": "epic",
+      "emoji": "🚁",
+      "info": "Marshpillow waddles in wearing a spinning Breadcopter hat, propeller whirring away. Whenever the Star Coal Express gives a sudden jolt, Marshpillow is already there, spinning that little propeller and pulling startled dream passengers into a warm, soft hug. Somehow, tucked into that cozy embrace, worries melt away and drowsy eyes grow even heavier... With Marshpillow on board, every passenger can sit back, relax, and drift into the sweetest of journeys in the World of Dreams!"
+    },
+    {
+      "name": "Cozy Guide",
+      "img": "images/costumes/pet/Crob_standard_cozy_guide.png",
+      "released": "September 23rd, 2026",
+      "tier": "sanrio",
+      "emoji": "☁️",
+      "info": "Passengers who were used to the constant rattling of the train began drifting off one by one as it glided along the cozy, cushioned tracks! They look so peaceful—it would be a shame to wake them, wouldn't it? Marshpillow will keep them nice and snug so they can enjoy sweet dreams all the way to their destination.",
+      "shop": "Collab Shop"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "id": "bonbon-birdy",
+  "name": "Bonbon Birdy",
+  "rarity": "epic",
+  "released": "October 14, 2021",
+  "img": "images/pets/Bonbon_Birdy.png",
+  "tags": [
+    "Jellies",
+    "Destruction"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+50,200 pts for Choco Bonbon Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+60,900 pts for Choco Bonbon Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+71,600 pts for Choco Bonbon Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+82,300 pts for Choco Bonbon Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+93,000 pts for Choco Bonbon Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+103,700 pts for Choco Bonbon Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+114,400 pts for Choco Bonbon Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+125,100 pts for Choco Bonbon Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+135,800 pts for Choco Bonbon Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+146,500 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+157,200 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+167,900 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+178,600 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+189,300 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Activates skill every 12.1 sec\n+1,000,000 for Destruction Points during skill activation\n+200,000 pts for Choco Bonbon Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Destroys obstacles at certain intervals by pecking at them with its needle beak. While pecking, Choco Bonbon Jellies are created. After a certain amount of pecks, the obstacle is destroyed. Level Up for more points for Choco Bonbon Jellies.",
+  "story": "As Chocolate Bonbon Cookie's trusty helper, Bonbon Birdy takes care of everything to the very sewing of the outfits for the fashion shows. Rumor has it the sharp Needle Beak has never once missed the mark! That combined with speeds surpassing even the most experienced designer Cookies, it's no wonder Chocolate Bonbon Cookie keeps entrusting this companion with work!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "chocolate-bonbon",
+      "desc": "+4,600,000 Design Points"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Bonbon Birdy",
+      "img": "images/pets/Bonbon_Birdy.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "A.C.i.D. Front Cover Model",
+	  "img": "images/costumes/pet/Crob_standard_a.c.i.d._front_cover_model.png",
+      "tier": "epic",
+      "info": "\"This year's Fall & Winter collection features A.C.i.D.'s main hip colors that sing vibrancy. Not yelling, singing! The belt does not interfere with your wings, allowing for comfortable freedom of movement in a design that blends form and fashion. The finishing touch? A hairband from Chocolate Bonbon Cookie to represent friendship.\" - Cogue Magazine"
+    }
+  ]
+}

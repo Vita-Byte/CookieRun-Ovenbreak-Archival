@@ -1,0 +1,442 @@
+{
+  "id": "white-kimchi",
+  "name": "White Kimchi Cookie",
+  "rarity": "epic",
+  "released": "September 11, 2026",
+  "illust": "images/cookie-illustrations/Crob_illustration_white_kimchi.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_white_kimchi.png",
+    "story": "Always offbeat, always out of step! She was known for having two left feet in the family. Yet whenever she danced in rituals, her dough would move like flowing water."
+  },
+  "img": "images/cookies/Crob_white_kimchi_standard.png",
+  "emoji": "👘",
+  "avatar": "images/cookie-heads/Crob_head_white_kimchi.png",
+  "tags": [
+    "Speed",
+    "Jellies",
+    "Blast"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 174,
+      "desc": "Skill activates every 27 sec\n+83,000 pts for Cabbage Spirit Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 183,
+      "desc": "Skill activates every 27 sec\n+93,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 192,
+      "desc": "Skill activates every 27 sec\n+104,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 201,
+      "desc": "Skill activates every 27 sec\n+114,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 210,
+      "desc": "Skill activates every 27 sec\n+125,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 219,
+      "desc": "Skill activates every 27 sec\n+135,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 228,
+      "desc": "Skill activates every 27 sec\n+146,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 237,
+      "desc": "Skill activates every 27 sec\n+156,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 246,
+      "desc": "Skill activates every 27 sec\n+167,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 255,
+      "desc": "Skill activates every 27 sec\n+177,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 264,
+      "desc": "Skill activates every 27 sec\n+188,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 273,
+      "desc": "Skill activates every 27 sec\n+198,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 282,
+      "desc": "Skill activates every 27 sec\n+209,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 291,
+      "desc": "Skill activates every 27 sec\n+219,500 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 300,
+      "desc": "Skill activates every 27 sec\n+230,000 pts for Cabbage Spirit Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Cabbage Spirits appear at regular intervals. Collect Cabbage Spirits to Enlighten them. The spirits then ascend, creating Cabbage Spirit Jellies. Level Up for more points for Cabbage Spirit Jellies.",
+  "story": "White Kimchi Cookie soothes souls with her graceful and pure shamanic dance. After repeating a long spiritual discipline—salting sun-ripened cabbages with sea salt, then carefully washing them clean, over and over—she is said to have attained immaculate divine powers. Perhaps it is the clear, refreshing broth that eases even the weariest heart. Whenever this Cookie steps into a shamanic rite, the resentment and sorrow of spirits wandering between worlds begin to melt away... \n\nNo more rituals meant only to drive spirits away! Just as age-old grief sealed deep within a kimchi jar ferments over time, White Kimchi Cookie throws a celebration whenever a lost soul unburdens its lingering regrets. Even the boundary between the living and the crumbled quietly fades when the leaves on her robes flutter gracefully.\n\nRather than cutting down resentment, White Kimchi Cookie offers a sacred blessing that wipes away tears and lights the path ahead. When the final dance comes to an end, the cabbage spirits brushed by her flowing robes become as lighthearted as the day they first sprouted, joyfully ascending at last. May your soul tread the heavenly path in peace... and reach the one who awaits you!",
+  "quote": "Wicked spirits, you see... they crumble before my dance.",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Wicked spirits, you see... they crumble before my dance.???"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Are you seeking peace and solace?",
+            "I am devoted to Her teachings...",
+            "Speak your sorrows onto me. I will listen to it all.",
+            "Lay down your sorrow. Pass on in peace.",
+            "White kimchi, after all, was the first of its kind.",
+            "In following white robes and a folded cap, softly we take flight...",
+            "Leave all your resentment and regrets upon my robe.",
+            "Life... a curious thing, ever beyond our knowing, ain't it?",
+            "This soul's wandered long, knowing not where to go.",
+            "Now, the dance shall begin. Cast off your worries and reveal to your heart's content!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "???"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "???"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Mighty kind of you. I'll just have to work harder.",
+            "Easy now! Didn't I tell you to hear them out before you start swinging?",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "???"
+            },
+            {
+              "label": "Given <u>Refreshing White Kimchi Talisman</u>",
+              "text": "???"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "???"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "???",
+            "???",
+            "???",
+            "???",
+            "???",
+            "???"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+1,000 pts for Scallion Cabbage Spirit Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+1,000 pts for Cabbage Spirit Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Zombie Cookie",
+      "id": "zombie",
+      "text": "The sound you make... Does it come from sorrow?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Gim Cookie",
+      "id": "gim",
+      "text": "Thanks for making the barrier. Behind those eyes... You have a warm heart.",
+      "type": "Trust"
+    },
+    {
+      "who": "Kumiho Cookie",
+      "id": "kumiho",
+      "text": "I understand you wish to become a Cookie. But you are already enough the way you are.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Onion Cookie",
+      "id": "onion",
+      "text": "Don't cry now... This child doesn't know. How should I explain...?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Licorice Cookie",
+      "id": "licorice",
+      "text": "Let the souls rest in peace. Must you boss thema round?",
+      "type": "Tension"
+    },
+    {
+      "who": "Dr. Bones Cookie",
+      "id": "dr-bones",
+      "text": "A Ghost City? I've still much to learn...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Black Garlic Cookie",
+      "id": "black-garlic",
+      "text": "The spirits are no spectacle. Don't chase them around for fun.",
+      "type": "Tension"
+    },
+    {
+      "who": "Vagabond Cookie",
+      "id": "vagabond",
+      "text": "A Cookie who soothes spirit with joyful dance.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Okchun Cookie",
+      "id": "okchun",
+      "text": "Village matters, rituals... How reassuring to see you putting your heart into all.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Devil Cookie",
+      "id": "devil",
+      "text": "Wraiths are not for collecting. Let them go now.",
+      "type": "Tension"
+    },
+    {
+      "who": "Yugwa Cookie",
+      "id": "yugwa",
+      "text": "Uncovering sins of the living and easing grievances of the crumbled... Could be similar...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Scallion Kimchi Cookie",
+      "id": "scallion-kimchi",
+      "text": "Don't keep it bottled up. Tell me everything!",
+      "type": "Trust"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "White Kimchi Cookie",
+      "img": "images/costumes/cookie/Crob_standard_white_kimchi.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "emoji": "👘",
+      "equipped": true
+    },
+    {
+      "name": "Serene Star Shaman",
+      "img": "images/costumes/cookie/Crob_standard_serene_star_shaman.png",
+      "illust": "images/costume-illustrations/Crob_illustration_serene_star_shaman.png",
+      "bonus": "+1,000 pts for Cabbage Spirit Jellies",
+      "released": "September 11, 2026",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "???",
+                "???",
+                "???",
+                "???",
+                "???"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "???"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "???"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "???",
+                "???",
+                "???",
+                "???",
+                "???",
+                "???",
+                "???",
+                "???",
+                "???",
+                "???"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "???"
+                },
+                {
+                  "label": "Given <u>Refreshing White Kimchi Talisman</u>",
+                  "text": "???"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "???"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "emoji": "💫",
+      "info": "On the day a Bridge Ritual is held to bid farewell to the departed, White Kimchi Cookie serves the Seven Stars Diety said to govern the fate of Cookies. Her precise, deliberate movements trace the seven salt-white stars twinkling in the northern sky. With such heartfelt wishes for the departed's happiness in the afterlife, perhaps their journey onward won't feel quite so bittersweet...!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "kimchi-bell",
+      "desc": "+178,000 pts for Cabbage Spirit Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "ghost-repellent-sticker",
+      "desc": "+44,600 pts for Ghost Tear Jellies"
+    }
+  ],
+  "candy": {
+    "name": "White Kimchi Cookie's Magic Candy",
+    "img": "images/magic-candy/186px-Crob_magic_candy_white_kimchi.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Creates White Kimchi Roll Jellies every 7 sec\n+140,000 pts for White Kimchi Talisman Jellies",
+        "reward": "No Level Up Reward"
+      },
+      {
+        "lv": 2,
+        "desc": "Creates White Kimchi Roll Jellies every 7 sec\n+192,500 pts for White Kimchi Talisman Jellies",
+        "reward": "❤️+30"
+      },
+      {
+        "lv": 3,
+        "desc": "Creates White Kimchi Roll Jellies every 7 sec\n+245,000 pts for White Kimchi Talisman Jellies",
+        "reward": "❤️+30"
+      },
+      {
+        "lv": 4,
+        "desc": "Creates White Kimchi Roll Jellies every 7 sec\n+297,500 pts for White Kimchi Talisman Jellies",
+        "reward": "❤️+30"
+      },
+      {
+        "lv": 5,
+        "desc": "Creates White Kimchi Roll Jellies every 7 sec\n+350,000 pts for White Kimchi Talisman Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Refreshing White Kimchi Talisman",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_white_kimchi.png",
+      "text": "May lingering regrets and sorrows be washed away...!"
+    },
+    "skillFull": "White Kimchi Roll Jellies appear at regular intervals. Collecting a White Kimchi Roll Jelly will grant a Talisman charge. While a Talisman charge is available, jumping changes the Slide button into the White Kimchi Talisman button. Tap the button to throw a White Kimchi Talisman forward. The Talisman attaches to an obstacle, causing White Kimchi Talisman Jellies to appear. The stronger the enchanted power, the more points for White Kimchi Talisman Jellies.",
+    "emoji": "🍬"
+  }
+}

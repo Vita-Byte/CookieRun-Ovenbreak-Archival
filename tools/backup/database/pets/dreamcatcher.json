@@ -1,0 +1,113 @@
+{
+  "id": "dreamcatcher",
+  "name": "Dreamcatcher",
+  "rarity": "legendary",
+  "released": "January 10, 2020",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Dreamcatcher.png",
+  "tags": [
+    "Score",
+    "EnergySpeed"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Activates skill every 21 sec\nEnergy drains 39.6% slower during skill activation\n+132,000 pts for Starry Night Sky",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Activates skill every 21 sec\nEnergy drains 43.2% slower during skill activation\n+144,000 pts for Starry Night Sky",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Activates skill every 21 sec\nEnergy drains 46.8% slower during skill activation\n+156,000 pts for Starry Night Sky",
+      "reward": "🔥3,000  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Activates skill every 21 sec\nEnergy drains 50.4% slower during skill activation\n+168,000 pts for Starry Night Sky",
+      "reward": "🔥3,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Activates skill every 21 sec\nEnergy drains 54% slower during skill activation\n+180,000 pts for Starry Night Sky",
+      "reward": "🔥3,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Activates skill every 21 sec\nEnergy drains 57.6% slower during skill activation\n+192,000 pts for Starry Night Sky",
+      "reward": "🔥3,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Activates skill every 21 sec\nEnergy drains 61.2% slower during skill activation\n+204,000 pts for Starry Night Sky",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Activates skill every 21 sec\nEnergy drains 64.8% slower during skill activation\n+216,000 pts for Starry Night Sky",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Activates skill every 21 sec\nEnergy drains 68.4% slower during skill activation\n+228,000 pts for Starry Night Sky",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Activates skill every 21 sec\nEnergy drains 72% slower during skill activation\n+240,000 pts for Starry Night Sky",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Activates skill every 21 sec\nEnergy drains 75.6% slower during skill activation\n+252,000 pts for Starry Night Sky",
+      "reward": "🔥8,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Activates skill every 21 sec\nEnergy drains 79.2% slower during skill activation\n+264,000 pts for Starry Night Sky",
+      "reward": "🔥8,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Activates skill every 21 sec\nEnergy drains 82.8% slower during skill activation\n+276,000 pts for Starry Night Sky",
+      "reward": "🔥8,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Activates skill every 21 sec\nEnergy drains 86.4% slower during skill activation\n+288,000 pts for Starry Night Sky",
+      "reward": "🔥8,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Activates skill every 21 sec\nEnergy drains 90% slower during skill activation\n+300,000 pts for Starry Night Sky",
+      "reward": "🔥8,000  ❤️+20"
+    }
+  ],
+  "skillFull": "A starry night sky appears at certain intervals. Points are granted at increments while the night sky is visible. The Cookie's Energy drain rate also slows down during this time. Level Up for more points from Starry Night Skies and an even slower Energy drain.",
+  "story": "Born amongst the stars, Dreamcatcher roams the night sky, collecting warm and shimmering starlight. After a fateful encounter, Dreamcatcher learned the power of sharing dreams from Moonlight Cookie. Legends say that no matter how exhausted or discouraged you are, receiving a dream from this Pet will guarantee a blissful slumber.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "moonlight",
+      "desc": "+43,000 pts for Star Powder Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Dreamcatcher",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/3/32/Dreamcatcher.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Night Sky Suncatcher",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/0e/Crob_standard_night_sky_suncatcher.png",
+      "tier": "legendary",
+      "info": "The Dreamcatcher has gathered light since the first light of dawn. All to shine endlessly like a sun on the Cookies to give them happiness. Even cloudy and rainy days shine bright like stars in the night sky!"
+    }
+  ]
+}
