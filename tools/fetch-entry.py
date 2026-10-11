@@ -737,6 +737,66 @@ def fetch_fandom(name, refresh=False):
     return txt, ""
 
 
+def search_wiki(query, refresh=False):
+    """Results of the wiki's own search box (Special:Search) as [(title, href)]; cached as .cache/search_<query>.html"""
+    os.makedirs(CACHE, exist_ok=True)
+    cf = os.path.join(CACHE, "search_" + re.sub(r"[^A-Za-z0-9._-]", "_", query) + ".html")
+    if os.path.exists(cf) and not refresh: html = open(cf, encoding="utf-8").read()
+    else:
+        url = BASE + "Special:Search?" + urllib.parse.urlencode({"search": query, "fulltext": 1, "ns0": 1, "limit": 10})
+        with urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=30) as r: html = r.read().decode("utf-8", "replace")
+        open(cf, "w", encoding="utf-8").write(html); time.sleep(1)
+    out = []
+    for b in parse(html)[0]:
+        if b["k"] == "li":
+            for t, h in b["c"]["a"]:
+                if "/w/" in h and t:
+                    out.append((urllib.parse.unquote(h.split("/w/", 1)[1].split("#")[0]).replace("_", " "), h)); break
+    return out
+
+
+def about_cookie(blocks, cookie):
+    """Is this costume page really about this cookie? (the lead text names it: 'a Super Epic Costume for Crowberry Cookie')"""
+    txt = " ".join(c["t"] for b in blocks[:14] for c in cells(b)).lower()
+    return cookie.lower() in txt or re.sub(r"\s+cookie$", "", cookie.lower()) in txt
+
+
+def wiki_costume_page(costume, cookie, refresh):
+    """(quote groups, how) from cookierun.wiki: first the costume's own page (/w/<Costume Name>), then the wiki's search results."""
+    def read(title):
+        try: html = fetch(title, refresh)
+        except Exception: return None
+        if not html or "mw-content-text" not in html: return None
+        bl = parse(html)[0]
+        return bl if about_cookie(bl, cookie) else None
+    tried = [costume]
+    bl = read(costume)
+    if bl is None:
+        try: hits = search_wiki(costume, refresh)
+        except Exception as ex: return [], f"wiki search failed ({ex})"
+        cands = [t for t, _ in hits if t.lower() == costume.lower()] + [t for t, _ in hits if t.lower() != costume.lower() and re.match(re.escape(costume.lower()) + r"( \(|/)", t.lower())]
+        for t in cands[:3]:
+            if t in tried: continue
+            tried.append(t); bl = read(t)
+            if bl is not None: break
+    if bl is None: return [], "no costume page found on cookierun.wiki" + (" (search had no matching result)" if len(tried) == 1 else "")
+    qs = parse_page_quotes(bl, costume=True)
+    return qs, f"cookierun.wiki page '{tried[-1]}'" if qs else f"cookierun.wiki page '{tried[-1]}' has no quotes section"
+
+
+def costume_quote_fallbacks(e, refresh):
+    """Costumes without quotes: 1) their own page on cookierun.wiki (found directly or via its search), 2) the Fandom wiki."""
+    left = [c for c in e.get("costumes", []) if c.get("tier") != "default" and not c.get("quotes")]
+    for c in left:
+        qs, how = wiki_costume_page(c["name"], e["name"], refresh)
+        if qs:
+            c["quotes"] = qs
+            secs = [s["title"] for g in qs for s in g["sections"]]
+            NOTES.append(f"costume quotes for '{c['name']}' taken from {how} ({', '.join(secs)})" + ("; no separate Tired section there, so check whether one of the General lines belongs in a Tired section" if "Tired" not in secs else ""))
+        else: NOTES.append(f"costume quotes for '{c['name']}': {how}; trying the Fandom wiki")
+    fandom_costume_quotes({"costumes": [c for c in left if not c.get("quotes")]}, refresh)
+
+
 def fandom_costume_quotes(e, refresh):
     """Costumes that have no quotes on cookierun.wiki: try the Fandom wiki page of the costume (text is CC BY-SA)."""
     for c in e.get("costumes", []):
@@ -780,7 +840,7 @@ def main():
             if debug and sub[s]: dump(sub[s], os.path.join(CACHE, s.lower() + ".blocks.txt"))
             if not h: print(f"  (no {s} subpage)")
     e, rep = extract(kind, bl, title, name, sub.get("Gallery", []), sub.get("Costumes", []), sub.get("Quotes", []), reference())
-    if kind == "cookie" and fi < 0: fandom_costume_quotes(e, refresh)
+    if kind == "cookie" and fi < 0: costume_quote_fallbacks(e, refresh)
     folder = os.path.join(ROOT, "database", FOLDER[kind])
     path = os.path.join(folder, e["id"] + ".json") if os.path.isdir(folder) else os.path.join(OUT, f"{kind}-{e['id']}.json")
     if os.path.exists(path) and "--force" not in flags:
