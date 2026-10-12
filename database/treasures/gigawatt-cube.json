@@ -1,0 +1,120 @@
+{
+  "id": "gigawatt-cube",
+  "name": "Gigawatt Cube",
+  "rarity": "epic",
+  "released": "May 15, 2019",
+  "img": "images/treasures/Gigawatt_Cube.png",
+  "avatar": "images/treasure-icons/Gigawatt_cube.png",
+  "tags": [
+    "Jellies",
+    "Magnetism"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+2,500 pts for Electro Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+5,000 pts for Electro Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+7,500 pts for Electro Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+10,000 pts for Electro Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+12,500 pts for Electro Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+15,000 pts for Electro Jellies"
+    }
+  ],
+  "skillFull": "Creates MagnetiCubes at certain intervals. Collect them for a 10-sec Magnetic Aura that causes Electro Jellies to appear. Level Up for more points per Electro Jelly.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+14,300 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+18,000 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+21,700 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+25,400 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+29,100 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+32,800 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+36,500 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+40,200 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+43,900 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+47,600 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+51,300 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "MagnetiCubes every 20 sec\nMagnetic Aura for 10 sec within 200px\nCreates 50 Electro Jellies\n+55,000 pts for Electro Jellies\n+1,000,000 pts for MagnetiCubes",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "On a dark and stormy night, an arc of lightning left a crater on the ground. Within was a cube of unknown origins, capable of conducting a surprising volume of electricity.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "avocado",
+      "desc": "+8,000 pts for Electro Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "blackberry",
+      "desc": "+8,000 pts for Electro Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "candy-corn",
+      "desc": "+8,000 pts for Electro Jellies"
+    }
+  ]
+}

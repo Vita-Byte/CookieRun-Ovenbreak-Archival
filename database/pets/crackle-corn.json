@@ -1,0 +1,125 @@
+{
+  "id": "crackle-corn",
+  "name": "Crackle Corn",
+  "rarity": "epic",
+  "released": "October 25, 2024",
+  "img": "images/pets/Crackle_corn.png",
+  "tags": [
+    "GiantMode",
+    "Items",
+    "Magnetism",
+    "Jellies",
+    "StarJellies",
+    "Potions"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activation every 9.5 sec\n+14,240 pts for Star Candy Jellies\n+4 Energy recovered from created Potions",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activation every 9.5 sec\n+16,080 pts for Star Candy Jellies\n+4 Energy recovered from created Potions",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activation every 9.5 sec\n+17,920 pts for Star Candy Jellies\n+5 Energy recovered from created Potions",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activation every 9.5 sec\n+19,760 pts for Star Candy Jellies\n+5 Energy recovered from created Potions",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activation every 9.5 sec\n+21,600 pts for Star Candy Jellies\n+6 Energy recovered from created Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activation every 9.5 sec\n+23,440 pts for Star Candy Jellies\n+6 Energy recovered from created Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activation every 9.5 sec\n+25,280 pts for Star Candy Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activation every 9.5 sec\n+27,120 pts for Star Candy Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activation every 9.5 sec\n+28,960 pts for Star Candy Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activation every 9.5 sec\n+30,800 pts for Star Candy Jellies\n+8 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activation every 9.5 sec\n+32,640 pts for Star Candy Jellies\n+8 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activation every 9.5 sec\n+34,480 pts for Star Candy Jellies\n+9 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activation every 9.5 sec\n+36,320 pts for Star Candy Jellies\n+9 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activation every 9.5 sec\n+38,160 pts for Star Candy Jellies\n+10 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activation every 9.5 sec\n+40,000 pts for Star Candy Jellies\n+10 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Sets off firecrackers at certain intervals, creating items and Star Candy Jellies. Level Up for more points for Star Candy Jellies and more Energy recovered from Potions created by Crackle Corn.",
+  "story": "Don't be startled if you suddenly hear firecrackers going off nearby-join in and clap along! It's just Crackle Corn celebrating! This Pet simply can't resist setting off firecrackers whenever something good happens. Candy Corn Cookie was shocked at first when she picked up Crackle Corn, thinking it was just candy she had dropped. But now, as you watch them alternating between blowing their whistle and setting off firecrackers while enjoying the party, it's clear they're a perfect match!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "candy-corn",
+      "desc": "+219,000 Candy Corn Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Crackle Corn",
+      "img": "images/pets/Crackle_corn.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Happy Town Pie Crier",
+      "img": "images/costumes/pet/Crob_standard_happy_town_pie_crier.png",
+      "released": "October 25, 2024",
+      "tier": "epic",
+      "info": "Hear ye, hear ye! Candy Corn Cookie has arrived! Cackle Corn announces her arrival with a distinct POP! before even the scent of the delicious pies can waft through the town. Seems like hungry Cookies should keep an ear open for Cackle Corn's cries!"
+    },
+    {
+      "name": "Star Voyage Signalman",
+      "img": "images/costumes/pet/Crob_standard_star_voyage_signalman.png",
+      "released": "October 27, 2025",
+      "tier": "epic",
+      "info": "As the very last passenger steps onto the Star Voyage Express, it's time for Crackle Corn to get to work! With a brilliant pop-pop, it alerts everyone to the train's departure. Whenever the tracks seem to twist and warp or the starfog grows too thick, another pop-pop! sets the train right back on the correct path to ensure a safe voyage. It's almost like it was made for this job!"
+    }
+  ]
+}

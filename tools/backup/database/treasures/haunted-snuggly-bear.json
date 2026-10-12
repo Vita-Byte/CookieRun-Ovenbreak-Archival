@@ -1,0 +1,120 @@
+{
+  "id": "haunted-snuggly-bear",
+  "name": "Haunted Snuggly Bear",
+  "rarity": "epic",
+  "released": "August 28, 2020",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/66/Haunted_Snuggly_Bear.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d1/Haunted_snuggly_bear.png",
+  "tags": [
+    "BearJellies",
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+400 pts for all Bear Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+800 pts for all Bear Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+1,200 pts for all Bear Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+1,600 pts for all Bear Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+2,000 pts for all Bear Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+2,500 pts for all Bear Jellies"
+    }
+  ],
+  "skillFull": "Collecting a certain number of Bear Jellies will cause a Ghost Bear to appear. After scaring you, the Ghost Bear will create Ghost Bear Jellies. Level Up for more Ghost Bear Jelly Points. (Each Bear Jelly will reduce the Treasure's counter by 1. Giant Bear Jellies reduce the counter significantly more.)",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+236,600 pts for Ghost Bear Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+256,000 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+275,400 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+294,800 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+314,200 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+333,600 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+353,000 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+372,400 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+391,800 pts for Ghost Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+411,200 pts for Ghost Bear Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+430,600 pts for Ghost Bear Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "A Ghost Bear appears after collecting 200 Bear Jellies\nCreates 5 Ghost Bear Jellies\n+450,000 pts for Ghost Bear Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Sure it looks a bit creepy. But fear not, for this snuggly stuffed bear eats nightmares while you sleep! It even brings gifts of Jellies!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "blackberry",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "onion",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "white-ghost",
+      "desc": "+1,650 pts for all Bear Jellies"
+    }
+  ]
+}

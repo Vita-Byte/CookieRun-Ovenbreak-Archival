@@ -14,11 +14,36 @@ Usage:
     python tools/build-database.py --check    only check (changes nothing)
 (Run these from the project folder, or drop "tools/" and run them from inside the tools folder - both work.)
 
+Order: entries are always sorted by rarity first (RARITY_ORDER below), then by "released" date inside each rarity
+(newest first; set NEWEST_FIRST = False below for oldest first). Entries without a readable date go at the end of their rarity. _order.json is rewritten with the sorted order on every build.
+
 Safety: if ANY .json file has a mistake, nothing is rebuilt and the old generated files stay as they were,
 and you get the file name + line + column of the problem. Warnings (missing images, unknown combo ids, ...) never block the build.
 Works with a double-clicked index.html because the website still loads plain .js files. Needs Python 3.8+, no packages.
 """
 import json, os, re, sys
+from datetime import datetime
+
+# Entries are always sorted by rarity first (in the order below), then by their "released" date inside each rarity.
+# NEWEST_FIRST: True = newest first, False = oldest first (only affects the date part).
+# Entries with no (or an unreadable) date go to the end of their rarity; unknown rarities go after all listed ones.
+RARITY_ORDER = ["legendary", "epic", "rare", "common", "special", "teenieping", "ppg", "sanrio"]
+RANK = {r: n for n, r in enumerate(RARITY_ORDER)}
+NEWEST_FIRST = True 
+DATE_FORMATS = ("%B %d, %Y", "%b %d, %Y", "%B %d %Y", "%b %d %Y", "%d %B %Y", "%d %b %Y", "%Y-%m-%d", "%Y/%m/%d", "%Y.%m.%d", "%m/%d/%Y", "%B %Y", "%b %Y", "%Y")
+
+
+def parse_date(s):
+    """'March 23, 2025' / '2025-03-23' / 'March 2025' / '2025' -> datetime, or None if empty/unreadable."""
+    if not isinstance(s, str): return None
+    s = re.sub(r"\(.*?\)", "", s)                       # drop "(KST)" etc.
+    s = re.sub(r"(?<=\d)(st|nd|rd|th)\b", "", s.strip(), flags=re.I)  # 1st -> 1
+    s = re.sub(r"\s+", " ", re.sub(r"\bSept\b", "Sep", s)).strip(" .,")
+    for f in DATE_FORMATS:
+        try: return datetime.strptime(s, f)
+        except ValueError: pass
+    return None
+
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 # Works from the project folder or from a tools/ subfolder: data (database/, images/) is always in the project folder,
@@ -117,6 +142,13 @@ def build(check_only):
         new = sorted((i for i in found if i not in order), key=lambda i: found[i][1])
         if new: print(f"  new in {folder}: {', '.join(new)} (added at the end)")
         order += new
+        # always sort by release date (stable: ties and undated entries keep their previous relative order)
+        dates = {i: parse_date(found[i][0].get("released")) for i in order}
+        for i in order:
+            if found[i][0].get("released") and dates[i] is None: warns.append(f"{kind} '{i}': could not read release date {found[i][0].get('released')!r} (placed at the end of its rarity)")
+        key = lambda i: (RANK.get(found[i][0].get("rarity"), len(RANK)), dates[i] is None,
+                         0 if dates[i] is None else -dates[i].toordinal() if NEWEST_FIRST else dates[i].toordinal())
+        order = sorted(order, key=key)  # stable: entries with the same rarity + date keep their previous order
         if not check_only and not errors: write(op, json.dumps(order, ensure_ascii=False, indent=1) + "\n")
         merged[folder] = [found[i][0] for i in order]; ids[kind] = set(found)
     # warnings: references and images

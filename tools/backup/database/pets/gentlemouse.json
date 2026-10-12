@@ -1,0 +1,117 @@
+{
+  "id": "gentlemouse",
+  "name": "Gentlemouse",
+  "rarity": "epic",
+  "released": "November 29, 2022",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c2/Gentlemouse.png",
+  "tags": [
+    "BearJellies",
+    "Items",
+    "Jellies",
+    "Potions",
+    "JellyParty"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activation every 16.7 sec\n+440,800 pts for Toy Block Jellies\n+4 Energy recovered from created Potions",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activation every 16.7 sec\n+488,600 pts for Toy Block Jellies\n+4 Energy recovered from created Potions",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activation every 16.7 sec\n+536,400 pts for Toy Block Jellies\n+5 Energy recovered from created Potions",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activation every 16.7 sec\n+584,200 pts for Toy Block Jellies\n+5 Energy recovered from created Potions",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activation every 16.7 sec\n+632,000 pts for Toy Block Jellies\n+6 Energy recovered from created Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activation every 16.7 sec\n+679,800 pts for Toy Block Jellies\n+6 Energy recovered from created Potions",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activation every 16.7 sec\n+727,600 pts for Toy Block Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activation every 16.7 sec\n+775,400 pts for Toy Block Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activation every 16.7 sec\n+823,200 pts for Toy Block Jellies\n+7 Energy recovered from created Potions",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activation every 16.7 sec\n+871,000 pts for Toy Block Jellies\n+8 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activation every 16.7 sec\n+918,800 pts for Toy Block Jellies\n+8 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activation every 16.7 sec\n+966,600 pts for Toy Block Jellies\n+9 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activation every 16.7 sec\n+1,014,400 pts for Toy Block Jellies\n+9 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activation every 16.7 sec\n+1,062,200 pts for Toy Block Jellies\n+10 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activation every 16.7 sec\n+1,110,000 pts for Toy Block Jellies\n+10 Energy recovered from created Potions",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "A toy appears at certain intervals. The Pet puts a key into the toy and winds it up to make it move and creates Toy Block Jellies. The toy car creates Yellow Bear Jelly Party items and the toy train creates Potions. Level Up for more points for Toy Block Jellies and more Energy restored from Potions.",
+  "story": "Among the many mysteries surrounding the Merrybear Toy Shop, it is said that all the toys return to the shelves on their own. However, that is actually the work of Gentlemouse, organizing all the toys strewn around the shop by young Cookies playing all day! It is said that Lollipop Cookie has been taken to the shelves once too, as the Pet mistook her for another of the shop's toys. Gentlemouse just shrugs off any compliments though, as exemplary behavior is al-mouse-t second nature to this companion!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "lollipop",
+      "desc": "+290,000 pts for Lollipop Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Gentlemouse",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/c/c2/Gentlemouse.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Mice and Warm",
+	  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/3/39/Crob_standard_mice_and_warm.png",
+	  "released": "November 29, 2022",
+      "tier": "epic",
+	  "info": "All the toys in the Merrybear Toy Shop gathered for a snowball tournament! But the extremely cold weather has brought everyone inside, so only the warmly dressed Gentlemouse stayed until the end! A truly a-mice-ing victory!"
+    }
+  ]
+}

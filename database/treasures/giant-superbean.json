@@ -1,0 +1,124 @@
+{
+  "id": "giant-superbean",
+  "name": "Giant Superbean",
+  "rarity": "epic",
+  "released": "March 13, 2019",
+  "img": "images/treasures/Giant_Superbean.png",
+  "avatar": "images/treasure-icons/Giant_superbean.png",
+  "tags": [
+    "BearJellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+400 pts for all Bear Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "+800 pts for all Bear Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "+1,200 pts for all Bear Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "+1,600 pts for all Bear Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "+2,000 pts for all Bear Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "+2,500 pts for all Bear Jellies"
+    }
+  ],
+  "skillFull": "Makes Bear Jellies super big after collecting a certain number of Bear Jellies. Earn bonus points for each collected super big Bear Jelly. Level Up for more bonus points.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+297,000 pts for super big Bear Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+321,455 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+345,909 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+370,364 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+394,818 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+419,273 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+443,727 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+468,182 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+492,636 pts for super big Bear Jellies",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+517,091 pts for super big Bear Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+541,545 pts for super big Bear Jellies",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "5 super big Bear Jellies every 200 Bear Jellies obtained\n+566,000 pts for super big Bear Jellies",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "This bean was specially cultivated to grow super big! But a wonderful thing: it makes Jellies around it bigger as well!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "prophet",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "herb",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "lollipop",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "dreamjelly",
+      "desc": "+1,650 pts for all Bear Jellies"
+    }
+  ]
+}

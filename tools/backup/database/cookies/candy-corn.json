@@ -1,0 +1,514 @@
+{
+  "id": "candy-corn",
+  "name": "Candy Corn Cookie",
+  "rarity": "epic",
+  "released": "October 25, 2024 October 25, 2024",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/7/7e/Img_updateHighlight_candy_corn.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/3/3a/Crob_affection_jelly_candy_corn.png",
+    "story": "Isn't every day a party if you smile as brightly as the full moon?"
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f8/Crob_standard_candy_corn.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d1/Crob_head_candy_corn.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 174,
+      "desc": "Skill activation after every 200 Jellies collected\n+132,000 pts for Candy Corn Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 183,
+      "desc": "Skill activation after every 200 Jellies collected\n+146,000 pts for Candy Corn Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 192,
+      "desc": "Skill activation after every 200 Jellies collected\n+160,000 pts for Candy Corn Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 201,
+      "desc": "Skill activation after every 200 Jellies collected\n+174,000 pts for Candy Corn Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 210,
+      "desc": "Skill activation after every 200 Jellies collected\n+188,000 pts for Candy Corn Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 219,
+      "desc": "Skill activation after every 200 Jellies collected\n+202,000 pts for Candy Corn Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 228,
+      "desc": "Skill activation after every 200 Jellies collected\n+216,000 pts for Candy Corn Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 237,
+      "desc": "Skill activation after every 200 Jellies collected\n+230,000 pts for Candy Corn Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 246,
+      "desc": "Skill activation after every 200 Jellies collected\n+244,000 pts for Candy Corn Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 255,
+      "desc": "Skill activation after every 200 Jellies collected\n+258,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 264,
+      "desc": "Skill activation after every 200 Jellies collected\n+272,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 273,
+      "desc": "Skill activation after every 200 Jellies collected\n+286,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 282,
+      "desc": "Skill activation after every 200 Jellies collected\n+300,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 291,
+      "desc": "Skill activation after every 200 Jellies collected\n+314,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 300,
+      "desc": "Skill activation after every 200 Jellies collected\n+328,000 pts for Candy Corn Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Scatters Candy Corn Jellies from the pumpkin basket after collecting a certain number of Jellies. Every fourth activation, Candy Corn Firecrackers fly and explode. Level Up for more points for Candy Corn Jellies.",
+  "story": "\"Beep beep! That's not right! Let's make this pumpkin moon party perfect!\" she exclaims, her tiny hands scattering candies with joyful abandon. Perched atop her head is an oversized candy corn, meticulously crafted in just the right late autumn hues. It's hard to believe, but this little Cookie's been head over heels for pumpkin moon parties since before she could even tell a pumpkin from a ghost!\n\nIs it her uncanny resemblance to a pointy traffic cone that makes her such a stickler for rules? Whatever the reason, this party planner takes her role very seriously. Watch her adorably stomp her feet when things don't meet her exacting standards! With boundless energy, she scurries through the village, whistle at the ready. No imperfection in the garden pumpkin decorations or ghost figurines escapes her keen eye.\n\nAs dusk falls and houses begin to twinkle with warm lights, Candy Corn Cookie's excitement reaches a fever pitch. Door to door she goes, eagerly knocking and shaking her pumpkin basket with glee. Worried she might play a trick if you don't offer a treat? Fear not! There're a plenty of candies to share!",
+  "quote": "Beep beep! Night of the Pumpkin Moon party rules are non-negotiable!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Beep beep! Night of the Pumpkin Moon party rules are non-negotiable!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Tonight, Cookies and ghosts are all friends!",
+            "Do you think the pumpkin full moon tastes pumpkin-y? Just wondering...",
+            "Beep beep! Full moon means everyone at Pumpkin Square, pronto!",
+            "Tonight's the night when anything goes, seriously!",
+            "Beep beep! Costumes are a must at this party, got it?",
+            "I'm on the hunt for the biggest pumpkin ever for our yard!",
+            "Hehe! Trick or treat!",
+            "I can't wait for it to get dark so the jack-o'-lanterns light up!",
+            "Parties are all about laughing, chatting and stuffing our faces!",
+            "Beep beep! Let's keep it orderly, everyone! Straight lines, please!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "I'm out of candy..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Wouldn't it be awesome if every day was party day?"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "I'm gonna hand out candies with cute little notes! How cool is that?",
+            "Sometimes I wonder what kind of parties do other villages throw?",
+            "Beep beep! You don't know anything about this party, do you?",
+            "I organize my candy by flavor and type. Doesn't everyone?",
+            "Trust me! I know best about Night of the Pumpkin Moon parties!",
+            "Stick to the rules and this party will be off the charts!",
+            "Beep beep! Party's over? Time to plan next year's!",
+            "Got this whistle as a gift in case I get lost!",
+            "It's not just a one-day party. It's epic BECAUSE it only one day!",
+            "I wrote down ALL the party rules! It's practically a novel!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Hmm... This doesn't really scream \"party\", does it?"
+            },
+            {
+              "label": "Given <u>Pumpkin Treat Basket</u>",
+              "text": "I'm gonna shower every Cookie I see with candy!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Pop this in our garden pumpkin and it'll shine like the full moon!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Beep beep! Here for the Pumpkin Moon Party?",
+            "Whatever you're expecting, it'll be even more fun!",
+            "Here are the candies for you to hand out!",
+            "Beep beep! Gotta pack my party outfit!",
+            "Wanna play tricks? But it has to be fun for everyone!",
+            "Let's head to the square with the big Jack-O'-Lantern!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+600 pts for Candy Corn Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+1,200 pts for Candy Corn Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Zombie Cookie",
+      "id": "zombie",
+      "text": "WOAH! Your costume is so cool! It almost looks... real!!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Cinnamon Cookie",
+      "id": "cinnamon",
+      "text": "Beep beep! Don't scatter cards everywhere!",
+      "type": "Tension"
+    },
+    {
+      "who": "Black Garlic Cookie",
+      "id": "black-garlic",
+      "text": "Pumpkin Moon Part isn't just about spooky stuff!",
+      "type": "Tension"
+    },
+    {
+      "who": "Spinach Cookie",
+      "id": "spinach",
+      "text": "She always piles veggies on me at the train station... It's too much...",
+      "type": "Tension"
+    },
+    {
+      "who": "Truffle Cookie",
+      "id": "truffle",
+      "text": "I can decorate the mansion garden? Awesome!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Onion Cookie",
+      "id": "onion",
+      "text": "How do you look ghostly even standing still? Amazing!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Birthday Cake Cookie",
+      "id": "birthday-cake",
+      "text": "I want to throw the perfect party too!",
+      "type": "Trust"
+    },
+    {
+      "who": "Walnut Cookie",
+      "id": "walnut",
+      "text": "We hunted Cookies in ghost costumes in the cornfield once. Scary fun!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Everything Pie Cookie",
+      "id": "everything-pie",
+      "text": "Too free-spirited... but super reliable!",
+      "type": "Trust"
+    },
+    {
+      "who": "Peppernut Cookie",
+      "id": "peppernut",
+      "text": "BEEP BEEP! Stop right there! Flowers and ribbons aren't the right decorations for the Pumpkin Moon Party!",
+      "type": "Tension"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Candy Corn Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f8/Crob_standard_candy_corn.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Pie Delivery Scout",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8b/Pie_delivery_scout.png",
+      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/3/34/Img_skinIllust_425601.png",
+      "bonus": "+1,200 pts for Candy Corn Jellies",
+      "released": "October 25, 2024 October 25, 2024",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Beep beep! Hot pies coming through!",
+                "Beep beep! Pie delivery!",
+                "Everyone's gonna be so happy! They'll smile like it's party time!",
+                "So hungry, but no snacking! Gotta finish deliveries first!",
+                "Careful, careful! Don't wanna crumble these pies!",
+                "Beep beep! Let's keep it orderly, everyone! Straight lines, please!",
+                "Do you think the pumpkin full moon tastes pumpkin-y? Just wondering...*",
+                "I can't wait for it to get dark so the jack-o'-lanterns light up!*",
+                "Parties are all about laughing, chatting and stuffing our faces!*",
+                "Tonight's the night when anything goes, seriously!*"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I want some pie too..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "?"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "First time out of the village, but I nailed it, right?",
+                "Knock knock! Pie delivery!",
+                "I rushed to deliver the pies before they got cold!",
+                "How'd you know I was here? Oh, the pie smell!",
+                "Beep beep! Make way! Pies to deliver before the party!",
+                "Everything Pie Cookie packed a special pie just for me!",
+                "Beep beep! Remember, pies taste best when they're warm!",
+                "First delivery mission complete! Just smelling these pies is making me full!",
+                "Hope everyone enjoys their pie under the Pumpkin Full Moon!",
+                "Oops, wrong turn? So many deliveries, I'm all mixed up!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Kinda in a pie rush here..."
+                },
+                {
+                  "label": "Given <u>Pumpkin Treat Basket</u>",
+                  "text": "Free candy with every pie delivery!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Wow! First delivery, first gift!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Candy Corn Cookie sets off on a delivery mission, carrying pies lovingly baked by Everything Pie Cookie. For any Cookie unable to attend the Pumpkin Moon Party, she'll go to the ends of Earthbread—by train or by boat—no distance is too far! If you're waiting with your window open and catch a whiff of sweetness, dash out quickly! A warm, freshly baked pie is sure to be waiting for you!"
+    },
+    {
+      "name": "Star Voyage Guide",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/ac/Star_voyage_guide.png",
+      "bonus": "+600 points for Candy Corn Jellies",
+      "released": "October 27, 2025",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "I hope everyone sleeps soon so we get dream voyagers!",
+                "Just close your eyes and imagine... Then a ticket is yours!",
+                "Beep beep! Look outside! It's a meteor shower!",
+                "This is the sparkling Milky Way Station! Isn't it beautiful?! Hehe!",
+                "Beep beep! We'll be departing soon! Take your seats!",
+                "Our next stop? Hehe, it's up to your imagination!",
+                "Today's snack is a Stardust Pumpkin Pie! Yummy!",
+                "Hehe, I won't play tricks if you give me a treat!",
+                "Beep beep! Please stand in neat, orderly lines!",
+                "You never know what might happen on a voyage like this!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Not enough imagination..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "?"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Beep beep! Double-check your belongings before you disembark!",
+                "Ssh, be quiet in the sleeping cars! You might wake up the sleeping dream voyagers!",
+                "Your seat is... huh? There's no seat number! Well... Just imagine one up!",
+                "Hehe, the passengers all said they enjoyed the trip... I did a good job, right?",
+                "You can buy Moonlight Soda and other souvenirs in the dining car! Look at this candy corn-shaped pin!",
+                "Beep beep! That scared me! A passing meteor crashed into the train... *Sniffle*",
+                "Beep beep! All aboard!",
+                "Hehe, you should sit in the window seat and enjoy the views!",
+                "Bet you've never seen the night sky so close! Hehe. We could almost touch the Pumpkin Moon!",
+                "When we stop at Milky Way Station let's all dip our dough in the Milky Way before we set off again!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "?"
+                },
+                {
+                  "label": "Given <u>Pumpkin Treat Basket</u>",
+                  "text": "?"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "?"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "info": "Beep beep! There's the signal! Candy Corn Cookie begins checking the tickets possessed by Cookies aboard the Star Voyage Express. No ticket? No problem! She kindly teaches confused dream voyagers how to imagine up their own. Close your eyes and imagine your ticket before heading the enchanting Milky Way Station for your very own trip!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "crackle-corn",
+      "desc": "+219,000 Candy Corn Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "gigawatt-cube",
+      "desc": "+8,000 pts for Electro Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "apple-candy-balloon",
+      "desc": "+650 pts for all Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Candy Corn Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/9c/Crob_magic_candy_candy_corn.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Fires 1 additional Candy Corn Firecracker\n+1 pts for Candy Corn Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Fires 1 additional Candy Corn Firecracker\n+21,000 pts for Candy Corn Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Fires 1 additional Candy Corn Firecracker\n+42,000 pts for Candy Corn Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Fires 1 additional Candy Corn Firecracker\n+63,000 pts for Candy Corn Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Fires 1 additional Candy Corn Firecracker\n+84,000 pts for Candy Corn Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Pumpkin Treat Basket",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/b2/Crob_magic_candy_ingredient_candy_corn.png",
+	  "text": "It may look like a small candy basket, but they say no matter how many treats you take out, more keep appearing. Just how deep is this basket, anyway?"
+    },
+    "skillFull": "Fires one additional Candy Corn Firecracker. The stronger the enchanted power, the more points for Candy Corn Jellies.",
+    "emoji": "🍬"
+  }
+}

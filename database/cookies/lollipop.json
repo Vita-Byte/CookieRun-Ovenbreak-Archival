@@ -1,0 +1,528 @@
+{
+  "id": "lollipop",
+  "name": "Lollipop Cookie",
+  "rarity": "epic",
+  "released": "November 29, 2022",
+  "illust": "images/cookie-illustrations/Img_cookie0210.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_lollipop.png",
+    "story": "The first thing I saw when I opened my eyes was the smile of the Cookie who fixed me."
+  },
+  "img": "images/cookies/Crob_standard_lollipop.png",
+  "avatar": "images/cookie-heads/Crob_head_lollipop.png",
+  "tags": [
+    "BearJellies",
+    "Items",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 174,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+163,600 pts for Lollipop Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 183,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+181,200 pts for Lollipop Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 192,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+198,800 pts for Lollipop Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 201,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+216,400 pts for Lollipop Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 210,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+234,000 pts for Lollipop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 219,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+251,600 pts for Lollipop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 228,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+269,200 pts for Lollipop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 237,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+286,800 pts for Lollipop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 246,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+304,400 pts for Lollipop Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 255,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+322,000 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 264,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+339,600 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 273,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+357,200 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 282,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+374,800 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 291,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+392,400 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 300,
+      "desc": "Activates skill after obtaining 100 Bear Jellies\n+410,000 pts for Lollipop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "After collecting enough Bear Jellies, the Cookie throws its teddy bear ahead to create an animated Teddy Bear. The Teddy Bear can be either Yellow, Pink, or Light Blue, and each skill activation cycles between each color. The Teddy Bear runs toward the right, creating Lollipop Jellies at certain intervals. Level Up for more points for Lollipop Jellies. (The blessing of the Teddy Bears also increases the duration of Yellow, Pink, and Frozen Bear Jelly Party Items by 50%, and you gain Magnetic Aura for Yellow, Pink, Blue, and Giant Bear Jellies.)",
+  "story": "The winter holidays truly are a time filled with miracles! On a particular day, a certain Cookie shopkeeper found a doll buried in the snow and took it back to the shop to repair it. Just as the clock turned to midnight, the Cookie inserted the wind-up key and turned it around, and this Cookie miraculously opened her eyes!\n\nShe pledged to help out with work in the shop as thanks for fixing her, but if you ask for recommendations, she just keeps bringing out her own favorite toys and starts playing with them. But how could anyone be angry after seeing that innocent smile?\n\nAfter spending hours playing with the teddy bears in the shop, Lollipop Cookie suddenly stops in her tracks, just like a wind-up toy. If you ever get to see that, let's cover the Cookie with a warm blanket to help her dream only the sweetest dreams.",
+  "quote": "Welcome to the world of toys!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Welcome to the world of toys!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Teddy bears! Let's play together!",
+            "Aww, you're leaving already? Can't we play just a little longer?",
+            "Since a Cookie fixed me, that makes me a Cookie too!",
+            "I know EVERYTHING about our shop's toys, so you can always ask me!",
+            "You REALLY want this toy, don't you?",
+            "Our shop is the funnest place in the WHOLE world!",
+            "Which toy friends should we play with today?",
+            "Heh heh! You thought I was a doll too, didn't you?",
+            "There's no toy shop out there quite like ours!",
+            "Toy friends! Follow my lead!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "*Tick*... *Tock*..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Hey, have this! Let's play some too!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "First time in our shop? You should come play with us then!",
+            "Cookie or a doll? Is that even important?",
+            "How could anyone NOT like being hugged by teddy bears?!",
+            "Just imagine how fun it would be to have a running competition with all my toy friends!",
+            "Ta-dah! I was hiding behind this teddy bear the WHOLE time!",
+            "Aww... I want to go on the Delivery Train too...",
+            "All the toys here help me think of fun games to play!",
+            "When I opened my eyes, I was sitting in between the teddy bears of the shop!",
+            "The snow was so cold...",
+            "The shopkeeper Cookie here said that he only wants everyone here to be happy!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Can you really play with this...?"
+            },
+            {
+              "label": "Given <u>Fireplace Sugar Ribbon</u>",
+              "text": "I HAVE to put this on a teddy bear!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "WHOA! I wanna try hanging this in a tree!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "What kind of you do you wanna buy?",
+            "There are dolls, robots, and even dinosaurs too!",
+            "Our shop is filled with fun things!",
+            "Let's go running with the teddy bears!",
+            "Buying a toy? Play with me!",
+            "Isn't that toy train SUPER long?"
+          ]
+        },
+        {
+          "title": "New Cookie Cup End",
+          "lines": [
+            "Come back soon, okay?"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+1,000 pts for Lollipop Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+2,000 pts for Lollipop Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "GingerBright",
+      "id": "gingerbright",
+      "text": "Whoa! Can I play with your lollipop?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Pancake Cookie",
+      "id": "pancake",
+      "text": "I saw you flying around with the toy planes in the shop!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Walnut Cookie",
+      "id": "walnut",
+      "text": "Let's play detective! How about \"the case of the lost teddy\"?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Chestnut Cookie",
+      "id": "chestnut",
+      "text": "I saw you looking through the shop window! Why didn't you come in and play?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Pudding Cookie",
+      "id": "pudding",
+      "text": "This Cookie always buys four of the same toy!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Onion Cookie",
+      "id": "onion",
+      "text": "Let's make the rabbit dolls and the teddy bears friends!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Eggnog Cookie",
+      "id": "eggnog",
+      "text": "He always gives me a present when he visits!",
+      "type": "Trust"
+    },
+    {
+      "who": "Tiramisu Cookie",
+      "id": "tiramisu",
+      "text": "I think I'd make a great toy train driver! Can I try?",
+      "type": "Trust"
+    },
+    {
+      "who": "Butterbear Cookie",
+      "id": "butterbear",
+      "text": "He told me I'm the greatest gift!",
+      "type": "Family"
+    },
+    {
+      "who": "Stollen Cookie",
+      "id": "stollen",
+      "text": "You bought all the toy trains from our shop... So, I couldn’t play with them!",
+      "type": "Tension"
+    },
+    {
+      "who": "Strawberry Shortcake Cookie",
+      "id": "strawberry-shortcake",
+      "text": "We'll be playing and suddenly they'll look out the window! I wonder if they're waiting for someone... It's going to make the toys sad!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Lollipop Cookie",
+      "img": "images/cookies/Crob_standard_lollipop.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "First Snow",
+      "img": "images/costumes/cookie/First_Snow.png",
+      "bonus": "+1,500 pts for Lollipop Jellies",
+      "released": "November 29, 2022",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Teddy bears! Let's play together!*",
+                "Heh heh! You thought I was a doll too, didn't you?*",
+                "Toy friends! Follow my lead!*",
+                "Let's make a snowman that looks just like the winner!",
+                "I wanna make a snowman that looks like a teddy bear!",
+                "Everyone, come out! The Temple is filled with snow!",
+                "Time really flies when you play in this place!",
+                "You REALLY like this toy, don't you?",
+                "Let's show the snowman we made to the winner when they come out here!",
+                "It's the first snow! Let's have a snow fight with my toy friends!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Aww... The snow all melted..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "I hope it snows REALLY much!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "The snow looks just like flowers!",
+                "I'm gonna make the best snowman there is!",
+                "You opened the windows as soon as you woke up too?!",
+                "You dressed warmly, right? We need to get up early, so we can finish the snowman before the race ends!",
+                "I brought a carrot for the nose!",
+                "Let's go find some chocolate branches to use as arms for the snowman!",
+                "Whoa! The snowman is done! Now we only need to wait for the winner!",
+                "The first snow is falling! Quick, make a wish!",
+                "The snow won't melt in the sun, right...?",
+                "The next time I'm gonna see the first snowflake of the year!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Is this for a snowman?"
+                },
+                {
+                  "label": "Given <u>Fireplace Sugar Ribbon</u>",
+                  "text": "Let's put this on the snowman!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "This would REALLY suit a snowman!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "champion",
+      "info": "On the day of the finals in the Celestial Temple, the skies were filled with the first snow of the year! Lollipop Cookie, having looked forward to this happening all year, ran outside first of all, even before the sun had risen. With all the snowflakes almost resembling beautiful flowers, perhaps this is the way heaven congratulates the winner!"
+    },
+    {
+      "name": "Attic's Little Stitcher",
+      "img": "images/costumes/cookie/Attics_little_stitcher.png",
+      "illust": "images/costume-illustrations/Img_skinIllust_421002.png",
+      "bonus": "+2,000 pts for Lollipop Jellies",
+      "released": "December 14, 2023",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Toy friends! Follow my lead!*",
+                "Our shop is the funnest place in the WHOLE world!*",
+                "Aww, you're leaving already? Can't we play just a little longer?*",
+                "What kind of toy clothes should I make today?",
+                "Don't you love this dress? I made it!",
+                "Here! A cozy sweater for you!",
+                "Let's wake up all the toys so no Cookies feel lonely!",
+                "Teddy bears, wake up! Let's play together!",
+                "Bring your friends! We can play together like the old times!",
+                "Winter nights are cold...! Join me in the attic, we can sew together!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Not enough thread..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Come again! You're always welcome!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "How about a striped vest? A bell hat too!",
+                "I was so startled when the teddy bear first spoke to me!",
+                "I wonder if the shopkeeper Cookie felt all warm inside too.",
+                "Let's make warm winter clothes and play with the yarn too!",
+                "Did you know that toys have different taste in clothes too?",
+                "There are a lot of toys in the attic waiting for their old friends...",
+                "Hi! Let's go sew and stitch some clothes!",
+                "The toy shop is closed, but the attic is still open!",
+                "Making clothes is so much fun! Would you like me to make one for your toy?",
+                "The shopkeeper Cookie taught me how to sew!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "I could use it as a decoration!"
+                },
+                {
+                  "label": "Given <u>Fireplace Sugar Ribbon</u>",
+                  "text": "So bright and pretty! I could even light my attic!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "This would look great on the clothes I'm working on!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "In the attic of the Merrybear Toy Shop, there resides a talented stitcher! On holiday eve night, toys dressed in winter clothes crafted by Lollipop Cookie wake up and start dancing to the rhythmic hum of the sewing machine. Perhaps the Cookie wishes to share the wonders of the holiday miracle she remembers receiving from one kindhearted Cookie."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "gentlemouse",
+      "desc": "+290,000 pts for Lollipop Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "giant-superbean",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "dreaming-bear-medal",
+      "desc": "+1,650 pts for all Bear Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Lollipop Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_lollipop.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "A Giant Teddy Bear appears with every 4th skill activation\n+28,000 pts for Lollipop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "A Giant Teddy Bear appears with every 4th skill activation\n+58,500 pts for Lollipop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "A Giant Teddy Bear appears with every 4th skill activation\n+89,000 pts for Lollipop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "A Giant Teddy Bear appears with every 4th skill activation\n+119,500 pts for Lollipop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "A Giant Teddy Bear appears with every 4th skill activation\n+150,000 pts for Lollipop Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Fireplace Sugar Ribbon",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_lollipop.png",
+	  "text": "As soon as this frozen sugar ribbon was placed above the fireplace, it sprung right back to life! Put this soft and sweet ribbon on your head to feel your own mood soften and sweeten up in an instant!"
+    },
+    "skillFull": "Every 4th skill activation creates a Giant Teddy Bear. The Giant Teddy Bear creates Lollipop Jellies of all different colors, at a higher number than the regular Teddy Bears. The stronger the enchanted power, the more points for Lollipop Jellies.",
+    "emoji": "🍬"
+  }
+}

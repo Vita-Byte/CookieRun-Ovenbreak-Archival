@@ -1,0 +1,591 @@
+{
+  "id": "blackberry",
+  "name": "Blackberry Cookie",
+  "rarity": "epic",
+  "released": "May 15, 2018",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/thumb/e/e4/Crk_illustration_blackberry.png/1024px-Crk_illustration_blackberry.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d6/Crob_affection_jelly_blackberry.png",
+    "story": "No one can take away Blackberry’s precious tea time. No one!"
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/5c/Crob_standard_blackberry.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/1/15/Crob_head_blackberry.png",
+  "tags": [
+    "GiantMode",
+    "BearJellies",
+    "Items",
+    "Jellies",
+    "Coins",
+    "Potions"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 171,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+238,000 pts for Blackberry Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 180,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+266,000 pts for Blackberry Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 189,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+294,000 pts for Blackberry Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 198,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+322,000 pts for Blackberry Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 207,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+350,000 pts for Blackberry Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 216,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+378,000 pts for Blackberry Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 225,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+406,000 pts for Blackberry Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 234,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+434,000 pts for Blackberry Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 243,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+462,000 pts for Blackberry Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 252,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+490,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 261,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+518,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 270,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+546,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 279,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+574,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 288,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+602,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 297,
+      "desc": "Skill activation every 0.6 sec\nGiant Jelly is created by the first ghost after 15 skill activations\nCoin Magic Jelly is created by the second ghost after 9 skill activations\nBear Jelly Party is created by the third ghost after 7 skill activations\n+630,000 pts for Blackberry Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Followed by ghosts who float forward to replace Jellies with Blackberry Jellies. Each ghost will create a Power Jelly after floating forward a certain number of times. Level Up for more points for Blackberry Jellies.",
+  "story": "Blackberry Cookie always wears a reserved look, but it would be hard to find a more caring and devoted Cookie. She has been working at one prestigious household for a long time, and is praised for her miraculous ability to do a multitude of tasks in virtually no time! Despite Blackberry's tightest schedule, she always finds the time to save the life of her venturesome employer. Perhaps, this is her main duty these days.",
+  "quote": "Is there anything I can do for you?",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Is there anything I can do for you?"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "May I suggest not taking this road...?",
+            "This path is most certainly unsafe.",
+            "Now, where did this Cookie go...",
+            "May I assist you with anything?",
+            "What a horrific mess!",
+            "I beg your pardon, but I really should go...",
+            "I do have other matters to attend to...",
+            "My employer requires my help again."
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "No time for rest...!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "I have procured a present for you."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Vanished again? Not surprising.",
+            "I can handle it myself. Do not worry.",
+            "Greetings. I suggest we get started immediately.",
+            "May I assist you with anything?",
+            "I see. Thank you.",
+            "I do not deserve such praise."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "What's this?"
+            },
+            {
+              "label": "Given <u>Gloomy Blackberry</u>",
+              "text": "Thank you. I was looking for one of these."
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Thanks for the dough!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Allow me to accompany you.",
+            "I hope the difficulty is to your liking.",
+            "May I suggest reaching Diamond before dinner?",
+            "This way, please.",
+            "Please come at your earliest convenience!",
+            "I believe we haven't met..."
+          ]
+        },
+        {
+          "title": "New Cookie Cup End",
+          "lines": [
+            "Congratulations!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+1,200 pts for Blackberry Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+2,400 pts for Blackberry Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Adventurer Cookie",
+      "id": "adventurer",
+      "text": "Urgh... He was here just a moment ago!",
+      "type": "Tension"
+    },
+    {
+      "who": "Pistachio Cookie",
+      "id": "pistachio",
+      "text": "Devotion to one's duty is a great trait!",
+      "type": "Admiration"
+    },
+    {
+      "who": "Chili Pepper Cookie",
+      "id": "chili-pepper",
+      "text": "Such Cookies must be kept at arm's length.",
+      "type": "Tension"
+    },
+    {
+      "who": "Devil Cookie",
+      "id": "devil",
+      "text": "This Cookie gives me the chills...",
+      "type": "Tension"
+    },
+    {
+      "who": "Truffle Cookie",
+      "id": "truffle",
+      "text": "Many cobwebs, otherwise a luxurious mansion.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Onion Cookie",
+      "id": "onion",
+      "text": "I am glad you are safe.",
+      "type": "Trust"
+    },
+    {
+      "who": "Earl Grey Cookie",
+      "id": "earl-grey",
+      "text": "Such clean facilities.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Chocolate Bonbon Cookie",
+      "id": "chocolate-bonbon",
+      "text": "She is quite kind and gentle to all of her customers.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Black Garlic Cookie",
+      "id": "black-garlic",
+      "text": "She once visited the mansion seeking for ghosts.",
+      "type": "Tension"
+    },
+    {
+      "who": "Schneeball Cookie",
+      "id": "schneeball",
+      "text": "I have caught her rummaging through the mansion's storage room.",
+      "type": "Tension"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Blackberry Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/5c/Crob_standard_blackberry.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Elegant Respite",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/5/54/Elegant_Respite.png",
+      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/0/05/Img_skinIllust_404201.png",
+      "bonus": "+2400 pts for Blackberry Jellies",
+      "released": "August 28, 2020",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "This path is most certainly unsafe.*",
+                "Now, where did this Cookie go...*",
+                "My employer requires my help again.*",
+                "I beg your pardon, but I really should go...*",
+                "What a horrific mess!*",
+                "I have not had a respite for a while...",
+                "What a fragrant blend of tea.",
+                "This is a magic candlestick.",
+                "Disappeared again... I should start searching.",
+                "This banquet is truly special."
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "My respite was too short..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "A gift for all banqueteers."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "How soon will you disappear this time...",
+                "This gift? It was found on an adventure.",
+                "Will you not join the banquet?",
+                "Yes, you may sit at this table.",
+                "I have prepared this welcome-back banquet.",
+                "Thank you for your compliments."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "... What is this?"
+                },
+                {
+                  "label": "Given <u>Gloomy Blackberry</u>",
+                  "text": "I shall use this well."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Many thanks."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Elegant and graceful, Blackberry Cookie slowly sips her tea as she enjoys the brief respite of the banquet. Though she prepared the banquet for Adventurer Cookie, it's as if the spotlight is on her. But who gifted her that new candlestick?"
+    },
+    {
+      "name": "Professor, Paranormal 101",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/19/Professor_Paranormal_101.png",
+      "bonus": "+1,200 pts for Blackberry Jellies",
+      "released": "July 28, 2022",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "May I suggest not taking this road...?*",
+                "What a horrific mess!*",
+                "I beg your pardon, but I really should go...*",
+                "May I assist you with anything?*",
+                "I do have other matters to attend to...*",
+                "I will be calling attendance now.",
+                "Let's begin the lesson.",
+                "Today's ghost story will be new to you because I experienced it myself.",
+                "Your homework is to write a ghost story you have experienced.",
+                "What makes you think you are taking this class alone?"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I still have classes left..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "That is all for today."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "\"Too scary!\" is not an acceptable excuse to leave the classroom.",
+                "No, Pets cannot cover for attendance.",
+                "Do you really think these stories are just... stories?",
+                "Let us begin with today's lesson.",
+                "I will be giving extra homework for tardy students.",
+                "I am only sharing stories.",
+                "I will be teaching next semester as well."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Focus on the lesson."
+                },
+                {
+                  "label": "Given <u>Gloomy Blackberry</u>",
+                  "text": "It is time for a short break."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Your lecture fee was well received."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "info": "Blackberry Cookie conducts a secretive class full of spine-chilling stories after school, and she reads them out loud in her calm voice. By the end of class, the students get goosebumps all over their dough. Is it only because of the stories...? Or did they see something...?"
+    },
+    {
+      "name": "Pumpkin Moon Witch",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/4/44/Pumpkin_moon_witch.png",
+      "bonus": "+1,200 pts for Blackberry Jellies",
+      "released": "November 14, 2024",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "May I assist you with anything?*",
+                "What a horrific mess!*",
+                "Now, where did this Cookie go...*",
+                "I beg your pardon, but I really should go...*",
+                "Let us make haste to the party.",
+                "Have we fallen under a wandering spell cast by the moonlight?",
+                "How fortunate to have been invited to the Pumpkin Moon Party...",
+                "There seems to be more guests than were properly invited.",
+                "Do you truly believe Cookies are the only ones lost...?",
+                "Our path will remain well lit as long as my candle continues to burn."
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "The dawn approaches..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Welcome to the Pumpkin Moon Party."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "After you. I've prepared all the candies, Jellies, and sweet pies for the party.",
+                "Someone's foul jokes may have led you astray...",
+                "You may run into some... unexpected additional party guests...",
+                "Cookie or not, all may get along at the Pumpkin Moon Party.",
+                "Do you... think I look like Blackberry Cookie?",
+                "Seems you found something interesting on your adventures. I would recognize you anywhere.",
+                "Have you come for the Pumpkin Moon Party?",
+                "Sometimes the moonlight is not enough to light one's way...",
+                "I felt like I was lost and wandering...",
+                "Whether meeting me is a blessing or a curse will become clear over time..."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "I'll mix this into the candy basket to hand out to Cookies."
+                },
+                {
+                  "label": "Given <u>Gloomy Blackberry</u>",
+                  "text": "Thank you. This will allow meet to meet dear friends I hardly meet."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "We can buy more than enough candles for all of our candlesticks..."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "info": "A truly spooky, captivating party is held each year on the Night of the Pumpkin Moon! However, many Cookies lose their way before making it there even with their way lit by the large harvest moon. Each of them encounters Blackberry Cookie, who leads them back onto the right path. Don't look too closely at the crowd following behind her, for there may be beings other than Cookies looking back at you."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "ghost-butler",
+      "desc": "+415,000 pts for Blackberry Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "haunted-snuggly-bear",
+      "desc": "+1,650 pts for all Bear Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "gigawatt-cube",
+      "desc": "+8,000 pts for Electro Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Blackberry Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/3/3d/Crob_magic_candy_blackberry.png",
+    "levels": [
+	  {
+        "lv": 1,
+        "desc": "Fourth Ghost creates Shiny Blackberry Jellies\nCreates a Blackberry Potion when Fourth Ghost uses skill 8 times\n+10,000 pts for Shiny Blackberry Jellies\n+6 Energy restored by Blackberry Potions",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Fourth Ghost creates Shiny Blackberry Jellies\nCreates a Blackberry Potion when Fourth Ghost uses skill 8 times\n+195,000 pts for Shiny Blackberry Jellies\n+6 Energy restored by Blackberry Potions",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Fourth Ghost creates Shiny Blackberry Jellies\nCreates a Blackberry Potion when Fourth Ghost uses skill 8 times\n+380,000 pts for Shiny Blackberry Jellies\n+6 Energy restored by Blackberry Potions",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Fourth Ghost creates Shiny Blackberry Jellies\nCreates a Blackberry Potion when Fourth Ghost uses skill 8 times\n+565,000 pts for Shiny Blackberry Jellies\n+6 Energy restored by Blackberry Potions",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Fourth Ghost creates Shiny Blackberry Jellies\nCreates a Blackberry Potion when Fourth Ghost uses skill 8 times\n+750,000 pts for Shiny Blackberry Jellies\n+6 Energy restored by Blackberry Potions",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Gloomy Blackberry",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/4/4f/Crob_magic_candy_ingredient_blackberry.png",
+	  "text": "An oddly gloomy-looking blackberry. Eat it to become able to see more than meets the eye..."
+    },
+    "skillFull": "The Fourth Ghost gets enhanced, creating Shiny Blackberry Jellies and Blackberry Potions. The stronger the enchanted power, the more points earned for Shiny Blackberry Jellies.",
+    "emoji": "🍬"
+  }
+}

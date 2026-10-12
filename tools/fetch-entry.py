@@ -206,6 +206,38 @@ def first_img(bl, *needles, avoid=()):
     return ""
 
 
+def pick_illust(bl):
+    """The default illustration: Crob_illustration_* file, else an image labelled Illustration, else one labelled Highlight
+    (older OvenBreak cookies have a 'Highlight' illustration; very old ones have neither)."""
+    ims = [(a.lower(), full(s)) for b in bl for c in cells(b) for a, s in c["im"] if s]
+    for a, u in ims:
+        if "crob_illustration_" in u.lower(): return u
+    for a, u in ims:
+        if "illustration" in a and "costume" not in a: return u
+    for a, u in ims:
+        if "highlight" in a or "highlight" in u.lower(): return u
+    return ""
+
+
+def official_blocks(gal):
+    """Gallery page: only the cookie's own 'Official Artwork' part (the costume galleries below it are not the default illustration)."""
+    _, ob = sect(gal, r"official artwork")
+    if ob: return ob
+    out = []
+    for b in gal:
+        if b["k"] == "h" and re.search(r"costume", b["t"], re.I): break
+        out.append(b)
+    return out
+
+
+def costume_facts(sc):
+    """(bonus, release date) from the 'Bonus' / 'Release Date' labels of a costume section."""
+    def val(rx):
+        _, b = sect(sc, rx)
+        return next(iter(paras(b)), "") or next((c["t"] for x in b for c in cells(x) if c["t"]), "")
+    return val(r"^bonus$").strip(), re.sub(r"\s*\(.*?\)", "", val(r"^release date$")).strip()
+
+
 def sect(bl, rx):
     """blocks under the first heading matching rx, up to the next heading of the same or higher level."""
     for i, b in enumerate(bl):
@@ -545,8 +577,13 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     rd = next(iter(paras(rel) or [c["t"] for b in rel for c in cells(b) if c["t"]]), "")
     e["released"] = re.sub(r"\s*\(.*?\)", "", rd).strip()
     rep.append(("release date", bool(e["released"])))
-    e["img"] = first_img(bl[:25], "crob_standard_") or first_img(bl[:25], avoid=("icon", "_head_", "rarit"))
-    if kind == "cookie": e["illust"] = first_img(bl[:25], "crob_illustration_")
+    base = next((full(s) for b in gal + bl[:40] for c in cells(b) for a, s in c["im"] if s and a.strip().lower() == "base sprite"), "")  # older cookies: sprite is not named Crob_standard_*
+    plain = next((u for u in imgs(bl[:25]) if not rarity_of_src(u) and "_costume" not in u.lower() and not any(x in u.lower() for x in ("icon", "_head_", "rarit"))), "")
+    e["img"] = first_img(bl[:25], "crob_standard_") or base or plain
+    if kind == "cookie":
+        e["illust"] = pick_illust(bl[:25]) or pick_illust(official_blocks(gal))
+        if not e["illust"]: NOTES.append("no illustration or Highlight image found for this cookie (very old cookies have none) - add one yourself if you have it")
+        elif "crob_illustration_" not in e["illust"].lower() and "highlight" in e["illust"].lower(): NOTES.append("illustration: this older cookie's 'Highlight' image was used")
     if kind == "treasure":  # infobox tabs: "With Background" (hexagon badge) = img, "Icon" (plain sprite) = avatar
         pick = lambda names, bad="": next((full(s) for b in bl[:30] for c in cells(b) for a, s in c["im"] if s and a.strip().lower() in names and (not bad or bad not in s.lower())), "")
         bg, ic = pick(("with background", "base sprite (background)")), pick(("icon", "base sprite"), "crob_head_")
@@ -576,6 +613,12 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
             cd["img"] = first_img([cand[0]], "magic_candy", avoid=("ingredient",)) or first_img(bl, "magic_candy_", avoid=("ingredient",))
             cd["levels"], note = complete(lv, ref["n_cand"], False, ref["cand"].get(e["rarity"]))
             cd["skillFull"] = desc; NOTES.append("candy levels: " + note)
+            if len(lv) == 1:
+                top = lambda s: max([float(x.replace(",", "")) for x in NUM.findall(s)] or [0])
+                rat = [round(top(x["candy"]["levels"][0]["desc"]) / top(x["candy"]["levels"][-1]["desc"]), 2) for x in entries("cookies")
+                       if x.get("rarity") == e["rarity"] and len((x.get("candy") or {}).get("levels") or []) >= 2 and top(x["candy"]["levels"][-1]["desc"])]
+                best = max(set(rat), key=rat.count) if rat else None
+                NOTES.append(f"the wiki shows only Lv.{lv[0]['lv']} of the candy, so Lv.1-{lv[0]['lv'] - 1} are not filled in" + (f" (in your data {rat.count(best)} of {len(rat)} {e['rarity']} candies have Lv.1 = {best:.0%} of the top level - not applied automatically)" if best and rat.count(best) >= 2 else ""))
         ing = first_img(gal, "magic_candy_ingredient")
         if ing:
             cap = next((b["c"]["t"].split("\n")[0].strip() for b in gal if b["k"] != "h" and "c" in b and any("magic_candy_ingredient" in s.lower() for _, s in b["c"]["im"]) and b["c"]["t"].strip()), "")
@@ -622,14 +665,23 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
         us = lambda s: re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
         allimg = imgs(cbl) + imgs(gal)
         for c in cos:
-            _, sc = sect(cbl, "^" + re.escape(c["name"]) + "$")
+            lvl, sc = sect(cbl, "^" + re.escape(c["name"]) + "$")
+            own = lvl is not None or len(cos) == 1  # only trust labels/images when this costume's own section was found
             sc = sc or cbl
             _, sy = sect(sc, r"^story$")
             c["info"] = "\n\n".join(paras(lead(sy))) or (max(paras(lead(sc)) or [""], key=len) if len(cos) == 1 else "")
+            if own:
+                bonus, rel = costume_facts(sc)
+                if bonus: c["bonus"] = bonus
+                if rel: c["released"] = rel
+                if not c["tier"]: c["tier"] = tier_of(next(iter(paras(sect(sc, r"^rarity$")[1])), ""))  # tier missing on the main page: use the label here
             mine = [u for u in allimg if us(c["name"]) in u.lower() and "_head_" not in u.lower()]
-            c["img"] = next((u for u in mine if "illustration" not in u.lower()), "")
-            ill = next((u for u in mine if "illustration" in u.lower()), "")
-            if ill and kind == "cookie" and c["tier"] in BIGTIERS: c["illust"] = ill
+            sec_ims = [(a.lower().strip(), full(s)) for b in sc for cc in cells(b) for a, s in cc["im"] if s] if own else []
+            c["img"] = next((u for a, u in sec_ims if a == "base sprite"), "") or next((u for u in mine if "illustration" not in u.lower()), "")
+            ill = next((u for a, u in sec_ims if "illustration" in a), "") or next((u for a, u in sec_ims if "highlight" in a), "") or next((u for u in mine if "illustration" in u.lower()), "")
+            if kind == "cookie" and c["tier"] in BIGTIERS:
+                if ill: c["illust"] = ill
+                else: NOTES.append(f"no costume illustration found for '{c['name']}' ({c['tier']})")
         rep.append(("costumes", bool(cos)))
         if kind == "cookie":
             base, cq, unm, src = [], {}, [], ""
@@ -781,6 +833,7 @@ def wiki_costume_page(costume, cookie, refresh):
             if bl is not None: break
     if bl is None: return [], "no costume page found on cookierun.wiki" + (" (search had no matching result)" if len(tried) == 1 else "")
     qs = parse_page_quotes(bl, costume=True)
+    wiki_costume_page.facts = costume_facts(bl)  # (bonus, release date) from the same page
     return qs, f"cookierun.wiki page '{tried[-1]}'" if qs else f"cookierun.wiki page '{tried[-1]}' has no quotes section"
 
 
@@ -788,7 +841,11 @@ def costume_quote_fallbacks(e, refresh):
     """Costumes without quotes: 1) their own page on cookierun.wiki (found directly or via its search), 2) the Fandom wiki."""
     left = [c for c in e.get("costumes", []) if c.get("tier") != "default" and not c.get("quotes")]
     for c in left:
+        wiki_costume_page.facts = ("", "")
         qs, how = wiki_costume_page(c["name"], e["name"], refresh)
+        bonus, rel = wiki_costume_page.facts
+        if bonus and not c.get("bonus"): c["bonus"] = bonus; NOTES.append(f"costume bonus for '{c['name']}' taken from its own wiki page")
+        if rel and not c.get("released"): c["released"] = rel; NOTES.append(f"costume release date for '{c['name']}' taken from its own wiki page")
         if qs:
             c["quotes"] = qs
             secs = [s["title"] for g in qs for s in g["sections"]]
@@ -851,7 +908,7 @@ def main():
     print(f"\nEntry written: {os.path.relpath(path, ROOT)}\n")
     for k, ok in rep: print(f"  {'ok     ' if ok else 'MISSING'}  {k}")
     for n in NOTES: print("  note:", n)
-    print("\nNot on the wiki (fill in yourself): emoji" + (", ingredient text (and name if the Gallery has no caption), costume release dates" if kind == "cookie" else ""))
+    print("\nNot on the wiki (fill in yourself): emoji" + (", ingredient text (and name if the Gallery has no caption)" if kind == "cookie" else ""))
     print("Check by eye: tags spelling, combo type, quote groups/labels, and any skill whose growth is not a straight line.")
     print("Then run download-images.py to fetch the images, and build-database.py to update the website files.")
     return 0
