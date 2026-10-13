@@ -358,10 +358,13 @@ def reference():
         for e in entries(folder):
             lv, r = e.get("levels") or [], e.get("rarity")
             if lv:
-                ref["n"].setdefault(kind, len(lv)); ref["lv"].setdefault((kind, r), [l.get("reward") for l in lv])
-            if kind == "treasure" and e.get("enhancements"): ref["n_enh"] = len(e["enhancements"])
+                ref["n"][kind] = max(ref["n"].get(kind, 0), len(lv))  # the longest level list = the full length
+                if any(l.get("reward") for l in lv): ref["lv"].setdefault((kind, r), [l.get("reward") for l in lv])  # only paths that really have rewards
+            if kind == "treasure" and e.get("enhancements"): ref["n_enh"] = max(ref["n_enh"] if ref.get("_enh") else 0, len(e["enhancements"])); ref["_enh"] = True
             cd = e.get("candy") or {}
-            if cd.get("levels"): ref["n_cand"] = len(cd["levels"]); ref["cand"].setdefault(r, [l.get("reward") for l in cd["levels"]])
+            if cd.get("levels"):
+                ref["n_cand"] = max(ref["n_cand"] if ref.get("_cand") else 0, len(cd["levels"])); ref["_cand"] = True
+                if any(l.get("reward") for l in cd["levels"]): ref["cand"].setdefault(r, [l.get("reward") for l in cd["levels"]])
             if kind == "cookie":
                 af = e.get("affection") or []
                 if not ref["aff3"] and len(af) >= 3: ref["aff3"] = af[:3]
@@ -548,6 +551,30 @@ def parse_page_quotes(bl, costume=False):
     return tidy(ordered)
 
 
+PTS = re.compile(r"(\d+(?:,\d{3})*(?:\.\d+)?)(\s*(?:pts|points)\b)", re.I)
+
+
+def candy_from_top(top, total, rarity, skip=""):
+    """Older pages show only the top Magic Candy level. If YOUR data has a clear pattern for this rarity (Lv.1 = the same share of
+    the top level in >= 2 candies and in a majority of them) and the numbers divide into whole steps, build Lv.1 from it.
+    Returns (level-1 dict or None, note)."""
+    pts = lambda d: (lambda m: float(m.group(1).replace(",", "")) if m else None)(PTS.search(d))
+    rat = []
+    for x in entries("cookies"):
+        L = (x.get("candy") or {}).get("levels") or []
+        if x.get("id") != skip and x.get("rarity") == rarity and len(L) >= 2 and pts(L[0]["desc"]) and pts(L[-1]["desc"]): rat.append(round(pts(L[0]["desc"]) / pts(L[-1]["desc"]), 3))
+    if not rat: return None, f"no {rarity} candy with 2+ levels in your data to learn a pattern from"
+    best = max(set(rat), key=rat.count); n = rat.count(best)
+    if n < 2 or n * 2 <= len(rat): return None, f"no clear pattern for {rarity} candies in your data (only {n} of {len(rat)} share Lv.1 = {best:.0%} of the top level)"
+    t = pts(top["desc"])
+    if t is None: return None, "the top candy level has no 'pts' number to scale"
+    lv1 = t * best
+    if abs(lv1 - round(lv1)) > 1e-6 or (t - round(lv1)) % (total - 1): return None, f"the numbers do not divide evenly (Lv.1 would be {lv1:,.2f}), so the {best:.0%} rule was not applied"
+    comma = "," in PTS.search(top["desc"]).group(1)
+    text = PTS.sub(lambda m: (f"{round(lv1):,}" if comma else f"{round(lv1)}") + m.group(2), top["desc"], count=1)
+    return {"lv": 1, "desc": text}, f"Lv.1 set to {best:.0%} of Lv.{top['lv']}, the pattern of {n} of {len(rat)} {rarity} candies in your data; the levels in between are equal steps"
+
+
 def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     e, rep = {}, []
     t0 = re.split(r"\s+[|\u2013-]\s+", title)
@@ -611,14 +638,14 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
         if cand:
             lv, desc = read_levels(cand[0], cand[1], False)
             cd["img"] = first_img([cand[0]], "magic_candy", avoid=("ingredient",)) or first_img(bl, "magic_candy_", avoid=("ingredient",))
+            first = None
+            if len(lv) == 1 and lv[0]["lv"] == ref["n_cand"]:
+                first, why = candy_from_top(lv[0], ref["n_cand"], e["rarity"], e["id"])
+                if first: lv = [first] + lv; NOTES.append("candy: " + why + " - please check it")
+                else: NOTES.append(f"the wiki shows only Lv.{lv[0]['lv']} of the candy: {why}; Lv.1-{lv[0]['lv'] - 1} are not filled in")
             cd["levels"], note = complete(lv, ref["n_cand"], False, ref["cand"].get(e["rarity"]))
-            cd["skillFull"] = desc; NOTES.append("candy levels: " + note)
-            if len(lv) == 1:
-                top = lambda s: max([float(x.replace(",", "")) for x in NUM.findall(s)] or [0])
-                rat = [round(top(x["candy"]["levels"][0]["desc"]) / top(x["candy"]["levels"][-1]["desc"]), 2) for x in entries("cookies")
-                       if x.get("rarity") == e["rarity"] and len((x.get("candy") or {}).get("levels") or []) >= 2 and top(x["candy"]["levels"][-1]["desc"])]
-                best = max(set(rat), key=rat.count) if rat else None
-                NOTES.append(f"the wiki shows only Lv.{lv[0]['lv']} of the candy, so Lv.1-{lv[0]['lv'] - 1} are not filled in" + (f" (in your data {rat.count(best)} of {len(rat)} {e['rarity']} candies have Lv.1 = {best:.0%} of the top level - not applied automatically)" if best and rat.count(best) >= 2 else ""))
+            cd["skillFull"] = desc
+            if not first and not (len(lv) == 1): NOTES.append("candy levels: " + note)
         ing = first_img(gal, "magic_candy_ingredient")
         if ing:
             cap = next((b["c"]["t"].split("\n")[0].strip() for b in gal if b["k"] != "h" and "c" in b and any("magic_candy_ingredient" in s.lower() for _, s in b["c"]["im"]) and b["c"]["t"].strip()), "")

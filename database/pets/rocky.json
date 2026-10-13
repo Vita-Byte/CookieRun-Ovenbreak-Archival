@@ -1,0 +1,93 @@
+{
+  "id": "rocky",
+  "name": "Rocky",
+  "rarity": "epic",
+  "released": "April 30, 2026",
+  "img": "images/pets/Crob_standard_rocky.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 15.5 sec\n+257,400 pts for Stone Shard Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 15.5 sec\n+280,800 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 15.5 sec\n+304,200 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 15.5 sec\n+327,600 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 15.5 sec\n+351,000 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 15.5 sec\n+374,400 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 15.5 sec\n+397,800 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 15.5 sec\n+421,200 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 15.5 sec\n+444,600 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 15.5 sec\n+468,000 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 15.5 sec\n+491,400 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 15.5 sec\n+514,800 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activates every 15.5 sec\n+538,200 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activates every 15.5 sec\n+561,600 pts for Stone Shard Jellies"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activates every 15.5 sec\n+585,000 pts for Stone Shard Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Tosses a part of its body forward at certain intervals. These rocks fly a certain distance before bursting and creating Stone Shard Jellies. Level Up for more points for Stone Shard Jellies.",
+  "story": "Not a single stone within the Halite Gorge has been left untouched by Halite Gauntlet Cookie's powerful fists! Perhaps they were a bit too powerful... as some stone fragments created by the Cookie's fists, left underfoot, eventually joined together in a group of three. Pass by without paying attention to your surroundings and it may appear as no more than ordinary rocks... However, one should never let their guard down in these parts. Rocky trails behind Halite Gauntlet Cookie with a stoic expresson(sic) on its face, prepared to take on any who dare stand in the Spirit Weapon's way. No matter how many times it is kicked, broken, and knocked down, its pieces always find each other again to stand reliable as ever by its Cookie's side.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "halite-gauntlet",
+      "desc": "+3,000,000 Gauntlet Swing Points"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Rocky",
+      "img": "images/pets/Crob_standard_rocky.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "id": "white-peach",
+  "name": "White Peach Cookie",
+  "rarity": "epic",
+  "released": "September 12, 2025",
+  "illust": "images/cookie-illustrations/Crob_illustration_white_peach_wikiver.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_white_peach.png",
+    "story": "Once, the cousins vied for the clan's heirship in a rivalry that began in good faith."
+  },
+  "img": "images/cookies/White_peach_cookie.png",
+  "avatar": "images/cookie-heads/Crob_head_white_peach.png",
+  "tags": [
+    "Speed",
+    "Jump",
+    "Jellies",
+    "SpecialControl"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 186,
+      "desc": "Skill activates every 29.4 sec\n+34,200 pts for Peach Petal Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 195,
+      "desc": "Skill activates every 29.4 sec\n+39,900 pts for Peach Petal Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 204,
+      "desc": "Skill activates every 29.4 sec\n+45,600 pts for Peach Petal Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 213,
+      "desc": "Skill activates every 29.4 sec\n+51,300 pts for Peach Petal Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 222,
+      "desc": "Skill activates every 29.4 sec\n+57,000 pts for Peach Petal Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 231,
+      "desc": "Skill activates every 29.4 sec\n+62,700 pts for Peach Petal Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 240,
+      "desc": "Skill activates every 29.4 sec\n+68,400 pts for Peach Petal Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 249,
+      "desc": "Skill activates every 29.4 sec\n+74,100 pts for Peach Petal Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 258,
+      "desc": "Skill activates every 29.4 sec\n+79,800 pts for Peach Petal Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 267,
+      "desc": "Skill activates every 29.4 sec\n+85,500 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 276,
+      "desc": "Skill activates every 29.4 sec\n+91,200 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 285,
+      "desc": "Skill activates every 29.4 sec\n+96,900 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 294,
+      "desc": "Skill activates every 29.4 sec\n+102,600 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 303,
+      "desc": "Skill activates every 29.4 sec\n+108,300 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 312,
+      "desc": "Skill activates every 29.4 sec\n+114,000 pts for Peach Petal Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Bamboo Outlaws appear at regular intervals. Jump and tap the Slide button to throw daggers. The daggers fly back to you and can damage the Outlaws on the way back. Defeating Bamboo Outlaws creates Peach Petal Jellies. Level up for more points for Peach Petal Jellies. (While battling Bamboo Outlaws you can quadruple jump.)",
+  "story": "On the night the revered Peach Clan was consumed by fire, one Cookie emerged from the inferno, clutching poison close to her heart. This was White Peach Cookie, crowned with two pale, downy peaches on her head.\n\nEven in orchards drenched with sunlight, there are branches that never catch the light, where peaches ripen soft and wan. So it was with White Peach Cookie, delicate, overshadowed by her cousin's brilliance. No matter how fiercely she trained, her efforts went unseen. Pride shattered, she nursed her wounds in silence, her heart slowly steeping in bitterness and poison.\n\nThus the clan's downfall became not tragedy, but a release. White Peach Cookie knelt before the Master of the Cult of the Umbral Pact, pledging loyalty and embracing new destiny.\n\nNow, like blossoms scattering their fragrance upon the wind, she spreads deadly mists and hurls hidden blades at her foes. Behind her radiant smile lurks the Pact's fangs of poison. Turn your back on her, and you may find yourself swallowed by her poison fog and pierced by a rain of flying daggers.",
+  "quote": "Run, before the peach blossoms scatter...!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Run, before the peach blossoms scatter...!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "The best way to master poison is to test it on yourself. Ahaha!",
+            "To fall out of their favor... just the thought makes my dough crawl...!",
+            "Justice, honor, friendship... I've never lost to fools who believe in that.",
+            "Your dough's changing color like petals withering away... How beautiful!",
+            "Failure? Please. That's for the talentless.",
+            "When you stand before true power... there's nothing left but to kneel.",
+            "Ugh... how irritating... utterly insufferable!",
+            "Oh? Oops! Did I just throw a dagger without warning?",
+            "You came at me with that level of skill? How insulting.",
+            "Aw, seeing you writhe in pain breaks my heart. Let me put you out of your misery."
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "Tch... was my poison too weak...?!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Payment for amusing me! Come challenge me again sometime."
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Ever heard of the Cult's fang of poison?",
+            "This elixir makes poison bloom in your dough like petals. Care for a taste?",
+            "Oh dear, how pitiful. But tell me... why come to me for an antidote?",
+            "So you get to keep your life? Clever little thing!",
+            "*Yawn...* Too slow... I nearly fell asleep. Pathetic!",
+            "Over already? And here I thought you'd make this more... entertaining.",
+            "The freedom I felt leaving the fire behind... beyond words.",
+            "My daggers don't always fly straight. Best watch your back!",
+            "Those who've only basked in sulight will never know the depth of the shadows.",
+            "I must be recognized... This time, I have to catch their eye... If not, I'm nothing."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "This is so useless. I suppose you don't value your life, huh?"
+            },
+            {
+              "label": "Given <u>Flask of Silent Venom</u>",
+              "text": "Your life hanging on a single vial... how does it feel? Can you sense the poison spreading?"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Resources are always welcome... perhaps the Master will be pleased?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Daring to lay a hand on me? How bold!",
+            "Did you just challenge me to a duel?",
+            "That'll be the worst mistake of your Cookie life... and your last!",
+            "Hold your stance properly, or you'll break!",
+            "Hahaha, already out of breath?",
+            "The moment the petals touch you... poison will seep through your dough!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+225 pts for Peach Petal Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+450 pts for Peach Petal Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Peach Cookie",
+      "id": "peach",
+      "text": "All I need is to get rid of you... Just watch... I'll CRUSH you!",
+      "type": "Family"
+    },
+    {
+      "who": "Plum Cookie",
+      "id": "plum",
+      "text": "You... you might just be her weakness...!",
+      "type": "Tension"
+    },
+    {
+      "who": "GingerBrave",
+      "id": "gingerbrave",
+      "text": "You think the world is that simple? Bravery solves nothing.",
+      "type": "Tension"
+    },
+    {
+      "who": "Zombie Cookie",
+      "id": "zombie",
+      "text": "Dough neither living nor dead... Mind if I test some poison on you?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Dragon Eye Cookie",
+      "id": "dragon-eye",
+      "text": "A Dragon Cookie? What...? I must report this to the Master!",
+      "type": "Tension"
+    },
+    {
+      "who": "General Jujube Cookie",
+      "id": "general-jujube",
+      "text": "Hypocrite. Don't pretend to be righteous when you only help to suit yourself!",
+      "type": "Tension"
+    },
+    {
+      "who": "Obscure Umbra Cookie",
+      "id": "obscure-umbra",
+      "text": "That jam-stained night haunts me still... Master's steps chill me, yet make me feel alive.",
+      "type": "Admiration"
+    },
+    {
+      "who": "Bamboo Blade Cookie",
+      "id": "bamboo-blade",
+      "text": "How dare you stand in the way of my master's great design...! I'll make sure you never get a sound night of rest until you crumble!",
+      "type": "Tension"
+    },
+    {
+      "who": "Xitang Cookie",
+      "id": "xitang",
+      "text": "With the right push, you might make a decent lackey, heh.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Halite Gauntlet Cookie",
+      "id": "halite-gauntlet",
+      "text": "She's so busy just leisurely training at that monastery of hers I doubt she'd even notice if I released poison there!",
+      "type": "Tension"
+    },
+    {
+      "who": "Nimbus Cake Cookie",
+      "id": "nimbus-cake",
+      "text": "With someone like you as leader of the alliance, the Peach Clan's fall was only a matter of time, haha!",
+      "type": "Tension"
+    },
+    {
+      "who": "Longjing Tea Cookie",
+      "id": "longjing-tea",
+      "text": "Ahaha, look at you strutting around all high and mighty talking about justice with that weak dough of yours! You'll crumble even without my poison!",
+      "type": "Tension"
+    },
+    {
+      "who": "Helios Honey Cookie",
+      "id": "helios-honey",
+      "text": "The Great Obscure Umbra and I aren't bound by flimsy, unspoken thoughts. What ties us runs thick and red as strawberry jam!",
+      "type": "Tension"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "White Peach Cookie",
+      "img": "images/cookies/White_peach_cookie.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Venomcrafting Vicar",
+      "img": "images/costumes/cookie/Venomcrafting_vicar.png",
+      "illust": "images/costume-illustrations/Img_skinIllust_427401.png",
+      "bonus": "+450 pts for Peach Petal Jellies",
+      "released": "September 12, 2025",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "A sweet offering... for the Master!",
+                "Why challenge me... when you could just drink the poison yourself?",
+                "Watch every breath. Even the air is mine to weaponize!",
+                "An antidote? Oh, I have one. But I've no intention of giving it to you.",
+                "Pain is honest... It strips you down to your most honest self.",
+                "The best way to test poison is to test it on yourself. Ahaha!",
+                "Is this really an antidote? Tell me... Can you trust me?",
+                "Aw, seeing you writhe in pain breaks my heart. Let me put you out of your misery.*",
+                "Your dough's changing color like petals withering away... How beautiful!*",
+                "Oh? Oops! Did I just throw a dagger without warning?*"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Ugh... how did you... neutralize the poison...?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Payment for amusing me! Come challenge me again sometime."
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Here to put me down? Haha... how amusing!",
+                "Why so weary? I haven't even started.",
+                "Sparring with you only dulls my edge. Not even good for amusement.",
+                "To think you're an apprentice... Your master must be ashamed.",
+                "Reaching the Cult's second seat... you think that was easy?",
+                "You're asking me for an antidote? Ha, then you should beg for it!",
+                "Out of breath... Dough hardening... Guess we'll talk again... in your next life!",
+                "This is the Way of the Cult! Clever, ruthless, and absolute!",
+                "Better to break than disappoint them! I'll brew a poison deadlier than ever!",
+                "I'll bloom the most beautiful, the most lethal poison flower for them!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "This is so useless. I suppose you don't value your life, huh?*"
+                },
+                {
+                  "label": "Given <u>Flask of Silent Venom</u>",
+                  "text": "My deadliest poison, proven on myself. It'll choke the life from you."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Contributing to the strength of the Cult? A wise choice!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "After mastering every poison under the sun, White Peach Cookie is said to have created a venom both colorless and scentless. Behind drifting petals of peach blossoms, she conceals venom-tipped daggers and lets them fly. Beware, for if you lose yourself in the spectacle, you'll already be succumbing to her toxin. Should you wish for an antidote, she invites you to seek her out at the Cult of the Umbral Pact... but what scheme lies behind that invitation?"
+    },
+	{
+      "name": "Student Council Delinquent",
+      "img": "images/costumes/cookie/Crob_standard_student_council_delinquent.png",
+	  "bonus": "+220 pts for Peach Petal Jellies",
+	  "released": "July 30, 2026",
+      "tier": "epic",
+      "info": "Rumors spread like a quick-acting poison of a student council president who took over her entire school while decked out in a full-length wine-colored skirt and with a rebellious look in her eye. Students dare not cross her path, because she ruthlessly dishes out punishments and demerit points at the slightest infraction of the hundreds of school rules. Following such strict rules and standards is difficult for even the most well-behaved of students, but as long as you follow the rules to the T she can, supposedly, be quite nice."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "bunny-bun",
+      "desc": "+84,000 pts for Peach Petal Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "umbratic-tome",
+      "desc": "+420,000 Dark Burst Points"
+    }
+  ],
+  "candy": {
+    "name": "White Peach Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_white_peach.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Gains dagger counts every 7.35 sec\n+400 pts for Peach Petal Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Gains dagger counts every 7.35 sec\n+8,800 pts for Peach Petal Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Gains dagger counts every 7.35 sec\n+17,200 pts for Peach Petal Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Gains dagger counts every 7.35 sec\n+25,600 pts for Peach Petal Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Gains dagger counts every 7.35 sec\n+34,000 pts for Peach Petal Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Flask of Silent Venom",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_white_peach.png",
+	  "text": "A flask brinning with a poison colorless, scentless, and tasteless. Its recipe is known to but one Cookie... so keep your guard up!"
+    },
+    "skillFull": "Gains additional dagger charges at fixed intervals. When charges are available, jump and tap the Slide button to throw a dagger. The dagger flies forward scattering Peach Petal Jellies and destroys obstacles. The stronger the enchanted power, the more points for Peach Petal Jellies.",
+    "emoji": "🍬"
+  }
+}

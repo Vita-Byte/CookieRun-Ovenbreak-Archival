@@ -1,0 +1,121 @@
+{
+  "id": "bunny-bun",
+  "name": "Bunny Bun",
+  "rarity": "epic",
+  "released": "September 12, 2025",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f3/Bunny_bun.png",
+  "tags": [
+    "Jellies",
+    "EnergySpeed"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activates every 22.6 sec\n+814,000 pts for Bunpling Jellies\n+1,628,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 22% while affected by the Giant Bunpling Jelly",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activates every 22.6 sec\n+888,000 pts for Bunpling Jellies\n+1,776,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 24% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activates every 22.6 sec\n+962,000 pts for Bunpling Jellies\n+1,924,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 26% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activates every 22.6 sec\n+1,036,000 pts for Bunpling Jellies\n+2,072,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 28% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activates every 22.6 sec\n+1,110,000 pts for Bunpling Jellies\n+2,220,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 30% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activates every 22.6 sec\n+1,184,000 pts for Bunpling Jellies\n+2,368,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 32% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activates every 22.6 sec\n+1,258,000 pts for Bunpling Jellies\n+2,516,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 34% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activates every 22.6 sec\n+1,332,000 pts for Bunpling Jellies\n+2,664,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 36% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activates every 22.6 sec\n+1,406,000 pts for Bunpling Jellies\n+2,812,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 38% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activates every 22.6 sec\n+1,480,000 pts for Bunpling Jellies\n+2,960,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 40% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activates every 22.6 sec\n+1,554,000 pts for Bunpling Jellies\n+3,108,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 42% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activates every 22.6 sec\n+1,628,000 pts for Bunpling Jellies\n+3,256,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 44% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Skill activates every 22.6 sec\n+1,702,000 pts for Bunpling Jellies\n+3,404,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 46% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Skill activates every 22.6 sec\n+1,776,000 pts for Bunpling Jellies\n+3,552,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 48% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Skill activates every 22.6 sec\n+1,850,000 pts for Bunpling Jellies\n+3,700,000 pts for Giant Bunpling Jellies\nEnergy drain reduced by 50% while affected by the Giant Bunpling Jelly",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Flies forward and pounds the ground at regular intervals. Each pound creates Bunpling Jellies, with the final pound creating a Giant Bunpling Jelly. Collect the Giant Bunpling Jelly to reduce Energy drain for a certain amount of time. Level up for more points for Bunpling Jellies and Giant Bunpling Jellies, and for slower Energy drain upon collecting the Giant Bunpling Jelly.",
+  "story": "Bunny Bun once sold dumplings at an old roadside inn. One fateful day, a band of raiders attacked during White Peach Cookie's meal... only to find themselves on the wrong side of her temper. Thanks to that encounter, Bunny Bun escaped disaster and, from then on, became bound to her side. Now working in the kitchens of the Cult of the Umbral Pact, Bunny Bun cares little whether the dumplings are served to righteous clans or dark ones, as long as it can steam up something sweet for White Peach Cookie. Though untrained in any martial arts, Bunny Bun has an uncanny knack for sensing White Peach Cookie's moods, knowing the very moment she is weary or hungry. Could it be that, without even realizing, Bunny Bun is cultivating a martial art of its own?",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "white-peach",
+      "desc": "+78,000 pts for Peach Petal Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Bunny Bun",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f3/Bunny_bun.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Venomwing Butterfly",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/7/78/Crob_standard_venomwing_butterfly.png",
+      "released": "September 12, 2025",
+      "tier": "epic",
+      "info": "Follow the sweet aroma, and you might find yourself in the kitchens of the Cult of the Umbral Pact. But beware... Bunny Bun's dumplings are always laced with poison, whether served to the righteous or the wicked. It's no wonder Bunny Bun's name is whispered with the same infamy as White Peach Cookie's. Still, rest assured, those truly cherished are given only the sweetest, safest treats."
+    },
+	{
+      "name": "Reserved Model Student",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/0/08/Crob_standard_reserved_model_student.png",
+      "released": "July 30, 2026",
+      "tier": "epic",
+      "info": "Bunny Bun gives off an unapproachable aura as the students hustle and bustle, rushing through the school gates in an attempt to not be late for class. It quickly picks out inappropriate school uniforms, missing name tags, and even the slightest bit of tardiness, blocking all possibilities for negotiation with its black mask. Rather than causing fear in its fellow students, this Pet's unwavering demeanor has made more and more students admire the student council. Under this model student's watch, school remains orderly for yet another day."
+    }
+  ]
+}
