@@ -1,0 +1,425 @@
+{
+  "id": "melon-soda",
+  "name": "Melon Soda Cookie",
+  "rarity": "epic",
+  "released": "June 26, 2026",
+  "illust": "images/cookie-illustrations/Crob_illustration_melon_soda_wikiver.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_melon_soda.png",
+    "story": "Staying as bubbly and refreshing as a fresh bottle of melon soda may be the secret to ensuring every day feels like a fun party!"
+  },
+  "img": "images/cookies/Crob_standard_melon_soda.png",
+  "avatar": "images/cookie-heads/Crob_head_melon_soda.png",
+  "tags": [
+    "Speed",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 167,
+      "desc": "Skill activates every 27.9 sec\n+107,600 pts for Melon Fizz Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 176,
+      "desc": "Skill activates every 27.9 sec\n+118,700 pts for Melon Fizz Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 185,
+      "desc": "Skill activates every 27.9 sec\n+129,800 pts for Melon Fizz Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 194,
+      "desc": "Skill activates every 27.9 sec\n+140,900 pts for Melon Fizz Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 203,
+      "desc": "Skill activates every 27.9 sec\n+152,000 pts for Melon Fizz Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 212,
+      "desc": "Skill activates every 27.9 sec\n+163,100 pts for Melon Fizz Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 221,
+      "desc": "Skill activates every 27.9 sec\n+174,200 pts for Melon Fizz Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 230,
+      "desc": "Skill activates every 27.9 sec\n+185,300 pts for Melon Fizz Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 239,
+      "desc": "Skill activates every 27.9 sec\n+196,400 pts for Melon Fizz Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 248,
+      "desc": "Skill activates every 27.9 sec\n+207,500 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 257,
+      "desc": "Skill activates every 27.9 sec\n+218,600 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 266,
+      "desc": "Skill activates every 27.9 sec\n+229,700 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 275,
+      "desc": "Skill activates every 27.9 sec\n+240,800 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 284,
+      "desc": "Skill activates every 27.9 sec\n+251,900 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 293,
+      "desc": "Skill activates every 27.9 sec\n+263,000 pts for Melon Fizz Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Fires a stream of melon soda with her soda pump at certain intervals. The Melon Soda Stream destroys obstacles and creates Melon Fizz Jellies. Collect the Soda Cannon Jelly that appears to fire off a power fan-shaped attack, that destroys more obstacles and creates more Melon Fizz Jellies. Level Up for more points for Melon Fizz Jellies.",
+  "story": "Platter City, a tireless city filled with countless Cookies' passions and sweetest dreams. This Cookie in particular spends part of her day carting platters of sweet fruit sodas at Cafe Fruit Bomber, but nothing can stop her the moment she catches wind of an interesting rumor spreading around town! Nobody would expect anything less from Melon Soda Cookie, whose endless curiosity and big dreams of influencer fame have her on the move non-stop!\n\nHelping the cafe owner on his fixer jobs—whether that means weaving through the alleys of Platter City to find a Cookie's lost dessert birdie or rushing to stop a runaway water boat—was just the beginning. Rumor has it that she even got caught up in a plot that involved finding a prestigious family's lost treasure!\n\nWhen she's caught in a pinch, POW! One blast from her Melon Soda Cannon has everyone floored! You might even catch her making sure the cameras caught the best angle for each refreshing blow. She's still got quite a bit to learn, but just like stacking topping after topping upon a Melon Soda float, she's slowly but surely making her way toward fulfilling her dream!\n\nBetter get close now, because who knows when she's going to be Platter City's next big influencer!",
+  "quote": "Time to make it BURST— nice and cool!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Time to make it BURST— nice and cool!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "It's me, Melon Soda Cookie, coming in extra cool!",
+            "Huh? Are you... one of my subs?",
+            "Order up— one melon soda, coming through!",
+            "Soda cannon— locked and loaded!",
+            "Hehe! Smash that Like button!",
+            "Ooh, what kind of requests do we have today?!",
+            "With all my heart... PEW!",
+            "Oh, this is gonna explode my views!",
+            "You there! Ready to cool off?",
+            "Woo! Let's go, Melon Soda Cookie!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "Noo... I'm losing subs..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Stay tuned!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "I'm trying to figure out how to boost my subs! Got any ideas?",
+            "Fruit Bomber isn't just any cafe... We're fixers who take requests! Let me know any time you need a hand!",
+            "You're watching this, right? Pew, pew!",
+            "Platter City's always bustling! Skyscrapers, cars, Cookies... There's never a dull day!",
+            "Another request already?! An influencer's gotta rest sometimes, you know!",
+            "Eek, the video of me setting off my Soda Cannon by accident in the cafe is going VIRAL! Let's do it again!",
+            "Ahem... hey... Do you uh, recognize me? No...? Hehe, well now you can get to know me!",
+            "I work at Cafe Fruit Bomber! It is THE place to hang out, hehe. Come check it out sometime!",
+            "*GASP* Really? Hehe... you have good taste!",
+            "Aww, that would've been perfect for a video! Can you say it again?"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Oh, this would be perfect for a random unboxing video! Gotta keep uploads regular!"
+            },
+            {
+              "label": "Given <u>Melon Soda Cannon</u>",
+              "text": "Pew, pew! How's that Melon Soda feel? Super refreshing, right?!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Oh em gee! Is this for me?! Can I post this on my accounts?!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "I'll make it suuuper refreshing!",
+            "Here comes my Soda Cannon! Pew-pew!",
+            "Now that's a highlight reel!",
+            "Hmm... Anything content-worthy going on?",
+            "I know Platter City inside and out!",
+            "Just ask for the fixers at Cafe Fruit Bomber!"
+          ]
+        },
+        {
+          "title": "New Cookie Cup End",
+          "lines": [
+            "That's another request wrapped up! Don't forget to like and subscribe!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+450 pts for Melon Fizz Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+900 pts for Melon Fizz Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Soda Cookie",
+      "id": "soda",
+      "text": "WOW, he's so good at surfing! Can I take a picture of you making soda waves?!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Black Garlic Cookie",
+      "id": "black-garlic",
+      "text": "Whoa! Ghost hunting?! That's super on-trend! Do you wanna do a collab?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Popping Candy Cookie",
+      "id": "popping-candy",
+      "text": "Oh, oh! Pleaaase come perform on Bluefizz Beach! I'm sure a concert vlog would go super viral...!",
+      "type": "Admiration"
+    },
+    {
+      "who": "Eggnog Cookie",
+      "id": "eggnog",
+      "text": "I heard he's one of the cafe's regulars! He just comes and sits for a while... Even the owner doesn't know what he does!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Melon Bun Cookie",
+      "id": "melon-bun",
+      "text": "Her hat's just as awesome as my goggles! The Cheddar Mines are so awesome... I'll clear the mines with my Soda Cannon!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Cream Soda Cookie",
+      "id": "cream-soda",
+      "text": "Hey, uh... Can you give me some tips on getting popular? Pretty please?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Cherry Cola Cookie",
+      "id": "cherry-cola",
+      "text": "Don't blow up...! At least not here in the cafe... I'm the one who has to clean at closing time!",
+      "type": "Tension"
+    },
+    {
+      "who": "Latte Cookie",
+      "id": "latte",
+      "text": "I didn't notice at first, but the more I think about it the more I realize she's a really kind adult Cookie!",
+      "type": "Trust"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Melon Soda Cookie",
+      "img": "images/cookies/Crob_standard_melon_soda.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Watermelon PUNCH!",
+      "img": "images/costumes/cookie/Crob_standard_watermelon_punch.png",
+      "illust": "images/costume-illustrations/Crob_illustration_watermelon_punch.png",
+      "bonus": "+900 pts for Melon Fizz Jellies",
+      "released": "June 26, 2026",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "It's me, Melon Soda Cookie, coming in extra cool!*",
+                "Order up— watermelon soda, coming through",
+                "You there! Ready to cool off?*",
+                "Soda cannon— locked and loaded!*",
+                "Hehe! Smash that Like button!*",
+                "Try the Cafe's new drink! It's Melon Soda Cookie-approved!",
+                "The whole beach smells like watermelon!",
+                "Pew-pew! Knock out the heat with some watermelon punch!",
+                "What'dya think?! You've gotta come to the cafe for more!",
+                "Try the Watermelon PUNCH! Challenge! Down it in one go"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "W-what do you mean we're out of stock...?!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Thanks for the sub!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Pew-pew! Who said giving out samples had to be boring?!",
+                "Fizzy carbonation, fresh watermelon and pineapple, and... Uh, I don't know the recipe yet!",
+                "Look! I drew a watermelon in the sand! ... Is it really that hard to tell?",
+                "Let's take a selfie all together! Hold your watermelon punch high and jump on the count of 3!",
+                "I bet a glass of watermelon punch that I can beat you in a race across the beach, Ice Pop Cookie!",
+                "I have to clean the beach after giving out samples of the drink? Aww... That's no fun...",
+                "Hey there! Are you here for a sample of our new drink?!",
+                "Do you like watermelon? Well then do I have a drink for you!",
+                "Oh em gee, you thought my Soda Cannon was awesome?! Hehe, watch, I can fire it again!",
+                "I love this uniform! I'm kinda sad I only get to wear it while we have the event!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Oh em gee, this is the first time a sub has given me a gift! Thank you so much!"
+                },
+                {
+                  "label": "Given <u>Melon Soda Cannon</u>",
+                  "text": "Come on, just a bit more power now! Pew-pew!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Whoa, this is super cool. I'm sure it'll get a ton of views!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Watermelon PUNCH, coming right up! What's that, you ask? Why, Cafe Fruit Bomber's new, limited-time summer drink! Melon Soda Cookie's all dressed up for the part, looking sweeter and fresher than the drink itself. She's been busy firing off samples of the new drink from her Soda Cannon, which now has Cookies lined up on the beach for the drink's official release! What a great way to cool off on vacation!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "melon-mlem",
+      "desc": "+177,000 pts for Melon Fizz Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "1000-juice",
+      "desc": "+380,000 Fruit Juice Points"
+    }
+  ],
+  "candy": {
+    "name": "Melon Soda Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_melon_soda.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Skill activates every 9.3 sec\n+200 pts for Melon Fizz Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Skill activates every 9.3 sec\n+16,400 pts for Melon Fizz Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Skill activates every 9.3 sec\n+32,600 pts for Melon Fizz Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Skill activates every 9.3 sec\n+48,800 pts for Melon Fizz Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Skill activates every 9.3 sec\n+65,000 pts for Melon Fizz Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Melon Soda Cannon",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_melon_soda.png",
+	  "text": "The refreshing taste of melon soda just BURSTS all around you! Stay positive and keep riding the fizzy waves!"
+    },
+    "skillFull": "Aims the soda pump towards the ground at certain intervals, firing it to lift off the ground. The soda fired off destorys obstacles beneath the Cookie and creates Melon Fizz Jellies. The stronger the enchanted power, the more points for Melon Fizz Jellies.",
+    "emoji": "🍬"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "seahorse-watergun",
+  "name": "Seahorse Watergun",
+  "rarity": "epic",
+  "released": "April 27, 2023",
+  "img": "images/treasures/Seahorse_watergun_bg.png",
+  "avatar": "images/treasure-icons/Seahorse_watergun.png",
+  "tags": [
+    "Distance",
+    "Score"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+15,000 Water Droplet Points"
+    },
+    {
+      "lv": 2,
+      "effect": "+30,000 Water Droplet Points"
+    },
+    {
+      "lv": 3,
+      "effect": "+45,000 Water Droplet Points"
+    },
+    {
+      "lv": 4,
+      "effect": "+60,000 Water Droplet Points"
+    },
+    {
+      "lv": 5,
+      "effect": "+75,000 Water Droplet Points"
+    },
+    {
+      "lv": 6,
+      "effect": "+90,000 Water Droplet Points"
+    }
+  ],
+  "skillFull": "Water Droplets appear at given distances. The Water Droplets slowly rise up, trapping any Jellies they come in contact with. When the Cookie passes through or touches the Water Droplets, they burst and give Water Droplet Points. Level Up for more Water Droplet Points.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Skill activation every 4,000 px run\n+268,000 Water Droplet Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Skill activation every 4,000 px run\n+290,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Skill activation every 4,000 px run\n+312,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Skill activation every 4,000 px run\n+334,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Skill activation every 4,000 px run\n+356,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Skill activation every 4,000 px run\n+378,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Skill activation every 4,000 px run\n+400,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Skill activation every 4,000 px run\n+422,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Skill activation every 4,000 px run\n+444,000 Water Droplet Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Skill activation every 4,000 px run\n+466,000 Water Droplet Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Skill activation every 4,000 px run\n+488,000 Water Droplet Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Skill activation every 4,000 px run\n+510,000 Water Droplet Points",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "This seahorse-shaped water gun is a must-bring to the beach! Burst the bubbles and enjoy the sweet Jellies waiting inside!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "blue-whale",
+      "desc": "+50,000 Bubble Points"
+    }
+  ]
+}

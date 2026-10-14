@@ -971,6 +971,41 @@
       body { padding-bottom: 0; }
       #detail { padding-bottom: env(safe-area-inset-bottom); }
       @media (min-width: 701px) { #list { padding-bottom: env(safe-area-inset-bottom); } }
+
+      /* ===== Combi maker tab ===== */
+      #combi { display: none; flex: 1; min-width: 0; min-height: 0; overflow: auto; flex-direction: column; gap: 10px; padding: 10px 12px 18px; -webkit-overflow-scrolling: touch; }
+      #combi > * { width: 100%; max-width: 760px; margin-inline: auto; flex: none; }
+      .cm .top input, .cm .top select { display: none; }
+      .cm-box { background: #0006; border: 1px solid #ffffff24; border-radius: 14px; padding: 10px 12px; box-shadow: inset 0 1px 0 #ffffff22; }
+      .cm-box h3 { margin: 0 0 8px; font: 800 15px var(--disp); color: #ffd86b; letter-spacing: 0.3px; }
+      .cm-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .cm-chip { border: 2px solid #ffffff40; background: #ffffff14; color: #fff; padding: 3px 11px; border-radius: 99px; font: 700 13px var(--disp); cursor: pointer; }
+      .cm-chip.on { background: #9d6bff; border-color: #fff; }
+      .cm-chip.x { padding-right: 7px; } .cm-chip.x b { margin-left: 6px; opacity: 0.8; }
+      .cm-opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 10px; }
+      .cm-opts label { display: flex; flex-direction: column; gap: 2px; font: 700 12px var(--disp); color: #d9c7ff; }
+      .cm-opts select, .cm-find { padding: 7px 9px; border-radius: 8px; border: 1px solid #ffffff40; background: #1c1630; color: #fff; font: 700 14px/1.2 inherit; }
+      .cm-find { width: 100%; margin-bottom: 8px; border-color: #0003; }
+      .cm-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+      .cm-btns .btn { flex: 1 1 auto; }
+      .cm-btns .btn:first-child { flex: 1 1 100%; }
+      .cm-slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .cm-slot { display: flex; flex-direction: column; align-items: stretch; gap: 4px; min-width: 0; }
+      .cm-slot .lbl { font: 800 11px var(--disp); color: #ffd86b; text-transform: uppercase; text-align: center; letter-spacing: 0.4px; }
+      .cm-slot .st { align-self: center; font: 800 11px var(--disp); border-radius: 99px; padding: 1px 9px; background: #ffffff22; color: #fff; }
+      .cm-slot .st.ok { background: #2fae4a; } .cm-slot .st.no { background: #a5384b; }
+      .cm-slot .ctl { display: flex; justify-content: center; gap: 6px; }
+      .cm-slot .ctl button { all: unset; cursor: pointer; font-size: 16px; padding: 2px 8px; border-radius: 8px; background: #0008; border: 1px solid #ffffff30; }
+      .cm-slot .ctl button.on { background: #ffd86b; }
+      .cm-empty .art { background: #ffffff10 !important; border: 2px dashed #ffffff55; }
+      .cm-empty .plus { font-size: 34px; color: #ffffffaa; display: flex; align-items: center; justify-content: center; height: 100%; }
+      .cm-big { font: 800 20px var(--disp); color: #fff; }
+      .cm-link { border-left: 4px solid #3fc23a; background: #ffffff12; border-radius: 8px; padding: 6px 10px; margin-top: 6px; font-size: 13px; line-height: 1.4; }
+      .cm-link.extra { border-color: #9d6bff; }
+      .cm-note { color: #d9c7ff; font-size: 13px; line-height: 1.4; margin-top: 6px; }
+      .cm-pick { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-height: 56vh; overflow: auto; padding: 2px; }
+      .cm-b { position: absolute; left: 3px; top: 3px; z-index: 2; font: 800 10px var(--disp); background: #2fae4a; color: #fff; border-radius: 99px; padding: 1px 6px; border: 1px solid #000; }
+      @media (max-width: 380px) { .cm-slots, .cm-pick { grid-template-columns: repeat(2, 1fr); } }
     </style>
   </head>
   <body>
@@ -991,6 +1026,7 @@
       <div class="body">
         <div class="tabs" id="tabs"></div>
         <div id="grid"></div>
+        <div id="combi"></div>
       </div>
     </div>
     <div id="detail"></div>
@@ -1039,6 +1075,7 @@
             ),
           plural: "Treasures",
         },
+        combi: { label: "Combi", icon: "🧩", plural: "Combi Maker", view: "combi", data: () => [] },
         cookieCostume: {
           label: "Cookie Costume",
           icon: "👕",
@@ -1184,6 +1221,11 @@
               `<button class="${k == tab ? "on" : ""}" onclick="tab='${k}';renderList()"><i>${t.icon}</i>${t.label}</button>`,
           )
           .join("");
+        const isCombi = TABS[tab].view == "combi";
+        $("list").classList.toggle("cm", isCombi);
+        $("grid").style.display = isCombi ? "none" : "";
+        $("combi").style.display = isCombi ? "flex" : "none";
+        if (isCombi) { $("count").textContent = "Combi Maker"; renderCombi(); return; }
         let d = TABS[tab].data().slice(),
           q = $("q").value.toLowerCase(),
           s = $("sort").value;
@@ -1746,6 +1788,201 @@
               .join("") || '<div class="txt">No combi bonus recorded yet.</div>'
           }</div>`,
         );
+      }
+
+      // ===================== Combi maker =====================
+      // Team: 1 main cookie + 1 relay cookie + 1 pet + 3 treasures. Combos are checked between the MAIN cookie and the pet / treasures;
+      // the relay cookie can be anyone - it only needs some synergy with the main cookie (shared tags, shared partners, relationship).
+      const CM_SLOTS = [["main", "Main Cookie", "cookie"], ["relay", "Relay Cookie", "cookie"], ["pet", "Pet", "pet"], ["t0", "Treasure 1", "treasure"], ["t1", "Treasure 2", "treasure"], ["t2", "Treasure 3", "treasure"]];
+      const CM_PARTS = [["pet", "pet"], ["t0", "treasure"], ["t1", "treasure"], ["t2", "treasure"]];
+      const CM_POS = ["Friendly", "Family", "Trust", "Admiration"];
+      const CM_PRESETS = [
+        { name: "Surprise me", opt: { min: 0, mode: "random", tag: "", syn: 0 } },
+        { name: "Max combos", opt: { min: 0, mode: "combos", tag: "", syn: 0 } },
+        { name: "Fully linked", opt: { min: 4, mode: "combos", tag: "", syn: 0 } },
+        { name: "Max bonus", opt: { min: 1, mode: "bonus", tag: "", syn: 0 } },
+        { name: "Synergy relay", opt: { min: 0, mode: "combos", tag: "", syn: 2 } },
+      ];
+      let cm = { team: {}, lock: {}, opt: { min: 0, mode: "random", tag: "", syn: 0 }, presets: [] };
+      try { const s = JSON.parse(localStorage.getItem("croCombi") || "{}"); cm = { ...cm, ...s, opt: { ...cm.opt, ...(s.opt || {}) } }; } catch (e) {}
+      const cmSave = () => { try { localStorage.setItem("croCombi", JSON.stringify(cm)); } catch (e) {} };
+      const cmEsc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+      const cmPool = (ty) => (ty == "cookie" ? TABS.cookie.data() : ty == "pet" ? TABS.pet.data() : TABS.treasure.data());
+      const cmTy = (slot) => CM_SLOTS.find((s) => s[0] == slot)[2];
+      const cmGet = (slot) => { const id = cm.team[slot]; return id ? cmPool(cmTy(slot)).find((x) => x.id == id) || null : null; };
+      const cmNum = (s) => { const m = /(\d[\d,]*(?:\.\d+)?)/.exec(String(s || "")); return m ? parseFloat(m[1].replace(/,/g, "")) : 0; };
+      const cmFmt = (n) => (n ? "+" + Math.round(n).toLocaleString("en-US") : "-");
+      const cmArt = (i, ty) => (ty == "treasure" && i.avatar ? `<img src="${i.avatar}" alt="" data-e="${i.emoji || ""}">` : art(i));
+      const rnd = (a) => a[Math.floor(Math.random() * a.length)];
+      // every combo is stored on one or both sides (cookie.combi / pet.combi / treasure.combi) - merge them
+      let CMLINKS = null;
+      function cmLinks() {
+        if (CMLINKS) return CMLINKS;
+        const m = new Map();
+        [["cookie", cmPool("cookie")], ["pet", cmPool("pet")], ["treasure", cmPool("treasure")]].forEach(([t, arr]) =>
+          arr.forEach((x) => (x.combi || []).forEach((c) => {
+            const a = t + ":" + x.id, b = c.type + ":" + c.id, k = a < b ? a + "|" + b : b + "|" + a, e = m.get(k) || { texts: {} };
+            e.texts[a] = c.desc || ""; m.set(k, e);
+          })));
+        return (CMLINKS = m);
+      }
+      // link between a cookie and a pet/treasure (null when none)
+      function cmLink(c, p, ty) {
+        if (!c || !p) return null;
+        const e = cmLinks().get("cookie:" + c.id + "|" + ty + ":" + p.id);
+        if (!e) return null;
+        const tc = e.texts["cookie:" + c.id] || "", tp = e.texts[ty + ":" + p.id] || "";
+        return { c, p, ty, tc, tp, value: cmNum(tc) + cmNum(tp) };
+      }
+      // how many pets (max 1) + treasures (max 3) can this cookie link with in your data
+      const cmReach = (c) => Math.min(1, cmPool("pet").filter((x) => cmLink(c, x, "pet")).length) + Math.min(3, cmPool("treasure").filter((x) => cmLink(c, x, "treasure")).length);
+      function cmSyn(t) {
+        if (!t.main || !t.relay) return null;
+        const A = t.main, B = t.relay, reasons = [];
+        const ta = new Set((A.tags || []).map((x) => x.toLowerCase())), shared = (B.tags || []).filter((x) => ta.has(x.toLowerCase()));
+        if (shared.length) reasons.push("shared tags: " + shared.map((x) => "#" + x).join(", "));
+        const both = CM_PARTS.map(([s, ty]) => [t[s], ty]).filter(([p, ty]) => p && cmLink(A, p, ty) && cmLink(B, p, ty));
+        if (both.length) reasons.push("both link with: " + both.map(([p]) => p.name).join(", "));
+        const rel = (A.relations || []).find((x) => x.id == B.id) || (B.relations || []).find((x) => x.id == A.id);
+        if (rel) reasons.push("relationship: " + rel.type);
+        return { score: shared.length + 2 * both.length + (rel && CM_POS.includes(rel.type) ? 1 : 0), reasons };
+      }
+      function cmEval(t) {
+        const lk = {}, links = [], extra = [];
+        CM_PARTS.forEach(([s, ty]) => {
+          lk[s] = cmLink(t.main, t[s], ty);
+          if (lk[s]) links.push(lk[s]);
+          const r = cmLink(t.relay, t[s], ty);
+          if (r) extra.push(r);
+        });
+        return { lk, links, extra, active: links.length, total: links.reduce((n, l) => n + l.value, 0), syn: cmSyn(t) };
+      }
+      const cmTeam = () => { const t = {}; CM_SLOTS.forEach(([s]) => (t[s] = cmGet(s))); return t; };
+      // ---- randomizer
+      function cmTry(free, o) {
+        const t = {}, tagOk = (x) => !o.tag || (x.tags || []).some((g) => g.toLowerCase() == o.tag.toLowerCase());
+        CM_SLOTS.forEach(([s]) => { if (!free.includes(s)) t[s] = cmGet(s); });
+        const cookies = cmPool("cookie"), pets = cmPool("pet"), tres = cmPool("treasure");
+        const used = new Set(CM_SLOTS.filter(([s]) => t[s]).map(([s, , ty]) => ty + ":" + t[s].id));
+        const fresh = (ty, arr) => arr.filter((x) => !used.has(ty + ":" + x.id));
+        const take = (slot, ty, arr) => { const it = rnd(arr); if (!it) return false; t[slot] = it; used.add(ty + ":" + it.id); return true; };
+        if (free.includes("main")) {
+          let c = fresh("cookie", cookies).filter(tagOk);
+          if (o.min > 0) c = c.filter((x) => cmReach(x) >= o.min);
+          if (!take("main", "cookie", c)) return null;
+        }
+        const pref = o.min > 0 || o.mode != "random" ? 0.9 : 0.35;   // how often a linked partner is preferred
+        const linked = (ty, arr) => (t.main ? fresh(ty, arr).filter((x) => cmLink(t.main, x, ty)) : []);
+        if (free.includes("pet")) { const lp = linked("pet", pets); if (!take("pet", "pet", lp.length && Math.random() < pref ? lp : fresh("pet", pets))) return null; }
+        for (const s of ["t0", "t1", "t2"]) if (free.includes(s)) {
+          const lt = linked("treasure", tres).filter(tagOk);
+          if (!take(s, "treasure", lt.length && Math.random() < pref ? lt : fresh("treasure", tres).filter(tagOk))) return null;
+        }
+        if (free.includes("relay")) {
+          let c = fresh("cookie", cookies);
+          if (o.syn > 0) c = c.filter((x) => { const sy = cmSyn({ ...t, relay: x }); return sy && sy.score >= o.syn; });
+          if (!take("relay", "cookie", c)) return null;
+        }
+        return t;
+      }
+      function cmSearch(free, o) {
+        const tries = o.mode == "random" ? 500 : 700;
+        let best = null, bs = -1;
+        for (let n = 0; n < tries; n++) {
+          const t = cmTry(free, o);
+          if (!t) continue;
+          const ev = cmEval(t);
+          if (ev.active < o.min) continue;
+          if (o.mode == "random") return t;
+          const sc = (o.mode == "bonus" ? 0 : ev.active * 1e9) + ev.total + (ev.syn ? ev.syn.score : 0);
+          if (sc > bs) { bs = sc; best = t; }
+        }
+        return best;
+      }
+      function cmRandomize(free, soft) {
+        free = free || CM_SLOTS.map((s) => s[0]).filter((s) => !(cm.lock[s] && cm.team[s]));
+        if (!free.length) return toast("All slots are locked");
+        if (CM_SLOTS.some(([s]) => !free.includes(s) && cm.lock[s] && !cm.team[s])) cm.lock = {};
+        let t = cmSearch(free, cm.opt);
+        if (!t && soft) t = cmSearch(free, { ...cm.opt, min: 0, syn: 0, mode: "random" });   // single-slot reroll: relax the rules instead of failing
+        if (!t) return toast("No team matches these settings - loosen the filters");
+        CM_SLOTS.forEach(([s]) => { if (t[s]) cm.team[s] = t[s].id; });
+        cmSave(); renderCombi();
+      }
+      // ---- actions used by the buttons
+      function cmOpt(k, v) { cm.opt[k] = k == "min" || k == "syn" ? +v : v; cmSave(); renderCombi(); }
+      function cmPreset(i) { const p = i < 0 ? null : [...CM_PRESETS, ...cm.presets][i]; if (p) cm.opt = { ...cm.opt, ...p.opt }; cmSave(); renderCombi(); }
+      function cmTag(tag) { cm.opt.tag = cm.opt.tag == tag ? "" : tag; cmSave(); renderCombi(); }
+      function cmSavePreset() {
+        const name = (prompt("Name for this preset:") || "").trim();
+        if (!name) return;
+        cm.presets = cm.presets.filter((p) => p.name != name).concat([{ name, opt: { ...cm.opt }, custom: true }]); cmSave(); renderCombi();
+      }
+      function cmDelPreset(name) { cm.presets = cm.presets.filter((p) => p.name != name); cmSave(); renderCombi(); }
+      function cmLock(s) { if (!cm.team[s]) return toast("Pick something first"); cm.lock[s] = !cm.lock[s]; cmSave(); renderCombi(); }
+      function cmRoll(s) { cmRandomize([s], true); }
+      function cmClear() { CM_SLOTS.forEach(([s]) => { if (!cm.lock[s]) delete cm.team[s]; }); cmSave(); renderCombi(); }
+      function cmSet(s, id) { if (id) cm.team[s] = id; else { delete cm.team[s]; delete cm.lock[s]; } cmSave(); closeM(); renderCombi(); }
+      function cmFind(v) { const q = v.toLowerCase().replace(/\s/g, ""); document.querySelectorAll("#cmPick [data-n]").forEach((b) => (b.style.display = b.dataset.n.includes(q) ? "" : "none")); }
+      function cmCopy() {
+        const t = cmTeam(), ev = cmEval(t), n = (x) => (x ? x.name : "-");
+        const txt = [`Main: ${n(t.main)}`, `Relay: ${n(t.relay)}` + (ev.syn && ev.syn.reasons.length ? ` (${ev.syn.reasons.join("; ")})` : ""), `Pet: ${n(t.pet)}`,
+          `Treasures: ${[t.t0, t.t1, t.t2].map(n).join(", ")}`, `Main combos: ${ev.active}/4  ${cmFmt(ev.total)}`,
+          ...ev.links.map((l) => `- ${l.c.name} + ${l.p.name}: ${l.tc || "-"} | ${l.tp || "-"}`)].join("\n");
+        const done = () => toast("Team copied");
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, () => prompt("Copy the team:", txt));
+        else prompt("Copy the team:", txt);
+      }
+      function cmOpen(slot) {
+        const [, label, ty] = CM_SLOTS.find((s) => s[0] == slot), t = cmTeam();
+        const taken = new Set(CM_SLOTS.filter(([s, , y]) => s != slot && y == ty && cm.team[s]).map(([s]) => cm.team[s]));
+        let arr = cmPool(ty).filter((x) => !taken.has(x.id)).map((x) => {
+          let badge = "", rank = 0;
+          if (slot == "main") { const r = cmReach(x); badge = r ? `<span class="cm-b">${r} link${r > 1 ? "s" : ""}</span>` : ""; rank = r; }
+          else if (slot == "relay") { const sy = cmSyn({ ...t, relay: x }); rank = sy ? sy.score : 0; badge = rank ? `<span class="cm-b">synergy ${rank}</span>` : ""; }
+          else { const l = cmLink(t.main, x, ty); rank = l ? 1 : 0; badge = l ? `<span class="cm-b">✔ ${cmFmt(l.value)}</span>` : ""; }
+          return { x, badge, rank };
+        });
+        arr.sort((a, b) => b.rank - a.rank || a.x.name.localeCompare(b.x.name));
+        modal(label, `<input class="cm-find" placeholder="Search…" oninput="cmFind(this.value)"><div class="cm-pick" id="cmPick">${arr.map(({ x, badge }) => `<button class="card r-${x.rarity}" data-n="${cmEsc(x.name.toLowerCase().replace(/\s/g, ""))}" onclick="cmSet('${slot}','${x.id}')"><div class="art">${badge}${cmArt(x, ty)}<span class="nm">${cmEsc(x.name)}</span></div></button>`).join("") || "<p>Nothing to pick yet.</p>"}</div>${cm.team[slot] ? `<button class="btn" style="margin-top:10px" onclick="cmSet('${slot}',null)">Clear this slot</button>` : ""}`);
+      }
+      function renderCombi() {
+        CMLINKS = null;
+        CM_SLOTS.forEach(([s, , ty]) => { if (cm.team[s] && !cmGet(s)) { delete cm.team[s]; delete cm.lock[s]; } });
+        const t = cmTeam(), ev = cmEval(t), o = cm.opt, all = [...CM_PRESETS, ...cm.presets];
+        const tagCount = {};
+        [...cmPool("cookie"), ...cmPool("treasure")].forEach((x) => (x.tags || []).forEach((g) => (tagCount[g] = (tagCount[g] || 0) + 1)));
+        const tags = Object.entries(tagCount).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+        const same = (p) => ["min", "mode", "syn"].every((k) => p.opt[k] == o[k]);
+        const slot = ([s, label, ty]) => {
+          const it = t[s], lk = ev.lk[s], lockd = cm.lock[s];
+          const card = it ? `<button class="card r-${it.rarity}" onclick="cmOpen('${s}')"><div class="art">${cmArt(it, ty)}<span class="nm">${cmEsc(it.name)}</span></div></button>`
+            : `<button class="card cm-empty" onclick="cmOpen('${s}')"><div class="art"><span class="plus">＋</span></div></button>`;
+          let st = '<span class="st" style="visibility:hidden">·</span>';   // keeps the rows aligned
+          if (s == "main" && it) st = `<span class="st ${ev.active ? "ok" : ""}">${ev.active}/4 combos</span>`;
+          if (it && t.main && CM_PARTS.some(([p]) => p == s)) st = lk ? `<span class="st ok">✔ ${cmFmt(lk.value)}</span>` : `<span class="st no">no combo</span>`;
+          if (s == "relay" && it && t.main) st = ev.syn && ev.syn.score ? `<span class="st ok">synergy ${ev.syn.score}</span>` : `<span class="st">no synergy</span>`;
+          return `<div class="cm-slot"><div class="lbl">${label}</div>${card}${st}<div class="ctl"><button class="${lockd ? "on" : ""}" onclick="cmLock('${s}')" title="Lock this slot">${lockd ? "🔒" : "🔓"}</button><button onclick="cmRoll('${s}')" title="Reroll this slot">🎲</button></div></div>`;
+        };
+        const opts = (arr, cur) => arr.map(([v, l]) => `<option value="${cmEsc(v)}" ${String(cur) == String(v) ? "selected" : ""}>${cmEsc(l)}</option>`).join("");
+        const linkHtml = (l, cls) => `<div class="cm-link ${cls || ""}"><b>${cmEsc(l.c.name)} + ${cmEsc(l.p.name)}</b><br>${cmEsc(l.c.name)}: ${cmEsc(l.tc) || "-"}<br>${cmEsc(l.p.name)}: ${cmEsc(l.tp) || "-"}</div>`;
+        const reach = t.main ? `${cmEsc(t.main.name)} can link with ${cmPool("pet").filter((x) => cmLink(t.main, x, "pet")).length} pet(s) and ${cmPool("treasure").filter((x) => cmLink(t.main, x, "treasure")).length} treasure(s) in your data.` : "";
+        $("combi").innerHTML = `
+          <div class="cm-box"><h3>Presets</h3><div class="cm-chips">${all.map((p, i) => `<button class="cm-chip ${same(p) ? "on" : ""} ${p.custom ? "x" : ""}" onclick="cmPreset(${i})">${cmEsc(p.name)}${p.custom ? `<b onclick="event.stopPropagation();cmDelPreset('${cmEsc(p.name).replace(/'/g, "")}')">✕</b>` : ""}</button>`).join("")}</div>
+            <div class="cm-chips" style="margin-top:8px">${tags.slice(0, 8).map(([g, n]) => `<button class="cm-chip ${o.tag.toLowerCase() == g.toLowerCase() ? "on" : ""}" onclick="cmTag('${cmEsc(g)}')">#${cmEsc(g)}<small>${n}</small></button>`).join("")}</div>
+            <div class="cm-opts">
+              <label>Min. main combos<select onchange="cmOpt('min',this.value)">${opts([[0, "any"], [1, "1+"], [2, "2+"], [3, "3+"], [4, "all 4"]], o.min)}</select></label>
+              <label>Mode<select onchange="cmOpt('mode',this.value)">${opts([["random", "Random"], ["combos", "Most combos"], ["bonus", "Highest bonus"]], o.mode)}</select></label>
+              <label>Tag focus<select onchange="cmOpt('tag',this.value)">${opts([["", "any"], ...tags.map(([g]) => [g, "#" + g])], o.tag)}</select></label>
+              <label>Relay synergy ≥<select onchange="cmOpt('syn',this.value)">${opts([[0, "any"], [1, "1"], [2, "2"], [3, "3"]], o.syn)}</select></label>
+            </div></div>
+          <div class="cm-btns"><button class="btn" onclick="cmRandomize()">🎲 Randomize</button><button class="btn" onclick="cmClear()">Clear</button><button class="btn" onclick="cmCopy()">Copy</button><button class="btn" onclick="cmSavePreset()">Save preset</button></div>
+          <div class="cm-slots">${CM_SLOTS.map(slot).join("")}</div>
+          <div class="cm-box"><h3>Main cookie combos</h3><div class="cm-big">${ev.active}/4 active · ${cmFmt(ev.total)}</div>${ev.links.map((l) => linkHtml(l)).join("")}
+            ${t.main ? "" : '<div class="cm-note">Pick a main cookie to see its combos.</div>'}<div class="cm-note">${reach}</div></div>
+          <div class="cm-box"><h3>Relay cookie</h3>${!t.relay ? '<div class="cm-note">Pick any relay cookie - it does not need combos with the pet or treasures.</div>' : !t.main ? '<div class="cm-note">Pick a main cookie to check the synergy.</div>'
+            : ev.syn && ev.syn.reasons.length ? `<div class="cm-big">Synergy ${ev.syn.score}</div>${ev.syn.reasons.map((r) => `<div class="cm-link">${cmEsc(r)}</div>`).join("")}` : '<div class="cm-note">No synergy found (shared tags, shared pet/treasure partners, relationship chart). It still works as a relay.</div>'}
+            ${ev.extra.length ? `<div class="cm-note">Extra: ${cmEsc(t.relay.name)} also links with the team (not counted above):</div>${ev.extra.map((l) => linkHtml(l, "extra")).join("")}` : ""}</div>`;
       }
       $("q").oninput = renderList;
       $("sort").onchange = renderList;

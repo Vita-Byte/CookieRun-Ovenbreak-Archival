@@ -1,0 +1,438 @@
+{
+  "id": "blue-whale",
+  "name": "Blue Whale Cookie",
+  "rarity": "epic",
+  "released": "August 13, 2025",
+  "illust": "images/cookie-illustrations/Img_updateHighlight_blue_whale_wikiver.png",
+  "jelly": {
+    "img": "images/affection-jelly/Blue_whale_jelly.png",
+    "story": "One of her greatest treasures is a small stone given to her by a temple Cookie when she was young."
+  },
+  "img": "images/cookies/Blue_whale_cookie.png",
+  "avatar": "images/cookie-heads/Crob_head_blue_whale.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 172,
+      "desc": "Skill activates every 33 sec\n+14,200 pts for Seadrop Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 181,
+      "desc": "Skill activates every 33 sec\n+21,400 pts for Seadrop Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 190,
+      "desc": "Skill activates every 33 sec\n+28,600 pts for Seadrop Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 199,
+      "desc": "Skill activates every 33 sec\n+35,800 pts for Seadrop Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 208,
+      "desc": "Skill activates every 33 sec\n+43,000 pts for Seadrop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 217,
+      "desc": "Skill activates every 33 sec\n+50,200 pts for Seadrop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 226,
+      "desc": "Skill activates every 33 sec\n+57,400 pts for Seadrop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 235,
+      "desc": "Skill activates every 33 sec\n+64,600 pts for Seadrop Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 244,
+      "desc": "Skill activates every 33 sec\n+71,800 pts for Seadrop Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 253,
+      "desc": "Skill activates every 33 sec\n+79,000 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 262,
+      "desc": "Skill activates every 33 sec\n+86,200 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 271,
+      "desc": "Skill activates every 33 sec\n+93,400 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 280,
+      "desc": "Skill activates every 33 sec\n+100,600 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 289,
+      "desc": "Skill activates every 33 sec\n+107,800 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 298,
+      "desc": "Skill activates every 33 sec\n+115,000 pts for Seadrop Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Enters the ocean at fixed intervals. Schools of sea creatures surrounded in bubbles appear and swim with the Cookie of you pop the bubbles. While swimming with the Cookie, the sea creatures create Seadrop Jellies and help the Cookie swim faster.Level Up for more points for Seadrop Jellies.",
+  "story": "Small ripples spread across the surface of the ocean, growing and growing until they reveal a mountainous figure rising out of the once calm sea... but no need to worry! It's just Blue Whale Cookie, searching for any wandering young ones!\n\nHer large form simply holds her even larger heart, with more than enough room to welcome and embrace any who approach her. She lovingly looks after any young Cookies who come to the Conch's Cradle Nursery, whether they be the beloved youngest of a large family or a lone young one found wandering in the wide, open sea. This caring Cookie's demeanor and teaching methods have filled the Nursery with the joyful laughter of young Cookies.\n\nSome may ask if it ever gets tiring looking after so many young ones, but Blue Whale Cookie simply replies with a calm smile and a reminder that even the smallest memories are formative in young Cookie's development. It seems like she's going to willingly be there to block any harsh waves until the Cookies are ready to go out into the world!!",
+  "quote": "Good morning, little ones!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Good morning, little ones!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Even the youngest Cookies should be respected.",
+            "Today we're planting coral! Follow me, two straight lines!",
+            "Great job! You've earned yourself a special starfish sticker!",
+            "Time to practice swimming amongst the jelly fishes(sic)!",
+            "I know you want to do well, but are you enjoying yourself?",
+            "I hope to make a loving environment for all the little ones!",
+            "Childhood memories are decisive in how a Cookie grows up...",
+            "Children's bubbly laughter is a sign of a happy city!",
+            "Okay, little ones! It's time for a nap!",
+            "The future of Neo Sugarteara is bright!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "I’m sorry… the Nursery is closed…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "I hope you had fun today!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Good morning, little ones! Did I wake you from sweet dreams?",
+            "I'm so happy to see all of you again today!",
+            "I'm happiest when I see all of your smiling faces!",
+            "It makes me so proud to see you grow up healthy and strong!",
+            "I'll lead the way until the day you can confidently swim through the world yourselves!",
+            "Get along with your new friends!",
+            "New little ones come to the Conch's Cradle Nursery each day as Neo Sugarteara continues to grow!",
+            "I'm more than happy so long as I'm able to provide a place for these young Cookies to grow.",
+            "While it may seem like no big deal, it could mean the whole world to a young Cookie!",
+            "May no young Cookie grow up lost and alone... as I once did..."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Thank you... There's really no need to give me anything, I'd rather you give presents to the little ones..."
+            },
+            {
+              "label": "Given <u>Stuffed Whale</u>",
+              "text": "I sleep with this right next to my head."
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "This glimmers like the eyes of the young Cookies...!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Little ones, today we'll be practicing running!",
+            "Don't be afraid. We can start out slow!",
+            "Don't be afraid. I'm here with you!",
+            "Let's try this one step at a time!",
+            "Keep trying!",
+            "See, this isn't scary at all!"
+          ]
+        },
+		{
+          "title": "New Cookie Cup End",
+          "lines": [
+            "Great job! Take a sticker."
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+300 for Seadrop Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+600 pts for Seadrop Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Sorbet Shark Cookie",
+      "id": "sorbet-shark",
+      "text": "I occasionally swam alongside them in their previous form. It's wonderful to see they've achieved what they always hoped to.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Abyss Monarch Cookie",
+      "id": "abyss-monarch",
+      "text": "You taught me how to put others first. I do hope you'll value yourself more now...",
+      "type": "Trust"
+    },
+    {
+      "who": "Chestnut Cookie",
+      "id": "chestnut",
+      "text": "Young Cookies should not grow up bearing such heavy burdens...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Lobster Cookie",
+      "id": "lobster",
+      "text": "You taught me how to protect something with all of my might.",
+      "type": "Trust"
+    },
+    {
+      "who": "Mocha Ray Cookie",
+      "id": "mocha-ray",
+      "text": "You taught me how to unwaveringly believe in something, regardless of what may happen...",
+      "type": "Trust"
+    },
+    {
+      "who": "Starch Noodle Cookie",
+      "id": "starch-noodle",
+      "text": "I should be more firm with the young ones' mistakes, just like you.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Pond Dino Cookie",
+      "id": "pond-dino",
+      "text": "You are who you are. It does not matter what any other Cookie says of you.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Electric Eel Cookie",
+      "id": "electric-eel",
+      "text": "You taught me how to smile through even the hardest times.",
+      "type": "Trust"
+    },
+    {
+      "who": "Cream Ferret Cookie",
+      "id": "cream-ferret",
+      "text": "It makes me so happy to see the little ones growing up happily and healthily!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Strawberry Crepe Cookie",
+      "id": "strawberry-crepe",
+      "text": "Even if you grow up, I will always be ready to give you a hug!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Blue Whale Cookie",
+      "img": "images/cookies/Blue_whale_cookie.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Sweet Summer Dreams",
+	  "img": "images/costumes/cookie/Sweet_summer_dreams.png",
+	  "illust": "images/costume-illustrations/Img_skinIllust_427201.png",
+	  "bonus": "+600 pts for Seadrop Jellies",
+	  "released": "August 13, 2025",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "I can't choose between ice cream and shaved ice!",
+                "The beach, the waves... It really feels like vacation.",
+                "It's been a while since I had some alone time. It's nice, but lonely...",
+                "I'd love to bring the little ones from the Nursery here.",
+                "I hope my students are doing well...",
+                "Childhood memories are decisive in how a Cookie grows up...",
+                "The future of Neo Sugarteara is bright!",
+                "Even the youngest Cookies should be respected.",
+                "Children's bubbly laughter is a sign of a happy city!",
+                "I hope to make a loving environment for all the little ones!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Vacation's over...?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Don’t forget to rest over the break!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "I got ahead of my work at the Nursery so that I could relax and be at ease.",
+                "I'm always overjoyed to meet the nursery Cookies over summer break! I could give them all a huge hug.",
+                "Vacation is always a fun time even for the adult Cookies!",
+                "The crowds on the beach really makes it feel like vacation.",
+                "I'll find a nice sun bed with a view of the sea.",
+                "What a beautiful sunset. It makes me want to cruise along the horizon as a whale.",
+                "I bought some shaved ice! I got a large so I can share with the little ones.",
+                "If you're hungry, we could buy Jelly Skewers from the night marker nearby.",
+                "The Jelly Skewers weren't enough... I ate all the skewers at the stand, but I'm still hungry.",
+                "Oh no, there's a little one crying...! Have they lost their family? I'd better help them out..."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "I'm sure another Cookie on the beach will need this more than I do."
+                },
+                {
+                  "label": "Given <u>Stuffed Whale</u>",
+                  "text": "I'd love to keep this with me even as I swim through the sea."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "It's like the blinding sun shining down on the beach."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+	  "info": "Summer vacation is as much for the teachers as it is for the little ones! Blue Whale Cookie's closed the Nursery for a few days to take a well-deserved vacation to the beach, where she sunbathes, reads, and swims to her heart's content... While part of her wishes this vacation could continue forever, her eyes can't help but be drawn to the young Cookies playing and enjoying their own vacation at the seaside."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "lil-krill",
+      "desc": "+111,000 pts for Seadrop Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "seahorse-watergun",
+      "desc": "+50,000 Bubble Points"
+    }
+  ],
+  "candy": {
+    "name": "Blue Whale Cookie's Magic Candy",
+    "img": "images/magic-candy/Candy0272_l.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Skill activates every 11 sec\n+3,000 pts for Seadrop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Skill activates every 11 sec\n+14,000 pts for Seadrop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Skill activates every 11 sec\n+25,000 pts for Seadrop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Skill activates every 11 sec\n+36,000 pts for Seadrop Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Skill activates every 11 sec\n+47,000 pts for Seadrop Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+	"ingredient": {
+      "name": "Stuffed Whale",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_blue_whale.png",
+	  "text": "A stuffed whale that a young Cookie made by hand, stitch by stitch, as a gift for their teacher. She's certain to treasure it no matter how old or worn it gets."
+    },
+    "skillFull": "A great Blue Whale appears at fixed intervals, letting off a spout of water. The spout leaved behind Seadrop Jellies. The stronger the enchanted power, the more points for Seadrop Jellies.",
+    "emoji": "🍬"
+  }
+}

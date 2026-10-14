@@ -10,6 +10,9 @@ Usage:
 
 Options:
     --file page.html   parse a saved copy of the main page instead of downloading it
+    --fandom           don't use cookierun.wiki: read the Fandom page you saved as .cache/<name>.html (e.g. blue_whale.html for
+                       "Blue Whale Cookie") - works for cookies, pets and treasures; nothing is downloaded for the main page.
+                       Costume pages saved as .cache/fandom_<Costume_Name>.html are used for costume quotes.
     --refresh          ignore the .cache/ folder and download again
     --force            overwrite an existing entry file in database/
     --debug            also write .cache/<page>.blocks.txt (what the script "saw") - send me that if a section comes out empty
@@ -100,7 +103,10 @@ class Doc(HTMLParser):
             if a.get("id") == "mw-content-text" and s.cstart is None: s.cstart = len(s.stack)
         if not s.live: return
         if tag == "br": s.top()["t"] += "\n"; return
-        if tag == "img": s.top()["im"].append((a.get("alt", ""), a.get("src") or a.get("data-src") or "")); return
+        if tag == "img":
+            src = a.get("src") or ""
+            if not src or src.startswith("data:"): src = a.get("data-src") or ""  # Fandom lazy-loads: src is a tiny placeholder, data-src is the real file
+            s.top()["im"].append((a.get("alt", ""), src)); return
         if tag in ("b", "strong"): s.bold = []
         elif tag == "a": s.alink = [a.get("href", ""), ""]
         elif tag == "table": s.flush(); s.tables.append({"rows": [], "row": None})
@@ -181,6 +187,9 @@ def slug(s):
 
 def full(src):
     if src.startswith("//"): src = "https:" + src
+    # Fandom: .../images/a/ab/File.png/revision/latest/scale-to-width-down/200?cb=...  ->  .../images/a/ab/File.png/revision/latest
+    m = re.match(r"(https?://static\.wikia\.nocookie\.net/.+?/images/\w/\w\w/[^/?#]+)/revision/.*$", src)
+    if m: return m.group(1) + "/revision/latest"
     m = re.match(r"(https?://[^?#]*?/images)/thumb/(\w/\w\w/[^/]+)/[^/]+$", src)
     return f"{m.group(1)}/{m.group(2)}" if m else src
 
@@ -604,7 +613,7 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     rd = next(iter(paras(rel) or [c["t"] for b in rel for c in cells(b) if c["t"]]), "")
     e["released"] = re.sub(r"\s*\(.*?\)", "", rd).strip()
     rep.append(("release date", bool(e["released"])))
-    base = next((full(s) for b in gal + bl[:40] for c in cells(b) for a, s in c["im"] if s and a.strip().lower() == "base sprite"), "")  # older cookies: sprite is not named Crob_standard_*
+    base = next((full(s) for b in gal + bl[:40] for c in cells(b) for a, s in c["im"] if s and a.strip().lower() in ("base sprite", "standard")), "")  # Fandom labels the sprite tab "Standard"; older cookies: sprite is not named Crob_standard_*
     plain = next((u for u in imgs(bl[:25]) if not rarity_of_src(u) and "_costume" not in u.lower() and not any(x in u.lower() for x in ("icon", "_head_", "rarit"))), "")
     e["img"] = first_img(bl[:25], "crob_standard_") or base or plain
     if kind == "cookie":
@@ -621,6 +630,7 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
     _, jl = sect(bl, r"affection jelly")
     if kind == "cookie" and (jl or gal):
         e["jelly"] = {"img": first_img(jl + gal, "affection_jelly"), "story": " ".join(paras(jl))}
+        if not e["jelly"]["img"]: e["jelly"]["img"] = next((u for u in imgs(jl) if "icon" not in u.lower()), "")  # Fandom: file is named after the jelly, not Affection_jelly_*
     lts, cand = level_tables(bl), None
     enh_t = next((x for x in lts if x[0]["rows"] and any("enhanced effect" in c["t"].lower() for c in x[0]["rows"][0])), None) if kind == "treasure" else None
     if kind == "cookie":
@@ -637,7 +647,7 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
         cd = {}
         if cand:
             lv, desc = read_levels(cand[0], cand[1], False)
-            cd["img"] = first_img([cand[0]], "magic_candy", avoid=("ingredient",)) or first_img(bl, "magic_candy_", avoid=("ingredient",))
+            cd["img"] = first_img([cand[0]], "magic_candy", avoid=("ingredient",)) or first_img(bl, "magic_candy_", avoid=("ingredient",)) or first_img([cand[0]], "candy", avoid=("ingredient", "blessing"))
             first = None
             if len(lv) == 1 and lv[0]["lv"] == ref["n_cand"]:
                 first, why = candy_from_top(lv[0], ref["n_cand"], e["rarity"], e["id"])
@@ -665,7 +675,7 @@ def extract(kind, bl, title, name, gal, cbl, qbl, ref):
         e["affection"] = [dict(a) for a in ref["aff3"]] + sorted((a for a in aff if a["n"] not in got), key=lambda a: a["n"])
         if not ref["aff3"]: NOTES.append("first 3 affection tiers not found in your cookies.js, so they were left out")
         rep.append(("affection", bool(aff)))
-        _, rc = sect(bl, r"^relationship chart$")
+        _, rc = sect(bl, r"^relationship charts?$")
         rels = []
         for b in lead(rc):
             if b["k"] != "li": continue
@@ -894,8 +904,29 @@ def fandom_costume_quotes(e, refresh):
         NOTES.append(f"costume quotes for '{c['name']}' taken from Fandom ({', '.join(secs)})" + ("; no separate Tired section there, so check whether one of the General lines belongs in a Tired section" if "Tired" not in secs else ""))
 
 
+def find_cached_fandom(name):
+    """A Fandom page you saved in .cache/ yourself, named after the entry: "Blue Whale Cookie" -> blue_whale.html
+    (also accepts blue_whale_cookie.html and fandom_Blue_Whale.html; case and punctuation do not matter).
+    Only files that really are Fandom pages are used - a cookierun.wiki page cached by this tool is ignored here.
+    Returns (path, html) or ("", "")."""
+    if not os.path.isdir(CACHE): return "", ""
+    norm = lambda s: re.sub(r"[^a-z0-9]+", "_", s.lower()).strip("_")
+    short = re.sub(r"\s+cookie$", "", name.strip(), flags=re.I)
+    want = {norm(name), norm(short), norm(short + " cookie")}
+    for fn in sorted(os.listdir(CACHE)):
+        if not fn.lower().endswith(".html"): continue
+        stem = norm(fn[:-5])
+        if stem.startswith("fandom_"): stem = stem[7:]
+        if stem not in want: continue
+        path = os.path.join(CACHE, fn)
+        try: html = open(path, encoding="utf-8", errors="replace").read()
+        except OSError: continue
+        if re.search(r"fandom\.com|wikia\.(?:com|nocookie)", html[:200000], re.I): return path, html
+    return "", ""
+
+
 def main():
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    args =[a for a in sys.argv[1:] if not a.startswith("--")]
     flags = [a for a in sys.argv[1:] if a.startswith("--")]
     fi = sys.argv.index("--file") if "--file" in sys.argv else -1
     if fi >= 0 and fi + 1 < len(sys.argv): args = [a for a in args if a != sys.argv[fi + 1]]
@@ -904,8 +935,15 @@ def main():
     kind, name = args[0], args[1]
     refresh, debug = "--refresh" in flags, "--debug" in flags
     base = name if "/OvenBreak" in name else name + "/OvenBreak"
-    html, used = None, base
+    html, used, local = None, base, fi >= 0
+    fpath, fhtml = ("", "") if fi >= 0 or "--fandom" not in flags else find_cached_fandom(name)
+    if "--fandom" in flags and fi < 0 and not fhtml:
+        want = re.sub(r"[^a-z0-9]+", "_", re.sub(r"\s+cookie$", "", name.strip(), flags=re.I).lower()).strip("_")
+        print(f"--fandom: no saved Fandom page for '{name}'. Save the page (browser: Save Page As, HTML only) as {os.path.relpath(CACHE, ROOT)}/{want}.html and run again."); return 1
     if fi >= 0: html = open(sys.argv[fi + 1], encoding="utf-8").read()
+    elif fhtml:
+        html, local = fhtml, True  # a saved Fandom page: read it as the main page, no downloads (its tabs are all on one page)
+        print(f"  using your saved Fandom page: {os.path.relpath(fpath, HERE)}")
     else:
         for t in ([base] if kind == "cookie" else [base, name]):
             try: html = fetch(t, refresh)
@@ -916,7 +954,7 @@ def main():
     bl, title = parse(html)
     if debug: os.makedirs(CACHE, exist_ok=True); dump(bl, os.path.join(CACHE, "main.blocks.txt"))
     sub = {}
-    if fi < 0:
+    if not local:
         for s in (["Gallery", "Costumes", "Quotes"] if kind == "cookie" else ["Costumes"] if kind == "pet" else []):
             try: h = fetch(used + "/" + s, refresh)
             except Exception as ex: h = None; print(f"  ! {s}: {ex}")
@@ -924,7 +962,8 @@ def main():
             if debug and sub[s]: dump(sub[s], os.path.join(CACHE, s.lower() + ".blocks.txt"))
             if not h: print(f"  (no {s} subpage)")
     e, rep = extract(kind, bl, title, name, sub.get("Gallery", []), sub.get("Costumes", []), sub.get("Quotes", []), reference())
-    if kind == "cookie" and fi < 0: costume_quote_fallbacks(e, refresh)
+    if kind == "cookie" and not local: costume_quote_fallbacks(e, refresh)
+    elif kind == "cookie" and fhtml: fandom_costume_quotes(e, refresh)  # costume pages saved as .cache/fandom_<Costume_Name>.html are used
     folder = os.path.join(ROOT, "database", FOLDER[kind])
     path = os.path.join(folder, e["id"] + ".json") if os.path.isdir(folder) else os.path.join(OUT, f"{kind}-{e['id']}.json")
     if os.path.exists(path) and "--force" not in flags:

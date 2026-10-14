@@ -1,0 +1,451 @@
+{
+  "id": "cappuccino",
+  "name": "Cappuccino Cookie",
+  "rarity": "epic",
+  "released": "August 11, 2023",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/d/df/Updatehighlight_cappuccino_cookie.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/b0/Crob_affection_jelly_cappuccino.png",
+    "story": "Whenever feeling worn out, it pins its desired travel destination on the world map."
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/da/Crob_standard_creamy_cappuccino.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/f/f7/Crob_head_cappuccino.png",
+  "tags": [
+    "Speed",
+    "Score",
+    "Jellies",
+    "SpecialControl"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 182,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+690,000 Evidence Points\n+300,000 Verdict Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 191,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+805,000 Evidence Points\n+350,000 Verdict Points",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 200,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+920,000 Evidence Points\n+400,000 Verdict Points",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 209,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,035,000 Evidence Points\n+450,000 Verdict Points",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 218,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,150,000 Evidence Points\n+500,000 Verdict Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 227,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,265,000 Evidence Points\n+550,000 Verdict Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 236,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,380,000 Evidence Points\n+600,000 Verdict Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 245,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,495,000 Evidence Points\n+650,000 Verdict Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 254,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,610,000 Evidence Points\n+700,000 Verdict Points",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 263,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,725,000 Evidence Points\n+750,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 272,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,840,000 Evidence Points\n+800,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 281,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+1,955,000 Evidence Points\n+850,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 290,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+2,070,000 Evidence Points\n+900,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 299,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+2,185,000 Evidence Points\n+950,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 308,
+      "desc": "Evidence Jellies appear every 5.2 sec\nSkill activation after collecting 6 Evidence Jellies\n+500,000 pts for Evidence Jellies\n+2,300,000 Evidence Points\n+1,000,000 Verdict Points",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "When you collect a certain number of Evidence Jellies, you will enter a courtroom. Once in the courtroom, a board will appear where you can submit the evidence collected. Adjust your jump according to the height of the boards and tap the button to attach the evidence. Once all boards have been attached with evidence, the judge will examine the evidence and make a ruling. The higher the level, the higher the Evidence Points and Verdict Points.",
+  "story": "From the Bear Jelly over consumption incident to the art theft at the Hors d'Oeuvre Museum, all the century's major criminal cases have been handled by none other than the veteran prosecutor, Cappuccino Cookie!\n\nThough he's a veteran beyond doubt, he constantly mumbles about being tired. However, Cappuccino Cookie's commitment to justice remains unwavering, evident when he tirelessly stacks cappuccino-filled cups while interrogating suspects throughout the night.\n\nOnce the trials are over, he plans on going on vacation and this is why he wears a vacation shirt underneath his robe. But when will that day truly come?!",
+  "quote": "I wish all Cookies were good... I could use a break.",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "I wish all Cookies were good... I could use a break."
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "Yeah, yeah... See you in court.",
+            "Even with all this evidence, are you still going to deny it?",
+            "You should start admitting the crime you committed.",
+            "It doesn't hurt to be nice and honest to one another, you know?",
+            "It is my job to make justice prevail.",
+            "Once this trial is over, I'm definitely taking a vacation...!",
+            "The list of vacation destinations just keeps getting longer...",
+            "Facing consequences for wrongdoing is common sense, right?",
+            "I stayed up all night, again...",
+            "Since the trial tomorrow is crucial, there's nothing I can do about it."
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "I need a vacation..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "Something to make your day!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "With all the cappuccino cups I've had, I could build a courthouse pillar.",
+            "A question I ask to every new prosecutor: What do you think justice is?",
+            "I tried to cut down on coffee, but I just can't resist...!",
+            "I put the documents somewhere in the office... it's like finding a needle in a haystack...",
+            "I have a lot of memorable trials. Not all are pleasant memories, though...",
+            "Once I retire, I might consider working part-time at my favorite café...",
+            "Looks like pulling an all-nighter is something I can't do anymore...",
+            "Hey, how did that case go?",
+            "It's not like I want to keep taking on cases without a break, you know.",
+            "I feel the proudest when bad Cookies pay for their crimes."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "I don't accept bribes."
+            },
+            {
+              "label": "Given <u>Well-Ironed Robe</u>",
+              "text": "Ironing is like a pre-trial ritual."
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "The scales of justice will gleam brightly, just like this clear golden light."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "Where is that file?! The trial is tomorrow!",
+            "This might be harder than you think!",
+            "Are you staying up all night, too? How about a cup of cappuccino then?",
+            "Remember, this job can get very draining.",
+            "Let's keep in mind that we work for justice.",
+            "Don't burn yourself out by working too hard from the start."
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+12,000 pts for Evidence Points"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+24,000 pts for Evidence Points"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Cherry Cookie",
+      "id": "cherry",
+      "text": "Cherry Bombs... Not on my watch.",
+      "type": "Tension"
+    },
+    {
+      "who": "Adventurer Cookie",
+      "id": "adventurer",
+      "text": "You do know the penalty for artifact vandalism, don't you?",
+      "type": "Tension"
+    },
+    {
+      "who": "Roguefort Cookie",
+      "id": "roguefort",
+      "text": "I've been waiting for the day to put you on trial!",
+      "type": "Tension"
+    },
+    {
+      "who": "Melon Bun Cookie",
+      "id": "melon-bun",
+      "text": "Life is tough, huh?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Dr. Bones Cookie",
+      "id": "dr-bones",
+      "text": "The Cookie I visit whenever I feel like my dough is flowing with cappuccino!",
+      "type": "Trust"
+    },
+    {
+      "who": "Almond Cookie",
+      "id": "almond",
+      "text": "This Cookie is hands down the one who truly embodies and practices justice!",
+      "type": "Trust"
+    },
+    {
+      "who": "Longan Dragon Cookie",
+      "id": "longan-dragon",
+      "text": "Plotting to crumble numerous Cookies would undoubtedly carry a severe sentence!",
+      "type": "Tension"
+    },
+    {
+      "who": "Pizza Cookie",
+      "id": "pizza",
+      "text": "Isn't it against labor laws to deliver pizza even late at night?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Langue de Chat Cookie",
+      "id": "langue-de-chat",
+      "text": "A sincere legal Cookie respects their opponent, no matter who they are.",
+      "type": "Trust"
+    },
+    {
+      "who": "Coffee Cookie",
+      "id": "coffee",
+      "text": "She knows every Cookie's taste in coffee.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Sauna Egg Cookie",
+      "id": "sauna-egg",
+      "text": "There's nothing like a warm bath after pulling an all-nighter...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Caramel Choux Cookie",
+      "id": "caramel-choux",
+      "text": "So young and full of dreams. I respect her passion and hard work.",
+      "type": "Friendly"
+    },
+    {
+      "who": "Latte Cookie",
+      "id": "latte",
+      "text": "Cappuccinos are better than lattes. I prefer the rich flavor of coffee over soft, foamy milk.",
+      "type": "Tension"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Cappuccino Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/da/Crob_standard_creamy_cappuccino.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Sunburnt Surfer",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/68/Sunburnt_surfer.png",
+      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/5/53/Img_skinIllust_422701.png",
+      "bonus": "+24,000 Evidence Points",
+      "released": "August 11, 2023",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "How nice it would be if everyone just admitting to their wrongdoings.",
+                "Okay, now... Forget about work and focus on resting...",
+                "Finally... Some time off...",
+                "Empty your mind before refilling again.",
+                "Lie down in a hammock and play the ukulele!",
+                "Justice lives within all of us.",
+                "A nap under the palm tree... Now, that's a paradise on Earthbread!",
+                "It is my job to make justice prevail.",
+                "Yeah, yeah... See you in court.",
+                "It doesn't hurt to be nice and honest to one another, you know?"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Sigh... I don't want to go to work..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "I worked hard, so I deserve to play hard!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Coming here after finishing a major trial is a great feeling!",
+                "Focus on the present.",
+                "This pineapple surfboard is custom made!",
+                "You need to have a hobby to endure daily life!",
+                "I haven't been on a vacation in a long time.",
+                "The time has come to show my vacation shirt hiding under my robes!",
+                "Ah, look at the waves... Let's go surfing!",
+                "I fell asleep on the sunbed, and now I'm sunburnt...",
+                "I need to enjoy my time off while I can. Maybe I'll go yachting tomorrow.",
+                "I feel recharged when I sit by the ocean at night and gaze up at the stars..."
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Evidence, is it...? I'll take a look after my vacation."
+                },
+                {
+                  "label": "Given <u>Well-Ironed Robe</u>",
+                  "text": "I feel well-rested! Now, back to work."
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "How luxurious! This welcome gift is nice."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "Under the blazing sun, this sunburnt Cookie is brimming with energy like never before! It's Cappuccino Cookie, and he is finally on the long-awaited vacation he has been dreaming of. Riding the waves, enjoying the cool waters, and when he gets tired, he returns to the beach to indulge in a refreshing nap. Be it at work or on vacation—Cappuccino Cookie remains fully committed to the present moment!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "creamy-cappuccino",
+      "desc": "+3,100,000 Evidence Points"
+    },
+    {
+      "type": "treasure",
+      "id": "bearstone-ring",
+      "desc": "+3,300 pts for Yellow Bear Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Cappuccino Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/f/fb/Crob_magic_candy_cappuccino.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Creates Verdict Jellies on ruling\n+88,000 pts for Verdict Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Creates Verdict Jellies on ruling\n+121,000 pts for Verdict Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Creates Verdict Jellies on ruling\n+154,000 pts for Verdict Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Creates Verdict Jellies on ruling\n+187,000 pts for Verdict Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Creates Verdict Jellies on ruling\n+220,000 pts for Verdict Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Well-Ironed Robe",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a5/Crob_magic_candy_ingredient_cappuccino.png",
+	  "text": "A well-tailored and neatly ironed robe appears to reveal the Cookie's mindset for going into the courtroom."
+    },
+    "skillFull": "When the judge makes a ruling, Verdict Jellies are created with each gavel strike. The stronger the enchanted power, the more points for Verdict Jellies.",
+    "emoji": "🍬"
+  }
+}

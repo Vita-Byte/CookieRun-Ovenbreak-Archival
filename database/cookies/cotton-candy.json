@@ -1,0 +1,519 @@
+{
+  "id": "cotton-candy",
+  "name": "Cotton Candy Cookie",
+  "rarity": "epic",
+  "released": "February 13, 2019",
+  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
+  "jelly": {
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8f/Crob_affection_jelly_cotton_candy.png",
+    "story": "This little bottle is filled with future words of love!"
+  },
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/2/2a/Crob_head_cotton_candy.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 169,
+      "desc": "Skill activation every 6.5 sec\n+35,400 pts for Cotton Candy Jellies\n+118,000 pts for Loving Heart Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 178,
+      "desc": "Skill activation every 6.5 sec\n+39,300 pts for Cotton Candy Jellies\n+131,000 pts for Loving Heart Jellies",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 187,
+      "desc": "Skill activation every 6.5 sec\n+43,200 pts for Cotton Candy Jellies\n+144,000 pts for Loving Heart Jellies",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 196,
+      "desc": "Skill activation every 6.5 sec\n+47,100 pts for Cotton Candy Jellies\n+157,000 pts for Loving Heart Jellies",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 205,
+      "desc": "Skill activation every 6.5 sec\n+51,000 pts for Cotton Candy Jellies\n+170,000 pts for Loving Heart Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 214,
+      "desc": "Skill activation every 6.5 sec\n+54,900 pts for Cotton Candy Jellies\n+183,000 pts for Loving Heart Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 223,
+      "desc": "Skill activation every 6.5 sec\n+58,800 pts for Cotton Candy Jellies\n+196,000 pts for Loving Heart Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 232,
+      "desc": "Skill activation every 6.5 sec\n+62,700 pts for Cotton Candy Jellies\n+209,000 pts for Loving Heart Jellies",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 241,
+      "desc": "Skill activation every 6.5 sec\n+66,600 pts for Cotton Candy Jellies\n+222,000 pts for Loving Heart Jellies",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 250,
+      "desc": "Skill activation every 6.5 sec\n+70,500 pts for Cotton Candy Jellies\n+235,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 259,
+      "desc": "Skill activation every 6.5 sec\n+74,400 pts for Cotton Candy Jellies\n+248,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 268,
+      "desc": "Skill activation every 6.5 sec\n+78,300 pts for Cotton Candy Jellies\n+261,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 277,
+      "desc": "Skill activation every 6.5 sec\n+82,200 pts for Cotton Candy Jellies\n+274,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 286,
+      "desc": "Skill activation every 6.5 sec\n+86,100 pts for Cotton Candy Jellies\n+287,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 295,
+      "desc": "Skill activation every 6.5 sec\n+90,000 pts for Cotton Candy Jellies\n+300,000 pts for Loving Heart Jellies",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Writes love letters at certain intervals. Failed letters are thrown away to destroy obstacles, creating Cotton Candy Jellies. After five attempts, Cotton Candy Cookie writes a love letter successfully and calls upon a Post Pigeon to help her fly and deliver the letter to a postbox. Once the letter is placed in the postbox, the Post Pigeon leaves behind a Loving Heart Jelly. Level Up for more points for Cotton Candy Jellies and Loving Heart Jellies.",
+  "story": "Cotton Candy Cookie is made from the sweetest of sugars and undoubtedly has the highest level of sugar among the Cookies. With such a saccharine heart, no wonder she's always in love! Cotton Candy Cookie spends all her days writing love letters but ends up throwing away more than she sends. Her goal is not to reveal her feelings to her beloved one but to cherish each moment of being in love. Cookies often joke that Cotton Candy Cookie sends way too many letters, but the truth is that everyone secretly wishes for one: what's inside the envelope is so very sweet!",
+  "quote": "Oh, I'm so in love...!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Oh, I'm so in love...!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "My love is like a hole I want to fall into... No!",
+            "The fragrance of your dough is divine... Um.",
+            "Your eyes are like two shiny Coins... Are they?",
+            "Oh, how I miss you... Um?",
+            "My heart is only yours... Nah!",
+            "My heart longs for... Not good enough!",
+            "All my Jellies are yours... No, no, no!",
+            "When I see your... Oh my!",
+            "Your voice is sweet as syrup... Um.",
+            "You are the one Cookie for me... Are you?",
+            "Oh no! The spelling... No, no!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "And... I! Will always! No, no..."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "From Cotton Candy Cookie, with love!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "And I will always... Huh, what?",
+            "If there is a key to your heart it is... NO, NO!",
+            "Your profile is so flat... Ah!",
+            "Will you ever receive my letter...?",
+            "It was love at first sight... Ah...",
+            "Can I be frank with you...?",
+            "Ah! I'm already in love..."
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Thank you..."
+            },
+            {
+              "label": "Given <u></u>",
+              "text": "Your voice is sweeter than candy... Ah!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "Royal Golden Dough! I can feel the love!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "I wish I were your relay... Hm...",
+            "We’d make a great combi toge... Oh, no!",
+            "My love shall crush all obstacles... Oh!",
+            "Oh, how I want to run with... Ah.",
+            "Ah, you..! The Cookie from my dreams...",
+            "Let's go on a date! Oh, no, no, no!"
+          ]
+        },
+        {
+          "title": "New Cookie Cup End",
+          "lines": [
+            "All my Jelly points are yours... Wait, no!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+750 pts for Cotton Candy Jellies"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+1,500 pts for Cotton Candy Jellies"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Pink Choco Cookie",
+      "id": "pink-choco",
+      "text": "Your Love Virus is always in my heart...Oh!",
+      "type": "Trust"
+    },
+    {
+      "who": "Cherry Blossom Cookie",
+      "id": "cherry-blossom",
+      "text": "Your tea is the best in the whole world...Hm!",
+      "type": "Trust"
+    },
+    {
+      "who": "Space Doughnut",
+      "id": "space-doughnut",
+      "text": "Oh no...I can't write in alien languages! Ah...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Cherry Ball Cookie",
+      "id": "cherry-ball",
+      "text": "The way you always give your best...! I think I'm falling for… Wait...",
+      "type": "Friendly"
+    },
+    {
+      "who": "White Ghost Cookie",
+      "id": "white-ghost",
+      "text": "I love how you're always there for... No no...",
+      "type": "Friendly"
+    },
+    {
+      "who": "Lilybell Cookie",
+      "id": "lilybell",
+      "text": "I know she's nice to everyone, but maybe... Could this be...?",
+      "type": "Friendly"
+    },
+    {
+      "who": "Cappuccino Cookie",
+      "id": "cappuccino",
+      "text": "If you could prosecute the Cookies who stole my heart... No!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Strawberry Stick Cookie",
+      "id": "strawberry-stick",
+      "text": "I respect your contagious positive attitude... No, something else!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mint Wafer Cookie",
+      "id": "mint-wafer",
+      "text": "You think I'd make a good lyricist? That's so nice of you... I think I'm in... No, no!",
+      "type": "Friendly"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Cotton Candy Cookie",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Punkromantic Fashion Show Model",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d5/Punkromantic_Fashion_Show_Model.png",
+      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e2/Img_skinIllust_406602.png",
+      "bonus": "+1,500 pts for Cotton Candy Jellies",
+      "released": "February 28, 2023",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Love is romantic and sometimes... punky...?",
+                "Does the runway lead to your heart...? No... that's not it...",
+                "My love is like a hole I want to fall into... No!*",
+                "The fragrance of your dough is divine... Um.*",
+                "My heart is only yours... No, no...!",
+                "My heart longs for... Not good enough!*",
+                "I wish to be as confident as a model when I'm with you... Hmm!",
+                "This isn't a love letter, but a chain letter... No!",
+                "Both happiness and sadness coexist in love... but...",
+                "You are the one Cookie for me... Are you?*"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Must confess my love..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "I wish I could express my feelings for you...!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "*Sigh...* Please don't take my love so lightly...",
+                "I'm here because I wanted to meet you... Um.",
+                "Will there be a stage just for the two of us?",
+                "If you think this is just an ordinary love letter, well... it's not...",
+                "Whatever style I change into, my love for you will never change... Huh?",
+                "The runway may be short, but my love runs forever... No!",
+                "I need to finish this letter before the fashion show...",
+                "The fashion show is about to begin?! Oh, no! My letter isn't done...",
+                "Two very different brands has met together... It sounds much like falling in love!",
+                "An invitation to the fashion show... Is it like a love letter?"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Is this for a model...?"
+                },
+                {
+                  "label": "Given <u></u>",
+                  "text": "Catching your glance is like eating a cotton candy... Ah!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "Brighter than the runway lights and beautiful like your eyes...!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "\"Can rock-and-roll be lovely too? If you answered yes, you understood this fashion show perfectly. Cotton Candy Cookie's dress is rich in blueberry lace, and the velvet choco heart decoration brings out the charm of the whole look. Rumor has it that VIPs will each receive a special letter...\" - Cogue Magazine"
+    },
+    {
+      "name": "Chuseok Greetings",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/6b/Chuseok_greetings.png",
+      "bonus": "+750 pts for Cotton Candy Jellies",
+      "released": "September 25, 2025",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Today, I am the messenger for so many hearts! Hehe!",
+                "Even during Chuseok, my feelings for you are unchanged... No, not enough.",
+                "My love is like a hole I want to fall into... No!*",
+                "The fragrance of your dough is divine... Um.*",
+                "Until you return from home, I will be waiting here forever and... Hm...",
+                "Oh, how I miss you... Um?*",
+                "My heart is only yours... No, no...!*",
+                "The feelings in my heart... Oh! Wait, this isn't my letter!",
+                "All my Jellies are yours... No, no, no!*",
+                "Hello! You have a letter? May I read it for you? REALLY?!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "I wish you have a good Chuseok... Should I write more?"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "I wish these heartfelt letters reach everyone they're meant for!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "Cookies receiving heartfelt letters, written with care... How beautiful!",
+                "I wish everyone gets to go home for Chuseok... Yes, that would be very nice!",
+                "Maybe one day... I'll get a bunch of replies to my letters too...",
+                "I think... making a mistake is worse than losing the letter...",
+                "When I give you this letter, I'm also giving you my heart... hehe!",
+                "Need to write this letter with care, just like making songpyeon... Ah!",
+                "So many letters to deliver... The responsibility is heavy!",
+                "I'll make sure the letter reaches its destination! No slip-ups!",
+                "You entrusted your letters to me because you believe in me... Hehe!",
+                "Delivering letters is just as exciting as writing them!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "Oh, I think you have the wrong address..."
+                },
+                {
+                  "label": "Given <u></u>",
+                  "text": "Love fills you up more than any holiday feast ever could... Hehe!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "It's just like someone's face lighting up when they're going home!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "epic",
+      "info": "Cotton Candy Cookie always gives her best when it comes to sharing her heart. This Chuseok, she has decided to help other Cookies deliver their messages, especially those who struggle to express their feelings! Anyone who is unable to visit home for the holidays can ask her for a rainbow rice cake scroll to write a message, and she'll wait by the village gate to make sure it's delivered to the right Cookie. Thank you, Cotton Candy Cookie, for make sure these precious letters reach their destination...!"
+    },
+    {
+      "name": "Love Messenger",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/68/Love_Messenger.png",
+      "bonus": "+350 pts for Cotton Candy Jellies",
+      "released": "February 13, 2019",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "When you read this letter... Um, no!",
+                "I will never love anyone but y... Ugh!",
+                "Your voice is soft as cotton ca... Wait?",
+                "Your eyes are like two holes... What?!",
+                "My love is bigger than a Giant Be... Hmm!"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "Oh, wrong address?"
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "rare",
+      "info": "On a warm spring day, a shy knock at the door might wake you from your daydreaming. It will be the Love Messenger holding a little letter in both hands."
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "cotton-candy-bird",
+      "desc": "+297,000 pts for Loving Heart Jellies"
+    },
+    {
+      "type": "treasure",
+      "id": "peaceful-dove-bun",
+      "desc": "+150,000 pts for Peaceful Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Cotton Candy Cookie's Magic Candy",
+    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/16/Crob_magic_candy_cotton_candy.png",
+    "levels": [
+      {
+        "lv": 5,
+        "desc": "+10% Speed per letter sent\n+220,000 pts for Heart Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Magic Candy Ingredient",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/ba/Crob_magic_candy_ingredient_cotton_candy.png"
+    },
+    "skillFull": "The more letters the Cookie sends, the faster the speed of the flight. After the flight phase of the skill ends, the speed bonus resets. The stronger the enchanted power, the more points for Loving Heart Jellies.",
+    "emoji": "🍬"
+  }
+}

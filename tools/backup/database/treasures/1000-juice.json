@@ -1,0 +1,119 @@
+{
+  "id": "1000-juice",
+  "name": "1000% Juice",
+  "rarity": "epic",
+  "released": "March 27, 2020",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/9/98/One_thousand_percent_juice_bg.png",
+  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/7/78/1000_juice.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "+128,250 Fruit Juice Points"
+    },
+    {
+      "lv": 2,
+      "effect": "+256,500 Fruit Juice Points"
+    },
+    {
+      "lv": 3,
+      "effect": "+384,750 Fruit Juice Points"
+    },
+    {
+      "lv": 4,
+      "effect": "+513,000 Fruit Juice Points"
+    },
+    {
+      "lv": 5,
+      "effect": "+641,250 Fruit Juice Points"
+    },
+    {
+      "lv": 6,
+      "effect": "+769,500 Fruit Juice Points"
+    }
+  ],
+  "skillFull": "Fruit Jellies appear at certain intervals. Collect the Fruit Jellies to reduce the counter displayed in the Treasure's slot. When the counter reaches 0, creates Fruit Juice Jellies. Level Up for more Fruit Juice Jelly Points.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+791,400 Fruit Juice Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+979,500 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+1,167,600 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+1,355,700 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+1,543,800 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+1,731,900 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+1,920,000 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+2,108,100 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+2,296,200 Fruit Juice Points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+2,484,300 Fruit Juice Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+2,672,400 Fruit Juice Points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Fruit Jellies every 6.16 sec\n+500,000 pts for Fruit Jellies\n+2,860,500 Fruit Juice Points",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Pure, all-natural juice made from fruit and only fruit, with a few Pudding Jellies as an extra! A single sip and you'll suddenly feel like you're on vacation.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "salt",
+      "desc": "+380,000 Fruit Juice Points"
+    },
+    {
+      "type": "cookie",
+      "id": "cream-soda",
+      "desc": "+380,000 Fruit Juice Points"
+    },
+    {
+      "type": "cookie",
+      "id": "melon-soda",
+      "desc": "+380,000 Fruit Juice Points"
+    }
+  ]
+}

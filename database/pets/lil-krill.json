@@ -1,0 +1,120 @@
+{
+  "id": "lil-krill",
+  "name": "Lil' Krill",
+  "rarity": "epic",
+  "released": "August 13, 2025",
+  "img": "images/pets/Crob_standard_lil_krill.png",
+  "tags": [
+    "Jellies"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Gains 3 skill charges every 24 secs\n+2,112,000 pts for Bitten Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Gains 3 skill charges every 24 secs\n+2,304,000 pts for Bitten Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Gains 3 skill charges every 24 secs\n+2,496,000 pts for Bitten Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Gains 3 skill charges every 24 secs\n+2,688,000 pts for Bitten Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Gains 3 skill charges every 24 secs\n+2,880,000 pts for Bitten Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Gains 3 skill charges every 24 secs\n+3,072,000 pts for Bitten Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Gains 3 skill charges every 24 secs\n+3,264,000 pts for Bitten Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Gains 3 skill charges every 24 secs\n+3,456,000 pts for Bitten Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Gains 3 skill charges every 24 secs\n+3,648,000 pts for Bitten Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Gains 3 skill charges every 24 secs\n+3,840,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Gains 3 skill charges every 24 secs\n+4,032,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Gains 3 skill charges every 24 secs\n+4,224,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Gains 3 skill charges every 24 secs\n+4,416,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Gains 3 skill charges every 24 secs\n+4,608,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Gains 3 skill charges every 24 secs\n+4,800,000 pts for Bitten Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Gains Skill counts at fixed intervals and brings Jellies found within range when counts are available, taking a bite before leaving the rest behind. The leftovers are surrounded by bubbles, allowing them to be collected by the Cookie. Level Up for more points for Bitten Jellies.",
+  "story": "Lil' Krill found itself swept away from its big krill family in a raging storm, drifting all the way to Neo Sugarteara on its own Blue Whale Cookie nearly gulped it right up on her swim around the city, thinking it was just a Krill Jelly... but how could she do that to such a cute little pet?! She took it under her fin, later putting it down for a nap in a spare cradle at the Conch's Cradle Nursery and caring for it as if it were her own. Now, it almost appear as if Lil' Krill thinks of Blue Whale Cookie as its mother! Even if it one day learns the truth, let its happy upbringing lessen the weight of the shock. Mother or not, Blue Whale Cookie's love and care for this little pet is the real thing.",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "blue-whale",
+      "desc": "+111,000 pts for Seadrop Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Lil' Krill",
+      "img": "images/pets/Crob_standard_lil_krill.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Shrimply Delicious",
+      "img": "images/costumes/pet/Crob_standard_shrimply_delicious.png",
+      "released": "April 30, 2026",
+      "tier": "epic",
+      "info": "Time for a party! And it ain't a party without Shrimp Crackers! But could the flavor have been a bit too shockingly delicious to handle? The moment Lil' Krill took a bit, POOF! They turned into the shape of a Shrimp Cracker. Erm, you're looking a little too delicious, so be careful!"
+    },
+    {
+      "name": "First Summer Vacation",
+      "img": "images/costumes/pet/Crob_standard_first_summer_vacation.png",
+      "released": "August 13, 2025",
+      "tier": "epic",
+      "info": "It's Lil' Krill's first ever summer vacation! Its eyes glitter upon seeing the sunshine, feeling the cool sea breeze, and hearing the many vacationing Cookies on the bustling beach. It has so much fun, it's time to go back to Neo Sugarteara before it knows it... Bet it's already looking forward to summer vacation next year!"
+    }
+  ]
+}
