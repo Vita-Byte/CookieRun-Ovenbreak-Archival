@@ -3,13 +3,13 @@
   "name": "Cotton Candy Cookie",
   "rarity": "epic",
   "released": "February 13, 2019",
-  "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
+  "illust": "images/cookie-illustrations/Cotton_Candy_Cookie.png",
   "jelly": {
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/8/8f/Crob_affection_jelly_cotton_candy.png",
+    "img": "images/affection-jelly/Crob_affection_jelly_cotton_candy.png",
     "story": "This little bottle is filled with future words of love!"
   },
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
-  "avatar": "https://cdn.wikimg.net/en/cookierunwiki/images/2/2a/Crob_head_cotton_candy.png",
+  "img": "images/cookie-illustrations/Cotton_Candy_Cookie.png",
+  "avatar": "images/cookie-heads/Crob_head_cotton_candy.png",
   "tags": [
     "Flight",
     "Speed",
@@ -109,7 +109,7 @@
     }
   ],
   "skillFull": "Writes love letters at certain intervals. Failed letters are thrown away to destroy obstacles, creating Cotton Candy Jellies. After five attempts, Cotton Candy Cookie writes a love letter successfully and calls upon a Post Pigeon to help her fly and deliver the letter to a postbox. Once the letter is placed in the postbox, the Post Pigeon leaves behind a Loving Heart Jelly. Level Up for more points for Cotton Candy Jellies and Loving Heart Jellies.",
-  "story": "Cotton Candy Cookie is made from the sweetest of sugars and undoubtedly has the highest level of sugar among the Cookies. With such a saccharine heart, no wonder she's always in love! Cotton Candy Cookie spends all her days writing love letters but ends up throwing away more than she sends. Her goal is not to reveal her feelings to her beloved one but to cherish each moment of being in love. Cookies often joke that Cotton Candy Cookie sends way too many letters, but the truth is that everyone secretly wishes for one: what's inside the envelope is so very sweet!",
+  "story": "Cotton Candy Cookie is made from the sweetest of sugars and undoubtedly has the highest level of sugar among the Cookies. With such a saccharine heart, no wonder she's always in love!\n\nCotton Candy Cookie spends all her days writing love letters but ends up throwing away more than she sends. Her goal is not to reveal her feelings to her beloved one but to cherish each moment of being in love.\n\nCookies often joke that Cotton Candy Cookie sends way too many letters, but the truth is that everyone secretly wishes for one: what's inside the envelope is so very sweet!",
   "quote": "Oh, I'm so in love...!",
   "quotes": [
     {
@@ -174,7 +174,7 @@
               "text": "Thank you..."
             },
             {
-              "label": "Given <u></u>",
+              "label": "Given <u>Fluff of Love</u>",
               "text": "Your voice is sweeter than candy... Ah!"
             },
             {
@@ -291,15 +291,15 @@
   "costumes": [
     {
       "name": "Cotton Candy Cookie",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/12/Cotton_Candy_Cookie.png",
+      "img": "images/cookie-illustrations/Cotton_Candy_Cookie.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Punkromantic Fashion Show Model",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d5/Punkromantic_Fashion_Show_Model.png",
-      "illust": "https://cdn.wikimg.net/en/cookierunwiki/images/e/e2/Img_skinIllust_406602.png",
+      "img": "images/costumes/cookie/Punkromantic_Fashion_Show_Model.png",
+      "illust": "images/costume-illustrations/Img_skinIllust_406602.png",
       "bonus": "+1,500 pts for Cotton Candy Jellies",
       "released": "February 28, 2023",
       "quotes": [
@@ -361,7 +361,7 @@
                   "text": "Is this for a model...?"
                 },
                 {
-                  "label": "Given <u></u>",
+                  "label": "Given <u>Fluff of Love</u>",
                   "text": "Catching your glance is like eating a cotton candy... Ah!"
                 },
                 {
@@ -378,7 +378,7 @@
     },
     {
       "name": "Chuseok Greetings",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/6b/Chuseok_greetings.png",
+      "img": "images/costumes/cookie/Chuseok_greetings.png",
       "bonus": "+750 pts for Cotton Candy Jellies",
       "released": "September 25, 2025",
       "quotes": [
@@ -440,7 +440,7 @@
                   "text": "Oh, I think you have the wrong address..."
                 },
                 {
-                  "label": "Given <u></u>",
+                  "label": "Given <u>Fluff of Love</u>",
                   "text": "Love fills you up more than any holiday feast ever could... Hehe!"
                 },
                 {
@@ -457,7 +457,7 @@
     },
     {
       "name": "Love Messenger",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/6/68/Love_Messenger.png",
+      "img": "images/costumes/cookie/Love_Messenger.png",
       "bonus": "+350 pts for Cotton Candy Jellies",
       "released": "February 13, 2019",
       "quotes": [
@@ -501,17 +501,38 @@
   ],
   "candy": {
     "name": "Cotton Candy Cookie's Magic Candy",
-    "img": "https://cdn.wikimg.net/en/cookierunwiki/images/1/16/Crob_magic_candy_cotton_candy.png",
+    "img": "images/magic-candy/Crob_magic_candy_cotton_candy.png",
     "levels": [
       {
+        "lv": 1,
+        "desc": "+10% Speed per letter sent\n+74,800 pts for Heart Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "+10% Speed per letter sent\n+111,100 pts for Heart Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "+10% Speed per letter sent\n+147,400 pts for Heart Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "+10% Speed per letter sent\n+183,700 pts for Heart Jellies",
+        "reward": "❤️+30"
+      },
+	  {
         "lv": 5,
         "desc": "+10% Speed per letter sent\n+220,000 pts for Heart Jellies",
         "reward": "❤️+30"
       }
     ],
     "ingredient": {
-      "name": "Magic Candy Ingredient",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/b/ba/Crob_magic_candy_ingredient_cotton_candy.png"
+      "name": "Fluff of Love",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_cotton_candy.png",
+	  "text": "If love is the best thing in the world, fluff of love is double best!"
     },
     "skillFull": "The more letters the Cookie sends, the faster the speed of the flight. After the flight phase of the skill ends, the speed bonus resets. The stronger the enchanted power, the more points for Loving Heart Jellies.",
     "emoji": "🍬"

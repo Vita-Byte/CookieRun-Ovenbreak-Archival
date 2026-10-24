@@ -1,0 +1,420 @@
+{
+  "id": "strawberry-stick",
+  "name": "Strawberry Stick Cookie",
+  "rarity": "epic",
+  "released": "June 20, 2024",
+  "illust": "images/cookie-illustrations/Img_updateHighlight_strawberry_stick.png",
+  "jelly": {
+    "img": "images/affection-jelly/Crob_affection_jelly_strawberry_stick.png",
+    "story": "Her first drumsticks remain as her first treasure."
+  },
+  "img": "images/cookies/Crob_standard_strawberry_stick.png",
+  "avatar": "images/cookie-heads/Crob_head_strawberry_stick.png",
+  "tags": [
+    "Flight",
+    "Speed",
+    "Score",
+    "Jellies",
+    "SpecialControl",
+    "NoteJelly"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "energy": 172,
+      "desc": "Skill activation every 34.3 sec\n+132,000 Drum Points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "energy": 181,
+      "desc": "Skill activation every 34.3 sec\n+169,000 Drum Points",
+      "reward": "🔥400  ❤️+30"
+    },
+    {
+      "lv": 3,
+      "energy": 190,
+      "desc": "Skill activation every 34.3 sec\n+206,000 Drum Points",
+      "reward": "🔥800  ❤️+30"
+    },
+    {
+      "lv": 4,
+      "energy": 199,
+      "desc": "Skill activation every 34.3 sec\n+243,000 Drum Points",
+      "reward": "🔥2,000  ❤️+30"
+    },
+    {
+      "lv": 5,
+      "energy": 208,
+      "desc": "Skill activation every 34.3 sec\n+280,000 Drum Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 6,
+      "energy": 217,
+      "desc": "Skill activation every 34.3 sec\n+317,000 Drum Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 7,
+      "energy": 226,
+      "desc": "Skill activation every 34.3 sec\n+354,000 Drum Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 8,
+      "energy": 235,
+      "desc": "Skill activation every 34.3 sec\n+391,000 Drum Points",
+      "reward": "🔥4,000  ❤️+30"
+    },
+    {
+      "lv": 9,
+      "energy": 244,
+      "desc": "Skill activation every 34.3 sec\n+428,000 Drum Points",
+      "reward": "🔥5,000  ❤️+30"
+    },
+    {
+      "lv": 10,
+      "energy": 253,
+      "desc": "Skill activation every 34.3 sec\n+465,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 11,
+      "energy": 262,
+      "desc": "Skill activation every 34.3 sec\n+502,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 12,
+      "energy": 271,
+      "desc": "Skill activation every 34.3 sec\n+539,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 13,
+      "energy": 280,
+      "desc": "Skill activation every 34.3 sec\n+576,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 14,
+      "energy": 289,
+      "desc": "Skill activation every 34.3 sec\n+613,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    },
+    {
+      "lv": 15,
+      "energy": 298,
+      "desc": "Skill activation every 34.3 sec\n+650,000 Drum Points",
+      "reward": "🔥6,000  ❤️+30"
+    }
+  ],
+  "skillFull": "Plays the drums at certain intervals. While playing, the Jump and Slide buttons are changed to Drum buttons. Play the drums following the notes approaching in the center of the screen to get points. Notes with numbers must be tapped that number of times in a certain amount of time to earn points. Level up to earn more Drum Points.",
+  "story": "Rat-a-tat, ba-dum tsss! As a tiny Cookie, Strawberry Stick Cookie was drumming before writing. The sweet-but-sour beat of strawberry cream-dipped biscuit sticks matches that of the hypest drums.\n\nWith a natural sense of rhythm and a penchant for practice, this Cookie is notorious for scribbling down beats and melodies in her class notebooks and breaking a chocolate biscuit stick or two.\n\nIt may be true that drumming lets out stress, because Strawberry Stick Cookie's positive outlook on life, ringing bright and clear as a hi-hat, lets her get over any hardship with a smile as she looks forward to the next beat she'll drum up.",
+  "quote": "Hope all our crowd has only the sweetest experiences today!",
+  "quotes": [
+    {
+      "title": "General",
+      "sections": [
+        {
+          "title": "New",
+          "lines": [
+            "Hope all our crowd has only the sweetest experiences today!"
+          ]
+        },
+        {
+          "title": "Cookie Info & Loading",
+          "lines": [
+            "I'm late, but the view on the way was amazing!",
+            "There's no school band?! Well, better late than never!",
+            "Nothing beats drumming while looking out at the sea!",
+            "I got caught writing songs in class! Time to focus, hehe!",
+            "Can you handle sweet? Take this Sweet Punch!",
+            "The more memories we make, the better!",
+            "I can really feel the rhythm!",
+            "All the bad things are just a build up for the good!",
+            "Every cloud has a silver lining!",
+            "Ba-dum tsss! Listen to that hype beat!"
+          ]
+        },
+        {
+          "title": "Tired",
+          "lines": [
+            "Well, it was about time for a break!"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lobby",
+      "sections": [
+        {
+          "title": "Daily Reward",
+          "lines": [
+            "I'll share this with you!"
+          ]
+        },
+        {
+          "title": "Tap",
+          "lines": [
+            "Are you late, too? What a happy coincidence!",
+            "The good and the bad, it all depends how you look at it!",
+            "I made a mistake, but I can learn from it!",
+            "I don't have an umbrella... but we can share!",
+            "I was drumming before I was running!",
+            "The hungrier I am, the tastier the school's Jelly is!",
+            "Class can be boring, but it just makes band practice more fun!",
+            "I get some of my greatest beats by tapping on my desk!",
+            "I hope all our fans only have the sweetest of luck!"
+          ]
+        },
+        {
+          "title": "Gift",
+          "rows": [
+            {
+              "label": "Neutral",
+              "text": "Since this is a gift I'll start learning more about it!"
+            },
+            {
+              "label": "Given <u>Happy Strawberry Drum</u>",
+              "text": "This beat is for you!"
+            },
+            {
+              "label": "Given <u>Royal Golden Dough</u>",
+              "text": "I knew something good would happen today!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cookie Trials",
+      "sections": [
+        {
+          "title": "Trial Info",
+          "lines": [
+            "It's all in how you hold the drumsticks!",
+            "Try tapping whichever drum you'd like!",
+            "I'm sure something good will happen!",
+            "No need to be nervous, just do what your dough tells you!",
+            "Fell(sic) the beat in your dough!",
+            "I'll play something to cheer you up!"
+          ]
+        }
+      ]
+    }
+  ],
+  "affection": [
+    {
+      "n": 0,
+      "name": "Strangers"
+    },
+    {
+      "n": 200,
+      "name": "Almost Friends"
+    },
+    {
+      "n": 400,
+      "name": "Friends"
+    },
+    {
+      "n": 800,
+      "name": "Good Friends",
+      "bonus": "+2,500 Drum Points"
+    },
+    {
+      "n": 1000,
+      "name": "Best Friends",
+      "bonus": "+5,000 Drum Points"
+    }
+  ],
+  "relations": [
+    {
+      "who": "Strawberry Cookie",
+      "id": "strawberry",
+      "text": "Who cares if you have no real strawberries? If anything, your flavor is stronger!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Rockstar Cookie",
+      "id": "rockstar",
+      "text": "I want to be like you someday! Having a goal is always best, right?",
+      "type": "Admiration"
+    },
+    {
+      "who": "Cheerleader Cookie",
+      "id": "cheerleader",
+      "text": "I really look up to any Cookies who support and cheer on others!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mustard Cookie",
+      "id": "mustard",
+      "text": "Who said Cookies have to be sweet? This one here understands the rock spirit!",
+      "type": "Trust"
+    },
+    {
+      "who": "Macaron Cookie",
+      "id": "macaron",
+      "text": "The more drums the merrier!",
+      "type": "Trust"
+    },
+    {
+      "who": "Cotton Candy Cookie",
+      "id": "cotton-candy",
+      "text": "Did you leave this letter in my locker?",
+      "type": "Friendly"
+    },
+    {
+      "who": "S'more Cookie",
+      "id": "s-more",
+      "text": "I told you that everything would work itself out!",
+      "type": "Friendly"
+    },
+    {
+      "who": "Mint Wafer Cookie",
+      "id": "mint-wafer",
+      "text": "We'll stick together, no matter how our rhythms change!",
+      "type": "Family"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Strawberry Stick Cookie",
+      "img": "images/cookies/Crob_standard_strawberry_stick.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Sweet Punch Solo Concert",
+      "img": "images/costumes/cookie/Sweet_punch_solo_concert.png",
+      "illust": "images/costume-illustrations/Img_skinIllust_424801.png",
+      "bonus": "+5,000 Drum Points",
+      "released": "June 20, 2024",
+      "quotes": [
+        {
+          "title": "General",
+          "sections": [
+            {
+              "title": "Cookie Info & Loading",
+              "lines": [
+                "Knock away the bad with our Sweet Punch!",
+                "At the bottom, there's nowhere to go but up!",
+                "The venue's small? We can pack it with our sweet music!",
+                "Since you're all here tonight, we'll make sure you go home happy!",
+                "There's some brand new songs in the concert set tonight!",
+                "Can you handle sweet? Take this Sweet Punch!*",
+                "I can really feel the rhythm!*",
+                "All the bad things are just a build up for the good!*",
+                "Every cloud has a silver lining!*",
+                "Ba-dum tsss! Listen to that hype beat!*"
+              ]
+            },
+            {
+              "title": "Tired",
+              "lines": [
+                "At least... our hard work paid off..."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lobby",
+          "sections": [
+            {
+              "title": "Daily Reward",
+              "lines": [
+                "Thank you all! Rock out and be happy!"
+              ]
+            },
+            {
+              "title": "Tap",
+              "lines": [
+                "I'm still songwriting! We already finished songs for our next concert!",
+                "I've dreamt of having a concert ever since we first made the band!",
+                "No time for an encore? Can we at least do one outdoors...?",
+                "Bad weather for our first concert...? It's good the show is indoors!",
+                "We'll work our way up to bigger venues!",
+                "There's a delay? More time to prep for an even better show!",
+                "The cheering is so loud! Nothing beats live performances!",
+                "I want our concert to make people smile even on bad days!"
+              ]
+            },
+            {
+              "title": "Gift",
+              "rows": [
+                {
+                  "label": "Neutral",
+                  "text": "This could come in handy before our next concert!"
+                },
+                {
+                  "label": "Given <u>Happy Strawberry Drum</u>",
+                  "text": "Our whole set will be packed with the happiest beats!"
+                },
+                {
+                  "label": "Given <u>Royal Golden Dough</u>",
+                  "text": "This shines brighter than concert lights!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tier": "superepic",
+      "info": "A couple of years have passed since the Sweet Punch began as a student band, and they're finally holding their first solo concert! Strawberry Stick Cookie has been working hard to write new songs especially for the upcoming show. Everyone's got to go home with sugary sweet smiles!"
+    }
+  ],
+  "combi": [
+    {
+      "type": "pet",
+      "id": "twinsticks",
+      "desc": "+780,000 Drum Points"
+    },
+    {
+      "type": "treasure",
+      "id": "rainbow-headphones",
+      "desc": "+220,000 pts for Mini Star Jellies"
+    }
+  ],
+  "candy": {
+    "name": "Strawberry Stick Cookie's Magic Candy",
+    "img": "images/magic-candy/Crob_magic_candy_strawberry_stick.png",
+    "levels": [
+      {
+        "lv": 1,
+        "desc": "Creates 3 Neon Jellies per drum note\n+71,000 pts for Neon Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 2,
+        "desc": "Creates 3 Neon Jellies per drum note\n+97,000 pts for Neon Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 3,
+        "desc": "Creates 3 Neon Jellies per drum note\n+123,000 pts for Neon Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 4,
+        "desc": "Creates 3 Neon Jellies per drum note\n+149,000 pts for Neon Jellies",
+        "reward": "❤️+30"
+      },
+	  {
+        "lv": 5,
+        "desc": "Creates 3 Neon Jellies per drum note\n+175,000 pts for Neon Jellies",
+        "reward": "❤️+30"
+      }
+    ],
+    "ingredient": {
+      "name": "Happy Strawberry Drum",
+      "img": "images/magic-candy-ingredients/Crob_magic_candy_ingredient_strawberry_stick.png",
+	  "text": "The beat of this drum is said to bring good luck and cheer up the dreariest of moods."
+    },
+    "skillFull": "Creates Neon Jellies when hitting drum notes. Hit multiple notes in a row for more Neon Jellies. The stronger the enchanted power, the more points for Neon Jellies.",
+    "emoji": "🍬"
+  }
+}

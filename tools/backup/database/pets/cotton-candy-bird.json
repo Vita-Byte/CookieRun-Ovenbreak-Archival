@@ -1,0 +1,117 @@
+{
+  "id": "cotton-candy-bird",
+  "name": "Cotton Candy Bird",
+  "rarity": "epic",
+  "released": "February 13, 2019",
+  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a2/Cotton_Candy_Bird.png",
+  "tags": [
+    "GiantMode",
+    "BlastMode",
+    "Items",
+    "Magnetism",
+    "EnergySpeed"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 17.5% slower during skill activation",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 22% slower during skill activation",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 26.4% slower during skill activation",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 30.9% slower during skill activation",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 35.4% slower during skill activation",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 39.8% slower during skill activation",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 44.3% slower during skill activation",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 48.8% slower during skill activation",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 53.2% slower during skill activation",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 57.7% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 62.1% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 66.6% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 71.1% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 75.5% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Creates Letters every 21.2 sec\nEnergy drains 80% slower during skill activation",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Brings letters at given intervals. Love Letters activate Blast Mode with Magnetism, Friendship Letters activate Giant Mode. Both sorts of letters slow down the Energy Drain for a short while. Level Up for a slower Energy Drain when receiving the letters.",
+  "story": "A happy post office bird set out to deliver love to the Cookie World. This veteran misdelivered only one letter in its lifetime. Can you guess whose letter was it?",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "cotton-candy",
+      "desc": "+297,000 points for Cotton Candy Jellies"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Cotton Candy Bird",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a2/Cotton_Candy_Bird.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Chuseok Courtesies",
+      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d6/Crob_standard_chuseok_courtesies.png",
+      "released": "September 25, 2025",
+      "tier": "epic",
+      "info": "This trusty companion soars across every corner of the land! Cotton Candy Cookie can't be everywhere herself, so this lovely Pet delivers heartfelt letters on her behalf. Its wings must ache from flying more than usual, but the moment someone receives a letter, seeing the joy on their faces makes Cotton Candy Bird's wings feel light as air once more!"
+    }
+  ]
+}

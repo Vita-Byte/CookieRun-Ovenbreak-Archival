@@ -1,0 +1,125 @@
+{
+  "id": "rainbow-headphones",
+  "name": "Rainbow Headphones",
+  "rarity": "epic",
+  "released": "October 25, 2018",
+  "img": "images/treasures/Rainbow_Headphones.png",
+  "avatar": "images/treasure-icons/Rainbow_headphones.png",
+  "tags": [
+    "Jellies",
+    "StarJellies"
+  ],
+  "bonus": true,
+  "enhancements": [
+    {
+      "lv": 1,
+      "effect": "Rainbow Mini Star Jelly appears with 5% probability\n+50,000 pts for Mini Star Jellies"
+    },
+    {
+      "lv": 2,
+      "effect": "Rainbow Mini Star Jelly appears with 10% probability\n+110,000 pts for Mini Star Jellies"
+    },
+    {
+      "lv": 3,
+      "effect": "Rainbow Mini Star Jelly appears with 15% probability\n+170,000 pts for Mini Star Jellies"
+    },
+    {
+      "lv": 4,
+      "effect": "Rainbow Mini Star Jelly appears with 20% probability\n+230,000 pts for Mini Star Jellies"
+    },
+    {
+      "lv": 5,
+      "effect": "Rainbow Mini Star Jelly appears with 25% probability\n+290,000 pts for Mini Star Jellies"
+    },
+    {
+      "lv": 6,
+      "effect": "Rainbow Mini Star Jelly appears with 30% probability\n+350,000 pts for Mini Star Jellies"
+    }
+  ],
+  "skillFull": "Mini Star Jellies of three colors appear at given intervals. Collect all three kinds of Mini Star Jellies for bonus points. Level Up for more frequent Mini Star Jelly creation and points for Mini Star Jellies.",
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,026,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,110,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 3,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,194,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 4,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,278,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 5,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,362,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 6,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,446,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 7,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,530,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 8,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,614,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 9,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,698,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥2,000"
+    },
+    {
+      "lv": 10,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,782,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 11,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,866,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥4,000"
+    },
+    {
+      "lv": 12,
+      "desc": "Mini Star Jellies appear every 11 sec\n+1,950,000 pts for Mini Star Jellies\n+50,000 bonus points",
+      "reward": "🔥6,000"
+    }
+  ],
+  "story": "Introducing new, limited-edition Rainbow Headphones! Prepare to experience a richer, warmer, and more vibrant sound of superb clarity!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "dj",
+      "desc": "+220,000 pts for Mini Star Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "marshmallow",
+      "desc": "+220,000 pts for Mini Star Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "strawberry-stick",
+      "desc": "+220,000 pts for Mini Star Jellies"
+    },
+    {
+      "type": "cookie",
+      "id": "mint-wafer",
+      "desc": "+220,000 pts for Mini Star Jellies"
+    }
+  ]
+}

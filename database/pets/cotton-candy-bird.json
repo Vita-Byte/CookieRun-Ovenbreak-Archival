@@ -3,7 +3,7 @@
   "name": "Cotton Candy Bird",
   "rarity": "epic",
   "released": "February 13, 2019",
-  "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a2/Cotton_Candy_Bird.png",
+  "img": "images/pets/Cotton_Candy_Bird.png",
   "tags": [
     "GiantMode",
     "BlastMode",
@@ -101,14 +101,14 @@
   "costumes": [
     {
       "name": "Cotton Candy Bird",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/a/a2/Cotton_Candy_Bird.png",
+      "img": "images/pets/Cotton_Candy_Bird.png",
       "desc": "Default Costume",
       "tier": "default",
       "equipped": true
     },
     {
       "name": "Chuseok Courtesies",
-      "img": "https://cdn.wikimg.net/en/cookierunwiki/images/d/d6/Crob_standard_chuseok_courtesies.png",
+      "img": "images/costumes/pet/Crob_standard_chuseok_courtesies.png",
       "released": "September 25, 2025",
       "tier": "epic",
       "info": "This trusty companion soars across every corner of the land! Cotton Candy Cookie can't be everywhere herself, so this lovely Pet delivers heartfelt letters on her behalf. Its wings must ache from flying more than usual, but the moment someone receives a letter, seeing the joy on their faces makes Cotton Candy Bird's wings feel light as air once more!"

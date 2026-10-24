@@ -1,0 +1,114 @@
+{
+  "id": "twinsticks",
+  "name": "Twinsticks",
+  "rarity": "epic",
+  "released": "June 20, 2024",
+  "img": "images/pets/Twinsticks.png",
+  "tags": [
+    "Items",
+    "Potions"
+  ],
+  "bonus": true,
+  "levels": [
+    {
+      "lv": 1,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+7,260,000 pts for Choco Stick Jellies\n+4 Energy restored from Strawberry Stick Jellies",
+      "reward": "No Level Up Reward"
+    },
+    {
+      "lv": 2,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+7,920,000 pts for Choco Stick Jellies\n+4 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥400  ❤️+20"
+    },
+    {
+      "lv": 3,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+8,580,000 pts for Choco Stick Jellies\n+5 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥800  ❤️+20"
+    },
+    {
+      "lv": 4,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+9,240,000 pts for Choco Stick Jellies\n+5 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥2,000  ❤️+20"
+    },
+    {
+      "lv": 5,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+9,900,000 pts for Choco Stick Jellies\n+6 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 6,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+10,560,000 pts for Choco Stick Jellies\n+6 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥4,000  ❤️+20"
+    },
+    {
+      "lv": 7,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+11,220,000 pts for Choco Stick Jellies\n+7 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 8,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+11,880,000 pts for Choco Stick Jellies\n+7 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 9,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+12,540,000 pts for Choco Stick Jellies\n+7 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥5,000  ❤️+20"
+    },
+    {
+      "lv": 10,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+13,200,000 pts for Choco Stick Jellies\n+8 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 11,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+13,860,000 pts for Choco Stick Jellies\n+8 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 12,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+14,520,000 pts for Choco Stick Jellies\n+9 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 13,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+15,180,000 pts for Choco Stick Jellies\n+9 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 14,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+15,840,000 pts for Choco Stick Jellies\n+10 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    },
+    {
+      "lv": 15,
+      "desc": "Creates Drumstick Jellies in sequence every 24.5 sec\n+16,500,000 pts for Choco Stick Jellies\n+10 Energy restored from Strawberry Stick Jellies",
+      "reward": "🔥6,000  ❤️+20"
+    }
+  ],
+  "skillFull": "Two types of Drumstick Jellies are created among regular Jellies following a certain pattern. Choco Sticks grant higher points, while Strawberry Sticks let you recover Energy. Level up to earn more Choco Stick points and recover more Energy with Strawberry Sticks.",
+  "story": "Drumsticks must be two of a kind! Strawberry Stick Cookie didn't beat around the bush, testing all the drumsticks at the drum store until she found the perfect pair. She swears on her drum set that despite their different flavors, the harmony that Twinsticks create in action is unbeatable. Even off stage, these two drumsticks walk to the beat of the same drummer!",
+  "combi": [
+    {
+      "type": "cookie",
+      "id": "strawberry-stick",
+      "desc": "+780,000 Drum Points"
+    }
+  ],
+  "costumes": [
+    {
+      "name": "Twinsticks",
+      "img": "images/pets/Twinsticks.png",
+      "desc": "Default Costume",
+      "tier": "default",
+      "equipped": true
+    },
+    {
+      "name": "Treat Bouquet",
+      "img": "images/costumes/pet/Crob_standard_treat_bouquet.png",
+      "released": "June 20, 2024",
+      "tier": "epic",
+      "info": "Twinsticks is decked out in bouquet wrapping, waiting for Sweet Punch backstage after their concert! It prepared this special surprise with the help of family and friends. Seeing the Cookies' happy smiles in their InstraCrumb pictures with Twinsticks makes the surprise seem like a big success."
+    }
+  ]
+}
